@@ -17,7 +17,7 @@
        <div class="navbar-header-row">
          <!-- logo -->
          <div class="logo">
-           <img src="../assets/logo-1.png" alt="" />
+           <img src="../assets/logo.png" alt="" />
          </div>
          <!-- menu toggle button -->
          <button class="menu-toggle" :class="{ toggled: menuOpen }" @click="toggleMenu">
