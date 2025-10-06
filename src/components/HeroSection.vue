@@ -53,12 +53,13 @@
 </template>
 
 <script>
+import heroVideo from "@/assets/hero-video.mp4";
 export default {
   name: "HeroSection",
   data() {
     return {
       isLoaded: false,
-      videoSrc: "../assets/hero-video.mp4", 
+      videoSrc: heroVideo, 
       textLines: [
         "City Comfort Line",
         "Your Trusted Partner",
@@ -99,7 +100,7 @@ export default {
 .video-background {
   position: absolute;
   inset: 0;
-  z-index: 0;
+  z-index: 1;
 }
 .hero-video {
   width: 100%;
@@ -125,6 +126,7 @@ export default {
 
 /* Content */
 .hero-content {
+    margin-top: 5%;
   position: relative;
   z-index: 10;
   text-align: center;
@@ -143,9 +145,10 @@ export default {
   margin-bottom: 2rem;
 }
 .hero-text {
-  font-size: clamp(2rem, 7vw, 5rem);
+  font-size: clamp(2rem, 4.5vw, 5rem);
+  /* font-size: 40px; */
   font-weight: 800;
-  color: #ffd700; /* gold accent */
+  color: #ffd700; 
   text-transform: uppercase;
   letter-spacing: 1px;
   opacity: 0;
