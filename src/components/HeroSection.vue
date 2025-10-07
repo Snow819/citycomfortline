@@ -54,12 +54,13 @@
 
 <script>
 import heroVideo from "@/assets/hero-video.mp4";
+
 export default {
   name: "HeroSection",
   data() {
     return {
       isLoaded: false,
-      videoSrc: heroVideo, 
+      videoSrc: heroVideo,
       textLines: [
         "City Comfort Line",
         "Your Trusted Partner",
@@ -83,6 +84,8 @@ export default {
   },
 };
 </script>
+
+
 
 <style scoped>
 .hero-section {
