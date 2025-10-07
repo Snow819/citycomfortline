@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "serviceAreas": "Service Areas",
+    "testimonials": "Testimonials",
+    "getQuote": "Get a Quote"
+  },
+  "hero": {
+    "title1": "City Comfort Line",
+    "title2": "Your Trusted Partner",
+    "subtitle": "Reliable and efficient home care & logistics services."
+  }
+}
