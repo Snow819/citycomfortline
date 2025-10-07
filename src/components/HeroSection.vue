@@ -183,7 +183,7 @@ export default {
 }
 
 .hero-text {
-  font-size: clamp(2rem, 4vw, 5rem);
+  font-size: clamp(2rem, 3vw, 5rem);
   font-weight: 800;
   color: #ffd700;
   text-transform: uppercase;
