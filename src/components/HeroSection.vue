@@ -128,6 +128,7 @@ export default {
 
 /* Content */
 .hero-content {
+  margin-top: 5%;
   position: relative;
   z-index: 10;
   text-align: center;
@@ -146,7 +147,7 @@ export default {
   margin-bottom: 2rem;
 }
 .hero-text {
-  font-size: clamp(2rem, 7vw, 5rem);
+  font-size: clamp(2rem, 4vw, 5rem);
   font-weight: 800;
   color: #ffd700; /* gold accent */
   text-transform: uppercase;
