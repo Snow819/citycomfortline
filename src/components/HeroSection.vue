@@ -53,12 +53,13 @@
 </template>
 
 <script>
+import heroVideo from '@/assets/hero-video.mp4';
 export default {
   name: "HeroSection",
   data() {
     return {
-      isLoaded: false,
-      videoSrc: "../assets/hero-video.mp4", 
+       isLoaded: false,
+      videoSrc: heroVideo,
       textLines: [
         "City Comfort Line",
         "Your Trusted Partner",
