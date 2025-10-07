@@ -86,6 +86,7 @@ export default {
 </script>
 
 
+
 <style scoped>
 .hero-section {
   position: relative;
@@ -102,7 +103,7 @@ export default {
 .video-background {
   position: absolute;
   inset: 0;
-  z-index: 0;
+  z-index: 1;
 }
 .hero-video {
   width: 100%;
@@ -129,6 +130,9 @@ export default {
 /* Content */
 .hero-content {
   margin-top: 5%;
+hero
+    margin-top: 5%;
+main
   position: relative;
   z-index: 10;
   text-align: center;
@@ -147,9 +151,14 @@ export default {
   margin-bottom: 2rem;
 }
 .hero-text {
+ hero
   font-size: clamp(2rem, 4vw, 5rem);
+
+  font-size: clamp(2rem, 4.5vw, 5rem);
+  /* font-size: 40px; */
+ main
   font-weight: 800;
-  color: #ffd700; /* gold accent */
+  color: #ffd700; 
   text-transform: uppercase;
   letter-spacing: 1px;
   opacity: 0;

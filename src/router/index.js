@@ -1,7 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue';
+ hero
 import ServiceView from '../views/ServiceView.vue';
 import ContactView from '../views/ContactView.vue';
+
+import ContactView from '../views/ContactView.vue';
+import ServiceView from '../views/ServiceView.vue';
+main
 import Navbar from '@/components/Navbar.vue'
 
 const router = createRouter({
@@ -13,16 +18,26 @@ const router = createRouter({
       component: HomeView,
     },
     {
+      hero
+
+      path:'/contact',
+      name: 'Contact',
+      component: ContactView,
+    },
+    {
+ main
       path:'/Service',
       name: 'Service',
       component: ServiceView,
     },
     {
+ hero
       path:'/Contact',
       name: 'Contact',
       component: ContactView,
     },
     {
+ main
       path:'/Navbar',
       name: 'Navbar',
       component: Navbar,
