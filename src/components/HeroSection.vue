@@ -53,13 +53,18 @@
 </template>
 
 <script>
+ navbar
 import { useLanguage } from '@/composables/useLanguage'
+
+import heroVideo from "@/assets/hero-video.mp4";
+ main
 
 export default {
   name: "HeroSection",
   data() {
     return {
       isLoaded: false,
+ navbar
       videoSrc: "../assets/hero-video.mp4",
       languageState: useLanguage(),
       translations: {
@@ -103,6 +108,20 @@ export default {
           scrollText: "向下滚动探索"
         }
       }
+
+      videoSrc: heroVideo,
+      textLines: [
+        "City Comfort Line",
+        "Your Trusted Partner",
+        "in Home Care & Logistics",
+      ],
+      subtitle:
+        "Reliable, caring, and efficient — we handle your home, transport, and comfort needs with excellence.",
+      buttons: [
+        { text: "Our Services", class: "primary", action: () => console.log("Navigate to services") },
+        { text: "Contact Us", class: "secondary", action: () => console.log("Navigate to contact") },
+      ],
+ main
     };
   },
   computed: {
@@ -124,6 +143,8 @@ export default {
 };
 </script>
 
+
+
 <style scoped>
 /* Keep all your existing styles exactly the same */
 .hero-section {
@@ -140,7 +161,7 @@ export default {
 .video-background {
   position: absolute;
   inset: 0;
-  z-index: 0;
+  z-index: 1;
 }
 .hero-video {
   width: 100%;
@@ -165,6 +186,7 @@ export default {
 }
 
 .hero-content {
+    margin-top: 5%;
   position: relative;
   z-index: 10;
   text-align: center;
@@ -182,9 +204,14 @@ export default {
   margin-bottom: 2rem;
 }
 .hero-text {
-  font-size: clamp(2rem, 7vw, 5rem);
+  font-size: clamp(2rem, 4.5vw, 5rem);
+  /* font-size: 40px; */
   font-weight: 800;
+ navbar
   color: #ffd700;
+
+  color: #ffd700; 
+ main
   text-transform: uppercase;
   letter-spacing: 1px;
   opacity: 0;
