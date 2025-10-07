@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "serviceAreas": "Zones de service",
+    "testimonials": "Témoignages",
+    "getQuote": "Obtenir un devis"
+  },
+  "hero": {
+    "title1": "Ligne Confort de la Ville",
+    "title2": "Votre partenaire de confiance",
+    "subtitle": "Des services fiables et efficaces pour votre maison et votre confort."
+  }
+}

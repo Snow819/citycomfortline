@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "home": "主页",
+    "about": "关于我们",
+    "services": "服务",
+    "serviceAreas": "服务区域",
+    "testimonials": "客户评价",
+    "getQuote": "获取报价"
+  },
+  "hero": {
+    "title1": "城市舒适线路",
+    "title2": "您值得信赖的合作伙伴",
+    "subtitle": "可靠且高效的家庭护理和物流服务。"
+  }
+}
