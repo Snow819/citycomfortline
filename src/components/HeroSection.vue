@@ -17,21 +17,21 @@
       <img src="@/assets/logo.png" alt="City Comfort Line Logo" class="hero-logo" />
 
       <div class="text-container">
-        <h1 v-for="(line, index) in textLines" :key="index" class="hero-text" :class="{ 'drop-in': isLoaded }"
+        <h1 v-for="(line, index) in t.textLines" :key="index" class="hero-text" :class="{ 'drop-in': isLoaded }"
           :style="{ animationDelay: `${0.2 + index * 0.15}s` }">
           {{ line }}
         </h1>
       </div>
 
       <p class="hero-subtitle" :class="{ 'fade-up': isLoaded }"
-        :style="{ animationDelay: `${0.2 + textLines.length * 0.15}s` }">
-        {{ subtitle }}
+        :style="{ animationDelay: `${0.2 + t.textLines.length * 0.15}s` }">
+        {{ t.subtitle }}
       </p>
 
       <div class="cta-buttons">
-        <button v-for="(button, index) in buttons" :key="index" class="cta-btn"
+        <button v-for="(button, index) in t.buttons" :key="index" class="cta-btn"
           :class="[button.class, { 'scale-in': isLoaded }]"
-          :style="{ animationDelay: `${0.4 + textLines.length * 0.15 + index * 0.1}s` }"
+          :style="{ animationDelay: `${0.4 + t.textLines.length * 0.15 + index * 0.1}s` }"
           @click="button.action">
           <span class="btn-text">{{ button.text }}</span>
         </button>
@@ -39,8 +39,8 @@
 
       <!-- Scroll Indicator -->
       <div class="scroll-indicator" :class="{ 'bounce-in': isLoaded }"
-        :style="{ animationDelay: `${0.8 + textLines.length * 0.15}s` }" @click="scrollDown">
-        <span class="scroll-text">Scroll to explore</span>
+        :style="{ animationDelay: `${0.8 + t.textLines.length * 0.15}s` }" @click="scrollDown">
+        <span class="scroll-text">{{ t.scrollText }}</span>
         <div class="scroll-arrow">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
             <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -53,24 +53,65 @@
 </template>
 
 <script>
+import { useLanguage } from '@/composables/useLanguage'
+
 export default {
   name: "HeroSection",
   data() {
     return {
       isLoaded: false,
-      videoSrc: "../assets/hero-video.mp4", 
-      textLines: [
-        "City Comfort Line",
-        "Your Trusted Partner",
-        "in Home Care & Logistics",
-      ],
-      subtitle:
-        "Reliable, caring, and efficient — we handle your home, transport, and comfort needs with excellence.",
-      buttons: [
-        { text: "Our Services", class: "primary", action: () => console.log("Navigate to services") },
-        { text: "Contact Us", class: "secondary", action: () => console.log("Navigate to contact") },
-      ],
+      videoSrc: "../assets/hero-video.mp4",
+      languageState: useLanguage(),
+      translations: {
+        en: {
+          textLines: [
+            "City Comfort Line",
+            "Your Trusted Partner",
+            "in Home Care & Logistics",
+          ],
+          subtitle: "Reliable, caring, and efficient — we handle your home, transport, and comfort needs with excellence.",
+          buttons: [
+            { text: "Our Services", class: "primary", action: () => console.log("Navigate to services") },
+            { text: "Contact Us", class: "secondary", action: () => console.log("Navigate to contact") },
+          ],
+          scrollText: "Scroll to explore"
+        },
+        fr: {
+          textLines: [
+            "City Comfort Line",
+            "Votre partenaire de confiance",
+            "en soins à domicile et logistique",
+          ],
+          subtitle: "Fiable, attentionné et efficace — nous gérons vos besoins en matière de maison, de transport et de confort avec excellence.",
+          buttons: [
+            { text: "Nos services", class: "primary", action: () => console.log("Navigate to services") },
+            { text: "Contactez-nous", class: "secondary", action: () => console.log("Navigate to contact") },
+          ],
+          scrollText: "Défiler pour explorer"
+        },
+        zh: {
+          textLines: [
+            "城市舒适线",
+            "您值得信赖的合作伙伴",
+            "家庭护理与物流",
+          ],
+          subtitle: "可靠、贴心、高效——我们以卓越的服务满足您的家庭、运输和舒适需求。",
+          buttons: [
+            { text: "我们的服务", class: "primary", action: () => console.log("Navigate to services") },
+            { text: "联系我们", class: "secondary", action: () => console.log("Navigate to contact") },
+          ],
+          scrollText: "向下滚动探索"
+        }
+      }
     };
+  },
+  computed: {
+    currentLanguage() {
+      return this.languageState.currentLanguage
+    },
+    t() {
+      return this.translations[this.currentLanguage]
+    }
   },
   mounted() {
     setTimeout(() => (this.isLoaded = true), 200);
@@ -84,6 +125,7 @@ export default {
 </script>
 
 <style scoped>
+/* Keep all your existing styles exactly the same */
 .hero-section {
   position: relative;
   width: 100%;
@@ -95,7 +137,6 @@ export default {
   justify-content: center;
 }
 
-/* Backgrounds */
 .video-background {
   position: absolute;
   inset: 0;
@@ -123,7 +164,6 @@ export default {
   background: rgba(0, 20, 20, 0.6);
 }
 
-/* Content */
 .hero-content {
   position: relative;
   z-index: 10;
@@ -138,14 +178,13 @@ export default {
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
 }
 
-/* Text */
 .text-container {
   margin-bottom: 2rem;
 }
 .hero-text {
   font-size: clamp(2rem, 7vw, 5rem);
   font-weight: 800;
-  color: #ffd700; /* gold accent */
+  color: #ffd700;
   text-transform: uppercase;
   letter-spacing: 1px;
   opacity: 0;
@@ -159,7 +198,6 @@ export default {
   100% { opacity: 1; transform: translateY(0) rotateX(0); }
 }
 
-/* Subtitle */
 .hero-subtitle {
   font-size: 1.2rem;
   max-width: 700px;
@@ -175,7 +213,6 @@ export default {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Buttons */
 .cta-buttons {
   display: flex;
   justify-content: center;
@@ -213,11 +250,11 @@ export default {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Scroll indicator */
 .scroll-indicator {
   margin-top: 3rem;
   animation: bounceIn 1s ease forwards;
   opacity: 0;
+  cursor: pointer;
 }
 .scroll-indicator.bounce-in {
   opacity: 1;
@@ -226,6 +263,7 @@ export default {
   font-size: 0.75rem;
   color: #b2dfdb;
   margin-bottom: 0.5rem;
+  display: block;
 }
 .scroll-arrow svg {
   color: #ffd700;
@@ -236,7 +274,6 @@ export default {
   50% { transform: translateY(6px); }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .hero-logo { width: 120px; }
   .hero-text { font-size: clamp(1.8rem, 8vw, 3.5rem); }

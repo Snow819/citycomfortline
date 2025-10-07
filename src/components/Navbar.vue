@@ -13,7 +13,7 @@
      <div v-if="menuOpen && !isDesktop" class="menu-overlay" @click="toggleMenu"></div>
      
      <!-- navbar -->
-     <nav :class="['navbar', { open: menuOpen && !isDesktop }]">
+     <nav :class="['navbar', { open: menuOpen && !isDesktop }]" :key="currentLanguage">
        <div class="navbar-header-row">
          <!-- logo -->
          <div class="logo">
@@ -27,39 +27,35 @@
          </button>
        </div>
        <!-- navbar-links -->
-       <ul class="navbar-links">
-         <li><router-link to="/">Home</router-link></li>
-         <li><router-link to="/investment-plans">Investment Plans</router-link></li>
-         <li><router-link to="/about">About</router-link></li>
-         <li><router-link to="/contact">Contact</router-link></li>
-         <li><router-link to="/blog">Blog</router-link></li>
+       <ul class="navbar-links" :class="`lang-${currentLanguage}`">
+         <li><router-link to="/"><span class="lang-en">Home</span><span class="lang-fr">Accueil</span><span class="lang-zh">首页</span></router-link></li>
+         <li><router-link to="/investment-plans"><span class="lang-en">About Us</span><span class="lang-fr">À propos</span><span class="lang-zh">关于我们</span></router-link></li>
+         <li><router-link to="/about"><span class="lang-en">Services</span><span class="lang-fr">Services</span><span class="lang-zh">服务</span></router-link></li>
+         <li><router-link to="/contact"><span class="lang-en">Service Areas</span><span class="lang-fr">Zones de service</span><span class="lang-zh">服务区域</span></router-link></li>
+         <li><router-link to="/blog"><span class="lang-en">Testimonials</span><span class="lang-fr">Témoignages</span><span class="lang-zh">客户评价</span></router-link></li>
        </ul>
        <!-- dropdown-menu -->
        <div class="dropdown-menu custom-country-dropdown">
          <div class="dropdown-selected" @click="toggleCountryDropdown">
-           {{ selectedCountry || 'Select Country' }}
+           {{ selectedCountry || t.selectLanguage }}
            <span class="dropdown-arrow">&#9662;</span>
          </div>
          <ul v-show="countryDropdownOpen" class="dropdown-list">
            <li
              v-for="country in countries"
-             :key="country"
+             :key="country.code"
+             v-show="country.code !== currentLanguage"
              @click="selectCountry(country)"
-             :class="{ active: selectedCountry === country }"
+             :class="{ active: selectedCountry === country.name }"
            >
-             {{ country }}
+             {{ country.name }}
            </li>
          </ul>
        </div>
        <!-- button section -->
-       <div class="btn">
-         <!-- sign up -->
+       <div class="btn" :class="`lang-${currentLanguage}`">
          <a href="#" class="btn1">
-           <button>Login</button>
-         </a>
-         <!-- login -->
-         <a href="#" class="btn2">
-           <button>Sign Up</button>
+           <button><span class="lang-en">Get a Quote</span><span class="lang-fr">Obtenir un devis</span><span class="lang-zh">获取报价</span></button>
          </a>
        </div>
      </nav>
@@ -67,19 +63,65 @@
  </template>
  
  <script>
+ import { useLanguage } from '@/composables/useLanguage'
+ 
  export default {
    data() {
      return {
        menuOpen: false,
        isDesktop: window.innerWidth > 768,
        countryDropdownOpen: false,
-       selectedCountry: '',
-       countries: ['USA', 'UK', 'Canada'],
+       languageState: useLanguage(),
+       countries: [
+         { name: 'English', code: 'en' },
+         { name: 'French', code: 'fr' },
+         { name: 'Mandarin', code: 'zh' }
+       ],
+       translations: {
+         en: {
+           home: 'Home',
+           aboutUs: 'About Us',
+           services: 'Services',
+           serviceAreas: 'Service Areas',
+           testimonials: 'Testimonials',
+           getQuote: 'Get a Quote',
+           selectLanguage: 'Select Language'
+         },
+         fr: {
+           home: 'Accueil',
+           aboutUs: 'À propos',
+           services: 'Services',
+           serviceAreas: 'Zones de service',
+           testimonials: 'Témoignages',
+           getQuote: 'Obtenir un devis',
+           selectLanguage: 'Choisir la langue'
+         },
+         zh: {
+           home: '首页',
+           aboutUs: '关于我们',
+           services: '服务',
+           serviceAreas: '服务区域',
+           testimonials: '客户评价',
+           getQuote: '获取报价',
+           selectLanguage: '选择语言'
+         }
+       },
        isNavbarHidden: false,
        isNavbarAnimated: false,
        lastScrollY: 0,
        scrollTimeout: null,
        isGlass: false,
+     }
+   },
+   computed: {
+     currentLanguage() {
+       return this.languageState.currentLanguage
+     },
+     selectedCountry() {
+       return this.languageState.selectedCountry
+     },
+     t() {
+       return this.translations[this.currentLanguage]
      }
    },
    methods: {
@@ -94,24 +136,21 @@
        this.countryDropdownOpen = !this.countryDropdownOpen
      },
      selectCountry(country) {
-       this.selectedCountry = country
+       this.languageState.selectedCountry = country.name
+       this.languageState.currentLanguage = country.code
        this.countryDropdownOpen = false
      },
      handleScroll() {
        const currentScrollY = window.scrollY
-       // Glass effect if scrolled more than 10px
        this.isGlass = currentScrollY > 10
        if (currentScrollY > this.lastScrollY && currentScrollY > 60) {
-         // Scrolling down
          this.isNavbarHidden = true
          this.isNavbarAnimated = false
        } else {
-         // Scrolling up
          this.isNavbarHidden = false
          this.isNavbarAnimated = false
        }
        this.lastScrollY = currentScrollY
-       // Animate down when scrolling stops
        if (this.scrollTimeout) clearTimeout(this.scrollTimeout)
        this.scrollTimeout = setTimeout(() => {
          this.isNavbarHidden = false
@@ -151,7 +190,7 @@
  }
  
  .navbar-transparent {
-   background: rgba(0, 0, 0, 0.2); /* dark overlay, nearly transparent */
+   background: rgba(0, 0, 0, 0.2);
    backdrop-filter: none;
  }
  
@@ -244,23 +283,25 @@
    text-align: center;
    text-decoration: none;
    color: #e9e9e9;
-   transition:
-     background 0.3s,
-     color 0.3s;
+   transition: none;
    padding: 8px 16px;
    font-size: 14px;
    border-radius: 6px;
+   white-space: nowrap;
+   display: inline-block;
+   position: relative;
+   overflow: hidden;
  }
  
  .navbar-links li a:hover,
  .navbar-links li .router-link-active:hover {
-   background: linear-gradient(90deg, #eb6709 0%, #f63d43 100%);
+   background: linear-gradient(135deg, #00796b, #26a69a);
    color: #fff;
    box-shadow: 0 2px 8px rgba(246, 61, 67, 0.15);
  }
  
  .navbar-links li .router-link-exact-active {
-   background: linear-gradient(90deg, #eb6709 0%, #f63d43 100%);
+   background: linear-gradient(135deg, #00796b, #26a69a);
    color: #fff;
    box-shadow: 0 2px 8px rgba(246, 61, 67, 0.15);
  }
@@ -291,17 +332,17 @@
  }
  
  .btn1 button {
-   background: linear-gradient(90deg, #eb6709 0%, #f63d43 100%);
+   background: linear-gradient(135deg, #00796b, #26a69a);
    color: #fff;
    border: none;
    padding: 8px 20px;
    border-radius: 6px;
    font-size: 14px;
-   transition:
-     background 0.3s,
-     color 0.3s,
-     box-shadow 0.3s;
+   transition: none;
    cursor: pointer;
+   white-space: nowrap;
+   position: relative;
+   overflow: hidden;
  }
  
  .btn1 button:hover {
@@ -324,7 +365,7 @@
  }
  
  .btn2 button:hover {
-   background: linear-gradient(90deg, #eb6709 0%, #f63d43 100%);
+   background: linear-gradient(135deg, #00796b, #26a69a);
    color: #fff;
  }
  
@@ -342,10 +383,9 @@
    cursor: pointer;
  }
  
- /* Style dropdown options with hover effect using ::v-deep for Vue scoped CSS */
  ::v-deep .dropdown-menu select option:hover,
  ::v-deep .dropdown-menu select option:focus {
-   background: linear-gradient(90deg, #eb6709 0%, #f63d43 100%);
+   background: linear-gradient(135deg, #00796b, #26a69a);
    color: #fff;
  }
  
@@ -353,6 +393,23 @@
    position: relative;
    min-width: 150px;
  }
+
+ /* Language visibility control */
+ .lang-en .lang-fr,
+ .lang-en .lang-zh {
+   display: none !important;
+ }
+
+ .lang-fr .lang-en,
+ .lang-fr .lang-zh {
+   display: none !important;
+ }
+
+ .lang-zh .lang-en,
+ .lang-zh .lang-fr {
+   display: none !important;
+ }
+
  .dropdown-selected {
    background: #181818;
    color: #fff;
@@ -367,6 +424,8 @@
    transition:
      background 0.3s,
      color 0.3s;
+   white-space: nowrap;
+   min-width: 150px;
  }
  
  .dropdown-arrow {
@@ -400,7 +459,7 @@
  
  .dropdown-list li:hover,
  .dropdown-list li.active {
-   background: linear-gradient(90deg, #eb6709 0%, #f63d43 100%);
+   background: linear-gradient(135deg, #00796b, #26a69a);
    color: #fff;
  }
  
@@ -408,7 +467,6 @@
    position: fixed;
    top: 50%;
    left: 0;
-   /* width: 100vw; */
    height: 100vh;
    background: #333;
    z-index: 999;
@@ -450,7 +508,6 @@
      display: none;
      flex-direction: column;
      align-items: flex-start;
-     /* width: 100vw; */
      background: transparent;
      box-shadow: none;
    }
@@ -480,4 +537,3 @@
    }
  }
  </style>
- 
