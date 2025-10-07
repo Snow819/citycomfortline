@@ -10,6 +10,11 @@
   "hero": {
     "title1": "City Comfort Line",
     "title2": "Your Trusted Partner",
-    "subtitle": "Reliable and efficient home care & logistics services."
+    "title3": "in Home Care & Logistics",
+    "subtitle":  "Reliable, caring, and efficient — we handle your home, transport, and comfort needs with excellence.",
+    "button1": "Our Services",
+    "button2": "Contact Us",
+    "scroll": "Scroll to explore"
+
   }
 }

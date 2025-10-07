@@ -1,15 +1,19 @@
 {
   "navbar": {
     "home": "Accueil",
-    "about": "À propos",
+    "about": "À propos de nous",
     "services": "Services",
     "serviceAreas": "Zones de service",
     "testimonials": "Témoignages",
     "getQuote": "Obtenir un devis"
   },
   "hero": {
-    "title1": "Ligne Confort de la Ville",
+    "title1": "City Comfort Line",
     "title2": "Votre partenaire de confiance",
-    "subtitle": "Des services fiables et efficaces pour votre maison et votre confort."
+    "title3": "dans les soins à domicile et la logistique",
+    "subtitle": "Fiable, attentionné et efficace — nous gérons vos besoins domestiques, de transport et de confort avec excellence.",
+    "button1": "Nos services",
+    "button2": "Contactez-nous",
+    "scroll": "Faites défiler pour explorer"
   }
 }
