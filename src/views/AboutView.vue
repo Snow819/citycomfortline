@@ -105,6 +105,11 @@ AOS.init({
 
 /* === RESPONSIVE === */
 @media (max-width: 992px) {
+  html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
   .container {
     grid-template-columns: 1fr;
     text-align: center;

@@ -6,3 +6,16 @@
   scroll-behavior: smooth;
   font-family: "Inter", sans-serif;
 }
+
+body {
+  background: #E8F5E9;
+  overflow-x: hidden;
+}
+
+/*  */
+@media (max-width: 768px) {
+  html,
+  body {
+      overflow-x: hidden;
+  }
+}
