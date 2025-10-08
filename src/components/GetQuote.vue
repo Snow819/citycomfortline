@@ -3,16 +3,6 @@
     <div class="form-container">
       <h2>{{ t("getQuote.title") }}</h2>
 
-      <!-- Language Switcher -->
-      <!-- <div class="language-switcher">
-        <label for="language">{{ t("form.language") }}</label>
-        <select id="language" v-model="currentLang" @change="changeLanguage">
-          <option value="en">English</option>
-          <option value="fr">Français</option>
-          <option value="zh">中文</option>
-        </select>
-      </div> -->
-
       <form @submit.prevent="handleSubmit" class="moving-form">
         <!-- Email Address -->
         <div class="form-group">
@@ -184,7 +174,6 @@ export default {
   /* ==== Form Container ==== */
   .form-container {
     width: 100%;
-    max-width: 480px;
     background: #181818;
     padding: 30px 25px;
     border-radius: 12px;
@@ -306,42 +295,3 @@ export default {
     }
   }
   </style>
-
-
-<!-- ============================================================================= -->
-
-
-  <style scoped>
-/* .form-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(160deg, #0d0d0d 30%, #1a1a1a 100%);
-} */
-
-.form-container {
-  /* width: 100%; */
-  padding: 30px 25px;
-  /* box-shadow: 0 4px 25px rgba(0, 0, 0, 0.35); */
-  /* color: #fff; */
-  /* transition: all 0.3s ease; */
-}
-
-/* .language-switcher {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 15px;
-}
-.language-switcher label {
-  margin-right: 8px;
-  color: #ccc;
-} */
-
-/* h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-} */
-</style> 

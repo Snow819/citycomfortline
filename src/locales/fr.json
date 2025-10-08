@@ -37,5 +37,86 @@
     "submit": "Obtenir un devis",
     "success": "Votre demande de devis a été envoyée avec succès !",
     "failure": "Échec de l'envoi du devis. Veuillez réessayer plus tard."
+  },
+   "about": {
+    "title": "À propos de nous",
+    "paragraph1": "Chez <span class='highlight'>City Comfort Line</span>, nous fixons la norme en matière de services de déménagement et de nettoyage fiables et professionnels à Ottawa et dans les villes voisines.",
+    "paragraph2": "Nous sommes spécialisés dans les déménagements résidentiels et commerciaux, les services d’entrée/sortie, l’enlèvement des déchets et des solutions de nettoyage complètes adaptées à vos besoins.",
+    "paragraph3": "Grâce à notre professionnalisme, notre ponctualité et notre souci de la satisfaction du client, <span class='highlight'>City Comfort Line</span> continue de gagner la confiance des familles et des entreprises dans toute la région.",
+    "quote": "City Comfort Line — Vous faire avancer, nettoyer avec soin."
+  },
+  "ourServices": {
+    "title": "Nos Services",
+    "subtitle": "Des solutions complètes de déménagement et de nettoyage adaptées à vos besoins",
+    "moving": {
+      "title": "Services de Déménagement",
+      "items": {
+        "residential": {
+          "title": "Déménagement Résidentiel",
+          "content": "Vous déménagez dans une nouvelle maison ? Nous prenons en charge les déménagements de toutes tailles, en veillant à un service efficace et sans stress."
+        },
+        "apartment": {
+          "title": "Déménagement d’Appartement et de Condo",
+          "content": "Experts dans la gestion des immeubles à plusieurs étages et des espaces restreints, nous assurons un déménagement fluide et sécurisé."
+        },
+        "office": {
+          "title": "Déménagement de Bureau et Commercial",
+          "content": "Réduisez les interruptions de vos activités avec notre service de déménagement rapide et organisé pour les entreprises."
+        },
+        "packing": {
+          "title": "Emballage et Déballage",
+          "content": "Gagnez du temps grâce à notre service complet d’emballage et de déballage, utilisant des matériaux sûrs et de qualité."
+        },
+        "furniture": {
+          "title": "Démontage et Remontage de Meubles",
+          "content": "Service gratuit pour les lits, les bureaux et autres meubles afin d’assurer un transport en toute sécurité."
+        },
+        "specialty": {
+          "title": "Déménagement d’Articles Spéciaux",
+          "content": "Manipulation experte des pianos, tapis de course, œuvres d’art et autres objets fragiles ou de grande valeur."
+        },
+        "internal": {
+          "title": "Déménagements Internes",
+          "content": "Réaménagement de meubles à l’intérieur de votre maison ou bureau, sans déplacement externe."
+        },
+        "local": {
+          "title": "Déménagements Locaux et Longue Distance",
+          "content": "Des services de déménagement fluides et professionnels, que ce soit à proximité ou vers une autre ville."
+        },
+        "storage": {
+          "title": "Solutions de Stockage",
+          "content": "Options de stockage sécurisées et flexibles, parfaites pour les besoins temporaires ou à long terme."
+        }
+      }
+    },
+    "cleaning": {
+      "title": "Services de Nettoyage",
+      "items": {
+        "postMove": {
+          "title": "Nettoyage Après Déménagement",
+          "content": "Nettoyage minutieux de votre ancien ou nouveau logement pour qu’il soit prêt à habiter."
+        },
+        "deep": {
+          "title": "Nettoyage en Profondeur",
+          "content": "Service complet pour un nettoyage intensif de toutes les pièces et surfaces de votre espace."
+        },
+        "residential": {
+          "title": "Nettoyage Résidentiel",
+          "content": "Nettoyage régulier ou ponctuel pour garder votre maison propre, fraîche et accueillante."
+        },
+        "commercial": {
+          "title": "Nettoyage Commercial",
+          "content": "Service professionnel de nettoyage de bureaux et d’espaces de travail pour un environnement sain et productif."
+        },
+        "carpet": {
+          "title": "Nettoyage de Tapis et de Meubles",
+          "content": "Techniques avancées pour éliminer les taches, la saleté et les allergènes, redonnant vie à vos tissus."
+        },
+        "window": {
+          "title": "Nettoyage de Vitres",
+          "content": "Nettoyage intérieur et extérieur des vitres pour une transparence et une brillance impeccables."
+        }
+      }
+    }
   }
 }

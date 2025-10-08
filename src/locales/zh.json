@@ -37,5 +37,86 @@
     "submit": "获取报价",
     "success": "您的报价请求已成功发送！",
     "failure": "报价发送失败，请稍后重试。"
+  },
+  "about": {
+    "title": "关于我们",
+    "paragraph1": "在 <span class='highlight'>City Comfort Line</span>，我们为渥太华及周边城市提供可靠且专业的搬家与清洁服务。我们的使命很简单——提供无缝、无压力的解决方案，让便利、品质与关怀完美结合。",
+    "paragraph2": "我们专注于住宅与商业搬迁、搬入/搬出服务、垃圾清理以及根据客户需求定制的全面清洁方案。无论是家庭搬迁、办公室迁移还是物业清洁，我们的专业团队都会以安全、高效和细致的方式完成每一个项目。",
+    "paragraph3": "凭借专业精神、准时服务和客户满意度的高度重视，<span class='highlight'>City Comfort Line</span> 赢得了个人、家庭和企业客户的信任。我们以对待自己空间和搬家的态度对待每一位客户，确保他们体验到无与伦比的舒适与安心。",
+    "quote": "City Comfort Line —— 帮您前行，用心清洁。"
+  },
+  "ourServices": {
+    "title": "我们的服务",
+    "subtitle": "为您提供全面的搬运和清洁解决方案",
+    "moving": {
+      "title": "搬家服务",
+      "items": {
+        "residential": {
+          "title": "住宅搬迁",
+          "content": "搬到新家？我们处理各种规模的搬迁..."
+        },
+        "apartment": {
+          "title": "公寓与高楼搬迁",
+          "content": "熟练应对高层建筑、电梯与狭窄走廊..."
+        },
+        "office": {
+          "title": "办公室与商业搬迁",
+          "content": "通过专业的办公室搬迁服务..."
+        },
+        "packing": {
+          "title": "打包与拆包",
+          "content": "节省时间，我们提供全套打包服务..."
+        },
+        "furniture": {
+          "title": "家具拆装",
+          "content": "为床、桌子等提供免费的拆装服务..."
+        },
+        "specialty": {
+          "title": "特殊物品搬运",
+          "content": "专业搬运钢琴、古董和艺术品..."
+        },
+        "internal": {
+          "title": "内部搬运",
+          "content": "家庭或办公室内部家具重新布置..."
+        },
+        "local": {
+          "title": "本地与长途搬运",
+          "content": "无论您是本地搬家还是跨省搬迁..."
+        },
+        "storage": {
+          "title": "仓储解决方案",
+          "content": "提供安全灵活的短期或长期仓储服务..."
+        }
+      }
+    },
+    "cleaning": {
+      "title": "清洁服务",
+      "items": {
+        "postMove": {
+          "title": "搬家后清洁",
+          "content": "搬家后彻底清洁您的新旧居所..."
+        },
+        "deep": {
+          "title": "深度清洁",
+          "content": "全方位清洁每个角落，包括窗户与家具..."
+        },
+        "residential": {
+          "title": "家庭清洁",
+          "content": "提供定期或一次性清洁服务..."
+        },
+        "commercial": {
+          "title": "商业清洁",
+          "content": "专业办公环境清洁..."
+        },
+        "carpet": {
+          "title": "地毯与沙发清洁",
+          "content": "去除地毯与家具的污渍和异味..."
+        },
+        "window": {
+          "title": "窗户清洁",
+          "content": "室内外无痕擦窗，让空间更明亮..."
+        }
+      }
+    }
   }
 }

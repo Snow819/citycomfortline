@@ -1,5 +1,5 @@
 <template>
-  <section class="hero-section">
+  <section class="hero-section" data-aos="fade-in">
     <!-- Video Background -->
     <div class="video-background">
       <video v-if="videoSrc" autoplay muted loop playsinline class="hero-video">
@@ -12,7 +12,7 @@
     </div>
 
     <!-- Hero Content -->
-    <div class="hero-content">
+    <div class="hero-content" data-aos="fade-up" data-aos-delay="300">
       <img src="@/assets/logo.png" alt="City Comfort Line Logo" class="hero-logo" />
 
       <div class="text-container">
@@ -20,28 +20,22 @@
           v-for="(line, index) in textLines"
           :key="index"
           class="hero-text"
-          :class="{ 'drop-in': isLoaded }"
           :style="{ animationDelay: `${0.2 + index * 0.15}s` }"
         >
           {{ t(line) }}
         </h1>
       </div>
 
-      <p
-        class="hero-subtitle"
-        :class="{ 'fade-up': isLoaded }"
-        :style="{ animationDelay: `${0.2 + textLines.length * 0.15}s` }"
-      >
+      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="500">
         {{ t('hero.subtitle') }}
       </p>
 
-      <div class="cta-buttons">
+      <div class="cta-buttons" data-aos="zoom-in" data-aos-delay="700">
         <button
           v-for="(button, index) in buttons"
           :key="index"
           class="cta-btn"
-          :class="[button.class, { 'scale-in': isLoaded }]"
-          :style="{ animationDelay: `${0.4 + textLines.length * 0.15 + index * 0.1}s` }"
+          :class="button.class"
           @click="button.action"
         >
           <span class="btn-text">{{ t(button.text) }}</span>
@@ -49,12 +43,7 @@
       </div>
 
       <!-- Scroll Indicator -->
-      <div
-        class="scroll-indicator"
-        :class="{ 'bounce-in': isLoaded }"
-        :style="{ animationDelay: `${0.8 + textLines.length * 0.15}s` }"
-        @click="scrollDown"
-      >
+      <div class="scroll-indicator" @click="scrollDown" data-aos="fade-up" data-aos-delay="900">
         <span class="scroll-text">{{ t('hero.scroll') }}</span>
         <div class="scroll-arrow">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -74,23 +63,20 @@
 
 <script>
 import { useI18n } from 'vue-i18n'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import heroVideo from '@/assets/hero-video.mp4'
 
 export default {
   name: 'HeroSection',
   setup() {
     const { t, locale } = useI18n()
-
     return { t, locale }
   },
   data() {
     return {
-      isLoaded: false,
       videoSrc: heroVideo,
-      textLines: [
-        'hero.title1',
-        'hero.title2',
-      ],
+      textLines: ['hero.title1', 'hero.title2'],
       buttons: [
         { text: 'hero.button1', class: 'primary', action: () => console.log('Navigate to services') },
         { text: 'hero.button2', class: 'secondary', action: () => console.log('Navigate to contact') },
@@ -98,7 +84,11 @@ export default {
     }
   },
   mounted() {
-    setTimeout(() => (this.isLoaded = true), 200)
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: 'ease-in-out',
+    })
   },
   methods: {
     scrollDown() {
@@ -108,14 +98,13 @@ export default {
 }
 </script>
 
-
 <style scoped>
 .hero-section {
   position: relative;
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background-color: #003f3d;
+  background-color: #2f2f2f;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,32 +121,20 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.5;
+  opacity: 0.35;
+  filter: grayscale(60%);
 }
 
 .fallback-background {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #003f3d, #00796b, #004d40);
-  animation: gradientShift 12s ease infinite;
-}
-
-@keyframes gradientShift {
-
-  0%,
-  100% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
+  background: #3a3a3a;
 }
 
 .video-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 20, 20, 0.6);
+  background: rgba(25, 25, 25, 0.2);
 }
 
 /* Content */
@@ -177,59 +154,21 @@ export default {
 }
 
 /* Text */
-.text-container {
-  margin-bottom: 2rem;
-}
-
 .hero-text {
-  font-size: clamp(2rem, 3vw, 5rem);
+  font-size: clamp(2rem, 3vw, 4.5rem);
   font-weight: 800;
-  color: #ffd700;
+  color: #e8c86f; /* Slightly gold tone */
   text-transform: uppercase;
   letter-spacing: 1px;
-  opacity: 0;
-  transform: translateY(-80px);
-}
-
-.hero-text.drop-in {
-  animation: dropIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-}
-
-@keyframes dropIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-80px) rotateX(-90deg);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0) rotateX(0);
-  }
+  margin: 0.5rem 0;
 }
 
 /* Subtitle */
 .hero-subtitle {
   font-size: 1.2rem;
   max-width: 700px;
-  margin: 0 auto 2rem;
-  color: #e0f2f1;
-  opacity: 0;
-}
-
-.hero-subtitle.fade-up {
-  animation: fadeUp 0.9s ease forwards;
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  margin: 1.5rem auto;
+  color: #dcdcdc;
 }
 
 /* Buttons */
@@ -247,71 +186,60 @@ export default {
   font-weight: 600;
   cursor: pointer;
   font-size: 1rem;
-  transition: all 0.3s ease;
-  opacity: 0;
+  transition: all 0.4s ease;
+  background: transparent;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
 }
 
 .cta-btn.primary {
-  background: linear-gradient(135deg, #00796b, #26a69a);
-  color: white;
+  background: linear-gradient(135deg, #e8c86f, #bfa043);
+  color: #1a1a1a;
 }
 
 .cta-btn.secondary {
+  border: 2px solid #e8c86f;
+  color: #e8c86f;
   background: transparent;
-  border: 2px solid #ffd700;
-  color: #ffd700;
-}
-
-.cta-btn.scale-in {
-  animation: scaleIn 0.6s ease forwards;
-}
-
-@keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
 }
 
 .cta-btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 0 25px rgba(232, 200, 111, 0.4);
+}
+
+.cta-btn.primary:hover {
+  background: linear-gradient(135deg, #f1d87a, #c3a84e);
+  color: #000;
+}
+
+.cta-btn.secondary:hover {
+  background: #e8c86f;
+  color: #1a1a1a;
 }
 
 /* Scroll indicator */
 .scroll-indicator {
   margin-top: 3rem;
-  animation: bounceIn 1s ease forwards;
-  opacity: 0;
-}
-
-.scroll-indicator.bounce-in {
-  opacity: 1;
+  cursor: pointer;
 }
 
 .scroll-text {
   font-size: 0.75rem;
-  color: #b2dfdb;
+  color: #dcdcdc;
   margin-bottom: 0.5rem;
 }
 
 .scroll-arrow svg {
-  color: #ffd700;
+  color: #e8c86f;
   animation: arrowBounce 2s infinite;
 }
 
 @keyframes arrowBounce {
-
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(6px);
   }

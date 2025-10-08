@@ -37,6 +37,86 @@
     "submit": "Get Quote",
     "success": "Your quote request has been sent successfully!",
     "failure": "Failed to send the quote. Please try again later."
+  },
+  "about": {
+    "title": "About Us",
+    "paragraph1": "At <span class='highlight'>City Comfort Line</span>, we set the standard for reliable and professional moving and cleaning services across Ottawa and neighbouring cities. Our mission is simple — to deliver seamless, stress-free solutions that combine convenience, quality, and care.",
+    "paragraph2": "We specialize in residential and commercial moving, move-in/move-out services, junk removal, and comprehensive cleaning solutions tailored to your needs. Whether it’s a household relocation, office move, or property refresh, our trained team ensures every job is completed safely, efficiently, and with the highest attention to detail.",
+    "paragraph3": "With a strong focus on professionalism, punctuality, and customer satisfaction, <span class='highlight'>City Comfort Line</span> continues to earn the trust of individuals, families, and businesses throughout the region. We take pride in treating every space and every move as if it were our own — ensuring our clients experience unmatched comfort and peace of mind.",
+    "quote": "City Comfort Line — Moving You Forward, Cleaning with Care."
+  },
+  "ourServices": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive moving and cleaning solutions for your needs",
+    "moving": {
+      "title": "Moving Services",
+      "items": {
+        "residential": {
+          "title": "Residential Moving",
+          "content": "Moving to a new home? We handle moves of all sizes..."
+        },
+        "apartment": {
+          "title": "Apartment & Condo Moves",
+          "content": "Skilled at navigating high-rise buildings..."
+        },
+        "office": {
+          "title": "Office & Commercial Moving",
+          "content": "Minimize business disruption..."
+        },
+        "packing": {
+          "title": "Packing & Unpacking",
+          "content": "Save time with our full-service packing..."
+        },
+        "furniture": {
+          "title": "Furniture Disassembly & Reassembly",
+          "content": "Complimentary service for beds..."
+        },
+        "specialty": {
+          "title": "Specialty Item Moving",
+          "content": "Expert handling of pianos, treadmills..."
+        },
+        "internal": {
+          "title": "Internal Moves",
+          "content": "Furniture rearranging within your home..."
+        },
+        "local": {
+          "title": "Local & Long-Distance Moves",
+          "content": "Seamless moving services..."
+        },
+        "storage": {
+          "title": "Storage Solutions",
+          "content": "Secure, flexible storage options..."
+        }
+      }
+    },
+    "cleaning": {
+      "title": "Cleaning Services",
+      "items": {
+        "postMove": {
+          "title": "Post-Move Cleaning",
+          "content": "Thorough cleaning of your old or new home..."
+        },
+        "deep": {
+          "title": "Deep Cleaning",
+          "content": "Comprehensive cleaning service..."
+        },
+        "residential": {
+          "title": "Residential Cleaning",
+          "content": "Regular or one-time cleaning..."
+        },
+        "commercial": {
+          "title": "Commercial Cleaning",
+          "content": "Professional office cleaning..."
+        },
+        "carpet": {
+          "title": "Carpet & Upholstery Cleaning",
+          "content": "Advanced cleaning techniques..."
+        },
+        "window": {
+          "title": "Window Cleaning",
+          "content": "Interior and exterior window cleaning..."
+        }
+      }
+    }
   }
-
 }
