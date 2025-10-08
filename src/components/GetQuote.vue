@@ -5,16 +5,16 @@
   
         <form @submit.prevent="handleSubmit" class="moving-form">
           <!-- Email Address -->
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input
-              type="email"
-              id="email"
-              v-model="form.email"
-              required
-              placeholder="Enter your email"
-            />
-          </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            v-model="form.email"
+            required
+            placeholder="Enter your email"
+          />
+        </div>
   
           <!-- Confirm Email Address -->
           <div class="form-group">
@@ -80,78 +80,90 @@
   </template>
   
   <script>
-  import emailjs from "emailjs-com";
-  
-  export default {
-    name: "MovingForm",
-    data() {
-      return {
-        form: {
-          email: "",
-          confirmEmail: "",
-          from: "",
-          to: "",
-          date: "",
-          service: "",
-        },
+import emailjs from "emailjs-com";
+import { useI18n } from 'vue-i18n'
+
+
+export default {
+  name: "MovingForm",
+  setup() {
+    const { t, locale } = useI18n()
+
+    return { t, locale }
+  },  
+  data() {
+    return {
+      form: {
+        email: "",
+        confirmEmail: "",
+        from: "",
+        to: "",
+        date: "",
+        service: "",
+      },
+      // currentLang: localStorage.getItem("lang") || "en"
+    };
+  },
+  computed: {
+    emailMismatch() {
+      return (
+        this.form.email &&
+        this.form.confirmEmail &&
+        this.form.email !== this.form.confirmEmail
+      );
+    },
+  },
+  methods: {
+    // changeLanguage() {
+    //   this.$i18n.locale = this.currentLang;
+    //   localStorage.setItem("lang", this.currentLang);
+    // },
+    async handleSubmit() {
+      if (this.emailMismatch) {
+        alert("Please make sure both emails match.");
+        return;
+      }
+
+      try {
+        const SERVICE_ID = "your_service_id";
+        const TEMPLATE_ID = "your_template_id";
+        const PUBLIC_KEY = "your_public_key";
+
+        const templateParams = {
+          email: this.form.email,
+          from: this.form.from,
+          to: this.form.to,
+          date: this.form.date,
+          service: this.form.service,
+        };
+
+        await emailjs.send(
+          SERVICE_ID,
+          TEMPLATE_ID,
+          templateParams,
+          PUBLIC_KEY
+        );
+
+        alert("Your quote request has been sent successfully!");
+        this.resetForm();
+      } catch (error) {
+        console.error("Email sending error:", error);
+        alert("Failed to send the quote. Please try again later.");
+      }
+    },
+    resetForm() {
+      this.form = {
+        email: "",
+        confirmEmail: "",
+        from: "",
+        to: "",
+        date: "",
+        service: "",
       };
     },
-    computed: {
-      emailMismatch() {
-        return (
-          this.form.email &&
-          this.form.confirmEmail &&
-          this.form.email !== this.form.confirmEmail
-        );
-      },
-    },
-    methods: {
-      async handleSubmit() {
-        if (this.emailMismatch) {
-          alert("Please make sure both emails match.");
-          return;
-        }
-  
-        try {
-          const SERVICE_ID = "your_service_id";
-          const TEMPLATE_ID = "your_template_id";
-          const PUBLIC_KEY = "your_public_key";
-  
-          const templateParams = {
-            email: this.form.email,
-            from: this.form.from,
-            to: this.form.to,
-            date: this.form.date,
-            service: this.form.service,
-          };
-  
-          await emailjs.send(
-            SERVICE_ID,
-            TEMPLATE_ID,
-            templateParams,
-            PUBLIC_KEY
-          );
-  
-          alert("Your quote request has been sent successfully!");
-          this.resetForm();
-        } catch (error) {
-          console.error("Email sending error:", error);
-          alert("Failed to send the quote. Please try again later.");
-        }
-      },
-      resetForm() {
-        this.form = {
-          email: "",
-          confirmEmail: "",
-          from: "",
-          to: "",
-          date: "",
-          service: "",
-        };
-      },
-    },
-  };
-  </script>
+  },
+};
+</script>
   
   <style scoped>
   /* ==== Layout Wrapper ==== */
@@ -289,4 +301,37 @@
     }
   }
   </style>
+
+
+<!-- ============================================================================= -->
+
+
+      <!-- Language Changer -->
+      <!-- <div class="language-switcher">
+        <label for="language">{{ $t("form.language") }}</label>
+        <select id="language" v-model="currentLang" @change="changeLanguage">
+          <option value="en">English</option>
+          <option value="fr">Français</option>
+          <option value="zh">中文</option>
+        </select>
+      </div> -->
+
+
+
+<!-- <style scoped>
+.language-switcher {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+.language-switcher label {
+  margin-right: 8px;
+  color: #ccc;
+}
+select {
+  padding: 5px;
+  border-radius: 5px;
+}
+</style> -->
+
   

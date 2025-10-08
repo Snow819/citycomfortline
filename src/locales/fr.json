@@ -8,12 +8,26 @@
     "getQuote": "Obtenir un devis"
   },
   "hero": {
-    "title1": "City Comfort Line",
-    "title2": "Votre partenaire de confiance",
-    "title3": "dans les soins à domicile et la logistique",
-    "subtitle": "Fiable, attentionné et efficace — nous gérons vos besoins domestiques, de transport et de confort avec excellence.",
-    "button1": "Nos services",
+    "title1": "Série Confort Urbain",
+    "title2": "Déménagement Expert & Nettoyage Professionnel",
+    "subtitle": "Votre partenaire de confiance pour des déménagements sans accroc et des espaces impeccables. Fiable, efficace et toujours attentionné.",
+    "button1": "Nos Services",
     "button2": "Contactez-nous",
     "scroll": "Faites défiler pour explorer"
+  },
+  
+  "getQuote": {
+    "title": "Demander un devis gratuit",
+    "subtitle": "Nous vous répondrons dès que possible.",
+    "name": "Nom complet",
+    "email": "Adresse e-mail",
+    "phone": "Numéro de téléphone",
+    "address": "Adresse de ramassage",
+    "service": "Sélectionner un service",
+    "message": "Message",
+    "button": "Envoyer le message",
+    "success": "Votre message a été envoyé avec succès !",
+    "error": "Une erreur s'est produite. Veuillez réessayer."
   }
+
 }

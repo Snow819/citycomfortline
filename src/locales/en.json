@@ -9,12 +9,23 @@
   },
   "hero": {
     "title1": "City Comfort Line",
-    "title2": "Your Trusted Partner",
-    "title3": "in Home Care & Logistics",
-    "subtitle":  "Reliable, caring, and efficient — we handle your home, transport, and comfort needs with excellence.",
+    "title2": "Expert Moving & Professional Cleaning",
+    "subtitle":  "Your trusted partner for seamless relocations and spotless spaces. Reliable, efficient, and always caring.",
     "button1": "Our Services",
     "button2": "Contact Us",
     "scroll": "Scroll to explore"
-
+  },
+  "getQuote": {
+    "title": "Request a Free Quote",
+    "subtitle": "We’ll get back to you as soon as possible.",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "address": "Pickup Address",
+    "service": "Select Service",
+    "message": "Message",
+    "button": "Send Message",
+    "success": "Your message has been sent successfully!",
+    "error": "Something went wrong. Please try again."
   }
 }

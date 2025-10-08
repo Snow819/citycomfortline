@@ -69,27 +69,27 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-// ✅ Get translator and locale from i18n
+// Get translator and locale from i18n
 const { t, locale } = useI18n()
 
-// ✅ Read saved language from localStorage
+// Read saved language from localStorage
 const savedLang = localStorage.getItem('language') || 'en'
 locale.value = savedLang
 
-// ✅ Countries definition
+// Countries definition
 const countries = [
   { name: 'English', code: 'en' },
   { name: 'Français', code: 'fr' },
   { name: '中文', code: 'zh' },
 ]
 
-// ✅ Helper function
+// Helper function
 function getCountryName(code) {
   const country = countries.find(c => c.code === code)
   return country ? country.name : 'English'
 }
 
-// ✅ State variables
+// State variables
 const menuOpen = ref(false)
 const isDesktop = ref(window.innerWidth > 768)
 const countryDropdownOpen = ref(false)
@@ -100,7 +100,7 @@ const isGlass = ref(false)
 const lastScrollY = ref(0)
 let scrollTimeout = null
 
-// ✅ Methods
+// Methods
 function toggleMenu() {
   menuOpen.value = !menuOpen.value
 }
@@ -143,7 +143,7 @@ function handleScroll() {
   }, 200)
 }
 
-// ✅ Lifecycle hooks
+// Lifecycle hooks
 onMounted(() => {
   window.addEventListener('resize', handleResize)
   window.addEventListener('scroll', handleScroll)
