@@ -27,13 +27,13 @@
         </button>
       </div>
 
-      <!-- Navbar Links -->
+      <!-- Navbar Links (scrolling instead of routing) -->
       <ul class="navbar-links">
-        <li><router-link to="/">{{ t('navbar.home') }}</router-link></li>
-        <li><router-link to="/about">{{ t('navbar.about') }}</router-link></li>
-        <li><router-link to="/services">{{ t('navbar.services') }}</router-link></li>
-        <li><router-link to="/areas">{{ t('navbar.serviceAreas') }}</router-link></li>
-        <li><router-link to="/testimonials">{{ t('navbar.testimonials') }}</router-link></li>
+        <li><a href="#home">{{ t('navbar.home') }}</a></li>
+        <li><a href="#about">{{ t('navbar.about') }}</a></li>
+        <li><a href="#services">{{ t('navbar.services') }}</a></li>
+        <li><a href="#areas">{{ t('navbar.serviceAreas') }}</a></li>
+        <li><a href="#testimonials">{{ t('navbar.testimonials') }}</a></li>
       </ul>
 
       <!-- Language Dropdown -->
@@ -57,8 +57,8 @@
 
       <!-- Button Section -->
       <div class="btn">
-        <a href="#" class="btn1">
-          <button><router-link to="/GetQuote">{{ t('navbar.getQuote') }}</router-link></button>
+        <a href="#get-quote" class="btn1">
+          <button>{{ t('navbar.getQuote') }}</button>
         </a>
       </div>
     </nav>
@@ -157,6 +157,10 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   padding: 10px 40px;
   position: fixed;

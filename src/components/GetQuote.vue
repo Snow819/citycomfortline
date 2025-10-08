@@ -171,7 +171,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
     min-height: 100vh;
     background: linear-gradient(160deg, #0d0d0d 30%, #1a1a1a 100%);
   }
