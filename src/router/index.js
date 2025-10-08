@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue';
 import ContactView from '../views/ContactView.vue';
 import ServiceView from '../views/ServiceView.vue';
 import Navbar from '@/components/Navbar.vue'
+import GetQuote from '@/components/GetQuote.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,6 +17,11 @@ const router = createRouter({
       path:'/contact',
       name: 'Contact',
       component: ContactView,
+    },
+    {
+      path:'/GetQuote',
+      name: 'GetQuote',
+      component: GetQuote,
     },
     {
       path:'/Service',
