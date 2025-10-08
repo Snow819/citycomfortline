@@ -1,8 +1,10 @@
 <script setup>
-import Navbar from '@/components/Navbar.vue'
-import HeroSection from '@/components/HeroSection.vue'
-import GetQuote from '@/components/GetQuote.vue'
-// You can later import AboutSection, ServicesSection, etc.
+import Navbar from '@/components/Navbar.vue';
+import HeroSection from '@/components/HeroSection.vue';
+import GetQuote from '@/components/GetQuote.vue';
+import AboutView from '@/views/AboutView.vue';
+import OurServices from '@/components/OurServices.vue';
+import FloatingQuoteButton from '@/components/FloatingQuoteButton.vue'; 
 </script>
 
 <template>
@@ -15,23 +17,13 @@ import GetQuote from '@/components/GetQuote.vue'
     </section>
 
     <!-- ABOUT SECTION -->
-    <section id="about" class="page-section">
-      <h2>About Us</h2>
-      <p>
-        We are City Comfort Line — your trusted moving and cleaning partner. 
-        Our professional team ensures seamless relocations and spotless spaces.
-      </p>
+    <section id="about">
+      <AboutView /> 
     </section>
 
     <!-- SERVICES SECTION -->
     <section id="services" class="page-section">
-      <h2>Our Services</h2>
-      <ul>
-        <li>Residential and commercial moving</li>
-        <li>Deep cleaning and sanitization</li>
-        <li>Packing and unpacking assistance</li>
-        <li>Furniture setup and disposal</li>
-      </ul>
+      <OurServices />
     </section>
 
     <!-- SERVICE AREAS SECTION -->
@@ -50,16 +42,17 @@ import GetQuote from '@/components/GetQuote.vue'
     <section id="get-quote">
       <GetQuote />
     </section>
+
+    <!-- FLOATING BUTTON -->
+     <FloatingQuoteButton />
   </main>
 </template>
 
 <style scoped>
-/* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
 }
 
-/* Add some section spacing and layout */
 .page-section {
   padding: 100px 20px;
   text-align: center;

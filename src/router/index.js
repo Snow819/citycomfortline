@@ -4,6 +4,8 @@ import ContactView from '../views/ContactView.vue';
 import ServiceView from '../views/ServiceView.vue';
 import Navbar from '@/components/Navbar.vue'
 import GetQuote from '@/components/GetQuote.vue';
+import OurServices from '@/components/OurServices.vue';
+import FloatingQuoteButton from '@/components/FloatingQuoteButton.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,6 +19,17 @@ const router = createRouter({
       path:'/contact',
       name: 'Contact',
       component: ContactView,
+    },
+    {},
+    {
+      path: '/FloatingQuoteButton',
+      name: 'FloatingQuoteButton',
+      component: FloatingQuoteButton, 
+    },
+    {
+      path: '/OurServices',
+      name: 'OurServices',
+      component: OurServices,
     },
     {
       path:'/GetQuote',

@@ -173,14 +173,13 @@ export default {
     align-items: center;
     /* padding: 40px 20px; */
     min-height: 100vh;
-    background: linear-gradient(160deg, #0d0d0d 30%, #1a1a1a 100%);
+    background: linear-gradient(160deg, #f9f9f9 30%, #e4e3e3 100%);
   }
   
   /* ==== Form Container ==== */
   .form-container {
     width: 100%;
-    max-width: 480px;
-    background: #181818;
+    background: rgb(255, 255, 255);
     padding: 30px 25px;
     border-radius: 12px;
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.35);
@@ -210,17 +209,18 @@ export default {
   label {
     margin-bottom: 6px;
     font-weight: 600;
-    color: #ccc;
+    color: #000000;
   }
   
   input,
   select {
     padding: 12px;
     border-radius: 6px;
-    border: 1px solid #444;
-    background: #222;
-    color: #fff;
+    border: 1px solid #c5c4c4;
+    background: inherit;
+    color: #000000;
     font-size: 15px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.35);
     transition: border-color 0.3s ease;
   }
   
