@@ -16,16 +16,26 @@
     "scroll": "滚动以了解更多"
   },
   "getQuote": {
-    "title": "请求免费报价",
-    "subtitle": "我们会尽快回复您。",
-    "name": "全名",
+    "title": "获取搬家报价",
     "email": "电子邮件地址",
-    "phone": "电话号码",
-    "address": "取件地址",
-    "service": "选择服务",
-    "message": "留言",
-    "button": "发送信息",
-    "success": "您的信息已成功发送！",
-    "error": "出现问题，请重试。"
+    "emailPlaceholder": "输入您的电子邮件",
+    "confirmEmail": "确认电子邮件地址",
+    "confirmEmailPlaceholder": "再次输入您的电子邮件",
+    "emailMismatch": "电子邮件地址不匹配",
+    "from": "搬出地点",
+    "fromPlaceholder": "输入当前地址",
+    "to": "搬入地点",
+    "toPlaceholder": "输入新地址",
+    "date": "搬家日期",
+    "service": "我们的服务",
+    "selectService": "选择服务",
+    "option1": "住宅搬家",
+    "option2": "商业搬迁",
+    "option3": "打包与拆包",
+    "option4": "仓储服务",
+    "option5": "搬家后清洁",
+    "submit": "获取报价",
+    "success": "您的报价请求已成功发送！",
+    "failure": "报价发送失败，请稍后重试。"
   }
 }

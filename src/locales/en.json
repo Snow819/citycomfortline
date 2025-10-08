@@ -16,16 +16,27 @@
     "scroll": "Scroll to explore"
   },
   "getQuote": {
-    "title": "Request a Free Quote",
-    "subtitle": "We’ll get back to you as soon as possible.",
-    "name": "Full Name",
+    "title": "Get Your Moving Quote",
     "email": "Email Address",
-    "phone": "Phone Number",
-    "address": "Pickup Address",
-    "service": "Select Service",
-    "message": "Message",
-    "button": "Send Message",
-    "success": "Your message has been sent successfully!",
-    "error": "Something went wrong. Please try again."
+    "emailPlaceholder": "Enter your email",
+    "confirmEmail": "Confirm Email Address",
+    "confirmEmailPlaceholder": "Re-enter your email",
+    "emailMismatch": "Emails do not match",
+    "from": "Moving From",
+    "fromPlaceholder": "Enter current address",
+    "to": "Moving To",
+    "toPlaceholder": "Enter new address",
+    "date": "Moving Date",
+    "service": "Our Services",
+    "selectService": "Select a service",
+    "option1": "Residential Moving",
+    "option2": "Commercial Moving",
+    "option3": "Packing & Unpacking",
+    "option4": "Storage Services",
+    "option5": "Cleaning After Move",
+    "submit": "Get Quote",
+    "success": "Your quote request has been sent successfully!",
+    "failure": "Failed to send the quote. Please try again later."
   }
+
 }

@@ -15,19 +15,27 @@
     "button2": "Contactez-nous",
     "scroll": "Faites défiler pour explorer"
   },
-  
   "getQuote": {
-    "title": "Demander un devis gratuit",
-    "subtitle": "Nous vous répondrons dès que possible.",
-    "name": "Nom complet",
+    "title": "Obtenez votre devis de déménagement",
     "email": "Adresse e-mail",
-    "phone": "Numéro de téléphone",
-    "address": "Adresse de ramassage",
-    "service": "Sélectionner un service",
-    "message": "Message",
-    "button": "Envoyer le message",
-    "success": "Votre message a été envoyé avec succès !",
-    "error": "Une erreur s'est produite. Veuillez réessayer."
+    "emailPlaceholder": "Entrez votre e-mail",
+    "confirmEmail": "Confirmez l'adresse e-mail",
+    "confirmEmailPlaceholder": "Saisissez à nouveau votre e-mail",
+    "emailMismatch": "Les e-mails ne correspondent pas",
+    "from": "Déménagement de",
+    "fromPlaceholder": "Entrez l'adresse actuelle",
+    "to": "Déménagement vers",
+    "toPlaceholder": "Entrez la nouvelle adresse",
+    "date": "Date de déménagement",
+    "service": "Nos services",
+    "selectService": "Sélectionnez un service",
+    "option1": "Déménagement résidentiel",
+    "option2": "Déménagement commercial",
+    "option3": "Emballage et déballage",
+    "option4": "Services de stockage",
+    "option5": "Nettoyage après déménagement",
+    "submit": "Obtenir un devis",
+    "success": "Votre demande de devis a été envoyée avec succès !",
+    "failure": "Échec de l'envoi du devis. Veuillez réessayer plus tard."
   }
-
 }
