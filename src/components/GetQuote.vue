@@ -1,126 +1,133 @@
 <template>
-    <div class="form-wrapper">
-      <div class="form-container">
-        <h2>Get Your Moving Quote</h2>
-  
-        <form @submit.prevent="handleSubmit" class="moving-form">
-          <!-- Email Address -->
+  <div class="form-wrapper">
+    <div class="form-container">
+      <h2>{{ t("getQuote.title") }}</h2>
+
+      <!-- Language Switcher -->
+      <!-- <div class="language-switcher">
+        <label for="language">{{ t("form.language") }}</label>
+        <select id="language" v-model="currentLang" @change="changeLanguage">
+          <option value="en">English</option>
+          <option value="fr">Français</option>
+          <option value="zh">中文</option>
+        </select>
+      </div> -->
+
+      <form @submit.prevent="handleSubmit" class="moving-form">
+        <!-- Email Address -->
         <div class="form-group">
-          <label for="email">Email Address</label>
+          <label for="email">{{ t("getQuote.email") }}</label>
           <input
             type="email"
             id="email"
             v-model="form.email"
             required
-            placeholder="Enter your email"
+            :placeholder="t('getQuote.emailPlaceholder')"
           />
         </div>
-  
-          <!-- Confirm Email Address -->
-          <div class="form-group">
-            <label for="confirmEmail">Confirm Email Address</label>
-            <input
-              type="email"
-              id="confirmEmail"
-              v-model="form.confirmEmail"
-              required
-              placeholder="Re-enter your email"
-            />
-            <p v-if="emailMismatch" class="error-text">Emails do not match</p>
-          </div>
-  
-          <!-- Moving From -->
-          <div class="form-group">
-            <label for="from">Moving From</label>
-            <input
-              type="text"
-              id="from"
-              v-model="form.from"
-              required
-              placeholder="Enter current address"
-            />
-          </div>
-  
-          <!-- Moving To -->
-          <div class="form-group">
-            <label for="to">Moving To</label>
-            <input
-              type="text"
-              id="to"
-              v-model="form.to"
-              required
-              placeholder="Enter new address"
-            />
-          </div>
-  
-          <!-- Moving Date -->
-          <div class="form-group">
-            <label for="date">Moving Date</label>
-            <input type="date" id="date" v-model="form.date" required />
-          </div>
-  
-          <!-- Our Services -->
-          <div class="form-group">
-            <label for="service">Our Services</label>
-            <select id="service" v-model="form.service" required>
-              <option disabled value="">Select a service</option>
-              <option>Residential Moving</option>
-              <option>Commercial Moving</option>
-              <option>Packing & Unpacking</option>
-              <option>Storage Services</option>
-              <option>Cleaning After Move</option>
-            </select>
-          </div>
-  
-          <!-- Button -->
-          <button type="submit" :disabled="emailMismatch">Get Quote</button>
-        </form>
-      </div>
-    </div>
-  </template>
-  
-  <script>
-import emailjs from "emailjs-com";
-import { useI18n } from 'vue-i18n'
 
+        <!-- Confirm Email Address -->
+        <div class="form-group">
+          <label for="confirmEmail">{{ t("getQuote.confirmEmail") }}</label>
+          <input
+            type="email"
+            id="confirmEmail"
+            v-model="form.confirmEmail"
+            required
+            :placeholder="t('getQuote.confirmEmailPlaceholder')"
+          />
+          <p v-if="emailMismatch" class="error-text">{{ t("getQuote.emailMismatch") }}</p>
+        </div>
+
+        <!-- Moving From -->
+        <div class="form-group">
+          <label for="from">{{ t("getQuote.from") }}</label>
+          <input
+            type="text"
+            id="from"
+            v-model="form.from"
+            required
+            :placeholder="t('getQuote.fromPlaceholder')"
+          />
+        </div>
+
+        <!-- Moving To -->
+        <div class="form-group">
+          <label for="to">{{ t("getQuote.to") }}</label>
+          <input
+            type="text"
+            id="to"
+            v-model="form.to"
+            required
+            :placeholder="t('getQuote.toPlaceholder')"
+          />
+        </div>
+
+        <!-- Moving Date -->
+        <div class="form-group">
+          <label for="date">{{ t("getQuote.date") }}</label>
+          <input type="date" id="date" v-model="form.date" required />
+        </div>
+
+        <!-- Our Services -->
+        <div class="form-group">
+          <label for="service">{{ t("getQuote.service") }}</label>
+          <select id="service" v-model="form.service" required>
+            <option disabled value="">{{ t("getQuote.selectService") }}</option>
+            <option>{{ t("getQuote.option1") }}</option>
+            <option>{{ t("getQuote.option2") }}</option>
+            <option>{{ t("getQuote.option3") }}</option>
+            <option>{{ t("getQuote.option4") }}</option>
+            <option>{{ t("getQuote.option5") }}</option>
+          </select>
+        </div>
+
+        <!-- Button -->
+        <button type="submit" :disabled="emailMismatch">
+          {{ t("getQuote.submit") }}
+        </button>
+      </form>
+    </div>
+  </div>
+</template>
+
+<script>
+import emailjs from "emailjs-com";
+import { useI18n } from "vue-i18n";
+import { ref, watch } from "vue";
 
 export default {
   name: "MovingForm",
   setup() {
-    const { t, locale } = useI18n()
+    const { t, locale } = useI18n();
+    const currentLang = ref(localStorage.getItem("lang") || "en");
+    locale.value = currentLang.value;
 
-    return { t, locale }
-  },  
-  data() {
-    return {
-      form: {
-        email: "",
-        confirmEmail: "",
-        from: "",
-        to: "",
-        date: "",
-        service: "",
-      },
-      // currentLang: localStorage.getItem("lang") || "en"
+    const changeLanguage = () => {
+      locale.value = currentLang.value;
+      localStorage.setItem("lang", currentLang.value);
     };
-  },
-  computed: {
-    emailMismatch() {
-      return (
-        this.form.email &&
-        this.form.confirmEmail &&
-        this.form.email !== this.form.confirmEmail
-      );
-    },
-  },
-  methods: {
-    // changeLanguage() {
-    //   this.$i18n.locale = this.currentLang;
-    //   localStorage.setItem("lang", this.currentLang);
-    // },
-    async handleSubmit() {
-      if (this.emailMismatch) {
-        alert("Please make sure both emails match.");
+
+    const form = ref({
+      email: "",
+      confirmEmail: "",
+      from: "",
+      to: "",
+      date: "",
+      service: "",
+    });
+
+    const emailMismatch = ref(false);
+    watch(
+      () => [form.value.email, form.value.confirmEmail],
+      ([email, confirm]) => {
+        emailMismatch.value = email && confirm && email !== confirm;
+      }
+    );
+
+    const handleSubmit = async () => {
+      if (emailMismatch.value) {
+        alert(t("getQuote.emailMismatch"));
         return;
       }
 
@@ -130,29 +137,25 @@ export default {
         const PUBLIC_KEY = "your_public_key";
 
         const templateParams = {
-          email: this.form.email,
-          from: this.form.from,
-          to: this.form.to,
-          date: this.form.date,
-          service: this.form.service,
+          email: form.value.email,
+          from: form.value.from,
+          to: form.value.to,
+          date: form.value.date,
+          service: form.value.service,
         };
 
-        await emailjs.send(
-          SERVICE_ID,
-          TEMPLATE_ID,
-          templateParams,
-          PUBLIC_KEY
-        );
+        await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
 
-        alert("Your quote request has been sent successfully!");
-        this.resetForm();
+        alert(t("getQuote.success"));
+        resetForm();
       } catch (error) {
         console.error("Email sending error:", error);
-        alert("Failed to send the quote. Please try again later.");
+        alert(t("getQuote.failure"));
       }
-    },
-    resetForm() {
-      this.form = {
+    };
+
+    const resetForm = () => {
+      form.value = {
         email: "",
         confirmEmail: "",
         from: "",
@@ -160,7 +163,9 @@ export default {
         date: "",
         service: "",
       };
-    },
+    };
+
+    return { t, locale, currentLang, changeLanguage, form, emailMismatch, handleSubmit };
   },
 };
 </script>
@@ -306,20 +311,24 @@ export default {
 <!-- ============================================================================= -->
 
 
-      <!-- Language Changer -->
-      <!-- <div class="language-switcher">
-        <label for="language">{{ $t("form.language") }}</label>
-        <select id="language" v-model="currentLang" @change="changeLanguage">
-          <option value="en">English</option>
-          <option value="fr">Français</option>
-          <option value="zh">中文</option>
-        </select>
-      </div> -->
+  <style scoped>
+/* .form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(160deg, #0d0d0d 30%, #1a1a1a 100%);
+} */
 
+.form-container {
+  /* width: 100%; */
+  padding: 30px 25px;
+  /* box-shadow: 0 4px 25px rgba(0, 0, 0, 0.35); */
+  /* color: #fff; */
+  /* transition: all 0.3s ease; */
+}
 
-
-<!-- <style scoped>
-.language-switcher {
+/* .language-switcher {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 15px;
@@ -327,11 +336,12 @@ export default {
 .language-switcher label {
   margin-right: 8px;
   color: #ccc;
-}
-select {
-  padding: 5px;
-  border-radius: 5px;
-}
-</style> -->
+} */
 
-  
+/* h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+} */
+</style> 
