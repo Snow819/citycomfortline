@@ -90,7 +90,6 @@ export default {
       textLines: [
         'hero.title1',
         'hero.title2',
-        'hero.title3',
       ],
       buttons: [
         { text: 'hero.button1', class: 'primary', action: () => console.log('Navigate to services') },
