@@ -23,7 +23,7 @@ import OurServices from '@/components/OurServices.vue';
     </section>
 
     <!-- SERVICES SECTION -->
-    <section id="services" class="page-section">
+    <section id="services">
       <OurServices />
     </section>
 
@@ -52,6 +52,7 @@ import OurServices from '@/components/OurServices.vue';
 <style scoped>
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .page-section {

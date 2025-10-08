@@ -1,13 +1,20 @@
 <template>
-    <div class="services-wrapper">
+    <div class="services-wrapper" data-aos="fade-up" data-aos-duration="800">
         <div class="services-container">
-            <h1 class="main-title">{{ $t('ourServices.title') }}</h1>
-            <p class="main-subtitle">{{ $t('ourServices.subtitle') }}</p>
+            <h1 class="main-title" data-aos="fade-down" data-aos-duration="1000" data-aos-once="false">
+                {{ $t('ourServices.title') }}
+            </h1>
+
+            <p class="main-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+                data-aos-once="false">
+                {{ $t('ourServices.subtitle') }}
+            </p>
 
             <div class="accordions-grid">
                 <!-- Moving Services Accordion -->
-                <div class="accordion-section">
-                    <div class="section-header">
+                <div class="accordion-section" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300"
+                    data-aos-once="false">
+                    <div class="section-header" data-aos="zoom-in" data-aos-delay="400">
                         <svg class="section-icon moving-icon" width="32" height="32" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor">
                             <rect x="1" y="3" width="15" height="13"></rect>
@@ -15,11 +22,15 @@
                             <circle cx="5.5" cy="18.5" r="2.5"></circle>
                             <circle cx="18.5" cy="18.5" r="2.5"></circle>
                         </svg>
-                        <h2 class="section-title">{{ $t('ourServices.moving.title') }}</h2>
+                        <h2 class="section-title" data-aos="fade-left" data-aos-delay="450">
+                            {{ $t('ourServices.moving.title') }}
+                        </h2>
                     </div>
 
                     <div class="accordion">
-                        <div v-for="(item, index) in movingServices" :key="index" class="accordion-item">
+                        <div v-for="(item, index) in movingServices" :key="index" class="accordion-item"
+                            data-aos="fade-up" :data-aos-delay="100 * index" data-aos-duration="700"
+                            data-aos-once="false">
                             <button @click="toggleMoving(index)" class="accordion-header">
                                 <span class="accordion-title-text">{{ $t(item.title) }}</span>
                                 <svg class="accordion-icon" :class="{ 'rotated': openMovingIndex === index }" width="20"
@@ -38,8 +49,9 @@
                 </div>
 
                 <!-- Cleaning Services Accordion -->
-                <div class="accordion-section">
-                    <div class="section-header">
+                <div class="accordion-section" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300"
+                    data-aos-once="false">
+                    <div class="section-header" data-aos="zoom-in" data-aos-delay="400">
                         <svg class="section-icon cleaning-icon" width="32" height="32" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor">
                             <path d="M12 3v18"></path>
@@ -47,11 +59,15 @@
                             <path d="M7.5 7.5 4 11l3.5 3.5"></path>
                             <path d="M16.5 7.5 20 11l-3.5 3.5"></path>
                         </svg>
-                        <h2 class="section-title">{{ $t('ourServices.cleaning.title') }}</h2>
+                        <h2 class="section-title" data-aos="fade-right" data-aos-delay="450">
+                            {{ $t('ourServices.cleaning.title') }}
+                        </h2>
                     </div>
 
                     <div class="accordion">
-                        <div v-for="(item, index) in cleaningServices" :key="index" class="accordion-item">
+                        <div v-for="(item, index) in cleaningServices" :key="index" class="accordion-item"
+                            data-aos="fade-up" :data-aos-delay="100 * index" data-aos-duration="700"
+                            data-aos-once="false">
                             <button @click="toggleCleaning(index)" class="accordion-header">
                                 <span class="accordion-title-text">{{ $t(item.title) }}</span>
                                 <svg class="accordion-icon" :class="{ 'rotated': openCleaningIndex === index }"
@@ -74,10 +90,12 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
-const openMovingIndex = ref(null);
-const openCleaningIndex = ref(null);
+const openMovingIndex = ref(null)
+const openCleaningIndex = ref(null)
 
 const movingServices = [
     { title: 'ourServices.moving.items.residential.title', content: 'ourServices.moving.items.residential.content' },
@@ -89,7 +107,7 @@ const movingServices = [
     { title: 'ourServices.moving.items.internal.title', content: 'ourServices.moving.items.internal.content' },
     { title: 'ourServices.moving.items.local.title', content: 'ourServices.moving.items.local.content' },
     { title: 'ourServices.moving.items.storage.title', content: 'ourServices.moving.items.storage.content' },
-];
+]
 
 const cleaningServices = [
     { title: 'ourServices.cleaning.items.postMove.title', content: 'ourServices.cleaning.items.postMove.content' },
@@ -98,39 +116,49 @@ const cleaningServices = [
     { title: 'ourServices.cleaning.items.commercial.title', content: 'ourServices.cleaning.items.commercial.content' },
     { title: 'ourServices.cleaning.items.carpet.title', content: 'ourServices.cleaning.items.carpet.content' },
     { title: 'ourServices.cleaning.items.window.title', content: 'ourServices.cleaning.items.window.content' },
-];
+]
 
 const toggleMoving = (index) => {
-    openMovingIndex.value = openMovingIndex.value === index ? null : index;
-};
+    openMovingIndex.value = openMovingIndex.value === index ? null : index
+}
 
 const toggleCleaning = (index) => {
-    openCleaningIndex.value = openCleaningIndex.value === index ? null : index;
-};
+    openCleaningIndex.value = openCleaningIndex.value === index ? null : index
+}
+
+onMounted(() => {
+    AOS.init({
+        duration: 1000,
+        once: false,
+        mirror: true,
+        easing: 'ease-in-out',
+        offset: 120,
+    });
+})
 </script>
 
 <style scoped>
 .services-wrapper {
-    min-height: 100vh;
-    background: white;
-    padding: 48px 40px;
+    background: #A5D6A7;
+    padding: 80px 40px;
+    overflow-x: hidden;
 }
 
 .services-container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .main-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #111827;
+    color: #444;
     text-align: center;
     margin-bottom: 16px;
 }
 
 .main-subtitle {
-    color: #6b7280;
+    color: #333;
     text-align: center;
     margin-bottom: 48px;
     font-size: 1.125rem;
@@ -169,17 +197,17 @@ const toggleCleaning = (index) => {
 }
 
 .cleaning-icon {
-    color: #2563eb;
+    color: #0d9488;
 }
 
 .section-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #111827;
+    color: #444;
 }
 
 .accordion {
-    background: white;
+    background: #f9fafb;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -208,12 +236,12 @@ const toggleCleaning = (index) => {
 }
 
 .accordion-header:hover {
-    background: #f9fafb;
+    background: #e5e7eb;
 }
 
 .accordion-title-text {
     font-weight: 600;
-    color: #111827;
+    color: #444;
     font-size: 1rem;
 }
 

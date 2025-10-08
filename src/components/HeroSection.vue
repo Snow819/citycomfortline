@@ -262,11 +262,12 @@ export default {
 
   .cta-buttons {
     flex-direction: column;
+    align-items: center;
   }
 
   .cta-btn {
     width: 100%;
-    max-width: 280px;
+    max-width: 500px;
   }
 }
 </style>
