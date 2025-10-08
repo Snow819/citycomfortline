@@ -58,7 +58,7 @@
       <!-- Button Section -->
       <div class="btn">
         <a href="#" class="btn1">
-          <button>{{ t('navbar.getQuote') }}</button>
+          <button><router-link to="/GetQuote">{{ t('navbar.getQuote') }}</router-link></button>
         </a>
       </div>
     </nav>
@@ -324,6 +324,11 @@ body {
  .btn1 button:hover {
    background: #222;
    color: #fff;
+ }
+ .btn1 a{
+   text-decoration: none;
+   color: white;
+   
  }
  
  .btn2 button {
