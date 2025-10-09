@@ -65,7 +65,7 @@
 import { useI18n } from 'vue-i18n'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import heroVideo from '@/assets/hero-video.mp4'
+import heroVideo from '@/assets/moving.MOV'
 
 export default {
   name: 'HeroSection',
@@ -76,7 +76,7 @@ export default {
   data() {
     return {
       videoSrc: heroVideo,
-      textLines: ['hero.title1', 'hero.title2'],
+      textLines: ['hero.title1', 'hero.title2', 'hero.title3'],
       buttons: [
         { text: 'hero.button1', class: 'primary', action: () => console.log('Navigate to services') },
         { text: 'hero.button2', class: 'secondary', action: () => console.log('Navigate to contact') },
@@ -157,7 +157,7 @@ export default {
 .hero-text {
   font-size: clamp(2rem, 3vw, 4.5rem);
   font-weight: 800;
-  color: #e8c86f; /* Slightly gold tone */
+  color: #e8c86f; 
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0.5rem 0;
