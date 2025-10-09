@@ -65,7 +65,7 @@
 import { useI18n } from 'vue-i18n'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import heroVideo from '@/assets/moving.MOV'
+import heroVideo from '@/assets/moving.mp4'
 
 export default {
   name: 'HeroSection',
