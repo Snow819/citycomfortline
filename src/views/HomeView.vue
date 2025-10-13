@@ -6,8 +6,7 @@ import AboutView from '@/views/AboutView.vue';
 import FloatingQuoteButton from '@/components/FloatingQuoteButton.vue'; 
 import OurServices from '@/components/OurServices.vue';
 import Testimonial from '@/components/Testimonial.vue';
-import Footer from '@/components/footer.vue';
-
+import FooterSection from '@/components/FooterSection.vue';
 </script>
 
 <template>
@@ -46,7 +45,7 @@ import Footer from '@/components/footer.vue';
     </section>
 
     <!-- FOOTER SECTION -->
-    <Footer />
+    <FooterSection />
 
     <!-- FLOATING BUTTON -->
      <FloatingQuoteButton />
