@@ -8,10 +8,10 @@
     "getQuote": "Obtenir un devis"
   },
   "hero": {
-    "title1": "Série Confort Urbain",
+    "title1": "City Comfort Line",
     "title2": "Là où la commodité rencontre le soin",
     "title3": "Votre propriété, notre priorité",
-    "subtitle": "Votre partenaire de confiance pour des déménagements sans accroc et des espaces impeccables. Fiable, efficace et toujours attentionné.",
+    "subtitle": "Votre partenaire de confiance pour des déménagements sans stress et des espaces impeccables. Fiable, efficace et toujours attentionné.",
     "button1": "Nos Services",
     "button2": "Contactez-nous",
     "scroll": "Faites défiler pour explorer"
@@ -20,11 +20,11 @@
     "title": "Obtenez votre devis de déménagement",
     "email": "Adresse e-mail",
     "emailPlaceholder": "Entrez votre e-mail",
-    "confirmEmail": "Confirmez l'adresse e-mail",
+    "confirmEmail": "Confirmez l’adresse e-mail",
     "confirmEmailPlaceholder": "Saisissez à nouveau votre e-mail",
     "emailMismatch": "Les e-mails ne correspondent pas",
     "from": "Déménagement de",
-    "fromPlaceholder": "Entrez l'adresse actuelle",
+    "fromPlaceholder": "Entrez l’adresse actuelle",
     "to": "Déménagement vers",
     "toPlaceholder": "Entrez la nouvelle adresse",
     "date": "Date de déménagement",
@@ -37,13 +37,13 @@
     "option5": "Nettoyage après déménagement",
     "submit": "Obtenir un devis",
     "success": "Votre demande de devis a été envoyée avec succès !",
-    "failure": "Échec de l'envoi du devis. Veuillez réessayer plus tard."
+    "failure": "Échec de l’envoi du devis. Veuillez réessayer plus tard."
   },
-   "about": {
+  "about": {
     "title": "À propos de nous",
-    "paragraph1": "Chez <span class='highlight'>City Comfort Line</span>, nous fixons la norme en matière de services de déménagement et de nettoyage fiables et professionnels à Ottawa et dans les villes voisines.",
-    "paragraph2": "Nous sommes spécialisés dans les déménagements résidentiels et commerciaux, les services d’entrée/sortie, l’enlèvement des déchets et des solutions de nettoyage complètes adaptées à vos besoins.",
-    "paragraph3": "Grâce à notre professionnalisme, notre ponctualité et notre souci de la satisfaction du client, <span class='highlight'>City Comfort Line</span> continue de gagner la confiance des familles et des entreprises dans toute la région.",
+    "paragraph1": "Chez <span class='highlight'>City Comfort Line</span>, nous fixons la norme en matière de services de déménagement et de nettoyage fiables et professionnels à Ottawa et dans les villes voisines. Notre mission est simple : offrir des solutions fluides et sans stress alliant commodité, qualité et soin.",
+    "paragraph2": "Nous sommes spécialisés dans les déménagements résidentiels et commerciaux, les services d’entrée/sortie, l’enlèvement des déchets et les solutions de nettoyage complètes adaptées à vos besoins. Qu’il s’agisse d’un déménagement résidentiel, d’un transfert de bureau ou d’un rafraîchissement de propriété, notre équipe formée veille à ce que chaque tâche soit réalisée en toute sécurité, efficacement et avec la plus grande attention aux détails.",
+    "paragraph3": "Grâce à notre professionnalisme, notre ponctualité et notre souci de la satisfaction du client, <span class='highlight'>City Comfort Line</span> continue de gagner la confiance des particuliers, des familles et des entreprises dans toute la région. Nous sommes fiers de traiter chaque espace et chaque déménagement comme s’il s’agissait du nôtre, garantissant ainsi à nos clients confort et tranquillité d’esprit.",
     "quote": "City Comfort Line — Vous faire avancer, nettoyer avec soin."
   },
   "ourServices": {
@@ -53,40 +53,36 @@
       "title": "Services de Déménagement",
       "items": {
         "residential": {
-          "title": "Déménagement Résidentiel",
-          "content": "Vous déménagez dans une nouvelle maison ? Nous prenons en charge les déménagements de toutes tailles, en veillant à un service efficace et sans stress."
+          "title": "Déménagements de Courte et Longue Distance",
+          "content": "Nous gérons les déménagements de toute distance — que vous changiez de rue ou de province. Les déménagements locaux bénéficient d’un service le jour même, tandis que les longs trajets incluent la planification d’itinéraire, le suivi GPS et une couverture d’assurance complète. Service porte à porte avec tarification transparente selon la distance et le volume. Peu importe la distance, vos biens arrivent en toute sécurité et à temps."
         },
         "apartment": {
-          "title": "Déménagement d’Appartement et de Condo",
-          "content": "Experts dans la gestion des immeubles à plusieurs étages et des espaces restreints, nous assurons un déménagement fluide et sécurisé."
+          "title": "Déménagement Résidentiel et Commercial",
+          "content": "Chez City Comfort Line, nous savons qu’un déménagement résidentiel diffère d’un transfert d’entreprise — chacun demande une attention, une planification et une expertise particulières. C’est pourquoi nous proposons des solutions dédiées pour répondre aux besoins uniques de nos clients résidentiels et professionnels."
         },
         "office": {
-          "title": "Déménagement de Bureau et Commercial",
-          "content": "Réduisez les interruptions de vos activités avec notre service de déménagement rapide et organisé pour les entreprises."
+          "title": "Livraison d’Équipement Lourd",
+          "content": "City Comfort Line est spécialisée dans la livraison sûre et efficace d’équipements lourds, de machines et d’objets surdimensionnés nécessitant un maniement expert et un transport spécialisé. Que vous soyez entrepreneur, gestionnaire immobilier ou particulier, notre équipe expérimentée assure le déplacement de vos articles robustes avec précision et soin."
         },
         "packing": {
-          "title": "Emballage et Déballage",
-          "content": "Gagnez du temps grâce à notre service complet d’emballage et de déballage, utilisant des matériaux sûrs et de qualité."
+          "title": "Service de Débarras et Enlèvement",
+          "content": "Libérez de l’espace et reprenez le contrôle de votre propriété grâce à notre service professionnel de débarras. Que vous vidiez des années d’accumulation, prépariez un déménagement ou rénoviez, notre équipe s’occupe du tri, du levage et du transport pour vous."
         },
         "furniture": {
           "title": "Démontage et Remontage de Meubles",
-          "content": "Service gratuit pour les lits, les bureaux et autres meubles afin d’assurer un transport en toute sécurité."
+          "content": "Le déplacement de meubles volumineux peut être l’un des aspects les plus complexes d’un déménagement. Nous offrons un service professionnel de démontage et de remontage pour garantir un transport sûr et sans dommage. Notre équipe connaît chaque type de mobilier — des lits aux systèmes modulaires — vous faisant gagner temps et tranquillité."
         },
         "specialty": {
-          "title": "Déménagement d’Articles Spéciaux",
-          "content": "Manipulation experte des pianos, tapis de course, œuvres d’art et autres objets fragiles ou de grande valeur."
+          "title": "Transport d’Objets Spéciaux",
+          "content": "Certains biens nécessitent une attention particulière, un équipement adapté et une manipulation experte. City Comfort Line assure le transport sécurisé d’articles délicats, fragiles ou de grande valeur tels que pianos, œuvres d’art et objets précieux, avec le soin et le respect qu’ils méritent."
         },
         "internal": {
           "title": "Déménagements Internes",
-          "content": "Réaménagement de meubles à l’intérieur de votre maison ou bureau, sans déplacement externe."
+          "content": "Tous les déménagements ne nécessitent pas de quitter les lieux. Parfois, il suffit de réorganiser votre mobilier ou votre équipement pour améliorer votre espace. Nous offrons des services de déplacement interne pour maisons, bureaux ou bâtiments — sans stress, sans effort et en toute sécurité."
         },
         "local": {
           "title": "Déménagements Locaux et Longue Distance",
-          "content": "Des services de déménagement fluides et professionnels, que ce soit à proximité ou vers une autre ville."
-        },
-        "storage": {
-          "title": "Solutions de Stockage",
-          "content": "Options de stockage sécurisées et flexibles, parfaites pour les besoins temporaires ou à long terme."
+          "content": "Que vous déménagiez à proximité ou à travers le pays, City Comfort Line fournit un service complet pour rendre votre expérience fluide et sans tracas. Chaque déménagement étant unique, nous proposons des solutions sur mesure garantissant la sécurité et la ponctualité de vos biens, quelle que soit la distance."
         }
       }
     },
@@ -94,28 +90,28 @@
       "title": "Services de Nettoyage",
       "items": {
         "postMove": {
-          "title": "Nettoyage Après Déménagement",
-          "content": "Nettoyage minutieux de votre ancien ou nouveau logement pour qu’il soit prêt à habiter."
+          "title": "Nettoyage de Bureaux et Petites Entreprises",
+          "content": "Gardez votre espace de travail impeccable et professionnel grâce aux services de nettoyage commercial de City Comfort Line. Nous offrons un nettoyage fiable et minutieux pour bureaux, commerces et cliniques, créant des environnements sains et productifs. Notre équipe s’occupe des bureaux, halls, sols, vitres, cuisines et sanitaires selon un horaire quotidien, hebdomadaire ou mensuel, avec options de nettoyage en profondeur, après travaux ou désinfection. Produits écologiques, service hors heures d’ouverture, personnel formé — sans contrat à long terme ni frais cachés."
         },
         "deep": {
           "title": "Nettoyage en Profondeur",
-          "content": "Service complet pour un nettoyage intensif de toutes les pièces et surfaces de votre espace."
+          "content": "Un nettoyage complet et détaillé allant au-delà de l’entretien régulier. Nous désinfectons les zones difficiles d’accès, éliminons la saleté incrustée et redonnons fraîcheur et éclat à chaque pièce. Idéal avant un événement ou pour un grand entretien saisonnier."
         },
         "residential": {
-          "title": "Nettoyage Résidentiel",
-          "content": "Nettoyage régulier ou ponctuel pour garder votre maison propre, fraîche et accueillante."
+          "title": "Nettoyage d’Appartements et Airbnb",
+          "content": "Conçu pour les locataires, propriétaires et hôtes exigeant des espaces impeccables rapidement. Nous nous occupons de tout — dépoussiérage, aspiration, désinfection des salles de bain et cuisines, préparation des lits et réapprovisionnement des essentiels. Parfait pour les entrées, sorties ou la préparation d’un logement Airbnb avant l’arrivée d’un invité."
         },
         "commercial": {
           "title": "Nettoyage Commercial",
-          "content": "Service professionnel de nettoyage de bureaux et d’espaces de travail pour un environnement sain et productif."
+          "content": "Maintenez un espace professionnel propre et accueillant grâce à nos services de nettoyage commercial fiables. Nous nettoyons bureaux, commerces, cliniques et plus encore — sols, vitres, postes de travail et sanitaires. Nos horaires flexibles, produits écologiques et personnel qualifié garantissent un environnement sain et constant qui favorise la productivité et donne une excellente impression."
         },
         "carpet": {
           "title": "Nettoyage de Tapis et de Meubles",
-          "content": "Techniques avancées pour éliminer les taches, la saleté et les allergènes, redonnant vie à vos tissus."
+          "content": "Redonnez vie à vos espaces grâce à notre service professionnel de nettoyage de tapis et de meubles. Nous éliminons la saleté incrustée, les taches et les allergènes à l’aide de méthodes sûres et efficaces, ravivant couleur et fraîcheur. Idéal pour bureaux, appartements et commerces."
         },
         "window": {
-          "title": "Nettoyage de Vitres",
-          "content": "Nettoyage intérieur et extérieur des vitres pour une transparence et une brillance impeccables."
+          "title": "Nettoyage d’Entrée / de Sortie",
+          "content": "Simplifiez votre déménagement grâce à notre service complet de nettoyage pour espaces vides. Nous nettoyons et désinfectons chaque coin — sols, vitres, cuisines et salles de bain — afin que votre ancien logement soit impeccable et le nouveau prêt à emménager. Parfait pour locataires, propriétaires et gestionnaires immobiliers."
         }
       }
     }

@@ -106,7 +106,7 @@ const movingServices = [
     { title: 'ourServices.moving.items.specialty.title', content: 'ourServices.moving.items.specialty.content' },
     { title: 'ourServices.moving.items.internal.title', content: 'ourServices.moving.items.internal.content' },
     { title: 'ourServices.moving.items.local.title', content: 'ourServices.moving.items.local.content' },
-    { title: 'ourServices.moving.items.storage.title', content: 'ourServices.moving.items.storage.content' },
+
 ]
 
 const cleaningServices = [
