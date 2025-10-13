@@ -13,7 +13,7 @@
 
     <!-- Hero Content -->
     <div class="hero-content" data-aos="fade-up" data-aos-delay="300">
-      <img src="@/assets/logo.png" alt="City Comfort Line Logo" class="hero-logo" />
+      <img src="@/assets/logo.jpg" alt="City Comfort Line Logo" class="hero-logo" />
 
       <div class="text-container">
         <h1
@@ -134,7 +134,7 @@ export default {
 .video-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(25, 25, 25, 0.2);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* Content */
@@ -144,11 +144,13 @@ export default {
   z-index: 10;
   text-align: center;
   color: #fff;
-  padding: 2rem;
+  padding: 80px 40px;
 }
 
 .hero-logo {
-  width: 160px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   margin-bottom: 1.5rem;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
 }
