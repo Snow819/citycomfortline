@@ -66,7 +66,7 @@ AOS.init({
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #c4a962; 
+  color: #1B5E20; 
   text-transform: uppercase;
 }
 
@@ -78,7 +78,7 @@ AOS.init({
 }
 
 .highlight {
-  color: #c4a962;
+  color: #1B5E20;
   font-weight: 600;
 }
 
@@ -86,7 +86,7 @@ AOS.init({
   margin-top: 30px;
   font-size: 1rem;
   color: #555;
-  border-left: 4px solid #c4a962;
+  border-left: 4px solid #1B5E20;
   padding-left: 15px;
   font-style: italic;
 }
@@ -112,7 +112,7 @@ AOS.init({
 
   .container {
     grid-template-columns: 1fr;
-    text-align: center;
+    text-align: start;
   }
 
   .about-image {
@@ -122,7 +122,7 @@ AOS.init({
   .quote {
     text-align: center;
     border-left: none;
-    border-top: 3px solid #c4a962;
+    border-top: 3px solid #1B5E20;
     padding-top: 10px;
     padding-left: 0;
   }

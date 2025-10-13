@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar.vue';
 import HeroSection from '@/components/HeroSection.vue';
 import GetQuote from '@/components/GetQuote.vue';
 import AboutView from '@/views/AboutView.vue';
-import FloatingQuoteButton from '@/components/FloatingQuoteButton.vue'; 
+import FloatingQuoteButton from '@/components/FloatingQuoteButton.vue';
 import OurServices from '@/components/OurServices.vue';
 import Testimonial from '@/components/Testimonial.vue';
 import FooterSection from '@/components/FooterSection.vue';
@@ -20,7 +20,7 @@ import FooterSection from '@/components/FooterSection.vue';
 
     <!-- ABOUT SECTION -->
     <section id="about">
-      <AboutView /> 
+      <AboutView />
     </section>
 
     <!-- SERVICES SECTION -->
@@ -48,7 +48,7 @@ import FooterSection from '@/components/FooterSection.vue';
     <FooterSection />
 
     <!-- FLOATING BUTTON -->
-     <FloatingQuoteButton />
+    <FloatingQuoteButton />
   </main>
 </template>
 
