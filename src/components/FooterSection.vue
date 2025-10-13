@@ -5,8 +5,13 @@
       <div class="footer-about" data-aos="zoom-in" data-aos-delay="100">
         <img :src="logo" alt="City Comfort Line Logo" class="footer-logo-img" />
         <p>
+ServicesArea
+          Your trusted partner for seamless relocations and spotless spaces
+          . Reliable, efficient, and always caring.
+
           Your trusted partner in comfort, care, and reliable travel.
           We make every journey smooth, safe, and stress-free.
+          main
         </p>
       </div>
 
@@ -58,7 +63,7 @@ onMounted(() => {
 
 <style scoped>
 .footer {
-  background: #a5d6a7;
+  background: #e3fae4;
   color: #444;
   padding: 80px 40px;
   text-align: center;

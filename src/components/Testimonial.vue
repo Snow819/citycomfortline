@@ -75,7 +75,7 @@ onUnmounted(() => {
 .testimonial-section {
   text-align: center;
   padding: 80px 20px;
-  background: #A5D6A7;
+  background: #e3fae4;
 }
 
 .section-title {

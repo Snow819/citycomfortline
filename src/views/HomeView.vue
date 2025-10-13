@@ -30,7 +30,7 @@ import ServiceArea from '@/components/ServiceArea.vue';
     </section>
 
     <!-- SERVICE AREAS SECTION -->
-    <section id="areas" class="page-section">
+    <section id="areas">
       <ServiceArea />
     </section>
 
@@ -56,22 +56,5 @@ import ServiceArea from '@/components/ServiceArea.vue';
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-}
-
-.page-section {
-  padding: 100px 20px;
-  text-align: center;
-  background: #f9f9f9;
-  border-bottom: 1px solid #ddd;
-}
-
-.page-section:nth-child(even) {
-  background: #ffffff;
-}
-
-h2 {
-  font-size: 2rem;
-  color: #00796b;
-  margin-bottom: 20px;
 }
 </style>

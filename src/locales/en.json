@@ -46,6 +46,7 @@
     "paragraph3": "With a strong focus on professionalism, punctuality, and customer satisfaction, <span class='highlight'>City Comfort Line</span> continues to earn the trust of individuals, families, and businesses throughout the region. We take pride in treating every space and every move as if it were our own  ensuring our clients experience unmatched comfort and peace of mind.",
     "quote": "City Comfort Line — Moving You Forward, Cleaning with Care."
   },
+  
   "ourServices": {
     "title": "Our Services",
     "subtitle": "Comprehensive moving and cleaning solutions for your needs",
@@ -113,6 +114,52 @@
           "title": "Move-In / Move-Out Cleaning",
           "content": "Make your move stress free with our detailed cleaning service for empty spaces. We scrub, sanitize, and polish every corner  from floors and windows to kitchens and bathrooms  ensuring your old place is spotless and your new one is move in ready. Perfect for tenants, landlords, and property managers who want a fresh start or a flawless handover."
         }
+      }
+    }
+  },
+  "serviceAreas": {
+    "title": "Our Service Areas",
+    "boundary": "We proudly serve the entire Ottawa region and surrounding communities.",
+    "areas": {
+      "ottawa": {
+        "name": "Ottawa",
+        "desc": "Main hub of operations"
+      },
+      "gatineau": {
+        "name": "Gatineau",
+        "desc": "Across the river service zone"
+      },
+      "kanata": {
+        "name": "Kanata",
+        "desc": "West-end clients"
+      },
+      "barrhaven": {
+        "name": "Barrhaven",
+        "desc": "Suburban cleaning coverage"
+      },
+      "orleans": {
+        "name": "Orleans",
+        "desc": "East-end service area"
+      },
+      "carleton_place": {
+        "name": "Carleton Place",
+        "desc": "Expanding west zone"
+      },
+      "cornwall": {
+        "name": "Cornwall",
+        "desc": "Southeast Ontario zone"
+      },
+      "arnprior": {
+        "name": "Arnprior",
+        "desc": "Outer Ottawa Valley area"
+      },
+      "smiths_falls": {
+        "name": "Smiths Falls",
+        "desc": "Rural community coverage"
+      },
+      "rockland": {
+        "name": "Rockland",
+        "desc": "Eastern suburb service"
       }
     }
   }

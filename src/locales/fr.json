@@ -115,5 +115,51 @@
         }
       }
     }
+  },
+  "serviceAreas": {
+    "title": "Nos zones de service",
+    "boundary": "Nous desservons fièrement toute la région d’Ottawa et les communautés environnantes.",
+    "areas": {
+      "ottawa": {
+        "name": "Ottawa",
+        "desc": "Centre principal des opérations"
+      },
+      "gatineau": {
+        "name": "Gatineau",
+        "desc": "Zone de service de l’autre côté de la rivière"
+      },
+      "kanata": {
+        "name": "Kanata",
+        "desc": "Clients de l’ouest"
+      },
+      "barrhaven": {
+        "name": "Barrhaven",
+        "desc": "Couverture des banlieues"
+      },
+      "orleans": {
+        "name": "Orléans",
+        "desc": "Zone de service de l’est"
+      },
+      "carleton_place": {
+        "name": "Carleton Place",
+        "desc": "Zone d’expansion à l’ouest"
+      },
+      "cornwall": {
+        "name": "Cornwall",
+        "desc": "Zone du sud-est de l’Ontario"
+      },
+      "arnprior": {
+        "name": "Arnprior",
+        "desc": "Zone de la vallée de l’Ottawa"
+      },
+      "smiths_falls": {
+        "name": "Smiths Falls",
+        "desc": "Couverture des communautés rurales"
+      },
+      "rockland": {
+        "name": "Rockland",
+        "desc": "Banlieue de l’est"
+      }
+    }
   }
 }
