@@ -16,7 +16,7 @@
       <div class="navbar-header-row">
         <!-- Logo -->
         <div class="logo">
-          <img src="@/assets/logo.png" alt="City Comfort Line Logo" />
+          <img src="@/assets/logo.jpg" alt="City Comfort Line Logo" />
         </div>
 
         <!-- Menu toggle button -->
@@ -177,7 +177,7 @@ header {
 }
 
 .navbar-transparent {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(247, 247, 247, 0.1);
   backdrop-filter: none;
 }
 
@@ -212,8 +212,9 @@ body {
 }
 
 .logo img {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 
 .menu-toggle {

@@ -5,7 +5,8 @@ import GetQuote from '@/components/GetQuote.vue';
 import AboutView from '@/views/AboutView.vue';
 import FloatingQuoteButton from '@/components/FloatingQuoteButton.vue'; 
 import OurServices from '@/components/OurServices.vue';
-
+import Testimonial from '@/components/Testimonial.vue';
+import FooterSection from '@/components/FooterSection.vue';
 </script>
 
 <template>
@@ -34,15 +35,17 @@ import OurServices from '@/components/OurServices.vue';
     </section>
 
     <!-- TESTIMONIALS SECTION -->
-    <section id="testimonials" class="page-section">
-      <h2>What Our Clients Say</h2>
-      <p>"City Comfort Line made our move stress-free and smooth!" – Grace A.</p>
+    <section id="testimonials">
+      <Testimonial />
     </section>
 
     <!-- GET QUOTE SECTION -->
     <section id="get-quote">
       <GetQuote />
     </section>
+
+    <!-- FOOTER SECTION -->
+    <FooterSection />
 
     <!-- FLOATING BUTTON -->
      <FloatingQuoteButton />

@@ -7,50 +7,27 @@
         <!-- Email Address -->
         <div class="form-group">
           <label for="email">{{ t("getQuote.email") }}</label>
-          <input
-            type="email"
-            id="email"
-            v-model="form.email"
-            required
-            :placeholder="t('getQuote.emailPlaceholder')"
-          />
+          <input type="email" id="email" v-model="form.email" required :placeholder="t('getQuote.emailPlaceholder')" />
         </div>
 
         <!-- Confirm Email Address -->
         <div class="form-group">
           <label for="confirmEmail">{{ t("getQuote.confirmEmail") }}</label>
-          <input
-            type="email"
-            id="confirmEmail"
-            v-model="form.confirmEmail"
-            required
-            :placeholder="t('getQuote.confirmEmailPlaceholder')"
-          />
+          <input type="email" id="confirmEmail" v-model="form.confirmEmail" required
+            :placeholder="t('getQuote.confirmEmailPlaceholder')" />
           <p v-if="emailMismatch" class="error-text">{{ t("getQuote.emailMismatch") }}</p>
         </div>
 
         <!-- Moving From -->
         <div class="form-group">
           <label for="from">{{ t("getQuote.from") }}</label>
-          <input
-            type="text"
-            id="from"
-            v-model="form.from"
-            required
-            :placeholder="t('getQuote.fromPlaceholder')"
-          />
+          <input type="text" id="from" v-model="form.from" required :placeholder="t('getQuote.fromPlaceholder')" />
         </div>
 
         <!-- Moving To -->
         <div class="form-group">
           <label for="to">{{ t("getQuote.to") }}</label>
-          <input
-            type="text"
-            id="to"
-            v-model="form.to"
-            required
-            :placeholder="t('getQuote.toPlaceholder')"
-          />
+          <input type="text" id="to" v-model="form.to" required :placeholder="t('getQuote.toPlaceholder')" />
         </div>
 
         <!-- Moving Date -->
@@ -159,139 +136,144 @@ export default {
   },
 };
 </script>
-  
-  <style scoped>
-  /* ==== Layout Wrapper ==== */
-  .form-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-    min-height: 100vh;
-    background: linear-gradient(160deg, #0d0d0d 30%, #1a1a1a 100%);
-  }
-  
-  /* ==== Form Container ==== */
+
+<style scoped>
+/* ==== Layout Wrapper ==== */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px;
+  min-height: 100vh;
+  background: linear-gradient(160deg, #E8F5E9 30%, #A5D6A7 100%);
+}
+
+/* ==== Form Container ==== */
+.form-container {
+  width: 100%;
+  background: rgba(30, 30, 30, 0.4);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.18);
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.35);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* ==== Form Fields ==== */
+.moving-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #f1f1f1;
+}
+
+input,
+select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #222;
+  color: #fff;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #26a69a;
+  outline: none;
+}
+
+/* ==== Button ==== */
+button {
+  background: linear-gradient(135deg, #A5D6A7, #E8F5E9);
+  color: #212121;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(50deg, #E8F5E9 30%, #A5D6A7 100%);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ==== Error Text ==== */
+.error-text {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+/* ==== Responsive Design ==== */
+
+/* Tablets */
+@media (min-width: 640px) {
   .form-container {
-    width: 100%;
-    background: #181818;
-    padding: 30px 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.35);
-    color: #fff;
-    transition: all 0.3s ease;
+    max-width: 600px;
+    padding: 40px;
   }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-  }
-  
-  /* ==== Form Fields ==== */
+
   .moving-form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 18px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
-  
-  .form-group {
-    display: flex;
-    flex-direction: column;
+
+  .form-group:nth-child(1),
+  .form-group:nth-child(2) {
+    grid-column: span 1;
   }
-  
-  label {
-    margin-bottom: 6px;
-    font-weight: 600;
-    color: #ccc;
+
+  .form-group:nth-last-child(2),
+  button {
+    grid-column: span 2;
   }
-  
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+  .form-container {
+    max-width: 700px;
+    padding: 50px;
+  }
+
   input,
   select {
-    padding: 12px;
-    border-radius: 6px;
-    border: 1px solid #444;
-    background: #222;
-    color: #fff;
-    font-size: 15px;
-    transition: border-color 0.3s ease;
+    font-size: 16px;
   }
-  
-  input:focus,
-  select:focus {
-    border-color: #26a69a;
-    outline: none;
-  }
-  
-  /* ==== Button ==== */
+
   button {
-    background: linear-gradient(135deg, #00796b, #26a69a);
-    color: #fff;
-    border: none;
-    padding: 12px;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    font-size: 17px;
+    padding: 14px;
   }
-  
-  button:hover {
-    background: linear-gradient(135deg, #00796b, #26a69a);
-  }
-  
-  button:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-  }
-  
-  /* ==== Error Text ==== */
-  .error-text {
-    color: #ff6b6b;
-    font-size: 0.85rem;
-    margin-top: 4px;
-  }
-  
-  /* ==== Responsive Design ==== */
-  
-  /* Tablets */
-  @media (min-width: 640px) {
-    .form-container {
-      max-width: 600px;
-      padding: 40px;
-    }
-  
-    .moving-form {
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-  
-    .form-group:nth-child(1),
-    .form-group:nth-child(2) {
-      grid-column: span 1;
-    }
-  
-    .form-group:nth-last-child(2),
-    button {
-      grid-column: span 2;
-    }
-  }
-  
-  /* Desktops */
-  @media (min-width: 1024px) {
-    .form-container {
-      max-width: 700px;
-      padding: 50px;
-    }
-  
-    input,
-    select {
-      font-size: 16px;
-    }
-  
-    button {
-      font-size: 17px;
-      padding: 14px;
-    }
-  }
-  </style>
+}
+</style>
