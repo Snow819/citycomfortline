@@ -216,6 +216,7 @@ onMounted(() => {
   }
 
   .area-item {
+  /* text-align: start; */
     justify-content: center;
   }
 }

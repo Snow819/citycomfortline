@@ -5,13 +5,7 @@
       <div class="footer-about" data-aos="zoom-in" data-aos-delay="100">
         <img :src="logo" alt="City Comfort Line Logo" class="footer-logo-img" />
         <p>
-ServicesArea
-          Your trusted partner for seamless relocations and spotless spaces
-          . Reliable, efficient, and always caring.
-
-          Your trusted partner in comfort, care, and reliable travel.
-          We make every journey smooth, safe, and stress-free.
-          main
+          Your trusted partner for seamless relocations and spotless spaces . Reliable, efficient, and always caring.
         </p>
       </div>
 
@@ -85,7 +79,7 @@ onMounted(() => {
 .footer-logo-img {
   width: 120px;
   height: 120px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   border-radius: 50%;
 }
 
@@ -183,7 +177,7 @@ onMounted(() => {
 @media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr;
-    text-align: center;
+    text-align: start;
   }
 }
 </style>
