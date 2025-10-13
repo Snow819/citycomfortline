@@ -6,8 +6,8 @@ import AboutView from '@/views/AboutView.vue';
 import FloatingQuoteButton from '@/components/FloatingQuoteButton.vue';
 import OurServices from '@/components/OurServices.vue';
 import Testimonial from '@/components/Testimonial.vue';
-import ServicesArea from '@/components/ServicesArea.vue';
 import FooterSection from '@/components/FooterSection.vue';
+import ServiceArea from '@/components/ServiceArea.vue';
 </script>
 
 <template>
@@ -30,8 +30,8 @@ import FooterSection from '@/components/FooterSection.vue';
     </section>
 
     <!-- SERVICE AREAS SECTION -->
-    <section id="areas" class="page-section">
-     <ServicesArea/>
+    <section id="areas">
+      <ServiceArea />
     </section>
 
     <!-- TESTIMONIALS SECTION -->
@@ -56,22 +56,5 @@ import FooterSection from '@/components/FooterSection.vue';
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-}
-
-.page-section {
-  padding: 100px 20px;
-  text-align: center;
-  background: #f9f9f9;
-  border-bottom: 1px solid #ddd;
-}
-
-.page-section:nth-child(even) {
-  background: #ffffff;
-}
-
-h2 {
-  font-size: 2rem;
-  color: #00796b;
-  margin-bottom: 20px;
 }
 </style>

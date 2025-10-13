@@ -1,5 +1,5 @@
 <template>
-  <div class="form-wrapper">
+  <div class="form-wrapper" id="get-quote">
     <div class="form-container ">
       <h2>{{ t("getQuote.title") }}</h2>
 

@@ -1,5 +1,5 @@
 <template>
-  <section class="testimonial-section" data-aos="fade-up" data-aos-duration="1000">
+  <section id="testimonials" class="testimonial-section" data-aos="fade-up" data-aos-duration="1000">
     <h2 class="section-title">What Our Clients Say</h2>
 
     <div class="carousel">
