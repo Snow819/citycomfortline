@@ -115,5 +115,51 @@
         }
       }
     }
+  },
+  "serviceAreas": {
+    "title": "我们的服务区域",
+    "boundary": "我们自豪地为渥太华及周边社区提供服务。",
+    "areas": {
+      "ottawa": {
+        "name": "渥太华",
+        "desc": "主要运营中心"
+      },
+      "gatineau": {
+        "name": "加蒂诺",
+        "desc": "河对岸的服务区域"
+      },
+      "kanata": {
+        "name": "卡纳塔",
+        "desc": "西区客户"
+      },
+      "barrhaven": {
+        "name": "巴尔黑文",
+        "desc": "郊区清洁服务"
+      },
+      "orleans": {
+        "name": "奥尔良",
+        "desc": "东部服务区域"
+      },
+      "carleton_place": {
+        "name": "卡尔顿普莱斯",
+        "desc": "西部扩展区域"
+      },
+      "cornwall": {
+        "name": "康沃尔",
+        "desc": "安大略东南区域"
+      },
+      "arnprior": {
+        "name": "阿恩普赖尔",
+        "desc": "渥太华谷外区"
+      },
+      "smiths_falls": {
+        "name": "史密斯瀑布",
+        "desc": "农村社区服务"
+      },
+      "rockland": {
+        "name": "罗克兰",
+        "desc": "东部郊区服务"
+      }
+    }
   }
 }

@@ -57,7 +57,7 @@
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+    background: #A5D6A7;
     color: white;
     padding: 16px;
     border-radius: 50px;
@@ -68,7 +68,7 @@
     gap: 0;
     font-size: 16px;
     font-weight: 600;
-    box-shadow: 0 4px 20px rgba(13, 148, 136, 0.5);
+    box-shadow: 0 4px 20px rgba(0, 23, 22, 0.5);
     transition: all 0.3s ease;
     z-index: 1000;
     overflow: hidden;

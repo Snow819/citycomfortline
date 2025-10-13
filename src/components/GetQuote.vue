@@ -193,8 +193,8 @@ select {
   padding: 12px;
   border-radius: 6px;
   border: 1px solid #444;
-  background: #222;
-  color: #fff;
+  background: #fff;
+  color: #222;
   font-size: 15px;
   transition: border-color 0.3s ease;
 }
