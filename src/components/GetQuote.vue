@@ -1,6 +1,6 @@
 <template>
   <div class="form-wrapper">
-    <div class="form-container">
+    <div class="form-container ">
       <h2>{{ t("getQuote.title") }}</h2>
 
       <form @submit.prevent="handleSubmit" class="moving-form">

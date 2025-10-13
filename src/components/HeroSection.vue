@@ -159,7 +159,7 @@ export default {
 .hero-text {
   font-size: clamp(2rem, 3vw, 4.5rem);
   font-weight: 800;
-  color: #e8c86f; 
+  color: #F5B400; 
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0.5rem 0;
@@ -196,13 +196,13 @@ export default {
 }
 
 .cta-btn.primary {
-  background: linear-gradient(135deg, #e8c86f, #bfa043);
+  background: linear-gradient(135deg, #F5B400, #bfa043);
   color: #1a1a1a;
 }
 
 .cta-btn.secondary {
-  border: 2px solid #e8c86f;
-  color: #e8c86f;
+  border: 2px solid #F5B400;
+  color: #F5B400;
   background: transparent;
 }
 
@@ -217,7 +217,7 @@ export default {
 }
 
 .cta-btn.secondary:hover {
-  background: #e8c86f;
+  background: #F5B400;
   color: #1a1a1a;
 }
 
@@ -234,7 +234,7 @@ export default {
 }
 
 .scroll-arrow svg {
-  color: #e8c86f;
+  color: #F5B400;
   animation: arrowBounce 2s infinite;
 }
 
@@ -251,6 +251,7 @@ export default {
 @media (max-width: 768px) {
   .hero-logo {
     width: 120px;
+    height: 120px;
   }
 
   .hero-text {

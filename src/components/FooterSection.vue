@@ -5,8 +5,13 @@
       <div class="footer-about" data-aos="zoom-in" data-aos-delay="100">
         <img :src="logo" alt="City Comfort Line Logo" class="footer-logo-img" />
         <p>
+ServicesArea
           Your trusted partner for seamless relocations and spotless spaces
           . Reliable, efficient, and always caring.
+
+          Your trusted partner in comfort, care, and reliable travel.
+          We make every journey smooth, safe, and stress-free.
+          main
         </p>
       </div>
 
@@ -14,11 +19,11 @@
       <div class="footer-links" data-aos="fade-up" data-aos-delay="200">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Book a Ride</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#areas">Service Area</a></li>
+          <li><a href="#testimonials">Testimonial</a></li>
         </ul>
       </div>
 
@@ -39,7 +44,7 @@
     </div>
 
     <!-- Copyright -->
-    <div class="footer-bottom" data-aos="fade-in" data-aos-delay="400">
+    <div class="footer-bottom">
       <p>© {{ new Date().getFullYear() }} City Comfort Line. All rights reserved.</p>
     </div>
   </footer>
@@ -60,7 +65,7 @@ onMounted(() => {
 .footer {
   background: #e3fae4;
   color: #444;
-  padding: 60px 20px 20px;
+  padding: 80px 40px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -72,6 +77,7 @@ onMounted(() => {
   gap: 30px;
   justify-content: center;
   align-items: start;
+  text-align: start;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -143,11 +149,29 @@ onMounted(() => {
   color: #000;
 }
 
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #2e7d32;
+  font-size: 1.5rem;
+  transition: transform 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.social-icons a:hover {
+  color: #1b5e20;
+  transform: scale(1.3) rotate(10deg);
+}
+
 /* Footer bottom */
 .footer-bottom {
-  margin-top: 40px;
+  margin-top: 30px;
+  padding-top: 30px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding-top: 20px;
 }
 
 .footer-bottom p {

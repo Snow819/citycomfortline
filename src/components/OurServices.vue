@@ -193,11 +193,11 @@ onMounted(() => {
 }
 
 .moving-icon {
-    color: #0d9488;
+    color: #2e7d32;
 }
 
 .cleaning-icon {
-    color: #0d9488;
+    color: #2e7d32;
 }
 
 .section-title {
@@ -246,7 +246,7 @@ onMounted(() => {
 }
 
 .accordion-icon {
-    color: #0d9488;
+    color: #2e7d32;
     transition: transform 0.3s ease;
     flex-shrink: 0;
     margin-left: 12px;
