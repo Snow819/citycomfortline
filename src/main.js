@@ -4,6 +4,7 @@ import App from './App.vue'
 import router from './router'
 import { createI18n } from 'vue-i18n'
 import "bootstrap-icons/font/bootstrap-icons.css";
+import "leaflet.smooth_marker_bouncing";
 
 // Import languages
 import en from './locales/en.json'
