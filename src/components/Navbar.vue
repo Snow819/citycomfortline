@@ -276,13 +276,13 @@ body {
  
  .navbar-links li a:hover,
  .navbar-links li .router-link-active:hover {
-   background: linear-gradient(135deg, #00796b, #26a69a);
+   background: #A5D6A7;
    color: #fff;
    box-shadow: 0 2px 8px rgba(246, 61, 67, 0.15);
  }
  
  .navbar-links li .router-link-exact-active {
-   background: linear-gradient(135deg, #00796b, #26a69a);
+   background: #A5D6A7;
    color: #fff;
    box-shadow: 0 2px 8px rgba(246, 61, 67, 0.15);
  }
@@ -307,13 +307,13 @@ body {
  }
  
  .btn button:hover {
-   background: linear-gradient(90deg, #eb6709 0%, #f63d43 100%);
+   background:#A5D6A7;
    color: #fff;
    box-shadow: 0 2px 8px rgba(246, 61, 67, 0.15);
  }
  
  .btn1 button {
-   background: linear-gradient(135deg, #00796b, #26a69a);
+   background: #A5D6A7;
    color: #fff;
    border: none;
    padding: 8px 20px;

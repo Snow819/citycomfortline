@@ -6,6 +6,7 @@ import AboutView from '@/views/AboutView.vue';
 import FloatingQuoteButton from '@/components/FloatingQuoteButton.vue'; 
 import OurServices from '@/components/OurServices.vue';
 import Testimonial from '@/components/Testimonial.vue';
+import ServicesArea from '@/components/ServicesArea.vue';
 import FooterSection from '@/components/FooterSection.vue';
 </script>
 
@@ -30,8 +31,7 @@ import FooterSection from '@/components/FooterSection.vue';
 
     <!-- SERVICE AREAS SECTION -->
     <section id="areas" class="page-section">
-      <h2>Service Areas</h2>
-      <p>We serve all major cities including Lagos, Abuja, Port Harcourt, and beyond.</p>
+     <ServicesArea/>
     </section>
 
     <!-- TESTIMONIALS SECTION -->

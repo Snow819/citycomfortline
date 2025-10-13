@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue';
 import Navbar from '@/components/Navbar.vue'
 import GetQuote from '@/components/GetQuote.vue';
+import ServicesArea from '@/components/ServicesArea.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,6 +16,11 @@ const router = createRouter({
       path:'/GetQuote',
       name: 'GetQuote',
       component: GetQuote,
+    },
+    {
+      path: '/ServicesArea',
+      name: 'ServicesArea',
+      component: ServicesArea,
     },
     {
       path:'/Navbar',

@@ -139,7 +139,7 @@ onMounted(() => {
 
 <style scoped>
 .services-wrapper {
-    background: #A5D6A7;
+    background: #e3fae4;
     padding: 80px 40px;
     overflow-x: hidden;
 }
