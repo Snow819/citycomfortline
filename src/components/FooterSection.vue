@@ -4,29 +4,27 @@
       <!-- Logo & Description -->
       <div class="footer-about" data-aos="zoom-in" data-aos-delay="100">
         <img :src="logo" alt="City Comfort Line Logo" class="footer-logo-img" />
-        <p>
-          Your trusted partner for seamless relocations and spotless spaces . Reliable, efficient, and always caring.
-        </p>
+        <p>{{ t('footer.description') }}</p>
       </div>
 
       <!-- Quick Links -->
       <div class="footer-links" data-aos="fade-up" data-aos-delay="200">
-        <h3>Quick Links</h3>
+        <h3>{{ t('footer.quickLinksTitle') }}</h3>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#areas">Service Area</a></li>
-          <li><a href="#testimonials">Testimonial</a></li>
+          <li><a href="#home">{{ t('footer.links.home') }}</a></li>
+          <li><a href="#about">{{ t('footer.links.about') }}</a></li>
+          <li><a href="#services">{{ t('footer.links.services') }}</a></li>
+          <li><a href="#areas">{{ t('footer.links.serviceArea') }}</a></li>
+          <li><a href="#testimonials">{{ t('footer.links.testimonial') }}</a></li>
         </ul>
       </div>
 
       <!-- Contact Info -->
       <div class="footer-contact" data-aos="fade-up" data-aos-delay="300">
-        <h3>Contact Us</h3>
-        <p><i class="bi bi-geo-alt-fill"></i> 15 Adeyemi Street, Ikeja, Lagos</p>
-        <p><i class="bi bi-telephone-fill"></i> +234 812 345 6789</p>
-        <p><i class="bi bi-envelope-fill"></i> support@citycomfortline.com</p>
+        <h3>{{ t('footer.contactTitle') }}</h3>
+        <p><i class="bi bi-geo-alt-fill"></i> {{ t('footer.address') }}</p>
+        <p><i class="bi bi-telephone-fill"></i> {{ t('footer.phone') }}</p>
+        <p><i class="bi bi-envelope-fill"></i> {{ t('footer.email') }}</p>
 
         <div class="social-icons">
           <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
@@ -39,7 +37,7 @@
 
     <!-- Copyright -->
     <div class="footer-bottom">
-      <p>© {{ new Date().getFullYear() }} City Comfort Line. All rights reserved.</p>
+      <p>© {{ new Date().getFullYear() }} City Comfort Line. {{ t('footer.rights') }}</p>
     </div>
   </footer>
 </template>
@@ -49,6 +47,9 @@ import logo from "@/assets/logo.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { onMounted } from "vue";
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
 
 onMounted(() => {
   AOS.init();
@@ -126,21 +127,6 @@ onMounted(() => {
   color: #2e7d32;
   margin-right: 8px;
   font-size: 1rem;
-}
-
-.social-icons {
-  margin-top: 15px;
-}
-
-.social-icons a {
-  color: #2e7d32;
-  margin: 0 8px;
-  font-size: 1.4rem;
-  transition: 0.3s;
-}
-
-.social-icons a:hover {
-  color: #000;
 }
 
 .social-icons {
