@@ -99,7 +99,7 @@
         },
         "residential": {
           "title": "公寓与 Airbnb 清洁",
-          "content": "为租客、房东及房东提供快速专业的清洁服务。从除尘、吸尘到厨房与浴室消毒，一应俱全。非常适合搬入搬出或为下位住客做准备，让空间始终洁净、宜人。"
+          "content": "为租客、房东及房主提供快速专业的清洁服务。从除尘、吸尘到厨房与浴室消毒，一应俱全。非常适合搬入搬出或为下位住客做准备，让空间始终洁净、宜人。"
         },
         "commercial": {
           "title": "商业清洁",
@@ -117,35 +117,35 @@
     }
   },
   "serviceAreas": {
-  "title": "我们的服务区域",
-  "boundary": "我们自豪地为整个渥太华地区及周边社区提供服务。",
-  "viewMap": "🌐 查看大地图",
-  "areas": {
-    "arnprior": "阿恩普赖尔 (Arnprior)",
-    "barrhaven": "巴尔黑文 (Barrhaven)",
-    "brockville": "布罗克维尔 (Brockville)",
-    "carleton_place": "卡尔顿普莱斯 (Carleton Place)",
-    "carp": "卡普 (Carp)",
-    "cornwall": "康沃尔 (Cornwall)",
-    "emburn": "恩本 (Emburn)",
-    "gatineau": "加蒂诺 (Gatineau)",
-    "kanata": "卡纳塔 (Kanata)",
-    "kemptville": "肯普特维尔 (Kemptville)",
-    "manotick": "马诺蒂克 (Manotick)",
-    "merrickville": "梅里克维尔 (Merrickville)",
-    "orleans": "奥尔良 (Orleans)",
-    "osgoode": "奥斯古德 (Osgoode)",
-    "ottawa": "渥太华 (Ottawa)",
-    "pembroke": "彭布罗克 (Pembroke)",
-    "perth": "珀斯 (Perth)",
-    "rockland": "罗克兰 (Rockland)",
-    "russell": "拉塞尔 (Russell)",
-    "smith_falls": "史密斯瀑布 (Smith Falls)",
-    "stittsville": "斯蒂茨维尔 (Stittsville)",
-    "wakefield": "韦克菲尔德 (Wakefield)"
-  }
-},
- "footer": {
+    "title": "我们的服务区域",
+    "boundary": "我们自豪地为整个渥太华地区及周边社区提供服务。",
+    "viewMap": "🌐 查看大地图",
+    "areas": {
+      "arnprior": "阿恩普赖尔 (Arnprior)",
+      "barrhaven": "巴尔黑文 (Barrhaven)",
+      "brockville": "布罗克维尔 (Brockville)",
+      "carleton_place": "卡尔顿普莱斯 (Carleton Place)",
+      "carp": "卡普 (Carp)",
+      "cornwall": "康沃尔 (Cornwall)",
+      "emburn": "恩本 (Emburn)",
+      "gatineau": "加蒂诺 (Gatineau)",
+      "kanata": "卡纳塔 (Kanata)",
+      "kemptville": "肯普特维尔 (Kemptville)",
+      "manotick": "马诺蒂克 (Manotick)",
+      "merrickville": "梅里克维尔 (Merrickville)",
+      "orleans": "奥尔良 (Orleans)",
+      "osgoode": "奥斯古德 (Osgoode)",
+      "ottawa": "渥太华 (Ottawa)",
+      "pembroke": "彭布罗克 (Pembroke)",
+      "perth": "珀斯 (Perth)",
+      "rockland": "罗克兰 (Rockland)",
+      "russell": "拉塞尔 (Russell)",
+      "smith_falls": "史密斯瀑布 (Smith Falls)",
+      "stittsville": "斯蒂茨维尔 (Stittsville)",
+      "wakefield": "韦克菲尔德 (Wakefield)"
+    }
+  },
+  "footer": {
     "description": "您值得信赖的合作伙伴，提供无缝搬迁和洁净空间服务。可靠、高效、贴心。",
     "quickLinksTitle": "快速链接",
     "links": {
