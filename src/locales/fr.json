@@ -117,49 +117,48 @@
     }
   },
   "serviceAreas": {
-    "title": "Nos zones de service",
-    "boundary": "Nous desservons fièrement toute la région d’Ottawa et les communautés environnantes.",
-    "areas": {
-      "ottawa": {
-        "name": "Ottawa",
-        "desc": "Centre principal des opérations"
-      },
-      "gatineau": {
-        "name": "Gatineau",
-        "desc": "Zone de service de l’autre côté de la rivière"
-      },
-      "kanata": {
-        "name": "Kanata",
-        "desc": "Clients de l’ouest"
-      },
-      "barrhaven": {
-        "name": "Barrhaven",
-        "desc": "Couverture des banlieues"
-      },
-      "orleans": {
-        "name": "Orléans",
-        "desc": "Zone de service de l’est"
-      },
-      "carleton_place": {
-        "name": "Carleton Place",
-        "desc": "Zone d’expansion à l’ouest"
-      },
-      "cornwall": {
-        "name": "Cornwall",
-        "desc": "Zone du sud-est de l’Ontario"
-      },
-      "arnprior": {
-        "name": "Arnprior",
-        "desc": "Zone de la vallée de l’Ottawa"
-      },
-      "smiths_falls": {
-        "name": "Smiths Falls",
-        "desc": "Couverture des communautés rurales"
-      },
-      "rockland": {
-        "name": "Rockland",
-        "desc": "Banlieue de l’est"
-      }
-    }
+  "title": "Nos zones de service",
+  "boundary": "Nous desservons fièrement la région d’Ottawa et les communautés environnantes.",
+  "viewMap": "🌐 Voir la carte complète",
+  "areas": {
+    "arnprior": "Arnprior",
+    "barrhaven": "Barrhaven",
+    "brockville": "Brockville",
+    "carleton_place": "Carleton Place",
+    "carp": "Carp",
+    "cornwall": "Cornwall",
+    "emburn": "Emburn",
+    "gatineau": "Gatineau",
+    "kanata": "Kanata",
+    "kemptville": "Kemptville",
+    "manotick": "Manotick",
+    "merrickville": "Merrickville",
+    "orleans": "Orléans",
+    "osgoode": "Osgoode",
+    "ottawa": "Ottawa",
+    "pembroke": "Pembroke",
+    "perth": "Perth",
+    "rockland": "Rockland",
+    "russell": "Russell",
+    "smith_falls": "Smith Falls",
+    "stittsville": "Stittsville",
+    "wakefield": "Wakefield"
+  }
+},
+  "footer": {
+    "description": "Votre partenaire de confiance pour des déménagements sans encombre et des espaces impeccables. Fiable, efficace et toujours attentionné.",
+    "quickLinksTitle": "Liens rapides",
+    "links": {
+      "home": "Accueil",
+      "about": "À propos de nous",
+      "services": "Services",
+      "serviceArea": "Zone de service",
+      "testimonial": "Témoignage"
+    },
+    "contactTitle": "Contactez-nous",
+    "address": "15, rue Adeyemi, Ikeja, Lagos",
+    "phone": "+234 812 345 6789",
+    "email": "support@citycomfortline.com",
+    "rights": "Tous droits réservés."
   }
 }

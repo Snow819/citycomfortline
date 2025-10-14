@@ -4,14 +4,14 @@
     "about": "About Us",
     "services": "Services",
     "serviceAreas": "Service Areas",
-    "testimonials": "Testimonials", 
+    "testimonials": "Testimonials",
     "getQuote": "Get a Quote"
   },
   "hero": {
     "title1": "City Comfort Line",
     "title2": "Where Convenience Meets Care",
     "title3": "Your Property, Our Priority",
-    "subtitle":  "Your trusted partner for seamless relocations and spotless spaces. Reliable, efficient, and always caring.",
+    "subtitle": "Your trusted partner for seamless relocations and spotless spaces. Reliable, efficient, and always caring.",
     "button1": "Our Services",
     "button2": "Contact Us",
     "scroll": "Scroll to explore"
@@ -46,7 +46,6 @@
     "paragraph3": "With a strong focus on professionalism, punctuality, and customer satisfaction, <span class='highlight'>City Comfort Line</span> continues to earn the trust of individuals, families, and businesses throughout the region. We take pride in treating every space and every move as if it were our own  ensuring our clients experience unmatched comfort and peace of mind.",
     "quote": "City Comfort Line — Moving You Forward, Cleaning with Care."
   },
-  
   "ourServices": {
     "title": "Our Services",
     "subtitle": "Comprehensive moving and cleaning solutions for your needs",
@@ -120,47 +119,46 @@
   "serviceAreas": {
     "title": "Our Service Areas",
     "boundary": "We proudly serve the entire Ottawa region and surrounding communities.",
+    "viewMap": "🌐 View Larger Map",
     "areas": {
-      "ottawa": {
-        "name": "Ottawa",
-        "desc": "Main hub of operations"
-      },
-      "gatineau": {
-        "name": "Gatineau",
-        "desc": "Across the river service zone"
-      },
-      "kanata": {
-        "name": "Kanata",
-        "desc": "West-end clients"
-      },
-      "barrhaven": {
-        "name": "Barrhaven",
-        "desc": "Suburban cleaning coverage"
-      },
-      "orleans": {
-        "name": "Orleans",
-        "desc": "East-end service area"
-      },
-      "carleton_place": {
-        "name": "Carleton Place",
-        "desc": "Expanding west zone"
-      },
-      "cornwall": {
-        "name": "Cornwall",
-        "desc": "Southeast Ontario zone"
-      },
-      "arnprior": {
-        "name": "Arnprior",
-        "desc": "Outer Ottawa Valley area"
-      },
-      "smiths_falls": {
-        "name": "Smiths Falls",
-        "desc": "Rural community coverage"
-      },
-      "rockland": {
-        "name": "Rockland",
-        "desc": "Eastern suburb service"
-      }
+      "arnprior": "Arnprior",
+      "barrhaven": "Barrhaven",
+      "brockville": "Brockville",
+      "carleton_place": "Carleton Place",
+      "carp": "Carp",
+      "cornwall": "Cornwall",
+      "emburn": "Emburn",
+      "gatineau": "Gatineau",
+      "kanata": "Kanata",
+      "kemptville": "Kemptville",
+      "manotick": "Manotick",
+      "merrickville": "Merrickville",
+      "orleans": "Orleans",
+      "osgoode": "Osgoode",
+      "ottawa": "Ottawa",
+      "pembroke": "Pembroke",
+      "perth": "Perth",
+      "rockland": "Rockland",
+      "russell": "Russell",
+      "smith_falls": "Smith Falls",
+      "stittsville": "Stittsville",
+      "wakefield": "Wakefield"
     }
+  },
+  "footer": {
+    "description": "Your trusted partner for seamless relocations and spotless spaces. Reliable, efficient, and always caring.",
+    "quickLinksTitle": "Quick Links",
+    "links": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "serviceArea": "Service Area",
+      "testimonial": "Testimonial"
+    },
+    "contactTitle": "Contact Us",
+    "address": "15 Adeyemi Street, Ikeja, Lagos",
+    "phone": "+234 812 345 6789",
+    "email": "support@citycomfortline.com",
+    "rights": "All rights reserved."
   }
 }
