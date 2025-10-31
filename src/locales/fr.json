@@ -7,6 +7,13 @@
     "testimonials": "Témoignages",
     "getQuote": "Obtenir un devis"
   },
+    "satisfaction": {
+      "years": "Années d'expérience",
+      "clients": "Satisfaction des clients",
+      "moves": "Déménagements effectués",
+      "relocated": "Bureaux/Maisons déplacés",
+      "referral": "Taux de recommandation"
+    },  
   "hero": {
     "title1": "City Comfort Line",
     "title2": "Là où la commodité rencontre le soin",
@@ -116,6 +123,103 @@
       }
     }
   },
+    "faq": {
+      "title": "Questions Fréquemment Posées",
+      "subtitle": "Chez City Comfort Line, nous comprenons que le déménagement et le nettoyage s'accompagnent de nombreuses questions. Ci-dessous, nous avons répondu aux questions les plus courantes pour rendre votre expérience aussi fluide et sans stress que possible.",
+      "moving": {
+        "title": "FAQ Services de Déménagement",
+        "items": {
+          "coverage": {
+            "question": "Où fournissez-vous des services de déménagement?",
+            "answer": "Nous fournissons des services de déménagement partout au Canada, y compris les déménagements locaux et longue distance. Que vous déménagiez dans la même ville ou d'une province à l'autre, nous sommes là pour vous."
+          },
+          "booking": {
+            "question": "À quel point à l'avance dois-je réserver mon déménagement?",
+            "answer": "Nous recommandons de réserver votre déménagement au moins 2 à 4 semaines à l'avance pour garantir votre date de déménagement préférée, surtout pendant les saisons de pointe (printemps et été). Cependant, nous faisons de notre mieux pour accommoder les déménagements de dernière minute dans la mesure du possible."
+          },
+          "insurance": {
+            "question": "Êtes-vous autorisé et assuré?",
+            "answer": "Oui! City Comfort Line est une entreprise de déménagement entièrement autorisée et assurée, garantissant la sécurité de vos biens tout au long du processus de déménagement."
+          },
+          "estimate": {
+            "question": "Offrez-vous des estimations de déménagement gratuites?",
+            "answer": "Oui! Nous offrons des estimations à domicile et virtuelles pour vous fournir un devis de déménagement précis en fonction de vos besoins spécifiques. Contactez-nous pour planifier une évaluation."
+          },
+          "packing": {
+            "question": "Fournissez-vous des services d'emballage et du matériel?",
+            "answer": "Oui! Nous offrons des services d'emballage complets avec une gamme complète de boîtes et de fournitures d'emballage. Nos professionnels expérimentés emballer soigneusement vos biens pour garantir qu'ils arrivent en toute sécurité à destination."
+          },
+          "emergency": {
+            "question": "Gérez-vous les déménagements d'urgence ou de dernière minute?",
+            "answer": "Oui! Nous offrons des services d'urgence 24/7 et sommes disponibles pour les déménagements à court préavis. Bien que nous recommandions de réserver à l'avance, nous comprenons que des situations imprévues surviennent et nous ferons de notre mieux pour répondre à vos besoins urgents."
+          }
+        }
+      },
+      "cleaning": {
+        "title": "FAQ Services de Nettoyage",
+        "items": {
+          "services": {
+            "question": "Quels services de nettoyage offrez-vous?",
+            "answer": "Nous offrons une gamme complète de services de nettoyage, notamment le nettoyage après déménagement, le nettoyage en profondeur, le nettoyage résidentiel, le nettoyage commercial, le nettoyage de tapis et le nettoyage de vitres. Tous les services sont personnalisés pour répondre à vos besoins spécifiques."
+          },
+          "booking": {
+            "question": "À quel point à l'avance dois-je réserver un nettoyage?",
+            "answer": "Nous recommandons de réserver votre service de nettoyage au moins 1 à 2 semaines à l'avance, surtout pour les services de nettoyage après déménagement ou en profondeur. Cependant, nous pouvons souvent accommoder des demandes de nettoyage le jour même ou le lendemain selon la disponibilité."
+          },
+          "supplies": {
+            "question": "Dois-je fournir des produits de nettoyage?",
+            "answer": "Non, nous apportons tous les produits et équipements de nettoyage professionnels nécessaires. Si vous avez des préférences de produits spécifiques ou des sensibilités, veuillez nous en informer à l'avance et nous répondrons à vos besoins."
+          },
+          "estimate": {
+            "question": "Offrez-vous des estimations de nettoyage gratuites?",
+            "answer": "Oui! Nous fournissons des estimations gratuites pour tous nos services de nettoyage. Nous pouvons évaluer votre espace virtuellement ou en personne pour vous donner un devis précis en fonction de la taille de votre propriété et des services requis."
+          },
+          "products": {
+            "question": "Vos produits de nettoyage sont-ils écologiques?",
+            "answer": "Oui! Nous utilisons des produits de nettoyage écologiques et non toxiques comme norme. Ces produits sont sans danger pour les enfants, les animaux domestiques et les personnes sensibles, tout en offrant des résultats de nettoyage exceptionnels."
+          },
+          "frequency": {
+            "question": "Offrez-vous des services de nettoyage récurrents?",
+            "answer": "Absolument! Nous offrons des horaires de nettoyage flexibles, y compris des plans de nettoyage hebdomadaires, bihebdomadaires et mensuels. Les clients réguliers reçoivent une planification prioritaire et des tarifs spéciaux. Nous pouvons personnaliser un horaire de nettoyage qui vous convient le mieux."
+          }
+        }
+      }
+    },
+      "testimonials": {
+        "title": "Ce que disent nos clients",
+        "items": {
+          "1": {
+            "text": "City Comfort Line m’a offert la meilleure expérience ! La réservation était rapide et simple.",
+            "name": "Oluwatobi Adebayo",
+            "role": "Client"
+          },
+          "2": {
+            "text": "Des chauffeurs professionnels et un service irréprochable. Je les recommande vivement !",
+            "name": "Mary Johnson",
+            "role": "Voyageuse fréquente"
+          },
+          "3": {
+            "text": "J’ai été impressionné par la propreté et le confort du véhicule. Excellent service !",
+            "name": "James Okoro",
+            "role": "Cadre d’entreprise"
+          },
+          "4": {
+            "text": "Service excellent du début à la fin. L’équipe était professionnelle et ponctuelle !",
+            "name": "Sarah Williams",
+            "role": "Cliente d’entreprise"
+          },
+          "5": {
+            "text": "Meilleure expérience de déménagement ! Tout a été manipulé avec soin.",
+            "name": "David Chen",
+            "role": "Propriétaire"
+          },
+          "6": {
+            "text": "Je recommande vivement City Comfort Line : professionnel, efficace et abordable !",
+            "name": "Aisha Mohammed",
+            "role": "Cheffe d’entreprise"
+          }
+        }
+      },    
   "serviceAreas": {
     "title": "Nos zones de service",
     "boundary": "Nous desservons fièrement la région d’Ottawa et les communautés environnantes.",
@@ -156,8 +260,8 @@
       "testimonial": "Témoignage"
     },
     "contactTitle": "Contactez-nous",
-    "address": "15, rue Adeyemi, Ikeja, Lagos",
-    "phone": "+234 812 345 6789",
+    "address": "1338,Wellington St,West,Unit 10,Ottawa,Ontario K1Y 3B7 Canada.",
+    "phone": "+1 613 851 6775",
     "email": "support@citycomfortline.com",
     "rights": "Tous droits réservés."
   }

@@ -23,7 +23,7 @@
       <div class="footer-contact" data-aos="fade-up" data-aos-delay="300">
         <h3>{{ t('footer.contactTitle') }}</h3>
         <p><i class="bi bi-geo-alt-fill"></i> {{ t('footer.address') }}</p>
-        <p><i class="bi bi-telephone-fill"></i> {{ t('footer.phone') }}</p>
+        <p><i class="bi bi-telephone-fill"></i><a href="tel:+16138516775"> {{ t('footer.phone') }}</a></p>
         <p><i class="bi bi-envelope-fill"></i> {{ t('footer.email') }}</p>
 
         <div class="social-icons">
@@ -117,10 +117,12 @@ onMounted(() => {
   color: #2e7d32;
 }
 
-.footer-contact p {
+.footer-contact p,
+.footer-contact a {
   margin: 6px 0;
   color: #333;
   font-size: 0.95rem;
+  text-decoration: none;
 }
 
 .footer-contact i {

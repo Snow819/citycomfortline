@@ -1,13 +1,14 @@
 <template>
   <div class="form-wrapper" id="get-quote">
-    <div class="form-container ">
+    <div class="form-container">
       <h2>{{ t("getQuote.title") }}</h2>
 
       <form @submit.prevent="handleSubmit" class="moving-form">
         <!-- Email Address -->
         <div class="form-group">
           <label for="email">{{ t("getQuote.email") }}</label>
-          <input type="email" id="email" v-model="form.email" required :placeholder="t('getQuote.emailPlaceholder')" />
+          <input type="email" id="email" v-model="form.email" required
+            :placeholder="t('getQuote.emailPlaceholder')" />
         </div>
 
         <!-- Confirm Email Address -->
@@ -21,13 +22,15 @@
         <!-- Moving From -->
         <div class="form-group">
           <label for="from">{{ t("getQuote.from") }}</label>
-          <input type="text" id="from" v-model="form.from" required :placeholder="t('getQuote.fromPlaceholder')" />
+          <input type="text" id="from" v-model="form.from" required
+            :placeholder="t('getQuote.fromPlaceholder')" />
         </div>
 
         <!-- Moving To -->
         <div class="form-group">
           <label for="to">{{ t("getQuote.to") }}</label>
-          <input type="text" id="to" v-model="form.to" required :placeholder="t('getQuote.toPlaceholder')" />
+          <input type="text" id="to" v-model="form.to" required
+            :placeholder="t('getQuote.toPlaceholder')" />
         </div>
 
         <!-- Moving Date -->
@@ -49,9 +52,14 @@
           </select>
         </div>
 
+        <!-- Toast Notification inside the form -->
+        <transition name="fade">
+          <div v-if="toast.show" :class="['toast-inline', toast.type]">{{ toast.message }}</div>
+        </transition>
+
         <!-- Button -->
-        <button type="submit" :disabled="emailMismatch">
-          {{ t("getQuote.submit") }}
+        <button type="submit" :disabled="emailMismatch || loading">
+          {{ loading ? t("getQuote.sending") : t("getQuote.submit") }}
         </button>
       </form>
     </div>
@@ -85,6 +93,8 @@ export default {
     });
 
     const emailMismatch = ref(false);
+    const loading = ref(false);
+
     watch(
       () => [form.value.email, form.value.confirmEmail],
       ([email, confirm]) => {
@@ -92,12 +102,36 @@ export default {
       }
     );
 
+    // Toast
+    const toast = ref({
+      show: false,
+      message: "",
+      type: "success",
+    });
+
+    const showToast = (message, type = "success") => {
+      toast.value = { show: true, message, type };
+      setTimeout(() => (toast.value.show = false), 3000);
+    };
+
+    const resetForm = () => {
+      form.value = {
+        email: "",
+        confirmEmail: "",
+        from: "",
+        to: "",
+        date: "",
+        service: "",
+      };
+    };
+
     const handleSubmit = async () => {
       if (emailMismatch.value) {
-        alert(t("getQuote.emailMismatch"));
+        showToast(t("getQuote.emailMismatch"), "error");
         return;
       }
 
+      loading.value = true;
       try {
         const SERVICE_ID = "your_service_id";
         const TEMPLATE_ID = "your_template_id";
@@ -113,26 +147,27 @@ export default {
 
         await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
 
-        alert(t("getQuote.success"));
+        showToast(t("getQuote.success"), "success");
         resetForm();
       } catch (error) {
         console.error("Email sending error:", error);
-        alert(t("getQuote.failure"));
+        showToast(t("getQuote.failure"), "error");
+      } finally {
+        loading.value = false;
       }
     };
 
-    const resetForm = () => {
-      form.value = {
-        email: "",
-        confirmEmail: "",
-        from: "",
-        to: "",
-        date: "",
-        service: "",
-      };
+    return {
+      t,
+      locale,
+      currentLang,
+      changeLanguage,
+      form,
+      emailMismatch,
+      handleSubmit,
+      toast,
+      loading,
     };
-
-    return { t, locale, currentLang, changeLanguage, form, emailMismatch, handleSubmit };
   },
 };
 </script>
@@ -161,6 +196,7 @@ export default {
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.35);
   color: #fff;
   transition: all 0.3s ease;
+  position: relative;
 }
 
 h2 {
@@ -275,5 +311,37 @@ button:disabled {
     font-size: 17px;
     padding: 14px;
   }
+}
+
+/* ==== Inline Toast inside form ==== */
+.toast-inline {
+  position: absolute;
+  bottom: 70px; /* above the button */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0.95;
+  z-index: 10;
+}
+
+.toast-inline.success {
+  background-color: #4caf50;
+}
+
+.toast-inline.error {
+  background-color: #f44336;
+}
+
+/* Fade animation */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

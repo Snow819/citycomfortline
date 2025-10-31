@@ -1,6 +1,7 @@
 <script setup>
 import Navbar from '@/components/Navbar.vue';
 import HeroSection from '@/components/HeroSection.vue';
+import Satisfaction from '@/components/Satisfaction.vue';
 import GetQuote from '@/components/GetQuote.vue';
 import AboutView from '@/views/AboutView.vue';
 import FloatingQuoteButton from '@/components/FloatingQuoteButton.vue';
@@ -8,6 +9,7 @@ import OurServices from '@/components/OurServices.vue';
 import Testimonial from '@/components/Testimonial.vue';
 import FooterSection from '@/components/FooterSection.vue';
 import ServiceArea from '@/components/ServiceArea.vue';
+import FAQSection from '@/components/FAQSection.vue';
 </script>
 
 <template>
@@ -18,6 +20,11 @@ import ServiceArea from '@/components/ServiceArea.vue';
     <section id="home">
       <HeroSection />
     </section>
+
+     <!-- SATISFACTION SECTION-->
+     <section>
+      <Satisfaction/>
+     </section>
 
     <!-- ABOUT SECTION -->
     <section id="about">
@@ -33,6 +40,11 @@ import ServiceArea from '@/components/ServiceArea.vue';
     <section id="areas">
       <ServiceArea />
     </section>
+
+    <!-- FAQ's SECTION-->
+     <section>
+      <FAQSection />
+     </section>
 
     <!-- TESTIMONIALS SECTION -->
     <section id="testimonials">

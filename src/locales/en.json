@@ -16,6 +16,13 @@
     "button2": "Contact Us",
     "scroll": "Scroll to explore"
   },
+    "satisfaction": {
+      "years": "Years of Experience",
+      "clients": "Client Satisfaction",
+      "moves": "Completed Moves",
+      "relocated": "Offices/Homes Relocated",
+      "referral": "Referral Rate"
+    },  
   "getQuote": {
     "title": "Get Your Moving Quote",
     "email": "Email Address",
@@ -145,6 +152,103 @@
       "wakefield": "Wakefield"
     }
   },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "At City Comfort Line, we understand that moving and cleaning come with many questions. Below, we've answered some of the most common inquiries to help make your experience as smooth and stress-free as possible.",
+      "moving": {
+        "title": "Moving Services FAQ",
+        "items": {
+          "coverage": {
+            "question": "Where do you provide moving services?",
+            "answer": "We provide moving services across Canada, including local and long-distance relocations. Whether you're moving within the same city or across provinces, we've got you covered."
+          },
+          "booking": {
+            "question": "How far in advance should I book my move?",
+            "answer": "We recommend booking your move at least 2-4 weeks in advance to secure your preferred moving date, especially during peak moving seasons (spring and summer). However, we do our best to accommodate last-minute moves whenever possible."
+          },
+          "insurance": {
+            "question": "Are you licensed and insured?",
+            "answer": "Yes! City Comfort Line is a fully licensed and insured moving company, ensuring the safety of your belongings throughout the entire moving process."
+          },
+          "estimate": {
+            "question": "Do you offer free moving estimates?",
+            "answer": "Yes! We offer both in-home and virtual estimates to provide you with an accurate moving quote based on your specific needs. Contact us to schedule an assessment."
+          },
+          "packing": {
+            "question": "Do you provide packing services and materials?",
+            "answer": "Yes! We offer comprehensive packing services with a full line of boxes and packing supplies. Our experienced professionals will carefully pack your belongings to ensure they arrive safely at your destination."
+          },
+          "emergency": {
+            "question": "Do you handle emergency or last-minute moves?",
+            "answer": "Yes! We offer 24/7 emergency services and are available for short notice moves. While we recommend booking in advance, we understand that unexpected situations arise and we'll do our best to accommodate your urgent moving needs."
+          }
+        }
+      },
+      "cleaning": {
+        "title": "Cleaning Services FAQ",
+        "items": {
+          "services": {
+            "question": "What cleaning services do you offer?",
+            "answer": "We offer a comprehensive range of cleaning services including post-move cleaning, deep cleaning, residential cleaning, commercial cleaning, carpet cleaning, and window cleaning. All services are customized to meet your specific needs."
+          },
+          "booking": {
+            "question": "How far in advance should I book a cleaning?",
+            "answer": "We recommend booking your cleaning service at least 1-2 weeks in advance, especially for post-move or deep cleaning services. However, we can often accommodate same-day or next-day cleaning requests based on availability."
+          },
+          "supplies": {
+            "question": "Do I need to provide cleaning supplies?",
+            "answer": "No, we bring all necessary professional-grade cleaning supplies and equipment. If you have specific product preferences or sensitivities, please let us know in advance and we'll accommodate your needs."
+          },
+          "estimate": {
+            "question": "Do you offer free cleaning estimates?",
+            "answer": "Yes! We provide free estimates for all our cleaning services. We can assess your space virtually or in-person to give you an accurate quote based on the size of your property and the services required."
+          },
+          "products": {
+            "question": "Are your cleaning products eco-friendly?",
+            "answer": "Yes! We use environmentally friendly, non-toxic cleaning products as our standard. These products are safe for children, pets, and those with sensitivities, while still providing exceptional cleaning results."
+          },
+          "frequency": {
+            "question": "Do you offer recurring cleaning services?",
+            "answer": "Absolutely! We offer flexible cleaning schedules including weekly, bi-weekly, and monthly cleaning plans. Regular clients receive priority scheduling and special rates. We can customize a cleaning schedule that works best for you."
+          }
+        }
+      }
+    },
+      "testimonials": {
+        "title": "What Our Clients Say",
+        "items": {
+          "1": {
+            "text": "City Comfort Line gave me the best experience ever! Booking was fast and seamless.",
+            "name": "Oluwatobi Adebayo",
+            "role": "Customer"
+          },
+          "2": {
+            "text": "Professional drivers and top-notch service. I highly recommend them!",
+            "name": "Mary Johnson",
+            "role": "Frequent Traveler"
+          },
+          "3": {
+            "text": "I was impressed with how clean and comfortable the vehicle was. Great service overall!",
+            "name": "James Okoro",
+            "role": "Business Executive"
+          },
+          "4": {
+            "text": "Excellent service from start to finish. The team was professional and punctual!",
+            "name": "Sarah Williams",
+            "role": "Corporate Client"
+          },
+          "5": {
+            "text": "Best moving experience I've ever had. They handled everything with care!",
+            "name": "David Chen",
+            "role": "Homeowner"
+          },
+          "6": {
+            "text": "Highly recommend City Comfort Line. Professional, efficient, and affordable!",
+            "name": "Aisha Mohammed",
+            "role": "Business Owner"
+          }
+        }
+      },    
   "footer": {
     "description": "Your trusted partner for seamless relocations and spotless spaces. Reliable, efficient, and always caring.",
     "quickLinksTitle": "Quick Links",
@@ -156,9 +260,9 @@
       "testimonial": "Testimonial"
     },
     "contactTitle": "Contact Us",
-    "address": "15 Adeyemi Street, Ikeja, Lagos",
-    "phone": "+234 812 345 6789",
-    "email": "support&#64;citycomfortline.com",
+    "address": "1338,Wellington St,West,Unit 10,Ottawa,Ontario K1Y 3B7 Canada.",
+    "phone": "+1 613 851 6775",
+    "email": "support@citycomfortline.com",
     "rights": "All rights reserved."
   }
 }
