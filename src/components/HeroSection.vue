@@ -255,7 +255,7 @@ export default {
   }
 
   .hero-text {
-    font-size: clamp(1.8rem, 8vw, 3.5rem);
+    font-size: clamp(1.2rem, 3vw, 2rem);
   }
 
   .hero-subtitle {
