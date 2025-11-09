@@ -11,18 +11,20 @@ import en from './locales/en.json'
 import fr from './locales/fr.json'
 import zh from './locales/zh.json'
 
+// Get saved language from localStorage or default to 'en'
+const savedLang = localStorage.getItem('lang') || 'en'
+
 // Create i18n instance
 const i18n = createI18n({
   legacy: false,
-  locale: 'en', 
+  locale: savedLang, // use saved language
   fallbackLocale: 'en',
-  messages: { en, fr, zh }
+  messages: { en, fr, zh },
+  allowComposition: true,
+  missingWarn: false,
+  fallbackWarn: false,
+  warnHtmlInMessage: 'off', 
 })
-
-const savedLang = localStorage.getItem('lang') || 'en'
-
-
-
 
 const app = createApp(App)
 app.use(router)

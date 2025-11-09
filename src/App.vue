@@ -1,21 +1,19 @@
 <template>
   <div id="app">
-    <transition name="fade">
-      <!-- 🌟 Preloader -->
-      <div v-if="loading" class="preloader">
-        <div class="car-wrapper">
-          <img :src="logo" alt="City Comfort Line" class="moving-car" />
-          <div class="road-line"></div>
-        </div>
-        <div class="loader"></div>
+    <!-- 🌟 Preloader -->
+    <div v-if="loading" class="preloader">
+      <div class="car-wrapper">
+        <img :src="logo" alt="City Comfort Line" class="moving-car" />
+        <div class="road-line"></div>
       </div>
+      <div class="loader"></div>
+    </div>
 
-      <!-- 🌟 Main App -->
-      <div v-else class="content">
-        <Navbar />
-        <router-view />
-      </div>
-    </transition>
+    <!-- 🌟 Main App -->
+    <div v-else class="content">
+      <Navbar v-if="!loading" />
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -157,18 +155,6 @@ export default {
   to {
     transform: rotate(360deg);
   }
-}
-
-/* ================================================
-   🌟 TRANSITIONS
-================================================= */
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.8s ease;
-}
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
 }
 
 /* Fade-in main content */
