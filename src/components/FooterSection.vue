@@ -37,7 +37,7 @@
 
     <!-- Copyright -->
     <div class="footer-bottom">
-      <p>© {{ new Date().getFullYear() }} City Comfort Line. {{ t('footer.rights') }}</p>
+      <p>© {{ new Date().getFullYear() }} Swift Comfort Line. {{ t('footer.rights') }}</p>
     </div>
   </footer>
 </template>

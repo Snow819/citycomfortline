@@ -15,7 +15,7 @@
       "referral": "Taux de recommandation"
     },  
   "hero": {
-    "title1": "City Comfort Line",
+    "title1": "Swift Comfort Line",
     "title2": "Là où la commodité rencontre le soin",
     "title3": "Votre propriété, notre priorité",
     "subtitle": "Votre partenaire de confiance pour des déménagements sans stress et des espaces impeccables. Fiable, efficace et toujours attentionné.",
@@ -23,35 +23,51 @@
     "button2": "Contactez-nous",
     "scroll": "Faites défiler pour explorer"
   },
-  "getQuote": {
-    "title": "Obtenez votre devis de déménagement",
-    "email": "Adresse e-mail",
-    "emailPlaceholder": "Entrez votre e-mail",
-    "confirmEmail": "Confirmez l’adresse e-mail",
-    "confirmEmailPlaceholder": "Saisissez à nouveau votre e-mail",
-    "emailMismatch": "Les e-mails ne correspondent pas",
-    "from": "Déménagement de",
-    "fromPlaceholder": "Entrez l’adresse actuelle",
-    "to": "Déménagement vers",
-    "toPlaceholder": "Entrez la nouvelle adresse",
-    "date": "Date de déménagement",
-    "service": "Nos services",
-    "selectService": "Sélectionnez un service",
-    "option1": "Déménagement résidentiel",
-    "option2": "Déménagement commercial",
-    "option3": "Emballage et déballage",
-    "option4": "Services de stockage",
-    "option5": "Nettoyage après déménagement",
-    "submit": "Obtenir un devis",
-    "success": "Votre demande de devis a été envoyée avec succès !",
-    "failure": "Échec de l’envoi du devis. Veuillez réessayer plus tard."
-  },
+    "getQuote": {
+      "title": "Obtenir un devis",
+      "name": "Nom complet",
+      "namePlaceholder": "Entrez votre nom complet",
+      "phone": "Numéro de téléphone",
+      "phonePlaceholder": "Entrez votre numéro de téléphone",
+      "email": "Adresse e-mail",
+      "emailPlaceholder": "Entrez votre e-mail",
+      "confirmEmail": "Confirmer l'adresse e-mail",
+      "confirmEmailPlaceholder": "Saisissez à nouveau votre e-mail",
+      "emailMismatch": "Les adresses e-mail ne correspondent pas",
+      "from": "Adresse de départ",
+      "fromPlaceholder": "Entrez l'adresse actuelle",
+      "to": "Destination",
+      "toPlaceholder": "Entrez l'adresse de destination",
+      "date": "Date du service",
+      "service": "Nos services",
+      "selectService": "Sélectionnez un service",
+      "option1": "Emballage",
+      "option2": "Transport",
+      "option3": "Stockage",
+      "option4": "Nettoyage",
+      "option5": "Autre",
+      "chooseServiceType": "Choisissez le type de service",
+      "sending": "Envoi...",
+      "submit": "Envoyer",
+      "success": "Votre demande a été envoyée avec succès !",
+      "failure": "Échec de l'envoi de votre demande. Veuillez réessayer.",
+      
+      "cleaningAddress": "Adresse de nettoyage",
+      "cleaningType": "Type de nettoyage",
+      "cleaningRooms": "Nombre de pièces",
+      "additionalCleaningDetails": "Exigences supplémentaires / Spécifications",
+  
+      "movingRooms": "Nombre de pièces",
+      "movingFrom": "Adresse de départ",
+      "movingTo": "Adresse de destination",
+      "additionalMovingDetails": "Exigences supplémentaires / Spécifications"
+    },  
   "about": {
     "title": "À propos de nous",
-    "paragraph1": "Chez City Comfort Line, nous fixons la norme en matière de services de déménagement et de nettoyage fiables et professionnels à Ottawa et dans les villes voisines. Notre mission est simple : offrir des solutions fluides et sans stress alliant commodité, qualité et soin.",
-    "paragraph2": "Nous sommes spécialisés dans les déménagements résidentiels et commerciaux, les services d’entrée/sortie, l’enlèvement des déchets et les solutions de nettoyage complètes adaptées à vos besoins. Qu’il s’agisse d’un déménagement résidentiel, d’un transfert de bureau ou d’un rafraîchissement de propriété, notre équipe formée veille à ce que chaque tâche soit réalisée en toute sécurité, efficacement et avec la plus grande attention aux détails.",
-    "paragraph3": "Grâce à notre professionnalisme, notre ponctualité et notre souci de la satisfaction du client, City Comfort Line continue de gagner la confiance des particuliers, des familles et des entreprises dans toute la région. Nous sommes fiers de traiter chaque espace et chaque déménagement comme s’il s’agissait du nôtre, garantissant ainsi à nos clients confort et tranquillité d’esprit.",
-    "quote": "City Comfort Line — Vous faire avancer, nettoyer avec soin."
+    "paragraph1": "Chez Swift Comfort Line, nous fixons la norme en matière de services de déménagement et de nettoyage fiables et professionnels à Ottawa et dans les villes voisines. Notre mission est simple : offrir des solutions fluides et sans stress alliant commodité, qualité et soin.",
+    "paragraph2": "Nous sommes spécialisés dans les déménagements résidentiels et commerciaux, les services d'entrée/sortie, l'enlèvement des déchets et les solutions de nettoyage complètes adaptées à vos besoins. Qu'il s'agisse d'un déménagement résidentiel, d'un transfert de bureau ou d'un rafraîchissement de propriété, notre équipe formée veille à ce que chaque tâche soit réalisée en toute sécurité, efficacement et avec la plus grande attention aux détails.",
+    "paragraph3": "Grâce à notre professionnalisme, notre ponctualité et notre souci de la satisfaction du client, Swift Comfort Line continue de gagner la confiance des particuliers, des familles et des entreprises dans toute la région. Nous sommes fiers de traiter chaque espace et chaque déménagement comme s'il s'agissait du nôtre, garantissant ainsi à nos clients confort et tranquillité d'esprit.",
+    "quote": "Swift Comfort Line — Vous faire avancer, nettoyer avec soin."
   },
   "ourServices": {
     "title": "Nos Services",
@@ -61,27 +77,27 @@
       "items": {
         "residential": {
           "title": "Déménagements de Courte et Longue Distance",
-          "content": "Nous gérons les déménagements de toute distance — que vous changiez de rue ou de province. Les déménagements locaux bénéficient d’un service le jour même, tandis que les longs trajets incluent la planification d’itinéraire, le suivi GPS et une couverture d’assurance complète. Service porte à porte avec tarification transparente selon la distance et le volume. Peu importe la distance, vos biens arrivent en toute sécurité et à temps."
+          "content": "Nous gérons les déménagements de toute distance — que vous changiez de rue ou de province. Les déménagements locaux bénéficient d'un service le jour même, tandis que les longs trajets incluent la planification d'itinéraire, le suivi GPS et une couverture d'assurance complète. Service porte à porte avec tarification transparente selon la distance et le volume. Peu importe la distance, vos biens arrivent en toute sécurité et à temps."
         },
         "apartment": {
           "title": "Déménagement Résidentiel et Commercial",
-          "content": "Chez City Comfort Line, nous savons qu’un déménagement résidentiel diffère d’un transfert d’entreprise — chacun demande une attention, une planification et une expertise particulières. C’est pourquoi nous proposons des solutions dédiées pour répondre aux besoins uniques de nos clients résidentiels et professionnels."
+          "content": "Chez Swift Comfort Line, nous savons qu'un déménagement résidentiel diffère d'un transfert d'entreprise — chacun demande une attention, une planification et une expertise particulières. C'est pourquoi nous proposons des solutions dédiées pour répondre aux besoins uniques de nos clients résidentiels et professionnels."
         },
         "office": {
-          "title": "Livraison d’Équipement Lourd",
-          "content": "City Comfort Line est spécialisée dans la livraison sûre et efficace d’équipements lourds, de machines et d’objets surdimensionnés nécessitant un maniement expert et un transport spécialisé. Que vous soyez entrepreneur, gestionnaire immobilier ou particulier, notre équipe expérimentée assure le déplacement de vos articles robustes avec précision et soin."
+          "title": "Livraison d'Équipement Lourd",
+          "content": "Swift Comfort Line est spécialisée dans la livraison sûre et efficace d'équipements lourds, de machines et d'objets surdimensionnés nécessitant un maniement expert et un transport spécialisé. Que vous soyez entrepreneur, gestionnaire immobilier ou particulier, notre équipe expérimentée assure le déplacement de vos articles robustes avec précision et soin."
         },
         "packing": {
           "title": "Service de Débarras et Enlèvement",
-          "content": "Libérez de l’espace et reprenez le contrôle de votre propriété grâce à notre service professionnel de débarras. Que vous vidiez des années d’accumulation, prépariez un déménagement ou rénoviez, notre équipe s’occupe du tri, du levage et du transport pour vous."
+          "content": "Libérez de l'espace et reprenez le contrôle de votre propriété grâce à notre service professionnel de débarras. Que vous vidiez des années d'accumulation, prépariez un déménagement ou rénoviez, notre équipe s'occupe du tri, du levage et du transport pour vous."
         },
         "furniture": {
           "title": "Démontage et Remontage de Meubles",
-          "content": "Le déplacement de meubles volumineux peut être l’un des aspects les plus complexes d’un déménagement. Nous offrons un service professionnel de démontage et de remontage pour garantir un transport sûr et sans dommage. Notre équipe connaît chaque type de mobilier — des lits aux systèmes modulaires — vous faisant gagner temps et tranquillité."
+          "content": "Le déplacement de meubles volumineux peut être l'un des aspects les plus complexes d'un déménagement. Nous offrons un service professionnel de démontage et de remontage pour garantir un transport sûr et sans dommage. Notre équipe connaît chaque type de mobilier — des lits aux systèmes modulaires — vous faisant gagner temps et tranquillité."
         },
         "specialty": {
-          "title": "Transport d’Objets Spéciaux",
-          "content": "Certains biens nécessitent une attention particulière, un équipement adapté et une manipulation experte. City Comfort Line assure le transport sécurisé d’articles délicats, fragiles ou de grande valeur tels que pianos, œuvres d’art et objets précieux, avec le soin et le respect qu’ils méritent."
+          "title": "Transport d'Objets Spéciaux",
+          "content": "Certains biens nécessitent une attention particulière, un équipement adapté et une manipulation experte. Swift Comfort Line assure le transport sécurisé d'articles délicats, fragiles ou de grande valeur tels que pianos, œuvres d'art et objets précieux, avec le soin et le respect qu'ils méritent."
         },
         "internal": {
           "title": "Déménagements Internes",
@@ -89,7 +105,7 @@
         },
         "local": {
           "title": "Déménagements Locaux et Longue Distance",
-          "content": "Que vous déménagiez à proximité ou à travers le pays, City Comfort Line fournit un service complet pour rendre votre expérience fluide et sans tracas. Chaque déménagement étant unique, nous proposons des solutions sur mesure garantissant la sécurité et la ponctualité de vos biens, quelle que soit la distance."
+          "content": "Que vous déménagiez à proximité ou à travers le pays, Swift Comfort Line fournit un service complet pour rendre votre expérience fluide et sans tracas. Chaque déménagement étant unique, nous proposons des solutions sur mesure garantissant la sécurité et la ponctualité de vos biens, quelle que soit la distance."
         }
       }
     },
@@ -98,15 +114,15 @@
       "items": {
         "postMove": {
           "title": "Nettoyage de Bureaux et Petites Entreprises",
-          "content": "Gardez votre espace de travail impeccable et professionnel grâce aux services de nettoyage commercial de City Comfort Line. Nous offrons un nettoyage fiable et minutieux pour bureaux, commerces et cliniques, créant des environnements sains et productifs. Notre équipe s’occupe des bureaux, halls, sols, vitres, cuisines et sanitaires selon un horaire quotidien, hebdomadaire ou mensuel, avec options de nettoyage en profondeur, après travaux ou désinfection. Produits écologiques, service hors heures d’ouverture, personnel formé — sans contrat à long terme ni frais cachés."
+          "content": "Gardez votre espace de travail impeccable et professionnel grâce aux services de nettoyage commercial de Swift Comfort Line. Nous offrons un nettoyage fiable et minutieux pour bureaux, commerces et cliniques, créant des environnements sains et productifs. Notre équipe s'occupe des bureaux, halls, sols, vitres, cuisines et sanitaires selon un horaire quotidien, hebdomadaire ou mensuel, avec options de nettoyage en profondeur, après travaux ou désinfection. Produits écologiques, service hors heures d'ouverture, personnel formé — sans contrat à long terme ni frais cachés."
         },
         "deep": {
           "title": "Nettoyage en Profondeur",
-          "content": "Un nettoyage complet et détaillé allant au-delà de l’entretien régulier. Nous désinfectons les zones difficiles d’accès, éliminons la saleté incrustée et redonnons fraîcheur et éclat à chaque pièce. Idéal avant un événement ou pour un grand entretien saisonnier."
+          "content": "Un nettoyage complet et détaillé allant au-delà de l'entretien régulier. Nous désinfectons les zones difficiles d'accès, éliminons la saleté incrustée et redonnons fraîcheur et éclat à chaque pièce. Idéal avant un événement ou pour un grand entretien saisonnier."
         },
         "residential": {
-          "title": "Nettoyage d’Appartements et Airbnb",
-          "content": "Conçu pour les locataires, propriétaires et hôtes exigeant des espaces impeccables rapidement. Nous nous occupons de tout — dépoussiérage, aspiration, désinfection des salles de bain et cuisines, préparation des lits et réapprovisionnement des essentiels. Parfait pour les entrées, sorties ou la préparation d’un logement Airbnb avant l’arrivée d’un invité."
+          "title": "Nettoyage d'Appartements et Airbnb",
+          "content": "Conçu pour les locataires, propriétaires et hôtes exigeant des espaces impeccables rapidement. Nous nous occupons de tout — dépoussiérage, aspiration, désinfection des salles de bain et cuisines, préparation des lits et réapprovisionnement des essentiels. Parfait pour les entrées, sorties ou la préparation d'un logement Airbnb avant l'arrivée d'un invité."
         },
         "commercial": {
           "title": "Nettoyage Commercial",
@@ -114,10 +130,10 @@
         },
         "carpet": {
           "title": "Nettoyage de Tapis et de Meubles",
-          "content": "Redonnez vie à vos espaces grâce à notre service professionnel de nettoyage de tapis et de meubles. Nous éliminons la saleté incrustée, les taches et les allergènes à l’aide de méthodes sûres et efficaces, ravivant couleur et fraîcheur. Idéal pour bureaux, appartements et commerces."
+          "content": "Redonnez vie à vos espaces grâce à notre service professionnel de nettoyage de tapis et de meubles. Nous éliminons la saleté incrustée, les taches et les allergènes à l'aide de méthodes sûres et efficaces, ravivant couleur et fraîcheur. Idéal pour bureaux, appartements et commerces."
         },
         "window": {
-          "title": "Nettoyage d’Entrée / de Sortie",
+          "title": "Nettoyage d'Entrée / de Sortie",
           "content": "Simplifiez votre déménagement grâce à notre service complet de nettoyage pour espaces vides. Nous nettoyons et désinfectons chaque coin — sols, vitres, cuisines et salles de bain — afin que votre ancien logement soit impeccable et le nouveau prêt à emménager. Parfait pour locataires, propriétaires et gestionnaires immobiliers."
         }
       }
@@ -125,7 +141,7 @@
   },
     "faq": {
       "title": "Questions Fréquemment Posées",
-      "subtitle": "Chez City Comfort Line, nous comprenons que le déménagement et le nettoyage s'accompagnent de nombreuses questions. Ci-dessous, nous avons répondu aux questions les plus courantes pour rendre votre expérience aussi fluide et sans stress que possible.",
+      "subtitle": "Chez Swift Comfort Line, nous comprenons que le déménagement et le nettoyage s'accompagnent de nombreuses questions. Ci-dessous, nous avons répondu aux questions les plus courantes pour rendre votre expérience aussi fluide et sans stress que possible.",
       "moving": {
         "title": "FAQ Services de Déménagement",
         "items": {
@@ -139,7 +155,7 @@
           },
           "insurance": {
             "question": "Êtes-vous autorisé et assuré?",
-            "answer": "Oui! City Comfort Line est une entreprise de déménagement entièrement autorisée et assurée, garantissant la sécurité de vos biens tout au long du processus de déménagement."
+            "answer": "Oui! Swift Comfort Line est une entreprise de déménagement entièrement autorisée et assurée, garantissant la sécurité de vos biens tout au long du processus de déménagement."
           },
           "estimate": {
             "question": "Offrez-vous des estimations de déménagement gratuites?",
@@ -168,7 +184,7 @@
           },
           "supplies": {
             "question": "Dois-je fournir des produits de nettoyage?",
-            "answer": "Non, nous apportons tous les produits et équipements de nettoyage professionnels nécessaires. Si vous avez des préférences de produits spécifiques ou des sensibilités, veuillez nous en informer à l'avance et nous répondrons à vos besoins."
+            "answer": "Oui, nous pouvons nous en occuper s’il s’agit d’un travail ponctuel et nous veillerons à ce que tout soit réalisé à votre satisfaction.Cependant, s’il s’agit d’un projet récurrent ou à long terme, nous discuterons de la meilleure façon de le gérer efficacement.Cela nous aide à planifier les horaires, maintenir la cohérence et offrir des résultats de haute qualité adaptés à vos besoins."
           },
           "estimate": {
             "question": "Offrez-vous des estimations de nettoyage gratuites?",
@@ -189,7 +205,7 @@
         "title": "Ce que disent nos clients",
         "items": {
           "1": {
-            "text": "City Comfort Line m’a offert la meilleure expérience ! La réservation était rapide et simple.",
+            "text": "Swift Comfort Line m'a offert la meilleure expérience ! La réservation était rapide et simple.",
             "name": "Oluwatobi Adebayo",
             "role": "Client"
           },
@@ -199,14 +215,14 @@
             "role": "Voyageuse fréquente"
           },
           "3": {
-            "text": "J’ai été impressionné par la propreté et le confort du véhicule. Excellent service !",
+            "text": "J'ai été impressionné par la propreté et le confort du véhicule. Excellent service !",
             "name": "James Okoro",
-            "role": "Cadre d’entreprise"
+            "role": "Cadre d'entreprise"
           },
           "4": {
-            "text": "Service excellent du début à la fin. L’équipe était professionnelle et ponctuelle !",
+            "text": "Service excellent du début à la fin. L'équipe était professionnelle et ponctuelle !",
             "name": "Sarah Williams",
-            "role": "Cliente d’entreprise"
+            "role": "Cliente d'entreprise"
           },
           "5": {
             "text": "Meilleure expérience de déménagement ! Tout a été manipulé avec soin.",
@@ -214,15 +230,15 @@
             "role": "Propriétaire"
           },
           "6": {
-            "text": "Je recommande vivement City Comfort Line : professionnel, efficace et abordable !",
+            "text": "Je recommande vivement Swift Comfort Line : professionnel, efficace et abordable !",
             "name": "Aisha Mohammed",
-            "role": "Cheffe d’entreprise"
+            "role": "Cheffe d'entreprise"
           }
         }
       },    
   "serviceAreas": {
     "title": "Nos zones de service",
-    "boundary": "Nous desservons fièrement la région d’Ottawa et les communautés environnantes.",
+    "boundary": "Nous desservons fièrement la région d'Ottawa et les communautés environnantes.",
     "viewMap": "🌐 Voir la carte complète",
     "areas": {
       "arnprior": "Arnprior",
@@ -262,7 +278,7 @@
     "contactTitle": "Contactez-nous",
     "address": "1338,Wellington St,West,Unit 10,Ottawa,Ontario K1Y 3B7 Canada.",
     "phone": "+1 613 851 6775",
-    "email": "support@citycomfortline.com",
+    "email": "support@swiftcomfortline.com",
     "rights": "Tous droits réservés."
   }
 }

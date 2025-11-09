@@ -20,10 +20,10 @@
   
   // Numbers stay static; labels come from translations
   const stats = ref([
-    { icon: 'fas fa-briefcase', labelKey: 'satisfaction.years', target: 10, current: 0, suffix: '+' },
+    { icon: 'fas fa-briefcase', labelKey: 'satisfaction.years', target: 5, current: 0, suffix: '+' },
     { icon: 'fas fa-smile', labelKey: 'satisfaction.clients', target: 100, current: 0, suffix: '%' },
-    { icon: 'fas fa-truck-moving', labelKey: 'satisfaction.moves', target: 280, current: 0, suffix: '+' },
-    { icon: 'fas fa-building', labelKey: 'satisfaction.relocated', target: 180, current: 0, suffix: '+' },
+    { icon: 'fas fa-truck-moving', labelKey: 'satisfaction.moves', target: 180, current: 0, suffix: '+' },
+    { icon: 'fas fa-building', labelKey: 'satisfaction.relocated', target: 80, current: 0, suffix: '+' },
     { icon: 'fas fa-users', labelKey: 'satisfaction.referral', target: 97, current: 0, suffix: '%' }
   ])
   

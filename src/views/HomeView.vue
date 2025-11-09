@@ -57,7 +57,10 @@ import FAQSection from '@/components/FAQSection.vue';
     </section>
 
     <!-- FOOTER SECTION -->
-    <FooterSection />
+     <section>
+      <FooterSection />
+     </section>
+    
 
     <!-- FLOATING BUTTON -->
     <FloatingQuoteButton />
