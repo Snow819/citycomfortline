@@ -341,7 +341,7 @@ select,
 textarea {
   padding: 12px;
   border-radius: 6px;
-  border: 1px solid #444;
+  border: none;
   background: #fff;
   color: #222;
   font-size: 15px;
@@ -351,7 +351,7 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: #26a69a;
+  border-color: #1b5e20;
   outline: none;
 }
 
@@ -365,7 +365,7 @@ textarea:focus {
   flex: 1;
   padding: 12px;
   border-radius: 6px;
-  border: 1px solid #444;
+  border: none;
   background: #fff;
   font-weight: 600;
   cursor: pointer;
@@ -373,9 +373,9 @@ textarea:focus {
 }
 
 .service-options button.active {
-  background: #26a69a;
+  background: #1b5e20;
   color: #fff;
-  border-color: #26a69a;
+  border-color: #1b5e20;
 }
 
 button[type="submit"] {

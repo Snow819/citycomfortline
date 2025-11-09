@@ -7,7 +7,7 @@ import AboutView from '@/views/AboutView.vue';
 import FloatingQuoteButton from '@/components/FloatingQuoteButton.vue';
 import OurServices from '@/components/OurServices.vue';
 import Testimonial from '@/components/Testimonial.vue';
-import FooterSection from '@/components/FooterSection.vue';
+import Footer from '@/components/Footer.vue';
 import ServiceArea from '@/components/ServiceArea.vue';
 import FAQSection from '@/components/FAQSection.vue';
 </script>
@@ -58,7 +58,7 @@ import FAQSection from '@/components/FAQSection.vue';
 
     <!-- FOOTER SECTION -->
      <section>
-      <FooterSection />
+      <Footer />
      </section>
     
 
