@@ -1,9 +1,9 @@
 {
   "navbar": {
     "home": "Accueil",
-    "about": "À propos de nous",
+    "about": "À propos",
     "services": "Services",
-    "serviceAreas": "Zones de service",
+    "serviceAreas": "Zones desservies",
     "testimonials": "Témoignages",
     "getQuote": "Obtenir un devis"
   },
@@ -276,9 +276,9 @@
       "testimonial": "Témoignage"
     },
     "contactTitle": "Contactez-nous",
-    "address": "1338,Wellington St,West,Unit 10,Ottawa,Ontario K1Y 3B7 Canada.",
+    "address": "1338 Wellington St West, Unit 10, Ottawa, Ontario, K1Y 3B7 Canada.",
     "phone": "+1 613 851 6775",
-    "email": "support@swiftcomfortline.com",
+    "email": "support{'@'}swiftcomfortline.com",
     "rights": "Tous droits réservés."
   }
 }

@@ -276,9 +276,9 @@
       "testimonial": "客户评价"
     },
     "contactTitle": "联系我们",
-    "address": "1338,Wellington St,West,Unit 10,Ottawa,Ontario K1Y 3B7 Canada.",
+    "address": "1338 Wellington St West, Unit 10, Ottawa, Ontario, K1Y 3B7 Canada.",
     "phone": "+1 613 851 6775",
-    "email": "support@swiftcomfortline.com",
+    "email": "support{'@'}swiftcomfortline.com",
     "rights": "版权所有。"
   }
 }
