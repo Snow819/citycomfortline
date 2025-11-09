@@ -8,7 +8,7 @@
     "getQuote": "Get a Quote"
   },
   "hero": {
-    "title1": "City Comfort Line",
+    "title1": "Swift Comfort Line",
     "title2": "Where Convenience Meets Care",
     "title3": "Your Property, Our Priority",
     "subtitle": "Your trusted partner for seamless relocations and spotless spaces. Reliable, efficient, and always caring.",
@@ -23,35 +23,51 @@
       "relocated": "Offices/Homes Relocated",
       "referral": "Referral Rate"
     },  
-  "getQuote": {
-    "title": "Get Your Moving Quote",
-    "email": "Email Address",
-    "emailPlaceholder": "Enter your email",
-    "confirmEmail": "Confirm Email Address",
-    "confirmEmailPlaceholder": "Re-enter your email",
-    "emailMismatch": "Emails do not match",
-    "from": "Moving From",
-    "fromPlaceholder": "Enter current address",
-    "to": "Moving To",
-    "toPlaceholder": "Enter new address",
-    "date": "Moving Date",
-    "service": "Our Services",
-    "selectService": "Select a service",
-    "option1": "Residential Moving",
-    "option2": "Commercial Moving",
-    "option3": "Packing & Unpacking",
-    "option4": "Storage Services",
-    "option5": "Cleaning After Move",
-    "submit": "Get Quote",
-    "success": "Your quote request has been sent successfully!",
-    "failure": "Failed to send the quote. Please try again later."
-  },
+      "getQuote": {
+        "title": "Get a Quote",
+        "name": "Full Name",
+        "namePlaceholder": "Enter your full name",
+        "phone": "Phone Number",
+        "phonePlaceholder": "Enter your phone number",
+        "email": "Email Address",
+        "emailPlaceholder": "Enter your email",
+        "confirmEmail": "Confirm Email Address",
+        "confirmEmailPlaceholder": "Re-enter your email",
+        "emailMismatch": "Email addresses do not match",
+        "from": "From",
+        "fromPlaceholder": "Enter current address",
+        "to": "To",
+        "toPlaceholder": "Enter destination address",
+        "date": "Date of Service",
+        "service": "Our Services",
+        "selectService": "Select a Service",
+        "option1": "Packing",
+        "option2": "Transportation",
+        "option3": "Storage",
+        "option4": "Cleaning",
+        "option5": "Other",
+        "chooseServiceType": "Choose Service Type",
+        "sending": "Sending...",
+        "submit": "Submit",
+        "success": "Your request has been sent successfully!",
+        "failure": "Failed to send your request. Please try again.",
+        
+        "cleaningAddress": "Cleaning Address",
+        "cleaningType": "Type of Cleaning",
+        "cleaningRooms": "Number of Rooms",
+        "additionalCleaningDetails": "Additional Requirements / Specifications",
+    
+        "movingRooms": "Number of Rooms",
+        "movingFrom": "Moving From",
+        "movingTo": "Moving To",
+        "additionalMovingDetails": "Additional Requirements / Specifications"
+      },      
   "about": {
     "title": "About Us",
-    "paragraph1": "At City Comfort Line, we set the standard for reliable and professional moving and cleaning services across Ottawa and neighbouring cities. Our mission is simple — to deliver seamless, stress-free solutions that combine convenience, quality, and care.",
-    "paragraph2": "We specialize in residential and commercial moving, move-in/move-out services, junk removal, and comprehensive cleaning solutions tailored to your needs. Whether it’s a household relocation, office move, or property refresh, our trained team ensures every job is completed safely, efficiently, and with the highest attention to detail.",
-    "paragraph3": "With a strong focus on professionalism, punctuality, and customer satisfaction, City Comfort Line continues to earn the trust of individuals, families, and businesses throughout the region. We take pride in treating every space and every move as if it were our own — ensuring our clients experience unmatched comfort and peace of mind.",
-    "quote": "City Comfort Line — Moving You Forward, Cleaning with Care."
+    "paragraph1": "At Swift Comfort Line, we set the standard for reliable and professional moving and cleaning services across Ottawa and neighbouring cities. Our mission is simple — to deliver seamless, stress-free solutions that combine convenience, quality, and care.",
+    "paragraph2": "We specialize in residential and commercial moving, move-in/move-out services, junk removal, and comprehensive cleaning solutions tailored to your needs. Whether it's a household relocation, office move, or property refresh, our trained team ensures every job is completed safely, efficiently, and with the highest attention to detail.",
+    "paragraph3": "With a strong focus on professionalism, punctuality, and customer satisfaction, Swift Comfort Line continues to earn the trust of individuals, families, and businesses throughout the region. We take pride in treating every space and every move as if it were our own — ensuring our clients experience unmatched comfort and peace of mind.",
+    "quote": "Swift Comfort Line — Moving You Forward, Cleaning with Care."
   },
   "ourServices": {
     "title": "Our Services",
@@ -65,31 +81,31 @@
         },
         "apartment": {
           "title": "Residential & Business Moving",
-          "content": "At City Comfort Line, we understand that moving a home is different from relocating a business — each requires specialized care, planning, and expertise. That's why we offer dedicated moving solutions tailored to meet the unique needs of both residential and commercial clients."
+          "content": "At Swift Comfort Line, we understand that moving a home is different from relocating a business — each requires specialized care, planning, and expertise. That's why we offer dedicated moving solutions tailored to meet the unique needs of both residential and commercial clients."
         },
         "office": {
           "title": "Heavy Equipment Delivery",
-          "content": "City Comfort Line specializes in the safe and efficient delivery of heavy equipment, machinery, and oversized items that require expert handling and specialized transportation. Whether you're a business owner, contractor, property manager, or homeowner, we have the experience, equipment, and trained personnel to move your heavy-duty items with precision and care."
+          "content": "Swift Comfort Line specializes in the safe and efficient delivery of heavy equipment, machinery, and oversized items that require expert handling and specialized transportation. Whether you're a business owner, contractor, property manager, or homeowner, we have the experience, equipment, and trained personnel to move your heavy-duty items with precision and care."
         },
         "packing": {
           "title": "Junk Removal Services",
-          "content": "Declutter your space and reclaim your property with City Comfort Line's professional junk removal services. Whether you're clearing out years of accumulated items, preparing for a move, renovating your home, or simply need to dispose of unwanted belongings, our experienced team handles all the heavy lifting and hauling for you."
+          "content": "Declutter your space and reclaim your property with Swift Comfort Line's professional junk removal services. Whether you're clearing out years of accumulated items, preparing for a move, renovating your home, or simply need to dispose of unwanted belongings, our experienced team handles all the heavy lifting and hauling for you."
         },
         "furniture": {
           "title": "Furniture Disassembly & Reassembly",
-          "content": "Moving large furniture can be one of the most challenging aspects of any relocation. That's why City Comfort Line offers professional furniture disassembly and reassembly services to ensure your valuable pieces are transported safely and efficiently. Our experienced team knows how to properly take apart and rebuild furniture of all types, from basic bed frames to complex modular systems — saving you time, frustration, and potential damage to your belongings."
+          "content": "Moving large furniture can be one of the most challenging aspects of any relocation. That's why Swift Comfort Line offers professional furniture disassembly and reassembly services to ensure your valuable pieces are transported safely and efficiently. Our experienced team knows how to properly take apart and rebuild furniture of all types, from basic bed frames to complex modular systems — saving you time, frustration, and potential damage to your belongings."
         },
         "specialty": {
           "title": "Specialty Item Moving",
-          "content": "Not all belongings are created equal. Some items require extra care, specialized equipment, and expert handling due to their size, weight, fragility, or value. City Comfort Line specializes in moving delicate, oversized, and high-value specialty items that demand professional expertise and meticulous attention to detail. Whether it's a priceless family heirloom, expensive musical instrument, or irreplaceable artwork, we treat your most precious possessions with the utmost care and respect they deserve."
+          "content": "Not all belongings are created equal. Some items require extra care, specialized equipment, and expert handling due to their size, weight, fragility, or value. Swift Comfort Line specializes in moving delicate, oversized, and high-value specialty items that demand professional expertise and meticulous attention to detail. Whether it's a priceless family heirloom, expensive musical instrument, or irreplaceable artwork, we treat your most precious possessions with the utmost care and respect they deserve."
         },
         "internal": {
           "title": "Internal Moves",
-          "content": "Not every move involves leaving your property. Sometimes, the best way to refresh your space, improve functionality, or accommodate lifestyle changes is to reorganize and rearrange what you already have. City Comfort Line offers professional internal moving services to help you relocate furniture, equipment, and belongings within your home, office, or building — without the stress, strain, or risk of injury that comes with DIY furniture moving."
+          "content": "Not every move involves leaving your property. Sometimes, the best way to refresh your space, improve functionality, or accommodate lifestyle changes is to reorganize and rearrange what you already have. Swift Comfort Line offers professional internal moving services to help you relocate furniture, equipment, and belongings within your home, office, or building — without the stress, strain, or risk of injury that comes with DIY furniture moving."
         },
         "local": {
           "title": "Local & Long-Distance Moves",
-          "content": "Whether you're moving across the street, across the city, or across the country, City Comfort Line provides comprehensive moving services designed to make your relocation seamless, stress-free, and efficient. We understand that every move is unique, with its own set of challenges, timelines, and requirements. That's why we offer tailored solutions for both local and long-distance moves, ensuring your belongings are transported safely and arrive on time, no matter the distance."
+          "content": "Whether you're moving across the street, across the city, or across the country, Swift Comfort Line provides comprehensive moving services designed to make your relocation seamless, stress-free, and efficient. We understand that every move is unique, with its own set of challenges, timelines, and requirements. That's why we offer tailored solutions for both local and long-distance moves, ensuring your belongings are transported safely and arrive on time, no matter the distance."
         }
       }
     },
@@ -98,7 +114,7 @@
       "items": {
         "postMove": {
           "title": "Office & Small Business Cleaning",
-          "content": "Keep your workspace spotless and professional with City Comfort Line’s commercial cleaning services. We deliver reliable, detailed cleaning for offices, retail stores, and medical facilities — creating healthier, more productive environments. Our team handles offices, reception areas, restrooms, floors, windows, and kitchens with daily, weekly, or monthly schedules, plus options for deep, post-construction, move-in/move-out, and disinfection cleaning. Enjoy after-hours service, eco-friendly products, and trained, consistent staff — all with no long-term contracts and transparent pricing. Perfect for offices, clinics, shops, gyms, and salons. Let City Comfort Line keep your business spotless — contact us today for a free quote!"
+          "content": "Keep your workspace spotless and professional with Swift Comfort Line's commercial cleaning services. We deliver reliable, detailed cleaning for offices, retail stores, and medical facilities — creating healthier, more productive environments. Our team handles offices, reception areas, restrooms, floors, windows, and kitchens with daily, weekly, or monthly schedules, plus options for deep, post-construction, move-in/move-out, and disinfection cleaning. Enjoy after-hours service, eco-friendly products, and trained, consistent staff — all with no long-term contracts and transparent pricing. Perfect for offices, clinics, shops, gyms, and salons. Let Swift Comfort Line keep your business spotless — contact us today for a free quote!"
         },
         "deep": {
           "title": "Deep Cleaning",
@@ -154,7 +170,7 @@
   },
     "faq": {
       "title": "Frequently Asked Questions",
-      "subtitle": "At City Comfort Line, we understand that moving and cleaning come with many questions. Below, we've answered some of the most common inquiries to help make your experience as smooth and stress-free as possible.",
+      "subtitle": "At Swift Comfort Line, we understand that moving and cleaning come with many questions. Below, we've answered some of the most common inquiries to help make your experience as smooth and stress-free as possible.",
       "moving": {
         "title": "Moving Services FAQ",
         "items": {
@@ -168,7 +184,7 @@
           },
           "insurance": {
             "question": "Are you licensed and insured?",
-            "answer": "Yes! City Comfort Line is a fully licensed and insured moving company, ensuring the safety of your belongings throughout the entire moving process."
+            "answer": "Yes! Swift Comfort Line is a fully licensed and insured moving company, ensuring the safety of your belongings throughout the entire moving process."
           },
           "estimate": {
             "question": "Do you offer free moving estimates?",
@@ -197,7 +213,7 @@
           },
           "supplies": {
             "question": "Do I need to provide cleaning supplies?",
-            "answer": "No, we bring all necessary professional-grade cleaning supplies and equipment. If you have specific product preferences or sensitivities, please let us know in advance and we'll accommodate your needs."
+            "answer": "Yes, we can handle it if it’s a one-time job and will ensure everything is completed to your satisfaction. However, if it’s a recurring or long-term project, we’ll discuss the best approach to manage it efficiently. This helps us plan schedules, maintain consistency, and deliver high-quality results tailored to your specific needs every time."
           },
           "estimate": {
             "question": "Do you offer free cleaning estimates?",
@@ -218,7 +234,7 @@
         "title": "What Our Clients Say",
         "items": {
           "1": {
-            "text": "City Comfort Line gave me the best experience ever! Booking was fast and seamless.",
+            "text": "Swift Comfort Line gave me the best experience ever! Booking was fast and seamless.",
             "name": "Oluwatobi Adebayo",
             "role": "Customer"
           },
@@ -243,7 +259,7 @@
             "role": "Homeowner"
           },
           "6": {
-            "text": "Highly recommend City Comfort Line. Professional, efficient, and affordable!",
+            "text": "Highly recommend Swift Comfort Line. Professional, efficient, and affordable!",
             "name": "Aisha Mohammed",
             "role": "Business Owner"
           }
@@ -262,7 +278,7 @@
     "contactTitle": "Contact Us",
     "address": "1338,Wellington St,West,Unit 10,Ottawa,Ontario K1Y 3B7 Canada.",
     "phone": "+1 613 851 6775",
-    "email": "support@citycomfortline.com",
+    "email": "support@swiftcomfortline.com",
     "rights": "All rights reserved."
   }
 }

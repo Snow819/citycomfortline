@@ -4,60 +4,199 @@
       <h2>{{ t("getQuote.title") }}</h2>
 
       <form @submit.prevent="handleSubmit" class="moving-form">
-        <!-- Email Address -->
+        <!-- Name -->
         <div class="form-group">
-          <label for="email">{{ t("getQuote.email") }}</label>
-          <input type="email" id="email" v-model="form.email" required
-            :placeholder="t('getQuote.emailPlaceholder')" />
+          <label for="name">{{ t("getQuote.name") }}</label>
+          <input
+            type="text"
+            id="name"
+            v-model="form.name"
+            required
+            :placeholder="t('getQuote.namePlaceholder')"
+          />
         </div>
 
-        <!-- Confirm Email Address -->
+        <!-- Phone Number -->
+        <div class="form-group">
+          <label for="phone">{{ t("getQuote.phone") }}</label>
+          <input
+            type="tel"
+            id="phone"
+            v-model="form.phone"
+            required
+            :placeholder="t('getQuote.phonePlaceholder')"
+          />
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">{{ t("getQuote.email") }}</label>
+          <input
+            type="email"
+            id="email"
+            v-model="form.email"
+            required
+            :placeholder="t('getQuote.emailPlaceholder')"
+          />
+        </div>
+
+        <!-- Confirm Email -->
         <div class="form-group">
           <label for="confirmEmail">{{ t("getQuote.confirmEmail") }}</label>
-          <input type="email" id="confirmEmail" v-model="form.confirmEmail" required
-            :placeholder="t('getQuote.confirmEmailPlaceholder')" />
+          <input
+            type="email"
+            id="confirmEmail"
+            v-model="form.confirmEmail"
+            required
+            :placeholder="t('getQuote.confirmEmailPlaceholder')"
+          />
           <p v-if="emailMismatch" class="error-text">{{ t("getQuote.emailMismatch") }}</p>
         </div>
 
-        <!-- Moving From -->
+        <!-- Address -->
         <div class="form-group">
           <label for="from">{{ t("getQuote.from") }}</label>
-          <input type="text" id="from" v-model="form.from" required
-            :placeholder="t('getQuote.fromPlaceholder')" />
+          <input
+            type="text"
+            id="from"
+            v-model="form.from"
+            required
+            :placeholder="t('getQuote.fromPlaceholder')"
+          />
         </div>
 
-        <!-- Moving To -->
         <div class="form-group">
           <label for="to">{{ t("getQuote.to") }}</label>
-          <input type="text" id="to" v-model="form.to" required
-            :placeholder="t('getQuote.toPlaceholder')" />
+          <input
+            type="text"
+            id="to"
+            v-model="form.to"
+            required
+            :placeholder="t('getQuote.toPlaceholder')"
+          />
         </div>
 
-        <!-- Moving Date -->
         <div class="form-group">
           <label for="date">{{ t("getQuote.date") }}</label>
           <input type="date" id="date" v-model="form.date" required />
         </div>
 
-        <!-- Our Services -->
+        <!-- Choose Service Type -->
         <div class="form-group">
-          <label for="service">{{ t("getQuote.service") }}</label>
-          <select id="service" v-model="form.service" required>
-            <option disabled value="">{{ t("getQuote.selectService") }}</option>
-            <option>{{ t("getQuote.option1") }}</option>
-            <option>{{ t("getQuote.option2") }}</option>
-            <option>{{ t("getQuote.option3") }}</option>
-            <option>{{ t("getQuote.option4") }}</option>
-            <option>{{ t("getQuote.option5") }}</option>
-          </select>
+          <label>{{ t("getQuote.chooseServiceType") }}</label>
+          <div class="service-options">
+            <button
+              type="button"
+              :class="{ active: form.serviceType === 'cleaning' }"
+              @click="form.serviceType = 'cleaning'"
+            >
+              Cleaning
+            </button>
+            <button
+              type="button"
+              :class="{ active: form.serviceType === 'moving' }"
+              @click="form.serviceType = 'moving'"
+            >
+              Moving
+            </button>
+          </div>
         </div>
 
-        <!-- Toast Notification inside the form -->
+        <!-- Cleaning Form -->
+        <template v-if="form.serviceType === 'cleaning'">
+          <div class="form-group">
+            <label for="cleaningAddress">Cleaning Address</label>
+            <input
+              type="text"
+              id="cleaningAddress"
+              v-model="form.cleaningAddress"
+              placeholder="Enter cleaning location"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="cleaningType">Type of Cleaning</label>
+            <select id="cleaningType" v-model="form.cleaningType">
+              <option disabled value="">Select cleaning type</option>
+              <option>Standard Cleaning</option>
+              <option>Deep Cleaning</option>
+              <option>Move-out / Move-in Cleaning</option>
+              <option>Commercial Cleaning</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="cleaningRooms">Number of Rooms</label>
+            <input
+              type="number"
+              id="cleaningRooms"
+              v-model="form.cleaningRooms"
+              min="1"
+              placeholder="Enter number of rooms"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="additionalCleaningDetails">Additional Requirements</label>
+            <textarea
+              id="additionalCleaningDetails"
+              v-model="form.additionalCleaningDetails"
+              placeholder="Describe what more you want using professional terminologies"
+            ></textarea>
+          </div>
+        </template>
+
+        <!-- Moving Form -->
+        <template v-if="form.serviceType === 'moving'">
+          <div class="form-group">
+            <label for="movingRooms">Number of Rooms</label>
+            <input
+              type="number"
+              id="movingRooms"
+              v-model="form.movingRooms"
+              min="1"
+              placeholder="Enter number of rooms"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="movingFrom">Moving From</label>
+            <input
+              type="text"
+              id="movingFrom"
+              v-model="form.movingFrom"
+              placeholder="Enter current location"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="movingTo">Moving To</label>
+            <input
+              type="text"
+              id="movingTo"
+              v-model="form.movingTo"
+              placeholder="Enter destination"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="additionalMovingDetails">Additional Requirements</label>
+            <textarea
+              id="additionalMovingDetails"
+              v-model="form.additionalMovingDetails"
+              placeholder="Describe what more you want using professional terminologies"
+            ></textarea>
+          </div>
+        </template>
+
+        <!-- Toast Notification -->
         <transition name="fade">
-          <div v-if="toast.show" :class="['toast-inline', toast.type]">{{ toast.message }}</div>
+          <div v-if="toast.show" :class="['toast-inline', toast.type]">
+            {{ toast.message }}
+          </div>
         </transition>
 
-        <!-- Button -->
+        <!-- Submit -->
         <button type="submit" :disabled="emailMismatch || loading">
           {{ loading ? t("getQuote.sending") : t("getQuote.submit") }}
         </button>
@@ -68,28 +207,36 @@
 
 <script>
 import emailjs from "emailjs-com";
-import { useI18n } from "vue-i18n";
 import { ref, watch } from "vue";
+import { useI18n } from "vue-i18n";
 
 export default {
-  name: "MovingForm",
+  name: "ServiceForm",
   setup() {
     const { t, locale } = useI18n();
-    const currentLang = ref(localStorage.getItem("lang") || "en");
-    locale.value = currentLang.value;
-
-    const changeLanguage = () => {
-      locale.value = currentLang.value;
-      localStorage.setItem("lang", currentLang.value);
-    };
+    locale.value = localStorage.getItem("lang") || "en";
 
     const form = ref({
+      name: "",
+      phone: "",
       email: "",
       confirmEmail: "",
       from: "",
       to: "",
       date: "",
-      service: "",
+      serviceType: "",
+
+      // Cleaning
+      cleaningAddress: "",
+      cleaningType: "",
+      cleaningRooms: null,
+      additionalCleaningDetails: "",
+
+      // Moving
+      movingRooms: null,
+      movingFrom: "",
+      movingTo: "",
+      additionalMovingDetails: "",
     });
 
     const emailMismatch = ref(false);
@@ -102,27 +249,14 @@ export default {
       }
     );
 
-    // Toast
-    const toast = ref({
-      show: false,
-      message: "",
-      type: "success",
-    });
-
+    const toast = ref({ show: false, message: "", type: "success" });
     const showToast = (message, type = "success") => {
       toast.value = { show: true, message, type };
-      setTimeout(() => (toast.value.show = false), 3000);
+      setTimeout(() => (toast.value.show = false), 4000);
     };
 
     const resetForm = () => {
-      form.value = {
-        email: "",
-        confirmEmail: "",
-        from: "",
-        to: "",
-        date: "",
-        service: "",
-      };
+      for (const key in form.value) form.value[key] = key.includes("Rooms") ? null : "";
     };
 
     const handleSubmit = async () => {
@@ -137,43 +271,24 @@ export default {
         const TEMPLATE_ID = "your_template_id";
         const PUBLIC_KEY = "your_public_key";
 
-        const templateParams = {
-          email: form.value.email,
-          from: form.value.from,
-          to: form.value.to,
-          date: form.value.date,
-          service: form.value.service,
-        };
-
-        await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
-
+        await emailjs.send(SERVICE_ID, TEMPLATE_ID, form.value, PUBLIC_KEY);
         showToast(t("getQuote.success"), "success");
         resetForm();
       } catch (error) {
-        console.error("Email sending error:", error);
+        console.error(error);
         showToast(t("getQuote.failure"), "error");
       } finally {
         loading.value = false;
       }
     };
 
-    return {
-      t,
-      locale,
-      currentLang,
-      changeLanguage,
-      form,
-      emailMismatch,
-      handleSubmit,
-      toast,
-      loading,
-    };
+    return { t, form, emailMismatch, handleSubmit, toast, loading };
   },
 };
 </script>
 
 <style scoped>
-/* ==== Layout Wrapper ==== */
+/* === Keep previous polished styles === */
 .form-wrapper {
   display: flex;
   justify-content: center;
@@ -183,17 +298,15 @@ export default {
   background: linear-gradient(160deg, #E8F5E9 30%, #A5D6A7 100%);
 }
 
-/* ==== Form Container ==== */
 .form-container {
   width: 100%;
-  background: rgba(30, 30, 30, 0.4);
+  background: rgba(30,30,30,0.4);
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.18);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
   padding: 30px 25px;
   border-radius: 12px;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.35);
   color: #fff;
   transition: all 0.3s ease;
   position: relative;
@@ -206,7 +319,6 @@ h2 {
   letter-spacing: 0.5px;
 }
 
-/* ==== Form Fields ==== */
 .moving-form {
   display: grid;
   grid-template-columns: 1fr;
@@ -225,7 +337,8 @@ label {
 }
 
 input,
-select {
+select,
+textarea {
   padding: 12px;
   border-radius: 6px;
   border: 1px solid #444;
@@ -236,25 +349,47 @@ select {
 }
 
 input:focus,
-select:focus {
+select:focus,
+textarea:focus {
   border-color: #26a69a;
   outline: none;
 }
 
-/* ==== Button ==== */
-button {
+/* Service type buttons */
+.service-options {
+  display: flex;
+  gap: 10px;
+}
+
+.service-options button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.service-options button.active {
+  background: #26a69a;
+  color: #fff;
+  border-color: #26a69a;
+}
+
+button[type="submit"] {
   background: linear-gradient(135deg, #A5D6A7, #E8F5E9);
   color: #212121;
-  font-weight: 600;
+  font-weight: bold;
   border: none;
   padding: 12px;
   border-radius: 6px;
-  font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-button:hover {
+button[type="submit"]:hover {
   background: linear-gradient(50deg, #E8F5E9 30%, #A5D6A7 100%);
 }
 
@@ -263,60 +398,16 @@ button:disabled {
   cursor: not-allowed;
 }
 
-/* ==== Error Text ==== */
 .error-text {
   color: #ff6b6b;
   font-size: 0.85rem;
   margin-top: 4px;
 }
 
-/* ==== Responsive Design ==== */
-
-/* Tablets */
-@media (min-width: 640px) {
-  .form-container {
-    max-width: 600px;
-    padding: 40px;
-  }
-
-  .moving-form {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  .form-group:nth-child(1),
-  .form-group:nth-child(2) {
-    grid-column: span 1;
-  }
-
-  .form-group:nth-last-child(2),
-  button {
-    grid-column: span 2;
-  }
-}
-
-/* Desktops */
-@media (min-width: 1024px) {
-  .form-container {
-    max-width: 700px;
-    padding: 50px;
-  }
-
-  input,
-  select {
-    font-size: 16px;
-  }
-
-  button {
-    font-size: 17px;
-    padding: 14px;
-  }
-}
-
-/* ==== Inline Toast inside form ==== */
+/* Toast */
 .toast-inline {
   position: absolute;
-  bottom: 70px; /* above the button */
+  bottom: 70px;
   left: 50%;
   transform: translateX(-50%);
   padding: 12px 20px;
@@ -335,7 +426,6 @@ button:disabled {
   background-color: #f44336;
 }
 
-/* Fade animation */
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;
@@ -343,5 +433,28 @@ button:disabled {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .form-container {
+    max-width: 600px;
+    padding: 40px;
+  }
+  .moving-form {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .form-group:nth-last-child(2),
+  button {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .form-container {
+    max-width: 700px;
+    padding: 50px;
+  }
 }
 </style>
