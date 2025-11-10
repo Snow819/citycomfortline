@@ -89,9 +89,14 @@
   }
   
   .stat i {
-    color: #00ff66;
+    color: #2e7d32;
     font-size: 1.3rem;
   }
+
+  .stat i:hover {
+  color: #Ff9a00;
+  transform: scale(1.1) rotate(10deg);
+}
   
   .number {
     font-weight: bold;

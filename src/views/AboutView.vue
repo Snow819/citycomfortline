@@ -21,7 +21,7 @@
         data-aos-duration="1200"
       >
         <img 
-          src="@/assets/logo.png" 
+          src="@/assets/Logo_dark.png" 
           alt="City Comfort Line Logo" 
           class="zoom-animation"
         />

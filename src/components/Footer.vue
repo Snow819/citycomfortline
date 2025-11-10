@@ -43,7 +43,7 @@
 </template>
 
 <script setup>
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/Logo_dark.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { onMounted } from "vue";
@@ -81,7 +81,6 @@ onMounted(() => {
   width: 120px;
   height: 120px;
   margin-bottom: 8px;
-  border-radius: 50%;
 }
 
 .footer-about p {
