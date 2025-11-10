@@ -19,7 +19,7 @@
 
 <script>
 import Navbar from "@/components/Navbar.vue";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/Logo_dark.png";
 
 export default {
   name: "App",
@@ -71,7 +71,7 @@ export default {
   animation: driveOnce 3s ease-in-out forwards, bob 1.5s ease-in-out infinite;
   filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.2));
   image-rendering: crisp-edges;
-  transform: scaleX(var(--car-direction, 1)); /* ✅ Face forward */
+  transform: scaleX(var(--car-direction, 1)); 
 }
 
 /* Automatically ensure car faces right (forward) */
@@ -87,8 +87,8 @@ export default {
   height: 4px;
   background-image: repeating-linear-gradient(
     to right,
-    #2e7d32 0,
-    #2e7d32 40px,
+    #02534D 0,
+    #02534D 40px,
     transparent 40px,
     transparent 80px
   );
@@ -103,7 +103,7 @@ export default {
   width: 55px;
   height: 55px;
   border: 4px solid #c8e6c9;
-  border-top-color: #2e7d32;
+  border-top-color: #02534D;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }

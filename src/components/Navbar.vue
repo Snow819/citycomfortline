@@ -14,7 +14,7 @@
       <div class="navbar-header-row">
         <!-- Logo -->
         <div class="logo">
-          <img src="@/assets/logo.jpg" alt="City Comfort Line Logo" />
+          <img src="@/assets/Logo_light.png" alt="City Comfort Line Logo" />
         </div>
 
         <!-- Menu toggle button -->
@@ -212,9 +212,8 @@ body {
 }
 
 .logo img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  width: 70px;
+  height: 70px;
 }
 
 .menu-toggle {
@@ -280,13 +279,13 @@ body {
 
 .navbar-links li a:hover,
 .navbar-links li .router-link-active:hover {
-  background: #2e7d32;
+  background: #02534D;
   color: #fff;
   box-shadow: 0 2px 8px rgba(246, 61, 67, 0.15);
 }
 
 .navbar-links li .router-link-exact-active {
-  background: #2e7d32;
+  background: #02534D;
   color: #fff;
   box-shadow: 0 2px 8px rgba(246, 61, 67, 0.15);
 }
@@ -311,13 +310,13 @@ body {
 }
 
 .btn button:hover {
-  background: #2e7d32;
+  background: #02534D;
   color: #fff;
   box-shadow: 0 2px 8px rgba(246, 61, 67, 0.15);
 }
 
 .btn1 button {
-  background: #2e7d32;
+  background: #02534D;
   color: #fff;
   border: none;
   padding: 8px 20px;

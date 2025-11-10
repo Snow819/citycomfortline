@@ -13,7 +13,7 @@
 
     <!-- Hero Content -->
     <div class="hero-content" data-aos="fade-up" data-aos-delay="300">
-      <img src="@/assets/logo.jpg" alt="City Comfort Line Logo" class="hero-logo" />
+      <img src="@/assets/Logo_dark.png" alt="City Comfort Line Logo" class="hero-logo" />
 
       <div class="text-container">
         <h1
@@ -139,7 +139,7 @@ export default {
 
 /* Content */
 .hero-content {
-  margin-top: 5%;
+  margin-top: 2%;
   position: relative;
   z-index: 10;
   text-align: center;
@@ -148,10 +148,9 @@ export default {
 }
 
 .hero-logo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 1.5rem;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
 }
 
@@ -159,7 +158,7 @@ export default {
 .hero-text {
   font-size: clamp(2rem, 3vw, 4.5rem);
   font-weight: 800;
-  color: #F5B400; 
+  color: #Ff9a00; 
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0.5rem 0;
@@ -196,13 +195,13 @@ export default {
 }
 
 .cta-btn.primary {
-  background: linear-gradient(135deg, #F5B400, #bfa043);
+  background: linear-gradient(135deg, #Ff9a00, #ecc140);
   color: #1a1a1a;
 }
 
 .cta-btn.secondary {
-  border: 2px solid #F5B400;
-  color: #F5B400;
+  border: 2px solid #Ff9a00;
+  color: #Ff9a00;
   background: transparent;
 }
 
@@ -217,7 +216,7 @@ export default {
 }
 
 .cta-btn.secondary:hover {
-  background: #F5B400;
+  background: #Ff9a00;
   color: #1a1a1a;
 }
 
@@ -234,7 +233,7 @@ export default {
 }
 
 .scroll-arrow svg {
-  color: #F5B400;
+  color: #Ff9a00;
   animation: arrowBounce 2s infinite;
 }
 
