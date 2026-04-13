@@ -46,7 +46,8 @@ export default {
 .preloader {
   position: fixed;
   inset: 0;
-  background: linear-gradient(180deg, #ffffff, #f4fff4);
+  /* background: linear-gradient(180deg, #ffffff, #f4fff4); */
+  background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;

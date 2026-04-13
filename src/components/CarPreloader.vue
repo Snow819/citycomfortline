@@ -30,13 +30,13 @@ onMounted(() => {
   window.addEventListener(
     "load",
     () => {
-      setTimeout(() => (visible.value = false), 400);
+      setTimeout(() => (visible.value = false), 200);
     },
     { once: true }
   );
 
   // fallback timeout
-  setTimeout(() => (visible.value = false), 6000);
+  setTimeout(() => (visible.value = false), 3000);
 });
 </script>
 
@@ -45,7 +45,8 @@ onMounted(() => {
 .preloader {
   position: fixed;
   inset: 0;
-  background: linear-gradient(180deg, #ffffff 0%, #eaffea 100%);
+  /* background: linear-gradient(180deg, #ffffff 0%, #eaffea 100%); */
+  background: #fff;
   z-index: 9999;
   display: flex;
   align-items: center;

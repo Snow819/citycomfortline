@@ -11,7 +11,7 @@
     "title1": "Swift Comfort Line",
     "title2": "Where Convenience Meets Care",
     "title3": "Your Property, Our Priority",
-    "subtitle": "Your trusted partner for seamless relocations and spotless spaces. Reliable, efficient, and always caring.",
+    "subtitle": "Your trusted partner for seamless relocations, spotless spaces, and reliable door-to-door transportation. Professional, efficient, and always caring.",
     "button1": "Our Services",
     "button2": "Contact Us",
     "scroll": "Scroll to explore"
@@ -31,35 +31,61 @@
     "phonePlaceholder": "Enter your phone number",
     "email": "Email Address",
     "emailPlaceholder": "Enter your email",
-    "confirmEmail": "Confirm Email Address",
-    "confirmEmailPlaceholder": "Re-enter your email",
-    "emailMismatch": "Email addresses do not match",
-    "from": "From",
-    "fromPlaceholder": "Enter current address",
-    "to": "To",
-    "toPlaceholder": "Enter destination address",
     "date": "Date of Service",
-    "service": "Our Services",
-    "selectService": "Select a Service",
-    "option1": "Packing",
-    "option2": "Transportation",
-    "option3": "Storage",
-    "option4": "Cleaning",
-    "option5": "Other",
-    "chooseServiceType": "Choose Service Type",
     "sending": "Sending...",
     "submit": "Submit",
-    "success": "Your request has been sent successfully!",
-    "failure": "Failed to send your request. Please try again.",
+    
+    "landingDescription": "We provide professional moving, cleaning, and chauffeur services tailored to your needs. Whether you're relocating, need thorough cleaning, or require reliable door-to-door transportation, we're here to make your experience seamless and stress-free.",
+    "getQuoteButton": "Get a Quote",
+    "back": "Back",
+    "selectServiceTitle": "Select Your Service",
+    "selectServiceSubtitle": "What service do you need?",
+    "cleaningServiceTitle": "Cleaning Service",
+    "cleaningServiceDescription": "Professional cleaning for your home or office",
+    "movingServiceTitle": "Moving Service",
+    "movingServiceDescription": "Reliable moving solutions for your relocation",
+    "cleaningRequestTitle": "Cleaning Service Request",
+    "movingRequestTitle": "Moving Service Request",
+    
     "cleaningAddress": "Cleaning Address",
+    "cleaningAddressPlaceholder": "Enter cleaning location",
     "cleaningType": "Type of Cleaning",
+    "selectCleaningType": "Select cleaning type",
+    "standardCleaning": "Standard Cleaning",
+    "deepCleaning": "Deep Cleaning",
+    "moveInOutCleaning": "Move-out / Move-in Cleaning",
+    "commercialCleaning": "Commercial Cleaning",
     "cleaningRooms": "Number of Rooms",
-    "additionalCleaningDetails": "Additional Requirements / Specifications",
-    "movingRooms": "Number of Rooms",
+    "cleaningRoomsPlaceholder": "Enter number of rooms",
+    "additionalCleaningDetails": "Additional Requirements (Optional)",
+    "additionalDetailsPlaceholder": "Describe any additional requirements",
+    
     "movingFrom": "Moving From",
+    "movingFromPlaceholder": "Enter current location",
     "movingTo": "Moving To",
-    "additionalMovingDetails": "Additional Requirements / Specifications"
-  },
+    "movingToPlaceholder": "Enter destination",
+    "movingRooms": "Number of Rooms",
+    "movingRoomsPlaceholder": "Enter number of rooms",
+    "additionalMovingDetails": "Additional Requirements (Optional)",
+
+    "chauffeurServiceTitle": "Chauffeur Service",
+"chauffeurServiceDescription": "Reliable door-to-door transportation for medical and personal errands",
+"chauffeurRequestTitle": "Chauffeur Service Request",
+"chauffeurType": "Type of Service",
+"selectChauffeurType": "Select service type",
+"chauffeurDoctor": "Doctor and Clinic Appointment",
+"chauffeurHospital": "Hospital Drop Offs and Pickups",
+"chauffeurPharmacy": "Pharmacy and Grocery Errands",
+"chauffeurCompanion": "Companion Service Available",
+"chauffeurDoorToDoor": "Reliable Door-to-Door Services",
+"chauffeurPickup": "Pickup Address",
+"chauffeurPickupPlaceholder": "Enter pickup location",
+"chauffeurDropoff": "Drop-off Address",
+"chauffeurDropoffPlaceholder": "Enter drop-off location",
+"chauffeurTime": "Preferred Pickup Time",
+"chauffeurCompanionNeeded": "I would like a companion for this trip",
+"additionalChauffeurDetails": "Additional Requirements (Optional)"
+},
   "about": {
     "title": "About Us",
     "paragraph1": "At Swift Comfort Line, we set the standard for reliable and professional moving and cleaning services across Ottawa and neighbouring cities. Our mission is simple — to deliver seamless, stress-free solutions that combine convenience, quality, and care.",
@@ -135,7 +161,32 @@
           "content": "Make your move stress-free with our detailed cleaning service for empty spaces. We scrub, sanitize, and polish every corner — from floors and windows to kitchens and bathrooms — ensuring your old place is spotless and your new one is move-in ready. Perfect for tenants, landlords, and property managers who want a fresh start or a flawless handover."
         }
       }
+    },
+    "chauffeur": {
+  "title": "Chauffeur Services",
+  "items": {
+    "doctor": {
+      "title": "Doctor and Clinic Appointment",
+      "content": "We provide reliable and comfortable transportation to and from your doctor or clinic appointments. Whether it's a routine check-up or a specialist visit, our professional chauffeurs ensure you arrive on time, stress-free, and in comfort."
+    },
+    "hospital": {
+      "title": "Hospital Drop Offs and Pickups",
+      "content": "Count on us for safe and timely hospital drop-offs and pickups. We understand the importance of punctuality and care during medical visits, and our drivers are committed to making every trip smooth, dignified, and worry-free."
+    },
+    "pharmacy": {
+      "title": "Pharmacy and Grocery Errands",
+      "content": "Let us handle your essential errands — from picking up prescriptions at the pharmacy to grocery shopping runs. Our chauffeurs assist with errands so you can focus on what matters most, without the hassle of transportation."
+    },
+    "companion": {
+      "title": "Companion Service Available",
+      "content": "For clients who prefer not to travel alone, we offer a companion service to accompany you throughout your appointment or errand. Our compassionate team provides friendly support and peace of mind for you and your loved ones."
+    },
+    "doorToDoor": {
+      "title": "Reliable Door-to-Door Services",
+      "content": "From the moment you step out your front door to the moment you return home, we've got you covered. Our door-to-door chauffeur service ensures seamless, comfortable, and dependable transportation every step of the way."
     }
+  }
+}
   },
   "serviceAreas": {
     "title": "Our Service Areas",
@@ -226,7 +277,36 @@
           "answer": "Absolutely! We offer flexible cleaning schedules including weekly, bi-weekly, and monthly cleaning plans. Regular clients receive priority scheduling and special rates. We can customize a cleaning schedule that works best for you."
         }
       }
+    },
+    "chauffeur": {
+  "title": "Chauffeur Services FAQ",
+  "items": {
+    "coverage": {
+      "question": "What areas do your chauffeur services cover?",
+      "answer": "We provide chauffeur services across Ottawa and surrounding communities, including all areas we serve for moving and cleaning. Whether it's a local clinic, hospital, pharmacy, or grocery store, we'll get you there safely."
+    },
+    "booking": {
+      "question": "How do I book a chauffeur?",
+      "answer": "You can book through our Get a Quote form by selecting Chauffeur Service. We recommend booking at least 24 hours in advance to secure your preferred time, though we do our best to accommodate same-day requests when available."
+    },
+    "companion": {
+      "question": "What is the companion service?",
+      "answer": "Our companion service pairs you with a caring team member who accompanies you throughout your appointment or errand — from the moment we pick you up to when we return you home. It's ideal for seniors, individuals with mobility challenges, or anyone who simply prefers not to travel alone."
+    },
+    "medical": {
+      "question": "Do you specialize in medical transportation?",
+      "answer": "Yes. We are experienced in transporting clients to and from doctor appointments, specialist visits, hospital admissions and discharges, and pharmacy pickups. Our drivers are punctual, patient, and respectful of your medical needs."
+    },
+    "wait": {
+      "question": "Will the driver wait for me during my appointment?",
+      "answer": "Yes, our drivers can wait for you during your appointment or errand and bring you back home once you're ready. Wait time details and any applicable fees are discussed at the time of booking."
+    },
+    "emergency": {
+      "question": "Are same-day or urgent rides available?",
+      "answer": "We do our best to accommodate urgent and same-day ride requests based on availability. Please contact us directly by phone for the fastest response when you need immediate assistance."
     }
+  }
+}
   },
   "testimonials": {
     "title": "What Our Clients Say",
@@ -260,7 +340,17 @@
         "text": "Highly recommend Swift Comfort Line. Professional, efficient, and affordable!",
         "name": "Aisha Mohammed",
         "role": "Business Owner"
-      }
+      },
+      "7": {
+  "text": "Swift Comfort Line's chauffeur service was a lifesaver. They took my mother to her hospital appointment and waited for her the entire time. So professional and caring!",
+  "name": "Patricia Okonkwo",
+  "role": "Family Caregiver"
+},
+"8": {
+  "text": "I use their chauffeur service every week for my clinic visits. Reliable, always on time, and the companion service gives me so much peace of mind.",
+  "name": "Robert Mensah",
+  "role": "Regular Client"
+}
     }
   },
   "footer": {
@@ -276,7 +366,7 @@
     "contactTitle": "Contact Us",
     "address": "1338 Wellington St West, Unit 10, Ottawa, Ontario, K1Y 3B7 Canada.",
     "phone": "+1 613 851 6775",
-    "email": "support{'@'}swiftcomfortline.com",
+    "email": "info{'@'}swiftcomfortline.com",
     "rights": "All rights reserved."
   }
 }

@@ -10,10 +10,12 @@ import Testimonial from '@/components/Testimonial.vue';
 import Footer from '@/components/Footer.vue';
 import ServiceArea from '@/components/ServiceArea.vue';
 import FAQSection from '@/components/FAQSection.vue';
+import TopBanner from '@/components/TopBanner.vue';
 </script>
 
 <template>
   <main>
+    <TopBanner />
     <Navbar />
 
     <!-- HERO SECTION -->

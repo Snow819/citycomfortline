@@ -42,7 +42,8 @@ AOS.init({
 
 <style scoped>
 .about-section {
-  background: #E8F5E9;
+  /* background: #E8F5E9; */
+  background: #fff;
   padding: 100px 40px;
   display: flex;
   justify-content: center;

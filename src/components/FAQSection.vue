@@ -83,6 +83,42 @@
                       </div>
                   </div>
               </div>
+
+              <!-- Chauffeur FAQ Accordion -->
+<div class="accordion-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
+    data-aos-once="false">
+    <div class="section-header" data-aos="zoom-in" data-aos-delay="400">
+        <svg class="section-icon chauffeur-icon" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor">
+            <circle cx="12" cy="12" r="10"></circle>
+            <circle cx="12" cy="10" r="3"></circle>
+            <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"></path>
+        </svg>
+        <h2 class="section-title" data-aos="fade-left" data-aos-delay="450">
+            {{ $t('faq.chauffeur.title') }}
+        </h2>
+    </div>
+
+    <div class="accordion">
+        <div v-for="(item, index) in chauffeurFaq" :key="index" class="accordion-item"
+            data-aos="fade-up" :data-aos-delay="100 * index" data-aos-duration="700"
+            data-aos-once="false">
+            <button @click="toggleChauffeur(index)" class="accordion-header">
+                <span class="accordion-title-text">{{ $t(item.question) }}</span>
+                <svg class="accordion-icon" :class="{ 'rotated': openChauffeurIndex === index }"
+                    width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </button>
+
+            <div class="accordion-content" :class="{ 'open': openChauffeurIndex === index }">
+                <div class="accordion-content-inner">
+                    {{ $t(item.answer) }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
           </div>
       </div>
   </div>
@@ -95,6 +131,7 @@ import 'aos/dist/aos.css'
 
 const openMovingIndex = ref(null)
 const openCleaningIndex = ref(null)
+const openChauffeurIndex = ref(null)
 
 const movingFaq = [
   { question: 'faq.moving.items.coverage.question', answer: 'faq.moving.items.coverage.answer' },
@@ -114,12 +151,25 @@ const cleaningFaq = [
   { question: 'faq.cleaning.items.frequency.question', answer: 'faq.cleaning.items.frequency.answer' },
 ]
 
+const chauffeurFaq = [
+  { question: 'faq.chauffeur.items.coverage.question', answer: 'faq.chauffeur.items.coverage.answer' },
+  { question: 'faq.chauffeur.items.booking.question', answer: 'faq.chauffeur.items.booking.answer' },
+  { question: 'faq.chauffeur.items.companion.question', answer: 'faq.chauffeur.items.companion.answer' },
+  { question: 'faq.chauffeur.items.medical.question', answer: 'faq.chauffeur.items.medical.answer' },
+  { question: 'faq.chauffeur.items.wait.question', answer: 'faq.chauffeur.items.wait.answer' },
+  { question: 'faq.chauffeur.items.emergency.question', answer: 'faq.chauffeur.items.emergency.answer' },
+]
+
 const toggleMoving = (index) => {
   openMovingIndex.value = openMovingIndex.value === index ? null : index
 }
 
 const toggleCleaning = (index) => {
   openCleaningIndex.value = openCleaningIndex.value === index ? null : index
+}
+
+const toggleChauffeur = (index) => {
+  openChauffeurIndex.value = openChauffeurIndex.value === index ? null : index
 }
 
 onMounted(() => {
@@ -168,7 +218,7 @@ onMounted(() => {
 
 @media (min-width: 1024px) {
   .accordions-grid {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -193,6 +243,10 @@ onMounted(() => {
 }
 
 .cleaning-icon {
+  color: #2e7d32;
+}
+
+.chauffeur-icon {
   color: #2e7d32;
 }
 

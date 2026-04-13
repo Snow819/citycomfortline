@@ -58,7 +58,8 @@ onMounted(() => {
 
 <style scoped>
 .footer {
-  background: #e3fae4;
+  /* background: #e3fae4; */
+  background: #fff;
   color: #444;
   padding: 80px 40px;
   text-align: center;

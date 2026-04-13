@@ -65,6 +65,8 @@ const testimonials = [
   { text: "testimonials.items.4.text", name: "testimonials.items.4.name", role: "testimonials.items.4.role", rating: 5 },
   { text: "testimonials.items.5.text", name: "testimonials.items.5.name", role: "testimonials.items.5.role", rating: 4 },
   { text: "testimonials.items.6.text", name: "testimonials.items.6.name", role: "testimonials.items.6.role", rating: 5 },
+  { text: "testimonials.items.7.text", name: "testimonials.items.7.name", role: "testimonials.items.7.role", rating: 5 },
+  { text: "testimonials.items.8.text", name: "testimonials.items.8.name", role: "testimonials.items.8.role", rating: 5 },
 ]
 
 const currentIndex = ref(0)
