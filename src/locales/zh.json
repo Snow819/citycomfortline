@@ -5,357 +5,152 @@
     "services": "服务",
     "serviceAreas": "服务区域",
     "testimonials": "客户评价",
-    "getQuote": "获取报价"
+    "contact": "联系我们",
+    "getInTouch": "联系我们"
   },
-    "satisfaction": {
-      "years": "经验年数",
-      "clients": "客户满意度",
-      "moves": "完成的搬迁",
-      "relocated": "搬迁的办公室/家庭",
-      "referral": "推荐率"
-    },  
   "hero": {
-    "title1": "迅捷舒适系列",
-    "title2": "便利与关怀相遇之处",
-    "title3": "您的物业，我们的首要任务",
-    "subtitle": "您值得信赖的合作伙伴，提供无忧搬迁、洁净空间及可靠的门到门接送服务。专业、高效、始终用心。",
-    "button1": "我们的服务",
-    "button2": "联系我们",
-    "scroll": "向下滚动了解更多"
+    "badge": "关爱。尊重。信任。安心。",
+    "title_line1": "支持",
+    "title_line2": "日常生活。",
+    "subtitle": "我们提供非医疗支持服务，帮助老年人在自己家中安全、舒适、独立地生活。",
+    "button1": "立即致电",
+    "button2": "了解更多",
+    "trust1": "每次同一位服务人员",
+    "trust2": "可靠守时",
+    "trust3": "包含家庭动态更新",
+    "stat1": "服务老年人数",
+    "stat2": "客户满意度",
+    "stat3": "服务年限"
   },
-   "getQuote": {
-    "title": "获取报价",
-    "name": "全名",
-    "namePlaceholder": "请输入您的全名",
-    "phone": "电话号码",
-    "phonePlaceholder": "请输入您的电话号码",
-    "email": "电子邮箱",
-    "emailPlaceholder": "请输入您的电子邮箱",
-    "date": "服务日期",
-    "sending": "发送中...",
-    "submit": "提交",
-    
-    "landingDescription": "我们提供专业的搬家、清洁及专车接送服务，满足您的各种需求。无论您是搬家、需要彻底清洁，还是需要可靠的门到门接送，我们都致力于让您的体验顺畅无忧。",
-    "getQuoteButton": "获取报价",
-    "back": "返回",
-    "selectServiceTitle": "选择您的服务",
-    "selectServiceSubtitle": "您需要什么服务？",
-    "cleaningServiceTitle": "清洁服务",
-    "cleaningServiceDescription": "为您的家庭或办公室提供专业清洁",
-    "movingServiceTitle": "搬家服务",
-    "movingServiceDescription": "可靠的搬迁解决方案",
-    "cleaningRequestTitle": "清洁服务请求",
-    "movingRequestTitle": "搬家服务请求",
-    
-    "cleaningAddress": "清洁地址",
-    "cleaningAddressPlaceholder": "请输入清洁地点",
-    "cleaningType": "清洁类型",
-    "selectCleaningType": "请选择清洁类型",
-    "standardCleaning": "标准清洁",
-    "deepCleaning": "深度清洁",
-    "moveInOutCleaning": "搬入/搬出清洁",
-    "commercialCleaning": "商业清洁",
-    "cleaningRooms": "房间数量",
-    "cleaningRoomsPlaceholder": "请输入房间数量",
-    "additionalCleaningDetails": "附加要求（可选）",
-    "additionalDetailsPlaceholder": "请描述任何附加要求",
-    
-    "movingFrom": "搬出地点",
-    "movingFromPlaceholder": "请输入当前地点",
-    "movingTo": "搬入地点",
-    "movingToPlaceholder": "请输入目的地",
-    "movingRooms": "房间数量",
-    "movingRoomsPlaceholder": "请输入房间数量",
-    "additionalMovingDetails": "附加要求（可选）",
-
-    "chauffeurServiceTitle": "专车接送服务",
-"chauffeurServiceDescription": "可靠的门到门接送，适用于医疗及个人日常事务",
-"chauffeurRequestTitle": "专车服务请求",
-"chauffeurType": "服务类型",
-"selectChauffeurType": "请选择服务类型",
-"chauffeurDoctor": "医生及诊所预约接送",
-"chauffeurHospital": "医院接送服务",
-"chauffeurPharmacy": "药店与杂货采购跑腿",
-"chauffeurCompanion": "陪同服务可选",
-"chauffeurDoorToDoor": "可靠的门到门服务",
-"chauffeurPickup": "上车地点",
-"chauffeurPickupPlaceholder": "请输入上车地点",
-"chauffeurDropoff": "下车地点",
-"chauffeurDropoffPlaceholder": "请输入下车地点",
-"chauffeurTime": "期望接送时间",
-"chauffeurCompanionNeeded": "我需要陪同人员",
-"additionalChauffeurDetails": "附加要求（可选）"
-},
   "about": {
-    "title": "关于我们",
-    "paragraph1": "在 <span class='highlight'>Swift Comfort Line</span>，我们为渥太华及周边城市提供可靠、专业的搬家与清洁服务。我们的使命是提供无缝、无压力的解决方案，让便利、品质与关怀完美融合。",
-    "paragraph2": "我们专注于住宅和商业搬迁、搬入/搬出服务、垃圾清理及全面清洁方案，量身定制以满足您的需求。无论是家庭搬迁、办公室迁移，还是物业焕新，我们的专业团队都能以最高标准、安全高效地完成每项任务。",
-    "paragraph3": "凭借专业精神、守时态度和客户至上的理念，<span class='highlight'>Swift Comfort Line</span> 赢得了众多家庭与企业的信任。我们用心对待每一次搬迁与清洁，让客户体验真正的安心与舒适。",
-    "quote": "Swift Comfort Line — 让搬家更轻松，让清洁更贴心。"
+    "label": "关于我们",
+    "title": "我们像对待家人一样照顾您所爱的人",
+    "paragraph1": "Swift Comfort Line 通过提供可靠的日常任务、预约出行和陪伴服务，帮助老年人在家中保持独立生活。",
+    "paragraph2": "我们服务渥太华及周边地区，专注于安全、舒适与信任。每次上门均由同一位专属人员负责，让您的家人放心依靠。",
+    "quote": "Swift Comfort Line — 每周都在，随时为您守护。",
+    "cta": "了解更多关于我们",
+    "cardTitle": "我们随时为您提供帮助",
+    "cardBtn": "联系我们"
   },
   "ourServices": {
-    "title": "我们的服务",
-    "subtitle": "为您量身定制的全面搬家与清洁解决方案",
-    "moving": {
-      "title": "搬家服务",
-      "items": {
-        "residential": {
-          "title": "短途与长途搬运",
-          "content": "无论您是跨街搬家还是跨省搬迁，我们都能安全高效地完成。短途搬家提供当日服务，长途搬迁包括路线规划、GPS追踪及全额保险。点到点运输，价格透明，按距离与体积计算，确保您的物品安全准时送达。"
-        },
-        "apartment": {
-          "title": "住宅与商业搬迁",
-          "content": "Swift Comfort Line 了解家庭搬迁与企业搬迁的不同需求。我们为住宅与商业客户提供量身定制的专业搬家解决方案，确保每次搬迁顺利、周全。"
-        },
-        "office": {
-          "title": "重型设备运输",
-          "content": "Swift Comfort Line 专业运输大型设备、机械与超重物品。无论您是企业主、承包商或物业经理，我们的团队都具备经验与设备，确保安全、精准的运输过程。"
-        },
-        "packing": {
-          "title": "垃圾清理服务",
-          "content": "通过 Swift Comfort Line 的专业垃圾清理服务，轻松整理您的空间。无论是搬家前清理、装修后清除废物，还是日常杂物处理，我们负责所有搬运与清除，让您的空间焕然一新。"
-        },
-        "furniture": {
-          "title": "家具拆装",
-          "content": "搬运大型家具往往是最棘手的环节。我们的专业拆装团队确保安全高效地处理各种家具，从床架到模块化系统，避免损坏并节省您的时间与精力。"
-        },
-        "specialty": {
-          "title": "特殊物品搬运",
-          "content": "部分物品需要额外的关怀与专用设备，如钢琴、艺术品或贵重收藏。Swift Comfort Line 提供专业的特殊物品搬运服务，确保您的贵重物品得到最高级别的保护。"
-        },
-        "internal": {
-          "title": "室内搬运",
-          "content": "不一定要搬出才能焕新空间。我们提供室内搬运服务，帮您安全移动家具、设备与物品，避免劳累与意外，让空间重新布局更轻松。"
-        },
-        "local": {
-          "title": "本地与长途搬家",
-          "content": "无论距离远近，Swift Comfort Line 提供无缝、高效的搬家体验。我们根据您的需求定制方案，确保物品安全抵达，搬迁过程轻松无忧。"
-        }
-      }
+    "label": "我们的服务",
+    "title": "服务项目",
+    "subtitle": "为居家老年人提供简单可靠的支持",
+    "mostPopular": "最受欢迎",
+    "viewAll": "查看所有服务",
+    "transportation": {
+      "title": "接送与预约出行",
+      "description": "安全可靠地前往就医、取药、购物及其他所需目的地",
+      "item1": "看诊及专科预约",
+      "item2": "药房及购物接送",
+      "item3": "医院接送服务"
     },
-    "cleaning": {
-      "title": "清洁服务",
-      "items": {
-        "postMove": {
-          "title": "办公室与小型企业清洁",
-          "content": "让您的工作环境始终整洁、专业。Swift Comfort Line 为办公室、商铺与诊所提供可靠、细致的清洁服务，打造健康高效的工作空间。提供每日、每周或每月清洁计划，以及深度清洁、装修后清洁与消毒服务。支持非工作时间清洁，使用环保产品，无需长期合约，价格透明。"
-        },
-        "deep": {
-          "title": "深度清洁",
-          "content": "从上到下彻底清洁，超越日常维护。我们清理难以触及的区域，去除积尘与污垢，让空间焕发清新气息，非常适合季度保养或特殊场合前使用。"
-        },
-        "residential": {
-          "title": "公寓与 Airbnb 清洁",
-          "content": "为租客、房东及房主提供快速专业的清洁服务。从除尘、吸尘到厨房与浴室消毒，一应俱全。非常适合搬入搬出或为下位住客做准备，让空间始终洁净、宜人。"
-        },
-        "commercial": {
-          "title": "商业清洁",
-          "content": "保持您的企业空间整洁、舒适。我们清洁办公室、商铺、诊所等场所，包括地板、窗户、卫生间及工作区。使用环保产品，安排灵活，确保高质量卫生环境，提升形象与效率。"
-        },
-        "carpet": {
-          "title": "地毯与家具清洁",
-          "content": "通过专业的地毯与软装清洁服务，去除深层污渍与过敏源。安全有效的方法让您的地毯与家具焕然一新，气味清新，舒适如初。"
-        },
-        "window": {
-          "title": "搬入 / 搬出清洁",
-          "content": "让搬家更轻松！我们为空置房屋提供彻底清洁，从地板、窗户到厨房与浴室，确保旧居干净、新居整洁，随时可入住。适合租户、房东与物业经理。"
-        }
-      }
+    "homeSupport": {
+      "title": "每周居家协助",
+      "description": "协助轻度家务整理及日常生活事务",
+      "item1": "轻度家务清洁",
+      "item2": "整理与归纳",
+      "item3": "日常跑腿事务"
     },
-    "chauffeur": {
-  "title": "专车接送服务",
-  "items": {
-    "doctor": {
-      "title": "医生及诊所预约接送",
-      "content": "我们为您提供可靠、舒适的医生及诊所预约接送服务。无论是常规检查还是专科就诊，我们的专业司机确保您准时、轻松、舒适地抵达目的地。"
-    },
-    "hospital": {
-      "title": "医院接送服务",
-      "content": "我们提供安全、准时的医院接送服务。我们深知医疗出行中准时与关怀的重要性，司机全程致力于让每次出行顺畅、有尊严、无忧虑。"
-    },
-    "pharmacy": {
-      "title": "药店与杂货采购跑腿",
-      "content": "让我们处理您的日常必要事务——从药店取药到杂货采购。我们的司机协助完成跑腿任务，让您专注于更重要的事情，无需为出行烦恼。"
-    },
-    "companion": {
-      "title": "陪同服务可选",
-      "content": "对于不希望独自出行的客户，我们提供全程陪同服务，在预约或跑腿过程中全程相伴。我们体贴的团队为您和您的家人提供友善的支持与安心保障。"
-    },
-    "doorToDoor": {
-      "title": "可靠的门到门服务",
-      "content": "从您踏出家门的那一刻到安全返回，我们全程为您保驾护航。我们的门到门专车服务确保每一步旅程都顺畅、舒适、值得信赖。"
+    "companionship": {
+      "title": "陪伴与关怀探访",
+      "description": "陪伴老年人，确认其状态，并及时向家人反馈",
+      "item1": "定期友好探访",
+      "item2": "安全状况确认",
+      "item3": "家庭动态更新"
     }
-  }
-}
   },
-    "faq": {
-      "title": "常见问题",
-      "subtitle": "在Swift Comfort Line，我们理解搬家和清洁会带来许多问题。下面，我们回答了一些最常见的问题，以帮助使您的体验尽可能顺畅和无压力。",
-      "moving": {
-        "title": "搬家服务常见问题",
-        "items": {
-          "coverage": {
-            "question": "你们在哪里提供搬家服务？",
-            "answer": "我们在加拿大各地提供搬家服务，包括本地和长途搬迁。无论您是在同一城市内搬家还是跨省搬家，我们都能为您服务。"
-          },
-          "booking": {
-            "question": "我应该提前多久预订搬家？",
-            "answer": "我们建议至少提前2-4周预订您的搬家，以确保您首选的搬家日期，特别是在搬家旺季（春季和夏季）。但是，我们会尽最大努力在可能的情况下安排最后一刻的搬家。"
-          },
-          "insurance": {
-            "question": "你们有执照和保险吗？",
-            "answer": "是的！Swift Comfort Line是一家完全持证和投保的搬家公司，确保您的物品在整个搬家过程中的安全。"
-          },
-          "estimate": {
-            "question": "你们提供免费搬家估价吗？",
-            "answer": "是的！我们提供上门和虚拟估价，根据您的具体需求为您提供准确的搬家报价。请联系我们安排评估。"
-          },
-          "packing": {
-            "question": "你们提供打包服务和材料吗？",
-            "answer": "是的！我们提供全面的打包服务，配有全系列的箱子和打包用品。我们经验丰富的专业人员会仔细打包您的物品，确保它们安全到达目的地。"
-          },
-          "emergency": {
-            "question": "你们处理紧急或临时搬家吗？",
-            "answer": "是的！我们提供24/7紧急服务，并可提供短期通知搬家。虽然我们建议提前预订，但我们理解意外情况会发生，我们会尽最大努力满足您的紧急搬家需求。"
-          }
-        }
-      },
-      "cleaning": {
-        "title": "清洁服务常见问题",
-        "items": {
-          "services": {
-            "question": "你们提供哪些清洁服务？",
-            "answer": "我们提供全面的清洁服务，包括搬家后清洁、深度清洁、住宅清洁、商业清洁、地毯清洁和窗户清洁。所有服务都可根据您的具体需求定制。"
-          },
-          "booking": {
-            "question": "我应该提前多久预订清洁服务？",
-            "answer": "我们建议至少提前1-2周预订您的清洁服务，特别是搬家后清洁或深度清洁服务。但是，根据可用性，我们通常可以安排当天或次日清洁请求。"
-          },
-          "supplies": {
-            "question": "我需要提供清洁用品吗？",
-            "answer": "是的，如果这是一次性工作，我们可以处理好，并确保一切令您满意。但是，如果这是一个长期或定期的项目，我们会与您讨论最佳的管理方式。这样有助于我们合理安排时间，保持一致性，并根据您的具体需求每次都提供高质量的成果。"
-          },
-          "estimate": {
-            "question": "你们提供免费清洁估价吗？",
-            "answer": "是的！我们为所有清洁服务提供免费估价。我们可以虚拟或亲自评估您的空间，根据您的房产大小和所需服务为您提供准确的报价。"
-          },
-          "products": {
-            "question": "你们的清洁产品环保吗？",
-            "answer": "是的！我们使用环保、无毒的清洁产品作为标准。这些产品对儿童、宠物和敏感人群安全，同时仍能提供卓越的清洁效果。"
-          },
-          "frequency": {
-            "question": "你们提供定期清洁服务吗？",
-            "answer": "当然可以！我们提供灵活的清洁计划，包括每周、每两周和每月清洁计划。定期客户可获得优先安排和特别价格。我们可以定制最适合您的清洁时间表。"
-          }
-        }
-      },
-      "chauffeur": {
-  "title": "专车服务常见问题",
-  "items": {
-    "coverage": {
-      "question": "专车服务覆盖哪些区域?",
-      "answer": "我们在渥太华及周边社区提供专车接送服务，涵盖所有搬家与清洁服务覆盖的区域。无论是诊所、医院、药店还是杂货店，我们都能安全送达。"
+  "packages": {
+    "title": "服务套餐",
+    "subtitle": "灵活安排，适合您的日程",
+    "note": "每次上门最少 3 小时",
+    "basic": {
+      "name": "基础套餐",
+      "frequency": "每月 2 次上门"
     },
-    "booking": {
-      "question": "如何预约专车?",
-      "answer": "您可以通过我们的获取报价表格选择专车服务进行预约。建议至少提前24小时预约以确保您的首选时段，但我们也会尽力根据当日空档安排即时服务。"
+    "weekly": {
+      "name": "每周套餐",
+      "frequency": "每周 1 次上门"
     },
-    "companion": {
-      "question": "陪同服务是什么?",
-      "answer": "我们的陪同服务将为您安排一位关怀备至的团队成员，从接送到送回家全程陪伴您完成预约或跑腿任务。非常适合老年人、行动不便者或任何不希望独自出行的客户。"
+    "premium": {
+      "name": "高级套餐",
+      "frequency": "每周 2 次上门"
     },
-    "medical": {
-      "question": "你们专门提供医疗交通服务吗?",
-      "answer": "是的。我们在接送客户前往医生预约、专科就诊、医院入院与出院及药店取药方面经验丰富。我们的司机准时、耐心，并充分尊重您的医疗需求。"
-    },
-    "wait": {
-      "question": "司机会在我预约期间等候吗?",
-      "answer": "是的，我们的司机可以在您就诊或办理事务期间等候，待您准备好后再送您回家。等候时间详情及相关费用将在预约时告知。"
-    },
-    "emergency": {
-      "question": "是否提供当日或紧急接送服务?",
-      "answer": "我们会尽力根据空档安排紧急及当日接送请求。如需即时协助，请直接致电联系我们以获得最快响应。"
-    }
-  }
-}
-    },
-      "testimonials": {
-        "title": "客户评价",
-        "items": {
-          "1": {
-            "text": "Swift Comfort Line 给了我最棒的体验！预订过程快捷又顺畅。",
-            "name": "奥卢瓦托比·阿德巴约",
-            "role": "客户"
-          },
-          "2": {
-            "text": "司机专业，服务一流。我强烈推荐！",
-            "name": "玛丽·约翰逊",
-            "role": "常旅客"
-          },
-          "3": {
-            "text": "车辆非常干净舒适，整体服务令人印象深刻！",
-            "name": "詹姆斯·奥科罗",
-            "role": "商务主管"
-          },
-          "4": {
-            "text": "从始至终的卓越服务，团队专业又准时！",
-            "name": "萨拉·威廉姆斯",
-            "role": "企业客户"
-          },
-          "5": {
-            "text": "这是我经历过最棒的搬家体验，他们非常细心！",
-            "name": "大卫·陈",
-            "role": "房主"
-          },
-          "6": {
-            "text": "强烈推荐 Swift Comfort Line！专业、高效又实惠！",
-            "name": "艾莎·穆罕默德",
-            "role": "企业主"
-          },
-          "7": {
-  "text": "Swift Comfort Line 的专车服务真是帮了大忙。他们送我母亲去医院就诊，全程等候。服务非常专业贴心！",
-  "name": "帕特里夏·奥孔科",
-  "role": "家庭照护者"
-},
-"8": {
-  "text": "我每周都使用他们的专车服务去诊所就诊。准时可靠，陪同服务让我非常安心。",
-  "name": "罗伯特·门萨",
-  "role": "常客"
-}
-        }
-      },    
+    "bookBtn": "预约此套餐"
+  },
+  "trust": {
+    "title": "家庭选择我们的理由",
+    "item1": "每次同一位服务人员",
+    "item2": "可靠守时",
+    "item3": "灵活支持",
+    "item4": "注重安全与舒适"
+  },
   "serviceAreas": {
-    "title": "我们的服务区域",
-    "boundary": "我们自豪地为整个渥太华地区及周边社区提供服务。",
-    "viewMap": "🌐 查看大地图",
+    "label": "服务范围",
+    "title": "服务区域",
+    "boundary": "我们自豪地服务整个渥太华地区及周边社区。",
+    "viewMap": "查看大地图",
     "areas": {
-      "arnprior": "阿恩普赖尔 (Arnprior)",
-      "barrhaven": "巴尔黑文 (Barrhaven)",
-      "brockville": "布罗克维尔 (Brockville)",
-      "carleton_place": "卡尔顿普莱斯 (Carleton Place)",
-      "carp": "卡普 (Carp)",
-      "cornwall": "康沃尔 (Cornwall)",
-      "emburn": "恩本 (Emburn)",
-      "gatineau": "加蒂诺 (Gatineau)",
-      "kanata": "卡纳塔 (Kanata)",
-      "kemptville": "肯普特维尔 (Kemptville)",
-      "manotick": "马诺蒂克 (Manotick)",
-      "merrickville": "梅里克维尔 (Merrickville)",
-      "orleans": "奥尔良 (Orleans)",
-      "osgoode": "奥斯古德 (Osgoode)",
-      "ottawa": "渥太华 (Ottawa)",
-      "pembroke": "彭布罗克 (Pembroke)",
-      "perth": "珀斯 (Perth)",
-      "rockland": "罗克兰 (Rockland)",
-      "russell": "拉塞尔 (Russell)",
-      "smith_falls": "史密斯瀑布 (Smith Falls)",
-      "stittsville": "斯蒂茨维尔 (Stittsville)",
-      "wakefield": "韦克菲尔德 (Wakefield)"
+      "arnprior": "阿恩普赖尔",
+      "barrhaven": "巴哈文",
+      "brockville": "布罗克维尔",
+      "carleton_place": "卡尔顿广场",
+      "carp": "卡普",
+      "cornwall": "康沃尔",
+      "emburn": "昂布伦",
+      "gatineau": "加蒂诺",
+      "kanata": "卡纳塔",
+      "kemptville": "坎普特维尔",
+      "manotick": "马诺蒂克",
+      "merrickville": "梅里克维尔",
+      "orleans": "奥尔良",
+      "osgoode": "奥斯古德",
+      "ottawa": "渥太华",
+      "pembroke": "彭布罗克",
+      "perth": "珀斯",
+      "rockland": "罗克兰",
+      "russell": "拉塞尔",
+      "smith_falls": "史密斯福尔斯",
+      "stittsville": "斯蒂茨维尔",
+      "wakefield": "韦克菲尔德"
     }
+  },
+  "testimonials": {
+    "label": "家庭评价",
+    "title": "客户评价",
+    "items": {
+      "1": { "text": "Swift Comfort Line 给了我最好的体验！预约快速便捷。", "name": "Oluwatobi Adebayo", "role": "客户" },
+      "2": { "text": "专业的服务人员和一流的服务，强烈推荐！", "name": "Mary Johnson", "role": "常客" },
+      "3": { "text": "我妈妈每周都得到妥善照顾，每次都是同一位服务员，总是准时。", "name": "James Okoro", "role": "客户家属" },
+      "4": { "text": "从头到尾服务优秀，团队专业守时！", "name": "Sarah Williams", "role": "家庭成员" },
+      "5": { "text": "他们对我父亲照顾得非常好，他期待每次探访。", "name": "David Chen", "role": "客户家属" },
+      "6": { "text": "强烈推荐 Swift Comfort Line，专业、高效、实惠！", "name": "Aisha Mohammed", "role": "客户" },
+      "7": { "text": "Swift Comfort Line 真是救星。他们送我母亲去医院就诊并全程等候，非常专业贴心！", "name": "Patricia Okonkwo", "role": "家庭照顾者" },
+      "8": { "text": "我每周都使用他们的接送服务去诊所，可靠准时，陪伴服务让我非常安心。", "name": "Robert Mensah", "role": "常客" }
+    }
+  },
+  "contact": {
+    "label": "联系我们",
+    "title": "期待您的来电",
+    "subtitle": "致电或发送消息，我们将尽快回复您。",
+    "callUs": "直接致电我们",
+    "phone": "+1 613 851 6775",
+    "formBadge": "发送消息",
+    "formTitle": "发送消息",
+    "nameLabel": "您的姓名",
+    "phoneLabel": "电话号码",
+    "messageLabel": "留言",
+    "namePlaceholder": "您的全名",
+    "phonePlaceholder": "您的电话号码",
+    "messagePlaceholder": "我们能为您做什么？",
+    "submit": "发送消息",
+    "sending": "发送中..."
   },
   "footer": {
-    "description": "您值得信赖的合作伙伴，提供无缝搬迁和洁净空间服务。可靠、高效、贴心。",
+    "description": "渥太华老年人专属支持服务。由值得信赖的陪伴者提供接送、跑腿及每周上门服务。",
+    "tagline": "非医疗支持服务",
     "quickLinksTitle": "快速链接",
+    "servicesTitle": "服务",
     "links": {
       "home": "首页",
       "about": "关于我们",
@@ -364,9 +159,12 @@
       "testimonial": "客户评价"
     },
     "contactTitle": "联系我们",
-    "address": "1338 Wellington St West, Unit 10, Ottawa, Ontario, K1Y 3B7 Canada.",
+    "address": "加拿大安大略省渥太华市惠灵顿西街1338号10单元，邮编K1Y 3B7",
     "phone": "+1 613 851 6775",
     "email": "info{'@'}swiftcomfortline.com",
+    "cta": "联系我们",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
     "rights": "版权所有。"
   }
 }

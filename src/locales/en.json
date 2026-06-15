@@ -1,197 +1,95 @@
 {
- "navbar": {
+  "navbar": {
     "home": "Home",
     "about": "About Us",
     "services": "Services",
     "serviceAreas": "Service Areas",
     "testimonials": "Testimonials",
-    "getQuote": "Get a Quote"
+    "contact": "Contact Us",
+    "getInTouch": "Get in Touch"
   },
   "hero": {
-    "title1": "Swift Comfort Line",
-    "title2": "Where Convenience Meets Care",
-    "title3": "Your Property, Our Priority",
-    "subtitle": "Your trusted partner for seamless relocations, spotless spaces, and reliable door-to-door transportation. Professional, efficient, and always caring.",
-    "button1": "Our Services",
-    "button2": "Contact Us",
-    "scroll": "Scroll to explore"
+    "badge": "Compassion. Respect. Trust. Peace of Mind.",
+    "title_line1": "Support for",
+    "title_line2": "Everyday Living.",
+    "subtitle": "We provide non-medical support services that help seniors live safely, comfortably and independently in the place they call home.",
+    "button1": "Call Now",
+    "button2": "Learn More",
+    "trust1": "Same person every visit",
+    "trust2": "Reliable & punctual",
+    "trust3": "Family updates included",
+    "stat1": "Seniors Supported",
+    "stat2": "Client Satisfaction",
+    "stat3": "Years of Service"
   },
-  "satisfaction": {
-    "years": "Years of Experience",
-    "clients": "Client Satisfaction",
-    "moves": "Completed Moves",
-    "relocated": "Offices/Homes Relocated",
-    "referral": "Referral Rate"
-  },
-  "getQuote": {
-    "title": "Get a Quote",
-    "name": "Full Name",
-    "namePlaceholder": "Enter your full name",
-    "phone": "Phone Number",
-    "phonePlaceholder": "Enter your phone number",
-    "email": "Email Address",
-    "emailPlaceholder": "Enter your email",
-    "date": "Date of Service",
-    "sending": "Sending...",
-    "submit": "Submit",
-    
-    "landingDescription": "We provide professional moving, cleaning, and chauffeur services tailored to your needs. Whether you're relocating, need thorough cleaning, or require reliable door-to-door transportation, we're here to make your experience seamless and stress-free.",
-    "getQuoteButton": "Get a Quote",
-    "back": "Back",
-    "selectServiceTitle": "Select Your Service",
-    "selectServiceSubtitle": "What service do you need?",
-    "cleaningServiceTitle": "Cleaning Service",
-    "cleaningServiceDescription": "Professional cleaning for your home or office",
-    "movingServiceTitle": "Moving Service",
-    "movingServiceDescription": "Reliable moving solutions for your relocation",
-    "cleaningRequestTitle": "Cleaning Service Request",
-    "movingRequestTitle": "Moving Service Request",
-    
-    "cleaningAddress": "Cleaning Address",
-    "cleaningAddressPlaceholder": "Enter cleaning location",
-    "cleaningType": "Type of Cleaning",
-    "selectCleaningType": "Select cleaning type",
-    "standardCleaning": "Standard Cleaning",
-    "deepCleaning": "Deep Cleaning",
-    "moveInOutCleaning": "Move-out / Move-in Cleaning",
-    "commercialCleaning": "Commercial Cleaning",
-    "cleaningRooms": "Number of Rooms",
-    "cleaningRoomsPlaceholder": "Enter number of rooms",
-    "additionalCleaningDetails": "Additional Requirements (Optional)",
-    "additionalDetailsPlaceholder": "Describe any additional requirements",
-    
-    "movingFrom": "Moving From",
-    "movingFromPlaceholder": "Enter current location",
-    "movingTo": "Moving To",
-    "movingToPlaceholder": "Enter destination",
-    "movingRooms": "Number of Rooms",
-    "movingRoomsPlaceholder": "Enter number of rooms",
-    "additionalMovingDetails": "Additional Requirements (Optional)",
-
-    "chauffeurServiceTitle": "Chauffeur Service",
-"chauffeurServiceDescription": "Reliable door-to-door transportation for medical and personal errands",
-"chauffeurRequestTitle": "Chauffeur Service Request",
-"chauffeurType": "Type of Service",
-"selectChauffeurType": "Select service type",
-"chauffeurDoctor": "Doctor and Clinic Appointment",
-"chauffeurHospital": "Hospital Drop Offs and Pickups",
-"chauffeurPharmacy": "Pharmacy and Grocery Errands",
-"chauffeurCompanion": "Companion Service Available",
-"chauffeurDoorToDoor": "Reliable Door-to-Door Services",
-"chauffeurPickup": "Pickup Address",
-"chauffeurPickupPlaceholder": "Enter pickup location",
-"chauffeurDropoff": "Drop-off Address",
-"chauffeurDropoffPlaceholder": "Enter drop-off location",
-"chauffeurTime": "Preferred Pickup Time",
-"chauffeurCompanionNeeded": "I would like a companion for this trip",
-"additionalChauffeurDetails": "Additional Requirements (Optional)"
-},
   "about": {
-    "title": "About Us",
-    "paragraph1": "At Swift Comfort Line, we set the standard for reliable and professional moving and cleaning services across Ottawa and neighbouring cities. Our mission is simple — to deliver seamless, stress-free solutions that combine convenience, quality, and care.",
-    "paragraph2": "We specialize in residential and commercial moving, move-in/move-out services, junk removal, and comprehensive cleaning solutions tailored to your needs. Whether it's a household relocation, office move, or property refresh, our trained team ensures every job is completed safely, efficiently, and with the highest attention to detail.",
-    "paragraph3": "With a strong focus on professionalism, punctuality, and customer satisfaction, Swift Comfort Line continues to earn the trust of individuals, families, and businesses throughout the region. We take pride in treating every space and every move as if it were our own — ensuring our clients experience unmatched comfort and peace of mind.",
-    "quote": "Swift Comfort Line — Moving You Forward, Cleaning with Care."
+    "label": "Who We Are",
+    "title": "We Treat Your Loved Ones Like Family",
+    "paragraph1": "Swift Comfort Line helps seniors remain independent at home by providing reliable support with daily tasks, appointments, and companionship.",
+    "paragraph2": "We serve Ottawa and surrounding areas with a focus on safety, comfort, and trust. Every visit is handled by the same dedicated person — someone your family can count on.",
+    "quote": "Swift Comfort Line — Here when you need us, every single week.",
+    "cta": "Learn More About Us",
+    "cardTitle": "We Are Here to Help",
+    "cardBtn": "Get in Touch"
   },
   "ourServices": {
+    "label": "What We Offer",
     "title": "Our Services",
-    "subtitle": "Comprehensive moving and cleaning solutions for your needs",
-    "moving": {
-      "title": "Moving Services",
-      "items": {
-        "residential": {
-          "title": "Short & Long Distance Moving",
-          "content": "We handle moves of any distance — whether you're relocating across the street or across the country. Local moves offer same-day service within the city, while long-distance relocations include route planning, GPS tracking, and full insurance coverage. Door-to-door service with transparent pricing based on distance and volume. No matter how far you're going, we ensure your belongings arrive safely and on time."
-        },
-        "apartment": {
-          "title": "Residential & Business Moving",
-          "content": "At Swift Comfort Line, we understand that moving a home is different from relocating a business — each requires specialized care, planning, and expertise. That's why we offer dedicated moving solutions tailored to meet the unique needs of both residential and commercial clients."
-        },
-        "office": {
-          "title": "Heavy Equipment Delivery",
-          "content": "Swift Comfort Line specializes in the safe and efficient delivery of heavy equipment, machinery, and oversized items that require expert handling and specialized transportation. Whether you're a business owner, contractor, property manager, or homeowner, we have the experience, equipment, and trained personnel to move your heavy-duty items with precision and care."
-        },
-        "packing": {
-          "title": "Junk Removal Services",
-          "content": "Declutter your space and reclaim your property with Swift Comfort Line's professional junk removal services. Whether you're clearing out years of accumulated items, preparing for a move, renovating your home, or simply need to dispose of unwanted belongings, our experienced team handles all the heavy lifting and hauling for you."
-        },
-        "furniture": {
-          "title": "Furniture Disassembly & Reassembly",
-          "content": "Moving large furniture can be one of the most challenging aspects of any relocation. That's why Swift Comfort Line offers professional furniture disassembly and reassembly services to ensure your valuable pieces are transported safely and efficiently. Our experienced team knows how to properly take apart and rebuild furniture of all types, from basic bed frames to complex modular systems — saving you time, frustration, and potential damage to your belongings."
-        },
-        "specialty": {
-          "title": "Specialty Item Moving",
-          "content": "Not all belongings are created equal. Some items require extra care, specialized equipment, and expert handling due to their size, weight, fragility, or value. Swift Comfort Line specializes in moving delicate, oversized, and high-value specialty items that demand professional expertise and meticulous attention to detail. Whether it's a priceless family heirloom, expensive musical instrument, or irreplaceable artwork, we treat your most precious possessions with the utmost care and respect they deserve."
-        },
-        "internal": {
-          "title": "Internal Moves",
-          "content": "Not every move involves leaving your property. Sometimes, the best way to refresh your space, improve functionality, or accommodate lifestyle changes is to reorganize and rearrange what you already have. Swift Comfort Line offers professional internal moving services to help you relocate furniture, equipment, and belongings within your home, office, or building — without the stress, strain, or risk of injury that comes with DIY furniture moving."
-        },
-        "local": {
-          "title": "Local & Long-Distance Moves",
-          "content": "Whether you're moving across the street, across the city, or across the country, Swift Comfort Line provides comprehensive moving services designed to make your relocation seamless, stress-free, and efficient. We understand that every move is unique, with its own set of challenges, timelines, and requirements. That's why we offer tailored solutions for both local and long-distance moves, ensuring your belongings are transported safely and arrive on time, no matter the distance."
-        }
-      }
+    "subtitle": "Simple, reliable support for seniors living at home",
+    "mostPopular": "Most Popular",
+    "viewAll": "View All Services",
+    "transportation": {
+      "title": "Transportation & Appointments",
+      "description": "Safe and reliable rides to doctor visits, pharmacy trips, grocery stores, and other needs",
+      "item1": "Doctor & specialist visits",
+      "item2": "Pharmacy & grocery runs",
+      "item3": "Hospital drop-offs & pickups"
     },
-    "cleaning": {
-      "title": "Cleaning Services",
-      "items": {
-        "postMove": {
-          "title": "Office & Small Business Cleaning",
-          "content": "Keep your workspace spotless and professional with Swift Comfort Line's commercial cleaning services. We deliver reliable, detailed cleaning for offices, retail stores, and medical facilities — creating healthier, more productive environments. Our team handles offices, reception areas, restrooms, floors, windows, and kitchens with daily, weekly, or monthly schedules, plus options for deep, post-construction, move-in/move-out, and disinfection cleaning. Enjoy after-hours service, eco-friendly products, and trained, consistent staff — all with no long-term contracts and transparent pricing. Perfect for offices, clinics, shops, gyms, and salons. Let Swift Comfort Line keep your business spotless — contact us today for a free quote!"
-        },
-        "deep": {
-          "title": "Deep Cleaning",
-          "content": "A detailed, top-to-bottom cleaning that goes beyond regular maintenance. We sanitize hard-to-reach areas, remove built-up dirt and dust, and restore freshness to your workspace — perfect for quarterly upkeep or preparing for special events."
-        },
-        "residential": {
-          "title": "Apartment & Airbnb Cleaning",
-          "content": "Designed for tenants, landlords, and hosts who need spotless spaces fast. We handle everything from dusting and vacuuming to bathroom and kitchen sanitization, bed making, and restocking essentials. Ideal for move-ins, move-outs, or preparing your Airbnb for the next guest — leaving every room fresh, clean, and guest-ready."
-        },
-        "commercial": {
-          "title": "Commercial Cleaning",
-          "content": "Keep your business spotless and welcoming with our reliable commercial cleaning services. We clean offices, retail spaces, clinics, and more — from floors and restrooms to windows and workstations. Our flexible schedules, eco-friendly products, and trained professionals ensure a consistent, hygienic environment that enhances productivity and makes a great impression on clients and staff alike."
-        },
-        "carpet": {
-          "title": "Carpet & Upholstery Cleaning",
-          "content": "Revitalize your space with our professional carpet and upholstery cleaning service. We remove deep-seated dirt, stains, and allergens using safe, effective methods that restore color and freshness. Perfect for offices, apartments, and commercial spaces — leaving your carpets and furniture looking, smelling, and feeling like new."
-        },
-        "window": {
-          "title": "Move-In / Move-Out Cleaning",
-          "content": "Make your move stress-free with our detailed cleaning service for empty spaces. We scrub, sanitize, and polish every corner — from floors and windows to kitchens and bathrooms — ensuring your old place is spotless and your new one is move-in ready. Perfect for tenants, landlords, and property managers who want a fresh start or a flawless handover."
-        }
-      }
+    "homeSupport": {
+      "title": "Weekly Home Support",
+      "description": "Help with light housekeeping, organizing, and everyday tasks",
+      "item1": "Light housekeeping",
+      "item2": "Organizing & decluttering",
+      "item3": "Everyday errands"
     },
-    "chauffeur": {
-  "title": "Chauffeur Services",
-  "items": {
-    "doctor": {
-      "title": "Doctor and Clinic Appointment",
-      "content": "We provide reliable and comfortable transportation to and from your doctor or clinic appointments. Whether it's a routine check-up or a specialist visit, our professional chauffeurs ensure you arrive on time, stress-free, and in comfort."
-    },
-    "hospital": {
-      "title": "Hospital Drop Offs and Pickups",
-      "content": "Count on us for safe and timely hospital drop-offs and pickups. We understand the importance of punctuality and care during medical visits, and our drivers are committed to making every trip smooth, dignified, and worry-free."
-    },
-    "pharmacy": {
-      "title": "Pharmacy and Grocery Errands",
-      "content": "Let us handle your essential errands — from picking up prescriptions at the pharmacy to grocery shopping runs. Our chauffeurs assist with errands so you can focus on what matters most, without the hassle of transportation."
-    },
-    "companion": {
-      "title": "Companion Service Available",
-      "content": "For clients who prefer not to travel alone, we offer a companion service to accompany you throughout your appointment or errand. Our compassionate team provides friendly support and peace of mind for you and your loved ones."
-    },
-    "doorToDoor": {
-      "title": "Reliable Door-to-Door Services",
-      "content": "From the moment you step out your front door to the moment you return home, we've got you covered. Our door-to-door chauffeur service ensures seamless, comfortable, and dependable transportation every step of the way."
+    "companionship": {
+      "title": "Companionship & Check-ins",
+      "description": "Spending time with seniors, ensuring they are okay, and updating family if needed",
+      "item1": "Regular friendly visits",
+      "item2": "Safety check-ins",
+      "item3": "Family update calls"
     }
-  }
-}
+  },
+  "packages": {
+    "title": "Our Plans",
+    "subtitle": "Flexible support that fits your schedule",
+    "note": "Minimum visit: 3 hours",
+    "basic": {
+      "name": "Basic Plan",
+      "frequency": "2 visits per month"
+    },
+    "weekly": {
+      "name": "Weekly Plan",
+      "frequency": "1 visit per week"
+    },
+    "premium": {
+      "name": "Premium Plan",
+      "frequency": "2 visits per week"
+    },
+    "bookBtn": "Book This Plan"
+  },
+  "trust": {
+    "title": "Why Families Choose Us",
+    "item1": "Same person every visit",
+    "item2": "Reliable and punctual",
+    "item3": "Flexible support",
+    "item4": "Focus on safety and comfort"
   },
   "serviceAreas": {
+    "label": "Where We Serve",
     "title": "Our Service Areas",
     "boundary": "We proudly serve the entire Ottawa region and surrounding communities.",
-    "viewMap": "🌐 View Larger Map",
+    "viewMap": "View Larger Map",
     "areas": {
       "arnprior": "Arnprior",
       "barrhaven": "Barrhaven",
@@ -217,145 +115,42 @@
       "wakefield": "Wakefield"
     }
   },
-  "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "At Swift Comfort Line, we understand that moving and cleaning come with many questions. Below, we've answered some of the most common inquiries to help make your experience as smooth and stress-free as possible.",
-    "moving": {
-      "title": "Moving Services FAQ",
-      "items": {
-        "coverage": {
-          "question": "Where do you provide moving services?",
-          "answer": "We provide moving services across Canada, including local and long-distance relocations. Whether you're moving within the same city or across provinces, we've got you covered."
-        },
-        "booking": {
-          "question": "How far in advance should I book my move?",
-          "answer": "We recommend booking your move at least 2-4 weeks in advance to secure your preferred moving date, especially during peak moving seasons (spring and summer). However, we do our best to accommodate last-minute moves whenever possible."
-        },
-        "insurance": {
-          "question": "Are you licensed and insured?",
-          "answer": "Yes! Swift Comfort Line is a fully licensed and insured moving company, ensuring the safety of your belongings throughout the entire moving process."
-        },
-        "estimate": {
-          "question": "Do you offer free moving estimates?",
-          "answer": "Yes! We offer both in-home and virtual estimates to provide you with an accurate moving quote based on your specific needs. Contact us to schedule an assessment."
-        },
-        "packing": {
-          "question": "Do you provide packing services and materials?",
-          "answer": "Yes! We offer comprehensive packing services with a full line of boxes and packing supplies. Our experienced professionals will carefully pack your belongings to ensure they arrive safely at your destination."
-        },
-        "emergency": {
-          "question": "Do you handle emergency or last-minute moves?",
-          "answer": "Yes! We offer 24/7 emergency services and are available for short notice moves. While we recommend booking in advance, we understand that unexpected situations arise and we'll do our best to accommodate your urgent moving needs."
-        }
-      }
-    },
-    "cleaning": {
-      "title": "Cleaning Services FAQ",
-      "items": {
-        "services": {
-          "question": "What cleaning services do you offer?",
-          "answer": "We offer a comprehensive range of cleaning services including post-move cleaning, deep cleaning, residential cleaning, commercial cleaning, carpet cleaning, and window cleaning. All services are customized to meet your specific needs."
-        },
-        "booking": {
-          "question": "How far in advance should I book a cleaning?",
-          "answer": "We recommend booking your cleaning service at least 1-2 weeks in advance, especially for post-move or deep cleaning services. However, we can often accommodate same-day or next-day cleaning requests based on availability."
-        },
-        "supplies": {
-          "question": "Do I need to provide cleaning supplies?",
-          "answer": "No, you do not need to provide cleaning supplies. We bring our own professional and eco-friendly cleaning materials. However, for recurring or long-term projects, we can discuss tailored arrangements if needed."
-        },
-        "estimate": {
-          "question": "Do you offer free cleaning estimates?",
-          "answer": "Yes! We provide free estimates for all our cleaning services. We can assess your space virtually or in-person to give you an accurate quote based on the size of your property and the services required."
-        },
-        "products": {
-          "question": "Are your cleaning products eco-friendly?",
-          "answer": "Yes! We use environmentally friendly, non-toxic cleaning products as our standard. These products are safe for children, pets, and those with sensitivities, while still providing exceptional cleaning results."
-        },
-        "frequency": {
-          "question": "Do you offer recurring cleaning services?",
-          "answer": "Absolutely! We offer flexible cleaning schedules including weekly, bi-weekly, and monthly cleaning plans. Regular clients receive priority scheduling and special rates. We can customize a cleaning schedule that works best for you."
-        }
-      }
-    },
-    "chauffeur": {
-  "title": "Chauffeur Services FAQ",
-  "items": {
-    "coverage": {
-      "question": "What areas do your chauffeur services cover?",
-      "answer": "We provide chauffeur services across Ottawa and surrounding communities, including all areas we serve for moving and cleaning. Whether it's a local clinic, hospital, pharmacy, or grocery store, we'll get you there safely."
-    },
-    "booking": {
-      "question": "How do I book a chauffeur?",
-      "answer": "You can book through our Get a Quote form by selecting Chauffeur Service. We recommend booking at least 24 hours in advance to secure your preferred time, though we do our best to accommodate same-day requests when available."
-    },
-    "companion": {
-      "question": "What is the companion service?",
-      "answer": "Our companion service pairs you with a caring team member who accompanies you throughout your appointment or errand — from the moment we pick you up to when we return you home. It's ideal for seniors, individuals with mobility challenges, or anyone who simply prefers not to travel alone."
-    },
-    "medical": {
-      "question": "Do you specialize in medical transportation?",
-      "answer": "Yes. We are experienced in transporting clients to and from doctor appointments, specialist visits, hospital admissions and discharges, and pharmacy pickups. Our drivers are punctual, patient, and respectful of your medical needs."
-    },
-    "wait": {
-      "question": "Will the driver wait for me during my appointment?",
-      "answer": "Yes, our drivers can wait for you during your appointment or errand and bring you back home once you're ready. Wait time details and any applicable fees are discussed at the time of booking."
-    },
-    "emergency": {
-      "question": "Are same-day or urgent rides available?",
-      "answer": "We do our best to accommodate urgent and same-day ride requests based on availability. Please contact us directly by phone for the fastest response when you need immediate assistance."
-    }
-  }
-}
-  },
   "testimonials": {
+    "label": "What Families Say",
     "title": "What Our Clients Say",
     "items": {
-      "1": {
-        "text": "Swift Comfort Line gave me the best experience ever! Booking was fast and seamless.",
-        "name": "Oluwatobi Adebayo",
-        "role": "Customer"
-      },
-      "2": {
-        "text": "Professional drivers and top-notch service. I highly recommend them!",
-        "name": "Mary Johnson",
-        "role": "Frequent Traveler"
-      },
-      "3": {
-        "text": "I was impressed with how clean and comfortable the vehicle was. Great service overall!",
-        "name": "James Okoro",
-        "role": "Business Executive"
-      },
-      "4": {
-        "text": "Excellent service from start to finish. The team was professional and punctual!",
-        "name": "Sarah Williams",
-        "role": "Corporate Client"
-      },
-      "5": {
-        "text": "Best moving experience I've ever had. They handled everything with care!",
-        "name": "David Chen",
-        "role": "Homeowner"
-      },
-      "6": {
-        "text": "Highly recommend Swift Comfort Line. Professional, efficient, and affordable!",
-        "name": "Aisha Mohammed",
-        "role": "Business Owner"
-      },
-      "7": {
-  "text": "Swift Comfort Line's chauffeur service was a lifesaver. They took my mother to her hospital appointment and waited for her the entire time. So professional and caring!",
-  "name": "Patricia Okonkwo",
-  "role": "Family Caregiver"
-},
-"8": {
-  "text": "I use their chauffeur service every week for my clinic visits. Reliable, always on time, and the companion service gives me so much peace of mind.",
-  "name": "Robert Mensah",
-  "role": "Regular Client"
-}
+      "1": { "text": "Swift Comfort Line gave me the best experience ever! Booking was fast and seamless.", "name": "Oluwatobi Adebayo", "role": "Client" },
+      "2": { "text": "Professional and top-notch service. I highly recommend them!", "name": "Mary Johnson", "role": "Frequent Client" },
+      "3": { "text": "My mother is in great hands every week. Same person, always on time.", "name": "James Okoro", "role": "Son of a Client" },
+      "4": { "text": "Excellent service from start to finish. The team was professional and punctual!", "name": "Sarah Williams", "role": "Family Member" },
+      "5": { "text": "They take such good care of my father. He looks forward to every visit.", "name": "David Chen", "role": "Son of a Client" },
+      "6": { "text": "Highly recommend Swift Comfort Line. Professional, efficient, and affordable!", "name": "Aisha Mohammed", "role": "Client" },
+      "7": { "text": "Swift Comfort Line was a lifesaver. They took my mother to her hospital appointment and waited the entire time. So professional and caring!", "name": "Patricia Okonkwo", "role": "Family Caregiver" },
+      "8": { "text": "I use their service every week for my clinic visits. Reliable, always on time, and the companion service gives me so much peace of mind.", "name": "Robert Mensah", "role": "Regular Client" }
     }
   },
+  "contact": {
+    "label": "Get in Touch",
+    "title": "We'd love to hear from you",
+    "subtitle": "Call us or send a message — we'll get back to you quickly.",
+    "callUs": "Call us directly",
+    "phone": "+1 613 851 6775",
+    "formBadge": "Send a Message",
+    "formTitle": "Send us a message",
+    "nameLabel": "Your name",
+    "phoneLabel": "Phone number",
+    "messageLabel": "Message",
+    "namePlaceholder": "Your name",
+    "phonePlaceholder": "Your phone number",
+    "messagePlaceholder": "How can we help?",
+    "submit": "Send Message",
+    "sending": "Sending..."
+  },
   "footer": {
-    "description": "Your trusted partner for seamless relocations and spotless spaces. Reliable, efficient, and always caring.",
+    "description": "Reliable senior support in Ottawa. Transportation, errands, and weekly home visits from a trusted companion.",
+    "tagline": "Non-Medical Support Services",
     "quickLinksTitle": "Quick Links",
+    "servicesTitle": "Services",
     "links": {
       "home": "Home",
       "about": "About Us",
@@ -367,6 +162,9 @@
     "address": "1338 Wellington St West, Unit 10, Ottawa, Ontario, K1Y 3B7 Canada.",
     "phone": "+1 613 851 6775",
     "email": "info{'@'}swiftcomfortline.com",
+    "cta": "Get in Touch",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
     "rights": "All rights reserved."
   }
 }

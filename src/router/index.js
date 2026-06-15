@@ -1,7 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue';
-import Navbar from '@/components/Navbar.vue'
-import GetQuote from '@/components/GetQuote.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -9,27 +6,19 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView,
-    },
-    {
-      path:'/GetQuote',
-      name: 'GetQuote',
-      component: GetQuote,
-    },
-    {
-      path:'/Navbar',
-      name: 'Navbar',
-      component: Navbar,
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue'),
+      component: { template: '<div></div>' }, // App.vue handles everything
     },
   ],
+  scrollBehavior(to) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth',
+        top: 80,
+      }
+    }
+    return { top: 0 }
+  },
 })
 
 export default router

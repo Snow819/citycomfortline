@@ -5,329 +5,91 @@
     "services": "Services",
     "serviceAreas": "Zones desservies",
     "testimonials": "Témoignages",
-    "getQuote": "Obtenir un devis"
+    "contact": "Nous joindre",
+    "getInTouch": "Nous contacter"
   },
-    "satisfaction": {
-      "years": "Années d'expérience",
-      "clients": "Satisfaction des clients",
-      "moves": "Déménagements effectués",
-      "relocated": "Bureaux/Maisons déplacés",
-      "referral": "Taux de recommandation"
-    },  
   "hero": {
-    "title1": "Swift Comfort Line",
-    "title2": "Là où la commodité rencontre le soin",
-    "title3": "Votre propriété, notre priorité",
-    "subtitle": "Votre partenaire de confiance pour des déménagements sans stress, des espaces impeccables et un transport porte-à-porte fiable. Professionnel, efficace et toujours attentionné.",
-    "button1": "Nos Services",
-    "button2": "Contactez-nous",
-    "scroll": "Faites défiler pour explorer"
+    "badge": "Compassion. Respect. Confiance. Tranquillité d'esprit.",
+    "title_line1": "Soutien pour",
+    "title_line2": "la vie quotidienne.",
+    "subtitle": "Nous offrons des services de soutien non médicaux pour aider les aînés à vivre en toute sécurité, confortablement et de façon autonome dans leur chez-soi.",
+    "button1": "Appeler maintenant",
+    "button2": "En savoir plus",
+    "trust1": "La même personne à chaque visite",
+    "trust2": "Fiable et ponctuel",
+    "trust3": "Mises à jour pour la famille incluses",
+    "stat1": "Aînés soutenus",
+    "stat2": "Satisfaction client",
+    "stat3": "Années de service"
   },
-    "getQuote": {
-    "title": "Obtenir un Devis",
-    "name": "Nom Complet",
-    "namePlaceholder": "Entrez votre nom complet",
-    "phone": "Numéro de Téléphone",
-    "phonePlaceholder": "Entrez votre numéro de téléphone",
-    "email": "Adresse Email",
-    "emailPlaceholder": "Entrez votre email",
-    "date": "Date du Service",
-    "sending": "Envoi en cours...",
-    "submit": "Soumettre",
-    
-    "landingDescription": "Nous offrons des services professionnels de déménagement, de nettoyage et de chauffeur adaptés à vos besoins. Que vous déménagiez, ayez besoin d'un nettoyage complet ou d'un transport porte-à-porte fiable, nous sommes là pour rendre votre expérience fluide et sans stress.",
-    "getQuoteButton": "Obtenir un Devis",
-    "back": "Retour",
-    "selectServiceTitle": "Sélectionnez Votre Service",
-    "selectServiceSubtitle": "De quel service avez-vous besoin?",
-    "cleaningServiceTitle": "Service de Nettoyage",
-    "cleaningServiceDescription": "Nettoyage professionnel pour votre maison ou bureau",
-    "movingServiceTitle": "Service de Déménagement",
-    "movingServiceDescription": "Solutions de déménagement fiables pour votre relocalisation",
-    "cleaningRequestTitle": "Demande de Service de Nettoyage",
-    "movingRequestTitle": "Demande de Service de Déménagement",
-    
-    "cleaningAddress": "Adresse de Nettoyage",
-    "cleaningAddressPlaceholder": "Entrez l'emplacement du nettoyage",
-    "cleaningType": "Type de Nettoyage",
-    "selectCleaningType": "Sélectionnez le type de nettoyage",
-    "standardCleaning": "Nettoyage Standard",
-    "deepCleaning": "Nettoyage en Profondeur",
-    "moveInOutCleaning": "Nettoyage de Déménagement (Entrée/Sortie)",
-    "commercialCleaning": "Nettoyage Commercial",
-    "cleaningRooms": "Nombre de Pièces",
-    "cleaningRoomsPlaceholder": "Entrez le nombre de pièces",
-    "additionalCleaningDetails": "Exigences Supplémentaires (Optionnel)",
-    "additionalDetailsPlaceholder": "Décrivez toute exigence supplémentaire",
-    
-    "movingFrom": "Déménager De",
-    "movingFromPlaceholder": "Entrez l'emplacement actuel",
-    "movingTo": "Déménager Vers",
-    "movingToPlaceholder": "Entrez la destination",
-    "movingRooms": "Nombre de Pièces",
-    "movingRoomsPlaceholder": "Entrez le nombre de pièces",
-    "additionalMovingDetails": "Exigences Supplémentaires (Optionnel)",
-
-    "chauffeurServiceTitle": "Service de Chauffeur",
-"chauffeurServiceDescription": "Transport porte-à-porte fiable pour vos rendez-vous médicaux et courses personnelles",
-"chauffeurRequestTitle": "Demande de Service de Chauffeur",
-"chauffeurType": "Type de Service",
-"selectChauffeurType": "Sélectionnez le type de service",
-"chauffeurDoctor": "Rendez-vous chez le Médecin et en Clinique",
-"chauffeurHospital": "Dépôts et Récupérations à l'Hôpital",
-"chauffeurPharmacy": "Courses en Pharmacie et à l'Épicerie",
-"chauffeurCompanion": "Service d'Accompagnement Disponible",
-"chauffeurDoorToDoor": "Services Porte-à-Porte Fiables",
-"chauffeurPickup": "Adresse de Prise en Charge",
-"chauffeurPickupPlaceholder": "Entrez le lieu de prise en charge",
-"chauffeurDropoff": "Adresse de Dépose",
-"chauffeurDropoffPlaceholder": "Entrez le lieu de dépose",
-"chauffeurTime": "Heure de Prise en Charge Souhaitée",
-"chauffeurCompanionNeeded": "Je souhaite un accompagnateur pour ce trajet",
-"additionalChauffeurDetails": "Exigences Supplémentaires (Optionnel)"
-},
-"about": {
-  "title": "À propos de nous",
-  "paragraph1": "Chez Swift Comfort Line, nous établissons la norme en matière de services de déménagement et de nettoyage fiables et professionnels à Ottawa et dans les villes voisines. Notre mission est simple — offrir des solutions fluides et sans stress qui allient commodité, qualité et soin.",
-  "paragraph2": "Nous sommes spécialisés dans le déménagement résidentiel et commercial, les services d'emménagement/déménagement, l'enlèvement de déchets et des solutions de nettoyage complètes adaptées à vos besoins. Qu'il s'agisse d'un déménagement de maison, d'un transfert de bureau ou d'une remise en état de propriété, notre équipe formée veille à ce que chaque travail soit effectué en toute sécurité, efficacement et avec la plus grande attention aux détails.",
-  "paragraph3": "Avec un fort accent sur le professionnalisme, la ponctualité et la satisfaction du client, Swift Comfort Line continue de gagner la confiance des particuliers, des familles et des entreprises de toute la région. Nous sommes fiers de traiter chaque espace et chaque déménagement comme si c'était le nôtre — garantissant à nos clients un confort et une tranquillité d'esprit inégalés.",
-  "quote": "Swift Comfort Line — Vous faire avancer, nettoyer avec soin."
-},
+  "about": {
+    "label": "Qui sommes-nous",
+    "title": "Nous traitons vos proches comme de la famille",
+    "paragraph1": "Swift Comfort Line aide les aînés à rester autonomes à domicile en offrant un soutien fiable pour les tâches quotidiennes, les rendez-vous et la compagnie.",
+    "paragraph2": "Nous servons Ottawa et les environs en mettant l'accent sur la sécurité, le confort et la confiance. Chaque visite est assurée par la même personne dévouée — quelqu'un sur qui votre famille peut compter.",
+    "quote": "Swift Comfort Line — Présents quand vous avez besoin de nous, chaque semaine.",
+    "cta": "En savoir plus sur nous",
+    "cardTitle": "Nous sommes là pour vous aider",
+    "cardBtn": "Nous contacter"
+  },
   "ourServices": {
-    "title": "Nos Services",
-    "subtitle": "Des solutions complètes de déménagement et de nettoyage adaptées à vos besoins",
-    "moving": {
-      "title": "Services de Déménagement",
-      "items": {
-        "residential": {
-          "title": "Déménagements de Courte et Longue Distance",
-          "content": "Nous gérons les déménagements de toute distance — que vous changiez de rue ou de province. Les déménagements locaux bénéficient d'un service le jour même, tandis que les longs trajets incluent la planification d'itinéraire, le suivi GPS et une couverture d'assurance complète. Service porte à porte avec tarification transparente selon la distance et le volume. Peu importe la distance, vos biens arrivent en toute sécurité et à temps."
-        },
-        "apartment": {
-          "title": "Déménagement Résidentiel et Commercial",
-          "content": "Chez Swift Comfort Line, nous savons qu'un déménagement résidentiel diffère d'un transfert d'entreprise — chacun demande une attention, une planification et une expertise particulières. C'est pourquoi nous proposons des solutions dédiées pour répondre aux besoins uniques de nos clients résidentiels et professionnels."
-        },
-        "office": {
-          "title": "Livraison d'Équipement Lourd",
-          "content": "Swift Comfort Line est spécialisée dans la livraison sûre et efficace d'équipements lourds, de machines et d'objets surdimensionnés nécessitant un maniement expert et un transport spécialisé. Que vous soyez entrepreneur, gestionnaire immobilier ou particulier, notre équipe expérimentée assure le déplacement de vos articles robustes avec précision et soin."
-        },
-        "packing": {
-          "title": "Service de Débarras et Enlèvement",
-          "content": "Libérez de l'espace et reprenez le contrôle de votre propriété grâce à notre service professionnel de débarras. Que vous vidiez des années d'accumulation, prépariez un déménagement ou rénoviez, notre équipe s'occupe du tri, du levage et du transport pour vous."
-        },
-        "furniture": {
-          "title": "Démontage et Remontage de Meubles",
-          "content": "Le déplacement de meubles volumineux peut être l'un des aspects les plus complexes d'un déménagement. Nous offrons un service professionnel de démontage et de remontage pour garantir un transport sûr et sans dommage. Notre équipe connaît chaque type de mobilier — des lits aux systèmes modulaires — vous faisant gagner temps et tranquillité."
-        },
-        "specialty": {
-          "title": "Transport d'Objets Spéciaux",
-          "content": "Certains biens nécessitent une attention particulière, un équipement adapté et une manipulation experte. Swift Comfort Line assure le transport sécurisé d'articles délicats, fragiles ou de grande valeur tels que pianos, œuvres d'art et objets précieux, avec le soin et le respect qu'ils méritent."
-        },
-        "internal": {
-          "title": "Déménagements Internes",
-          "content": "Tous les déménagements ne nécessitent pas de quitter les lieux. Parfois, il suffit de réorganiser votre mobilier ou votre équipement pour améliorer votre espace. Nous offrons des services de déplacement interne pour maisons, bureaux ou bâtiments — sans stress, sans effort et en toute sécurité."
-        },
-        "local": {
-          "title": "Déménagements Locaux et Longue Distance",
-          "content": "Que vous déménagiez à proximité ou à travers le pays, Swift Comfort Line fournit un service complet pour rendre votre expérience fluide et sans tracas. Chaque déménagement étant unique, nous proposons des solutions sur mesure garantissant la sécurité et la ponctualité de vos biens, quelle que soit la distance."
-        }
-      }
+    "label": "Ce que nous offrons",
+    "title": "Nos services",
+    "subtitle": "Un soutien simple et fiable pour les aînés à domicile",
+    "mostPopular": "Le plus populaire",
+    "viewAll": "Voir tous les services",
+    "transportation": {
+      "title": "Transport et rendez-vous",
+      "description": "Trajets sûrs et fiables vers les médecins, pharmacies, épiceries et autres besoins",
+      "item1": "Visites chez le médecin et spécialistes",
+      "item2": "Courses à la pharmacie et à l'épicerie",
+      "item3": "Dépôts et collectes à l'hôpital"
     },
-    "cleaning": {
-      "title": "Services de Nettoyage",
-      "items": {
-        "postMove": {
-          "title": "Nettoyage de Bureaux et Petites Entreprises",
-          "content": "Gardez votre espace de travail impeccable et professionnel grâce aux services de nettoyage commercial de Swift Comfort Line. Nous offrons un nettoyage fiable et minutieux pour bureaux, commerces et cliniques, créant des environnements sains et productifs. Notre équipe s'occupe des bureaux, halls, sols, vitres, cuisines et sanitaires selon un horaire quotidien, hebdomadaire ou mensuel, avec options de nettoyage en profondeur, après travaux ou désinfection. Produits écologiques, service hors heures d'ouverture, personnel formé — sans contrat à long terme ni frais cachés."
-        },
-        "deep": {
-          "title": "Nettoyage en Profondeur",
-          "content": "Un nettoyage complet et détaillé allant au-delà de l'entretien régulier. Nous désinfectons les zones difficiles d'accès, éliminons la saleté incrustée et redonnons fraîcheur et éclat à chaque pièce. Idéal avant un événement ou pour un grand entretien saisonnier."
-        },
-        "residential": {
-          "title": "Nettoyage d'Appartements et Airbnb",
-          "content": "Conçu pour les locataires, propriétaires et hôtes exigeant des espaces impeccables rapidement. Nous nous occupons de tout — dépoussiérage, aspiration, désinfection des salles de bain et cuisines, préparation des lits et réapprovisionnement des essentiels. Parfait pour les entrées, sorties ou la préparation d'un logement Airbnb avant l'arrivée d'un invité."
-        },
-        "commercial": {
-          "title": "Nettoyage Commercial",
-          "content": "Maintenez un espace professionnel propre et accueillant grâce à nos services de nettoyage commercial fiables. Nous nettoyons bureaux, commerces, cliniques et plus encore — sols, vitres, postes de travail et sanitaires. Nos horaires flexibles, produits écologiques et personnel qualifié garantissent un environnement sain et constant qui favorise la productivité et donne une excellente impression."
-        },
-        "carpet": {
-          "title": "Nettoyage de Tapis et de Meubles",
-          "content": "Redonnez vie à vos espaces grâce à notre service professionnel de nettoyage de tapis et de meubles. Nous éliminons la saleté incrustée, les taches et les allergènes à l'aide de méthodes sûres et efficaces, ravivant couleur et fraîcheur. Idéal pour bureaux, appartements et commerces."
-        },
-        "window": {
-          "title": "Nettoyage d'Entrée / de Sortie",
-          "content": "Simplifiez votre déménagement grâce à notre service complet de nettoyage pour espaces vides. Nous nettoyons et désinfectons chaque coin — sols, vitres, cuisines et salles de bain — afin que votre ancien logement soit impeccable et le nouveau prêt à emménager. Parfait pour locataires, propriétaires et gestionnaires immobiliers."
-        }
-      }
+    "homeSupport": {
+      "title": "Soutien hebdomadaire à domicile",
+      "description": "Aide pour l'entretien léger, l'organisation et les tâches quotidiennes",
+      "item1": "Entretien léger du domicile",
+      "item2": "Organisation et désencombrement",
+      "item3": "Courses quotidiennes"
     },
-    "chauffeur": {
-  "title": "Services de Chauffeur",
-  "items": {
-    "doctor": {
-      "title": "Rendez-vous chez le Médecin et en Clinique",
-      "content": "Nous offrons un transport fiable et confortable pour vos rendez-vous médicaux et en clinique. Que ce soit pour une consultation de routine ou une visite chez un spécialiste, nos chauffeurs professionnels vous garantissent une arrivée ponctuelle et sereine."
-    },
-    "hospital": {
-      "title": "Dépôts et Récupérations à l'Hôpital",
-      "content": "Comptez sur nous pour des dépôts et récupérations sûrs et ponctuels à l'hôpital. Nous comprenons l'importance de la ponctualité et du soin lors des visites médicales, et nos chauffeurs s'engagent à rendre chaque trajet fluide et sans souci."
-    },
-    "pharmacy": {
-      "title": "Courses en Pharmacie et à l'Épicerie",
-      "content": "Confiez-nous vos courses essentielles — récupération d'ordonnances à la pharmacie ou courses à l'épicerie. Nos chauffeurs s'occupent de vos déplacements pour que vous puissiez vous concentrer sur l'essentiel."
-    },
-    "companion": {
-      "title": "Service d'Accompagnement Disponible",
-      "content": "Pour les clients qui préfèrent ne pas voyager seuls, nous proposons un service d'accompagnement tout au long de votre rendez-vous ou de vos courses. Notre équipe bienveillante offre un soutien chaleureux et une tranquillité d'esprit pour vous et vos proches."
-    },
-    "doorToDoor": {
-      "title": "Services Porte-à-Porte Fiables",
-      "content": "De votre porte d'entrée jusqu'à votre retour à domicile, nous prenons tout en charge. Notre service de chauffeur porte-à-porte garantit un transport fluide, confortable et fiable à chaque étape du trajet."
+    "companionship": {
+      "title": "Compagnie et visites de contrôle",
+      "description": "Présence auprès des aînés, vérification de leur bien-être et mises à jour pour la famille",
+      "item1": "Visites amicales régulières",
+      "item2": "Visites de sécurité",
+      "item3": "Appels de mise à jour pour la famille"
     }
-  }
-}
   },
-    "faq": {
-      "title": "Questions Fréquemment Posées",
-      "subtitle": "Chez Swift Comfort Line, nous comprenons que le déménagement et le nettoyage s'accompagnent de nombreuses questions. Ci-dessous, nous avons répondu aux questions les plus courantes pour rendre votre expérience aussi fluide et sans stress que possible.",
-      "moving": {
-        "title": "FAQ Services de Déménagement",
-        "items": {
-          "coverage": {
-            "question": "Où fournissez-vous des services de déménagement?",
-            "answer": "Nous fournissons des services de déménagement partout au Canada, y compris les déménagements locaux et longue distance. Que vous déménagiez dans la même ville ou d'une province à l'autre, nous sommes là pour vous."
-          },
-          "booking": {
-            "question": "À quel point à l'avance dois-je réserver mon déménagement?",
-            "answer": "Nous recommandons de réserver votre déménagement au moins 2 à 4 semaines à l'avance pour garantir votre date de déménagement préférée, surtout pendant les saisons de pointe (printemps et été). Cependant, nous faisons de notre mieux pour accommoder les déménagements de dernière minute dans la mesure du possible."
-          },
-          "insurance": {
-            "question": "Êtes-vous autorisé et assuré?",
-            "answer": "Oui! Swift Comfort Line est une entreprise de déménagement entièrement autorisée et assurée, garantissant la sécurité de vos biens tout au long du processus de déménagement."
-          },
-          "estimate": {
-            "question": "Offrez-vous des estimations de déménagement gratuites?",
-            "answer": "Oui! Nous offrons des estimations à domicile et virtuelles pour vous fournir un devis de déménagement précis en fonction de vos besoins spécifiques. Contactez-nous pour planifier une évaluation."
-          },
-          "packing": {
-            "question": "Fournissez-vous des services d'emballage et du matériel?",
-            "answer": "Oui! Nous offrons des services d'emballage complets avec une gamme complète de boîtes et de fournitures d'emballage. Nos professionnels expérimentés emballer soigneusement vos biens pour garantir qu'ils arrivent en toute sécurité à destination."
-          },
-          "emergency": {
-            "question": "Gérez-vous les déménagements d'urgence ou de dernière minute?",
-            "answer": "Oui! Nous offrons des services d'urgence 24/7 et sommes disponibles pour les déménagements à court préavis. Bien que nous recommandions de réserver à l'avance, nous comprenons que des situations imprévues surviennent et nous ferons de notre mieux pour répondre à vos besoins urgents."
-          }
-        }
-      },
-      "cleaning": {
-        "title": "FAQ Services de Nettoyage",
-        "items": {
-          "services": {
-            "question": "Quels services de nettoyage offrez-vous?",
-            "answer": "Nous offrons une gamme complète de services de nettoyage, notamment le nettoyage après déménagement, le nettoyage en profondeur, le nettoyage résidentiel, le nettoyage commercial, le nettoyage de tapis et le nettoyage de vitres. Tous les services sont personnalisés pour répondre à vos besoins spécifiques."
-          },
-          "booking": {
-            "question": "À quel point à l'avance dois-je réserver un nettoyage?",
-            "answer": "Nous recommandons de réserver votre service de nettoyage au moins 1 à 2 semaines à l'avance, surtout pour les services de nettoyage après déménagement ou en profondeur. Cependant, nous pouvons souvent accommoder des demandes de nettoyage le jour même ou le lendemain selon la disponibilité."
-          },
-          "supplies": {
-            "question": "Dois-je fournir des produits de nettoyage?",
-            "answer": "Oui, nous pouvons nous en occuper s’il s’agit d’un travail ponctuel et nous veillerons à ce que tout soit réalisé à votre satisfaction.Cependant, s’il s’agit d’un projet récurrent ou à long terme, nous discuterons de la meilleure façon de le gérer efficacement.Cela nous aide à planifier les horaires, maintenir la cohérence et offrir des résultats de haute qualité adaptés à vos besoins."
-          },
-          "estimate": {
-            "question": "Offrez-vous des estimations de nettoyage gratuites?",
-            "answer": "Oui! Nous fournissons des estimations gratuites pour tous nos services de nettoyage. Nous pouvons évaluer votre espace virtuellement ou en personne pour vous donner un devis précis en fonction de la taille de votre propriété et des services requis."
-          },
-          "products": {
-            "question": "Vos produits de nettoyage sont-ils écologiques?",
-            "answer": "Oui! Nous utilisons des produits de nettoyage écologiques et non toxiques comme norme. Ces produits sont sans danger pour les enfants, les animaux domestiques et les personnes sensibles, tout en offrant des résultats de nettoyage exceptionnels."
-          },
-          "frequency": {
-            "question": "Offrez-vous des services de nettoyage récurrents?",
-            "answer": "Absolument! Nous offrons des horaires de nettoyage flexibles, y compris des plans de nettoyage hebdomadaires, bihebdomadaires et mensuels. Les clients réguliers reçoivent une planification prioritaire et des tarifs spéciaux. Nous pouvons personnaliser un horaire de nettoyage qui vous convient le mieux."
-          }
-        }
-      },
-      "chauffeur": {
-  "title": "FAQ Service de Chauffeur",
-  "items": {
-    "coverage": {
-      "question": "Quelles zones couvrez-vous avec votre service de chauffeur?",
-      "answer": "Nous offrons notre service de chauffeur à Ottawa et dans les communautés environnantes, y compris toutes les zones desservies pour le déménagement et le nettoyage. Que ce soit une clinique, un hôpital, une pharmacie ou une épicerie, nous vous y amenons en toute sécurité."
+  "packages": {
+    "title": "Nos forfaits",
+    "subtitle": "Un soutien flexible adapté à votre emploi du temps",
+    "note": "Visite minimale : 3 heures",
+    "basic": {
+      "name": "Forfait de base",
+      "frequency": "2 visites par mois"
     },
-    "booking": {
-      "question": "Comment réserver un chauffeur?",
-      "answer": "Vous pouvez réserver via notre formulaire Obtenir un Devis en sélectionnant Service de Chauffeur. Nous recommandons de réserver au moins 24 heures à l'avance pour garantir votre créneau, bien que nous fassions de notre mieux pour accommoder les demandes le jour même selon la disponibilité."
+    "weekly": {
+      "name": "Forfait hebdomadaire",
+      "frequency": "1 visite par semaine"
     },
-    "companion": {
-      "question": "En quoi consiste le service d'accompagnement?",
-      "answer": "Notre service d'accompagnement vous associe à un membre attentionné de notre équipe qui vous accompagne tout au long de votre rendez-vous ou course — du moment de la prise en charge jusqu'au retour à domicile. Idéal pour les personnes âgées, les personnes à mobilité réduite ou toute personne préférant ne pas voyager seule."
+    "premium": {
+      "name": "Forfait premium",
+      "frequency": "2 visites par semaine"
     },
-    "medical": {
-      "question": "Proposez-vous un transport médical spécialisé?",
-      "answer": "Oui. Nous avons l'expérience du transport de clients vers et depuis des rendez-vous médicaux, des visites chez des spécialistes, des admissions et sorties d'hôpital, ainsi que des récupérations en pharmacie. Nos chauffeurs sont ponctuels, patients et respectueux de vos besoins médicaux."
-    },
-    "wait": {
-      "question": "Le chauffeur m'attend-il pendant mon rendez-vous?",
-      "answer": "Oui, nos chauffeurs peuvent vous attendre pendant votre rendez-vous ou course et vous raccompagner chez vous dès que vous êtes prêt. Les détails concernant le temps d'attente et les éventuels frais sont discutés lors de la réservation."
-    },
-    "emergency": {
-      "question": "Les trajets urgents ou le jour même sont-ils disponibles?",
-      "answer": "Nous faisons de notre mieux pour accommoder les demandes urgentes et de dernière minute selon la disponibilité. Veuillez nous contacter directement par téléphone pour une réponse rapide en cas de besoin immédiat."
-    }
-  }
-}
-    },
-      "testimonials": {
-        "title": "Ce que disent nos clients",
-        "items": {
-          "1": {
-            "text": "Swift Comfort Line m'a offert la meilleure expérience ! La réservation était rapide et simple.",
-            "name": "Oluwatobi Adebayo",
-            "role": "Client"
-          },
-          "2": {
-            "text": "Des chauffeurs professionnels et un service irréprochable. Je les recommande vivement !",
-            "name": "Mary Johnson",
-            "role": "Voyageuse fréquente"
-          },
-          "3": {
-            "text": "J'ai été impressionné par la propreté et le confort du véhicule. Excellent service !",
-            "name": "James Okoro",
-            "role": "Cadre d'entreprise"
-          },
-          "4": {
-            "text": "Service excellent du début à la fin. L'équipe était professionnelle et ponctuelle !",
-            "name": "Sarah Williams",
-            "role": "Cliente d'entreprise"
-          },
-          "5": {
-            "text": "Meilleure expérience de déménagement ! Tout a été manipulé avec soin.",
-            "name": "David Chen",
-            "role": "Propriétaire"
-          },
-          "6": {
-            "text": "Je recommande vivement Swift Comfort Line : professionnel, efficace et abordable !",
-            "name": "Aisha Mohammed",
-            "role": "Cheffe d'entreprise"
-          },
-          "7": {
-  "text": "Le service de chauffeur de Swift Comfort Line a été une bouée de sauvetage. Ils ont accompagné ma mère à son rendez-vous à l'hôpital et ont attendu tout le temps. Tellement professionnel et attentionné !",
-  "name": "Patricia Okonkwo",
-  "role": "Aidante familiale"
-},
-"8": {
-  "text": "J'utilise leur service de chauffeur chaque semaine pour mes visites en clinique. Fiable, toujours à l'heure, et le service d'accompagnement me donne une grande tranquillité d'esprit.",
-  "name": "Robert Mensah",
-  "role": "Client régulier"
-}
-        }
-      },    
+    "bookBtn": "Réserver ce forfait"
+  },
+  "trust": {
+    "title": "Pourquoi les familles nous choisissent",
+    "item1": "La même personne à chaque visite",
+    "item2": "Fiable et ponctuel",
+    "item3": "Soutien flexible",
+    "item4": "Priorité à la sécurité et au confort"
+  },
   "serviceAreas": {
+    "label": "Zones desservies",
     "title": "Nos zones de service",
-    "boundary": "Nous desservons fièrement la région d'Ottawa et les communautés environnantes.",
-    "viewMap": "🌐 Voir la carte complète",
+    "boundary": "Nous desservons fièrement toute la région d'Ottawa et les communautés environnantes.",
+    "viewMap": "Voir la carte agrandie",
     "areas": {
       "arnprior": "Arnprior",
       "barrhaven": "Barrhaven",
@@ -335,7 +97,7 @@
       "carleton_place": "Carleton Place",
       "carp": "Carp",
       "cornwall": "Cornwall",
-      "emburn": "Emburn",
+      "emburn": "Embrun",
       "gatineau": "Gatineau",
       "kanata": "Kanata",
       "kemptville": "Kemptville",
@@ -348,25 +110,61 @@
       "perth": "Perth",
       "rockland": "Rockland",
       "russell": "Russell",
-      "smith_falls": "Smith Falls",
+      "smith_falls": "Smiths Falls",
       "stittsville": "Stittsville",
       "wakefield": "Wakefield"
     }
   },
+  "testimonials": {
+    "label": "Ce que disent les familles",
+    "title": "Ce que disent nos clients",
+    "items": {
+      "1": { "text": "Swift Comfort Line m'a offert la meilleure expérience possible. La réservation était rapide et simple.", "name": "Oluwatobi Adebayo", "role": "Client" },
+      "2": { "text": "Des professionnels et un service de qualité. Je les recommande vivement !", "name": "Mary Johnson", "role": "Cliente fidèle" },
+      "3": { "text": "Ma mère est entre de bonnes mains chaque semaine. Même personne, toujours à l'heure.", "name": "James Okoro", "role": "Fils d'une cliente" },
+      "4": { "text": "Service excellent du début à la fin. L'équipe était professionnelle et ponctuelle !", "name": "Sarah Williams", "role": "Membre de la famille" },
+      "5": { "text": "Ils prennent si bien soin de mon père. Il attend chaque visite avec impatience.", "name": "David Chen", "role": "Fils d'un client" },
+      "6": { "text": "Je recommande vivement Swift Comfort Line. Professionnel, efficace et abordable !", "name": "Aisha Mohammed", "role": "Cliente" },
+      "7": { "text": "Swift Comfort Line a été une bouée de sauvetage. Ils ont emmené ma mère à son rendez-vous à l'hôpital et ont attendu tout le temps. Tellement professionnel et attentionné !", "name": "Patricia Okonkwo", "role": "Aidante familiale" },
+      "8": { "text": "J'utilise leur service chaque semaine pour mes visites à la clinique. Fiable, toujours à l'heure, et le service d'accompagnement me donne tellement de tranquillité d'esprit.", "name": "Robert Mensah", "role": "Client régulier" }
+    }
+  },
+  "contact": {
+    "label": "Contactez-nous",
+    "title": "Nous serions ravis de vous entendre",
+    "subtitle": "Appelez-nous ou envoyez un message — nous vous répondrons rapidement.",
+    "callUs": "Appelez-nous directement",
+    "phone": "+1 613 851 6775",
+    "formBadge": "Envoyer un message",
+    "formTitle": "Envoyez-nous un message",
+    "nameLabel": "Votre nom",
+    "phoneLabel": "Numéro de téléphone",
+    "messageLabel": "Message",
+    "namePlaceholder": "Votre nom complet",
+    "phonePlaceholder": "Votre numéro de téléphone",
+    "messagePlaceholder": "Comment pouvons-nous vous aider ?",
+    "submit": "Envoyer le message",
+    "sending": "Envoi en cours..."
+  },
   "footer": {
-    "description": "Votre partenaire de confiance pour des déménagements sans encombre et des espaces impeccables. Fiable, efficace et toujours attentionné.",
+    "description": "Soutien aux aînés à Ottawa. Transport, courses et visites hebdomadaires d'un accompagnateur de confiance.",
+    "tagline": "Services de soutien non médicaux",
     "quickLinksTitle": "Liens rapides",
+    "servicesTitle": "Services",
     "links": {
       "home": "Accueil",
-      "about": "À propos de nous",
+      "about": "À propos",
       "services": "Services",
-      "serviceArea": "Zone de service",
-      "testimonial": "Témoignage"
+      "serviceArea": "Zones desservies",
+      "testimonial": "Témoignages"
     },
-    "contactTitle": "Contactez-nous",
-    "address": "1338 Wellington St West, Unit 10, Ottawa, Ontario, K1Y 3B7 Canada.",
+    "contactTitle": "Nous joindre",
+    "address": "1338, rue Wellington Ouest, unité 10, Ottawa, Ontario, K1Y 3B7 Canada.",
     "phone": "+1 613 851 6775",
     "email": "info{'@'}swiftcomfortline.com",
+    "cta": "Nous contacter",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
     "rights": "Tous droits réservés."
   }
 }
