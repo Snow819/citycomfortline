@@ -8,7 +8,7 @@
         <!-- Brand -->
         <div class="footer-brand">
           <div class="footer-logo-row">
-            <img src="@/assets/Logo.svg" alt="Swift Comfort Line" class="footer-logo" />
+            <img src="@/assets/Logo2.svg" alt="Swift Comfort Line" class="footer-logo" />
             <div class="footer-logo-text">
               <span class="footer-logo-name">Swift Comfort <span class="gold">Line</span></span>
               <span class="footer-logo-divider"></span>
@@ -171,8 +171,9 @@ const scrollTo = (id) => {
 }
 
 .footer-logo {
-  width: 56px;
-  height: 56px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
   object-fit: contain;
 }
 
