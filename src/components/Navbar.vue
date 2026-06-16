@@ -10,7 +10,7 @@
 
       <!-- Logo -->
       <a href="#home" class="navbar-logo" @click.prevent="scrollTo('home')">
-        <img src="@/assets/Logo_dark.png" alt="Swift Comfort Line" class="logo-emblem" />
+        <img src="@/assets/Logo.svg" alt="Swift Comfort Line" class="logo-emblem" />
         <div class="logo-text">
           <span class="logo-name">Swift Comfort <span class="logo-name--gold">Line</span></span>
           <span class="logo-divider"></span>
@@ -235,7 +235,7 @@ const mobileNav = (id) => {
 const onScroll = () => {
   const y = window.scrollY
   isScrolled.value = y > 10
-  isHidden.value   = y > lastY && y > 80
+  isHidden.value   = y > lastY && y > 200
   lastY            = y
 
   // Active section detection

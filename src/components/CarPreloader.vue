@@ -52,7 +52,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import logo from '@/assets/Logo_light.png'
+import logo from '@/assets/Logo.svg'
 
 const visible = ref(true)
 const tagline = 'Non-Medical Support Services'
