@@ -265,7 +265,6 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 /* ─── Header shell ──────────────────────────────────────── */
 .navbar-header {
@@ -321,30 +320,30 @@ onUnmounted(() => {
 }
 
 .logo-name {
-  font-family: 'Lora', Georgia, serif;
+  font-family: var(--font-display);
   font-size: 1.15rem;
   font-weight: 700;
-  color: #2D1B69;
+  color: var(--color-primary);
   letter-spacing: 0.01em;
   line-height: 1.1;
   text-transform: uppercase;
 }
 
-.logo-name--gold { color: #C9A84C; }
+.logo-name--gold { color: var(--color-gold); }
 
 .logo-divider {
   display: block;
   width: 100%;
   height: 1.5px;
-  background: linear-gradient(to right, #C9A84C, transparent);
+  background: linear-gradient(to right, var(--color-gold), transparent);
   margin: 3px 0;
 }
 
 .logo-tagline {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.68rem;
   font-weight: 400;
-  color: #8a8aaa;
+  color: var(--color-primary);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -365,10 +364,10 @@ onUnmounted(() => {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.88rem;
   font-weight: 500;
-  color: #3a3a5a;
+  color: var(--color-primary);
   text-decoration: none;
   padding: 8px 14px;
   border-radius: 6px;
@@ -384,15 +383,15 @@ onUnmounted(() => {
   left: 14px;
   right: 14px;
   height: 2px;
-  background: #C9A84C;
+  background: var(--color-gold);
   border-radius: 2px;
   transform: scaleX(0);
   transition: transform 0.2s ease;
 }
 
-.nav-link:hover        { color: #2D1B69; }
+.nav-link:hover        { color: var(--color-primary); }
 .nav-link:hover::after { transform: scaleX(1); }
-.nav-link.active       { color: #C9A84C; }
+.nav-link.active       { color: var(--color-gold); }
 .nav-link.active::after { transform: scaleX(1); }
 
 /* ─── Services dropdown ─────────────────────────────────── */
@@ -424,14 +423,14 @@ onUnmounted(() => {
   transition: background 0.15s ease;
 }
 
-.dropdown-item:hover { background: #f7f4ff; }
+.dropdown-item:hover { background: var(--color-primary-light); }
 
 .dropdown-icon {
   width: 36px;
   height: 36px;
   border-radius: 8px;
   background: rgba(45,27,105,0.07);
-  color: #2D1B69;
+  color: var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -440,18 +439,18 @@ onUnmounted(() => {
 
 .dropdown-item-title {
   display: block;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.85rem;
   font-weight: 600;
-  color: #2D1B69;
+  color: var(--color-primary);
   line-height: 1.2;
 }
 
 .dropdown-item-desc {
   display: block;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.74rem;
-  color: #8a8aaa;
+  color: var(--color-text-muted);
   margin-top: 2px;
   line-height: 1.4;
 }
@@ -477,10 +476,10 @@ onUnmounted(() => {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.82rem;
   font-weight: 500;
-  color: #3a3a5a;
+  color: var(--color-primary);
   background: transparent;
   border: 1.5px solid rgba(45,27,105,0.15);
   border-radius: 50px;
@@ -491,8 +490,8 @@ onUnmounted(() => {
 }
 
 .lang-btn:hover {
-  border-color: #2D1B69;
-  color: #2D1B69;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .lang-list {
@@ -511,28 +510,28 @@ onUnmounted(() => {
 
 .lang-item {
   padding: 9px 14px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.85rem;
-  color: #3a3a5a;
+  color: var(--color-primary);
   border-radius: 7px;
   cursor: pointer;
   transition: background 0.15s ease, color 0.15s ease;
 }
 
 .lang-item:hover {
-  background: #f7f4ff;
-  color: #2D1B69;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
 }
 
 /* ─── CTA button ────────────────────────────────────────── */
 .btn-get-in-touch {
   display: inline-flex;
   align-items: center;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.88rem;
   font-weight: 600;
   color: #ffffff;
-  background: #C9A84C;
+  background: var(--color-gold);
   padding: 11px 26px;
   border-radius: 50px;
   text-decoration: none;
@@ -543,7 +542,7 @@ onUnmounted(() => {
 }
 
 .btn-get-in-touch:hover {
-  background: #b8943e;
+  background: var(--color-gold-dark);
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(201,168,76,0.45);
 }
@@ -564,7 +563,7 @@ onUnmounted(() => {
   display: block;
   width: 24px;
   height: 2px;
-  background: #2D1B69;
+  background: var(--color-primary);
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -590,17 +589,17 @@ onUnmounted(() => {
 }
 
 .mobile-link {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 500;
-  color: #2D1B69;
+  color: var(--color-primary);
   text-decoration: none;
   padding: 12px 16px;
   border-radius: 10px;
   transition: background 0.15s ease;
 }
 
-.mobile-link:hover { background: #f7f4ff; }
+.mobile-link:hover { background: var(--color-primary-light); }
 
 .mobile-lang {
   display: flex;
@@ -610,9 +609,9 @@ onUnmounted(() => {
 }
 
 .mobile-lang-btn {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.85rem;
-  color: #8a8aaa;
+  color: var(--color-text-muted);
   cursor: pointer;
   padding: 6px 14px;
   border-radius: 50px;
@@ -630,9 +629,9 @@ onUnmounted(() => {
   display: block;
   text-align: center;
   margin-top: 12px;
-  background: #C9A84C;
+  background: var(--color-gold);
   color: #fff;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 600;
   padding: 14px;

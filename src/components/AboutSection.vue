@@ -115,11 +115,10 @@ const scrollTo = (id) => {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 /* ─── Section ───────────────────────────────────────────── */
 .about-section {
-  background: #2D1B69;
+  background: var(--color-primary);
   padding: 90px 40px;
   overflow: hidden;
   position: relative;
@@ -130,7 +129,11 @@ const scrollTo = (id) => {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-image:
+  radial-gradient(
+    rgba(255,255,255,0.04) 1px,
+    transparent 1px
+  );
   background-size: 32px 32px;
   pointer-events: none;
 }
@@ -144,7 +147,7 @@ const scrollTo = (id) => {
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 65%);
+  background: radial-gradient(circle, var(--color-gold-light) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -165,8 +168,8 @@ const scrollTo = (id) => {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #C9A84C;
-  font-family: 'DM Sans', sans-serif;
+  color: var(--color-gold);
+  font-family: var(--font-body);
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -175,29 +178,28 @@ const scrollTo = (id) => {
 }
 
 .about-title {
-  font-family: 'Lora', Georgia, serif;
+  font-family: var(--font-display);
+  color: var(--color-bg);
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   font-weight: 700;
-  color: #ffffff;
   line-height: 1.2;
   margin-bottom: 20px;
 }
 
 .about-text {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 300;
-  color: rgba(255,255,255,0.72);
+  color: rgba(255,255,255,0.82);
   line-height: 1.8;
   margin-bottom: 14px;
 }
 
 .about-quote {
-  font-family: 'Lora', Georgia, serif;
   font-style: italic;
   font-size: 0.95rem;
-  color: #C9A84C;
-  border-left: 3px solid #C9A84C;
+  color: var(--color-gold);
+  border-left: 3px solid var(--color-gold);
   padding-left: 16px;
   margin: 24px 0 32px;
   line-height: 1.6;
@@ -207,9 +209,9 @@ const scrollTo = (id) => {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  border: 2px solid rgba(255,255,255,0.4);
+  border: 2px solid rgba(204,147,58,0.45);
   color: #ffffff;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.06em;
@@ -221,8 +223,8 @@ const scrollTo = (id) => {
 }
 
 .about-cta:hover {
-  background: rgba(255,255,255,0.1);
-  border-color: #ffffff;
+  background: rgba(204,147,58,0.12);
+  border-color: var(--color-gold);
   transform: translateY(-2px);
 }
 
@@ -247,7 +249,7 @@ const scrollTo = (id) => {
   object-position: center top;
   border-radius: 20px;
   display: block;
-  box-shadow: 0 24px 64px rgba(0,0,0,0.3);
+  box-shadow: var(--shadow-lg);
 }
 
 /* Experience badge */
@@ -255,13 +257,13 @@ const scrollTo = (id) => {
   position: absolute;
   bottom: -20px;
   left: -20px;
-  background: #C9A84C;
+  background: var(--color-gold);
   border-radius: 14px;
   padding: 16px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 8px 28px rgba(201,168,76,0.4);
+  box-shadow: 0 8px 28px rgba(204,147,58,0.4);
   animation: floatBadge 3s ease-in-out infinite;
 }
 
@@ -271,7 +273,6 @@ const scrollTo = (id) => {
 }
 
 .exp-number {
-  font-family: 'Lora', Georgia, serif;
   font-size: 1.8rem;
   font-weight: 700;
   color: #ffffff;
@@ -279,7 +280,6 @@ const scrollTo = (id) => {
 }
 
 .exp-label {
-  font-family: 'DM Sans', sans-serif;
   font-size: 0.7rem;
   color: rgba(255,255,255,0.85);
   text-align: center;
@@ -289,17 +289,17 @@ const scrollTo = (id) => {
 
 /* ─── Right: contact card ───────────────────────────────── */
 .about-card {
-  background: #ffffff;
+  background: var(--color-bg);
   border-radius: 20px;
   padding: 36px 32px;
-  box-shadow: 0 20px 56px rgba(0,0,0,0.2);
+  box-shadow: var(--shadow-lg);
 }
 
 .card-title {
-  font-family: 'Lora', Georgia, serif;
+  font-family: var(--font-display);
   font-size: 1.4rem;
   font-weight: 700;
-  color: #2D1B69;
+  color: var(--color-primary);
   text-align: center;
   margin-bottom: 16px;
 }
@@ -317,11 +317,11 @@ const scrollTo = (id) => {
   content: '';
   flex: 1;
   height: 1px;
-  background: linear-gradient(to right, transparent, #C9A84C);
+  background: linear-gradient(to right, transparent, var(--color-gold));
 }
 
 .card-divider::after {
-  background: linear-gradient(to left, transparent, #C9A84C);
+  background: linear-gradient(to left, transparent, var(--color-gold));
 }
 
 .card-contact-list {
@@ -342,9 +342,9 @@ const scrollTo = (id) => {
 .card-contact-item:hover { opacity: 0.75; }
 
 .card-contact-item span {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.9rem;
-  color: #3a3a5a;
+  color: var(--color-text-muted);
   font-weight: 400;
 }
 
@@ -359,8 +359,8 @@ const scrollTo = (id) => {
 }
 
 .card-icon--purple {
-  background: rgba(45,27,105,0.08);
-  color: #2D1B69;
+  background: var(--color-primary-light);
+color: var(--color-primary);
 }
 
 .card-cta {
@@ -369,22 +369,22 @@ const scrollTo = (id) => {
   justify-content: center;
   gap: 8px;
   width: 100%;
-  background: #C9A84C;
+  background: var(--color-gold);
   color: #ffffff;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.9rem;
   font-weight: 600;
   padding: 14px;
   border-radius: 50px;
   text-decoration: none;
-  box-shadow: 0 6px 20px rgba(201,168,76,0.35);
+  box-shadow: 0 6px 20px rgba(204,147,58,0.35);
   transition: all 0.25s ease;
 }
 
 .card-cta:hover {
-  background: #b8943e;
+  background: var(--color-gold-dark);
+  box-shadow: 0 10px 28px rgba(204,147,58,0.45);
   transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(201,168,76,0.45);
 }
 
 /* ─── Responsive ────────────────────────────────────────── */

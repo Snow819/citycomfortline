@@ -76,61 +76,131 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=DM+Sans:wght@400;500&display=swap');
 
 /* ─── Strip ─────────────────────────────────────────────── */
 .satisfaction-strip {
-  background: linear-gradient(135deg, #1E3A5F 0%, #152d4a 100%);
-  border-top: 1px solid rgba(111, 175, 143, 0.2);
-  border-bottom: 1px solid rgba(111, 175, 143, 0.2);
-  padding: 28px 40px;
-  overflow: hidden;
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-primary) 0%,
+      var(--color-primary-dark) 100%
+    );
+
+  padding: 34px 40px;
   position: relative;
+  overflow: hidden;
 }
 
-/* Subtle dot texture */
 .satisfaction-strip::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 28px 28px;
+
+  background:
+    radial-gradient(
+      circle at 15% 50%,
+      rgba(204,147,58,0.12),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 85% 50%,
+      rgba(204,147,58,0.08),
+      transparent 40%
+    );
+
   pointer-events: none;
+}
+
+.satisfaction-strip::after {
+  content: '';
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      var(--color-gold),
+      transparent
+    );
 }
 
 /* ─── Stats row ─────────────────────────────────────────── */
 .stats {
   position: relative;
   z-index: 2;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
-  gap: 0;
-  max-width: 1100px;
+
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 /* ─── Single stat ───────────────────────────────────────── */
 .stat {
+  flex: 1;
+transition: transform .3s ease
   display: flex;
   align-items: center;
-  gap: 12px;
-  flex: 1;
   justify-content: center;
-  padding: 0 20px;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
+
+  gap: 14px;
+
+  padding: 18px 24px;
+
+  position: relative;
 }
 
 .stat:last-child {
   border-right: none;
 }
 
+.stat:not(:last-child)::after {
+  content: '';
+
+  position: absolute;
+
+  right: 0;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 1px;
+  height: 60%;
+
+  background:
+    linear-gradient(
+      transparent,
+      rgba(255,255,255,0.18),
+      transparent
+    );
+}
+
 /* ─── Icon ──────────────────────────────────────────────── */
 .stat-icon {
-  color: #6FAF8F;
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background:
+    rgba(204,147,58,0.12);
+
+  color: var(--color-gold);
+
   flex-shrink: 0;
-  opacity: 0.9;
 }
 
 /* ─── Text ──────────────────────────────────────────────── */
@@ -140,20 +210,35 @@ onBeforeUnmount(() => {
 }
 
 .number {
-  font-family: 'Lora', Georgia, serif;
-  font-size: 1.5rem;
+  font-family: var(--font-display);
+
+  font-size: 1.9rem;
   font-weight: 700;
-  color: #ffffff;
-  line-height: 1.1;
+
+  color: white;
+
+  line-height: 1;
 }
 
 .label {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.55);
-  margin-top: 2px;
-  white-space: nowrap;
+  font-family: var(--font-body);
+
+  font-size: 0.8rem;
+
+  color: rgba(255,255,255,0.7);
+
+  margin-top: 4px;
+
+  letter-spacing: .03em;
+}
+
+.stat:hover {
+  transform: translateY(-4px);
+}
+
+.stat:hover .stat-icon {
+  background: var(--color-gold);
+  color: var(--color-primary);
 }
 
 /* ─── Responsive ────────────────────────────────────────── */

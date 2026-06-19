@@ -117,7 +117,7 @@ const scrollTo = (id) => {
 
 /* ─── Footer shell ───────────────────────────────────────── */
 .footer {
-  background: #2D1B69;
+  background: var(--color-primary);
   position: relative;
   overflow: hidden;
 }
@@ -141,7 +141,11 @@ const scrollTo = (id) => {
   width: 420px;
   height: 320px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(201,168,76,0.1) 0%, transparent 65%);
+  background: radial-gradient(
+    circle,
+    rgba(204, 147, 58, 0.12) 0%,
+    transparent 65%
+  );
   pointer-events: none;
 }
 
@@ -159,7 +163,7 @@ const scrollTo = (id) => {
   grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
   gap: 48px;
   padding-bottom: 48px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid var(--color-border);
 }
 
 /* ─── Brand ──────────────────────────────────────────────── */
@@ -184,37 +188,43 @@ const scrollTo = (id) => {
 }
 
 .footer-logo-name {
-  font-family: 'Lora', Georgia, serif;
+  font-family: var(--font-display);
   font-size: 1.05rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--color-bg);
   text-transform: uppercase;
   letter-spacing: 0.01em;
 }
 
-.gold { color: #C9A84C; }
+.gold { 
+color: var(--color-gold);
+}
 
 .footer-logo-divider {
   display: block;
   width: 100%;
   height: 1.5px;
-  background: linear-gradient(to right, #C9A84C, transparent);
+   background: linear-gradient(
+    to right,
+    var(--color-gold),
+    transparent
+  );
   margin: 3px 0;
 }
 
 .footer-logo-tagline {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.65rem;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255, 255, 255, 0.45);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .footer-desc {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.875rem;
   font-weight: 300;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255,255,255,0.65);
   line-height: 1.75;
   max-width: 290px;
   margin-bottom: 24px;
@@ -241,19 +251,19 @@ const scrollTo = (id) => {
 }
 
 .social-icons a:hover {
-  background: #C9A84C;
-  border-color: #C9A84C;
-  color: #2D1B69;
+ background: var(--color-gold);
+  border-color: var(--color-gold);
+  color: var(--color-primary);
 }
 
 /* ─── Headings ───────────────────────────────────────────── */
 .footer-heading {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.74rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #C9A84C;
+  color: var(--color-gold);
   margin-bottom: 22px;
 }
 
@@ -268,7 +278,7 @@ const scrollTo = (id) => {
 }
 
 .footer-links a {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.875rem;
   color: rgba(255,255,255,0.55);
   text-decoration: none;
@@ -294,7 +304,7 @@ const scrollTo = (id) => {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.85rem;
   color: rgba(255,255,255,0.55);
   line-height: 1.5;
@@ -302,7 +312,7 @@ const scrollTo = (id) => {
 
 .contact-icon {
   flex-shrink: 0;
-  color: #C9A84C;
+  color: var(--color-gold);
   margin-top: 2px;
 }
 
@@ -319,9 +329,9 @@ const scrollTo = (id) => {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #C9A84C;
-  color: #2D1B69;
-  font-family: 'DM Sans', sans-serif;
+   background: var(--color-gold);
+  color: var(--color-primary);
+  font-family: var(--font-body);
   font-size: 0.85rem;
   font-weight: 700;
   padding: 11px 24px;
@@ -331,7 +341,7 @@ const scrollTo = (id) => {
 }
 
 .footer-cta:hover {
-  background: #ffffff;
+  background: var(--color-bg);
   transform: translateY(-2px);
 }
 
@@ -349,7 +359,7 @@ const scrollTo = (id) => {
 }
 
 .footer-bottom p {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.8rem;
   color: rgba(255,255,255,0.35);
   margin: 0;
@@ -362,9 +372,9 @@ const scrollTo = (id) => {
 }
 
 .footer-bottom-links a {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.8rem;
-  color: rgba(255,255,255,0.35);
+  color: var(--color-gold);
   text-decoration: none;
   transition: color 0.2s ease;
 }

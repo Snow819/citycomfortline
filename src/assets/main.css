@@ -1,27 +1,29 @@
 /* ─── Google Fonts ───────────────────────────────────────── */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap');
 
-/* ─── Global Tokens ──────────────────────────────────────── */
+/* ─── Global Tokens — Official Brand Colors ──────────────── */
 :root {
-  --color-primary:       #2D1B69;
-  --color-primary-dark:  #1e1248;
-  --color-primary-light: #f7f4ff;
-  --color-gold:          #C9A84C;
-  --color-gold-dark:     #b8943e;
-  --color-gold-light:    rgba(201,168,76,0.1);
+  --color-primary:       #45137D;   /* official brand purple */
+  --color-primary-dark:  #320e5c;
+  --color-primary-bright:#5d1ba8;
+  --color-primary-light: #f6f2fb;
+  --color-gold:          #CC933A;   /* official brand gold */
+  --color-gold-dark:     #a8772d;
+  --color-gold-bright:   #e0aa54;
+  --color-gold-light:    rgba(204,147,58,0.12);
   --color-bg:            #ffffff;
-  --color-bg-soft:       #faf9ff;
-  --color-text:          #1a1a2e;
-  --color-text-muted:    #5a5a7a;
-  --color-border:        rgba(45,27,105,0.1);
+  --color-bg-soft:       #faf7fd;
+  --color-text:          #1a1224;
+  --color-text-muted:    #5c5468;
+  --color-border:        rgba(69,19,125,0.12);
   --font-display:        'Lora', Georgia, serif;
   --font-body:           'DM Sans', system-ui, sans-serif;
   --radius-sm:           6px;
   --radius-md:           12px;
   --radius-lg:           20px;
-  --shadow-sm:           0 2px 8px rgba(45,27,105,0.07);
-  --shadow-md:           0 6px 24px rgba(45,27,105,0.12);
-  --shadow-lg:           0 16px 48px rgba(45,27,105,0.14);
+  --shadow-sm:           0 2px 8px rgba(69,19,125,0.08);
+  --shadow-md:           0 6px 24px rgba(69,19,125,0.14);
+  --shadow-lg:           0 16px 48px rgba(69,19,125,0.16);
 }
 
 /* ─── Reset ──────────────────────────────────────────────── */
@@ -84,14 +86,14 @@ button {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #f7f4ff;
+  background: #f6f2fb;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(45,27,105,0.25);
+  background: rgba(69,19,125,0.3);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(45,27,105,0.45);
+  background: rgba(69,19,125,0.5);
 }
 
 /* ─── Section utilities ──────────────────────────────────── */
@@ -146,4 +148,38 @@ button {
   .container {
     padding: 0 20px;
   }
+}
+
+/* ─── Section background-image utility ───────────────────── */
+/* Use on any section: <section class="section-bg"><img class="section-bg-img"><div class="section-overlay"></div><div class="section-content">...</div></section> */
+.section-bg {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.section-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.section-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    160deg,
+    rgba(69, 19, 125, 0.88) 0%,
+    rgba(69, 19, 125, 0.78) 45%,
+    rgba(50, 14, 92, 0.85) 100%
+  );
+}
+
+.section-content {
+  position: relative;
+  z-index: 1;
 }

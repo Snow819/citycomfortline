@@ -75,12 +75,20 @@ onMounted(() => {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 /* ─── Section ───────────────────────────────────────────── */
 .service-areas {
-  background: #faf9ff;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(204,147,58,0.08),
+      transparent 30%
+    ),
+    var(--color-bg-soft);
+
   padding: 90px 40px;
+  position: relative;
+  overflow: hidden;
 }
 
 .service-areas-container {
@@ -104,30 +112,30 @@ onMounted(() => {
 .label-line {
   width: 32px;
   height: 1px;
-  background: #C9A84C;
+  background: var(--color-gold);
 }
 
 .section-label {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #C9A84C;
+  color: var(--color-gold);
 }
 
 .section-title {
-  font-family: 'Lora', Georgia, serif;
+  font-family: var(--font-display);
   font-size: clamp(1.9rem, 3.2vw, 2.6rem);
   font-weight: 700;
-  color: #2D1B69;
+  color: var(--color-primary);
   margin-bottom: 14px;
 }
 
 .section-subtitle {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 1rem;
-  color: #5a5a7a;
+  color: var(--color-text-muted);
   max-width: 540px;
   margin: 0 auto 40px;
   line-height: 1.7;
@@ -137,24 +145,47 @@ onMounted(() => {
 .canada-badge {
   display: inline-flex;
   align-items: center;
-  gap: 18px;
-  background: #ffffff;
-  border: 1.5px solid rgba(45,27,105,0.1);
-  border-radius: 18px;
-  padding: 24px 36px;
-  box-shadow: 0 12px 36px rgba(45,27,105,0.08);
-  margin-bottom: 36px;
+  gap: 20px;
+
+  background: var(--color-bg);
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 24px;
+
+  padding: 28px 40px;
+
+  box-shadow: var(--shadow-md);
+
+  margin-bottom: 42px;
+
+  transition: all .35s ease;
+}
+
+.canada-badge:hover {
+  transform: translateY(-6px);
+
+  box-shadow: var(--shadow-lg);
 }
 
 .canada-icon {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: #faf3e6;
+  width: 74px;
+  height: 74px;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-primary-light),
+      rgba(204,147,58,0.12)
+    );
+
+  border: 1px solid rgba(204,147,58,0.15);
+
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
 }
 
 .canada-badge > div:last-child {
@@ -165,16 +196,16 @@ onMounted(() => {
 }
 
 .canada-title {
-  font-family: 'Lora', Georgia, serif;
+  font-family: var(--font-display);
   font-size: 1.3rem;
   font-weight: 700;
-  color: #2D1B69;
+  color: var(--color-primary);
 }
 
 .canada-sub {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.85rem;
-  color: #8a8aaa;
+  color: var(--color-text-muted);
 }
 
 /* ─── Trust row ─────────────────────────────────────────── */
@@ -190,9 +221,9 @@ onMounted(() => {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.9rem;
-  color: #3a3a5a;
+  color: var(--color-text-muted);
 }
 
 .check {
@@ -211,9 +242,9 @@ onMounted(() => {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #2D1B69;
+  background: var(--color-primary);
   color: #ffffff;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.9rem;
   font-weight: 600;
   padding: 14px 32px;
@@ -224,7 +255,7 @@ onMounted(() => {
 }
 
 .areas-cta:hover {
-  background: #C9A84C;
+  background: var(--color-primary-dark);
   transform: translateY(-2px);
   box-shadow: 0 12px 32px rgba(201,168,76,0.35);
 }

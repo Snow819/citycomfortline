@@ -23,7 +23,7 @@
             >
               <!-- Quote icon -->
               <div class="quote-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="#C9A84C">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
                 </svg>
               </div>
@@ -39,6 +39,9 @@
                   <div>
                     <h4 class="author-name">{{ $t(testimonial.name) }}</h4>
                     <p class="author-role">{{ $t(testimonial.role) }}</p>
+                    <div class="verified-badge">
+  ✓ Verified Client
+</div>
                   </div>
                 </div>
               </div>
@@ -140,13 +143,25 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 /* ─── Section ───────────────────────────────────────────── */
 .testimonial-section {
-  background: #ffffff;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(204,147,58,0.06),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(69,19,125,0.05),
+      transparent 35%
+    ),
+    var(--color-bg);
+
   padding: 90px 40px;
   overflow: hidden;
+  position: relative;
 }
 
 .testimonial-container {
@@ -175,7 +190,7 @@ onUnmounted(() => {
 }
 
 .section-label {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -184,7 +199,7 @@ onUnmounted(() => {
 }
 
 .section-title {
-  font-family: 'Lora', Georgia, serif;
+  font-family: var(--font-display);
   font-size: clamp(1.9rem, 3.2vw, 2.6rem);
   font-weight: 700;
   color: #2D1B69;
@@ -199,35 +214,52 @@ onUnmounted(() => {
 
 /* ─── Card ──────────────────────────────────────────────── */
 .testimonial-card {
-  background: #faf9ff;
-  border: 1px solid rgba(45,27,105,0.08);
-  border-radius: 18px;
-  padding: 36px 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  padding: 36px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all .35s ease;
+}
+
+.testimonial-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  padding: 36px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all .35s ease;
 }
 
 .testimonial-card:hover {
-  box-shadow: 0 12px 36px rgba(45,27,105,0.1);
-  transform: translateY(-3px);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(204,147,58,0.3);
 }
 
 /* Quote icon */
 .quote-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: rgba(201,168,76,0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+color: var(--color-gold);
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-gold-light),
+      rgba(204,147,58,0.05)
+    );
+
+  border: 1px solid rgba(204,147,58,0.15);
 }
 
 /* ─── Text ──────────────────────────────────────────────── */
 .testimonial-text {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.975rem;
   font-weight: 300;
   line-height: 1.8;
@@ -255,7 +287,7 @@ onUnmounted(() => {
 }
 
 .star.filled {
-  color: #C9A84C;
+  color: var(--color-gold);;
 }
 
 .author-info {
@@ -265,33 +297,51 @@ onUnmounted(() => {
 }
 
 .author-avatar {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: #2D1B69;
-  color: #ffffff;
-  font-family: 'Lora', Georgia, serif;
-  font-size: 0.85rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
+   width: 48px;
+  height: 48px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-primary),
+      var(--color-primary-bright)
+    );
+
+  color: white;
+  box-shadow: 0 8px 20px rgba(69,19,125,0.25);
 }
 
 .author-name {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 600;
-  color: #2D1B69;
+  color: var(--color-primary);
   margin: 0;
 }
 
 .author-role {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.8rem;
   color: #8a8aaa;
   margin: 0;
+}
+
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
+  font-size: 0.72rem;
+  font-weight: 600;
+
+  color: var(--color-primary);
+
+  background: var(--color-primary-light);
+
+  padding: 4px 10px;
+  border-radius: 20px;
+
+  margin-top: 6px;
 }
 
 /* ─── Controls ──────────────────────────────────────────── */
@@ -318,10 +368,14 @@ onUnmounted(() => {
 }
 
 .controls button:hover {
-  background: #2D1B69;
-  border-color: #2D1B69;
-  color: #ffffff;
-  transform: scale(1.08);
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-primary-bright)
+  );
+
+  border-color: transparent;
+  color: white;
 }
 
 /* ─── Dots ──────────────────────────────────────────────── */

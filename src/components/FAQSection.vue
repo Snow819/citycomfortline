@@ -169,7 +169,7 @@ onMounted(() => {
 /* ─── Heading ───────────────────────────────────────────── */
 .section-label {
   display: inline-block;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.1em;
@@ -179,7 +179,7 @@ onMounted(() => {
 }
 
 .main-title {
-  font-family: 'Lora', Georgia, serif;
+  font-family: var(--font-display);
   font-size: clamp(1.8rem, 3vw, 2.4rem);
   font-weight: 700;
   color: #1E3A5F;
@@ -187,8 +187,8 @@ onMounted(() => {
 }
 
 .main-subtitle {
-  font-family: 'DM Sans', sans-serif;
-  color: #5a6a7e;
+  font-family: var(--font-body);
+  color: var(--color-text-muted);
   font-size: 1rem;
   line-height: 1.7;
   max-width: 560px;
@@ -232,7 +232,7 @@ onMounted(() => {
 }
 
 .section-title {
-  font-family: 'Lora', Georgia, serif;
+  font-family: var(--font-display);
   font-size: 1.1rem;
   font-weight: 600;
   color: #1E3A5F;
@@ -275,16 +275,16 @@ onMounted(() => {
 }
 
 .accordion-title-text {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-weight: 500;
-  color: #1a2332;
+  color: var(--color-text-muted);
   font-size: 0.9rem;
   line-height: 1.4;
 }
 
 /* ─── Chevron ───────────────────────────────────────────── */
 .accordion-icon {
-  color: #6FAF8F;
+  color: var(--color-gold);
   transition: transform 0.3s ease;
   flex-shrink: 0;
   stroke-width: 2.5;
@@ -310,7 +310,7 @@ onMounted(() => {
 
 .accordion-content-inner {
   padding: 14px 18px 18px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   color: #5a6a7e;
   line-height: 1.7;
   font-size: 0.875rem;

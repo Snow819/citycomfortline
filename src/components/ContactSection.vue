@@ -33,7 +33,7 @@
         <div class="contact-trust">
           <div class="trust-item" v-for="(item, i) in trustItems" :key="i">
             <span class="trust-check">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2D1B69" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#45137D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
             </span>
             <span>{{ t(item) }}</span>
           </div>
@@ -43,7 +43,7 @@
       <!-- Right: form -->
       <div class="contact-form-wrap" data-aos="fade-left">
         <div class="form-badge">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A84C">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
           </svg>
           {{ t('contact.formBadge') }}
@@ -144,7 +144,7 @@ const handleSubmit = async () => {
       icon: 'success',
       title: 'Message Sent!',
       text: 'Thank you! We will get back to you shortly.',
-      confirmButtonColor: '#2D1B69',
+      confirmButtonColor: '#45137D',
       timer: 3000,
       showConfirmButton: true,
     })
@@ -156,7 +156,7 @@ const handleSubmit = async () => {
       icon: 'error',
       title: 'Oops...',
       text: 'Something went wrong. Please try again or call us directly.',
-      confirmButtonColor: '#2D1B69',
+      confirmButtonColor: '#45137D',
     })
   } finally {
     loading.value = false
@@ -165,7 +165,6 @@ const handleSubmit = async () => {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 /* ─── Section ───────────────────────────────────────────── */
 .contact-section {
@@ -193,31 +192,31 @@ const handleSubmit = async () => {
 .label-line {
   width: 32px;
   height: 1px;
-  background: #C9A84C;
+  background: var(--color-gold);
 }
 
 .section-label {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #C9A84C;
+  color: var(--color-gold);
 }
 
 .contact-title {
-  font-family: 'Lora', Georgia, serif;
+  font-family: var(--font-display);
   font-size: clamp(1.9rem, 3.2vw, 2.6rem);
   font-weight: 700;
-  color: #2D1B69;
+  color: var(--color-primary);
   line-height: 1.25;
   margin-bottom: 14px;
 }
 
 .contact-subtitle {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 1rem;
-  color: #5a5a7a;
+  color: var(--color-text-muted);
   line-height: 1.75;
   margin-bottom: 36px;
 }
@@ -225,11 +224,11 @@ const handleSubmit = async () => {
 /* ─── Phone CTA ─────────────────────────────────────────── */
 .phone-cta {
   display: flex;
-  align-items: center;
   gap: 16px;
   background: #faf9ff;
   border: 1.5px solid rgba(45,27,105,0.08);
   border-radius: 16px;
+  align-items: center;
   padding: 20px 24px;
   text-decoration: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
@@ -237,7 +236,7 @@ const handleSubmit = async () => {
 }
 
 .phone-cta:hover {
-  border-color: #C9A84C;
+  border-color: var(--color-gold);
   box-shadow: 0 8px 28px rgba(201,168,76,0.16);
   transform: translateY(-2px);
 }
@@ -246,7 +245,7 @@ const handleSubmit = async () => {
   width: 52px;
   height: 52px;
   border-radius: 14px;
-  background: #2D1B69;
+  background: var(--color-primary);
   color: #fff;
   display: flex;
   align-items: center;
@@ -256,24 +255,24 @@ const handleSubmit = async () => {
 
 .phone-label {
   display: block;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.75rem;
-  color: #8a8aaa;
+  color: var(--color-text-muted);
   margin-bottom: 2px;
 }
 
 .phone-number {
   display: block;
-  font-family: 'Lora', Georgia, serif;
+  font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 700;
-  color: #2D1B69;
+  color: var(--color-primary);
   letter-spacing: 0.02em;
 }
 
 .phone-arrow {
   margin-left: auto;
-  color: #C9A84C;
+  color: var(--color-gold);
   flex-shrink: 0;
 }
 
@@ -288,9 +287,9 @@ const handleSubmit = async () => {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.92rem;
-  color: #3a3a5a;
+  color: var(--color-text-muted);
 }
 
 .trust-check {
@@ -306,7 +305,7 @@ const handleSubmit = async () => {
 
 /* ─── Form card ─────────────────────────────────────────── */
 .contact-form-wrap {
-  background: #2D1B69;
+  background: var(--color-primary);
   border-radius: 24px;
   padding: 44px 40px;
   position: relative;
@@ -344,8 +343,8 @@ const handleSubmit = async () => {
   gap: 8px;
   background: rgba(201,168,76,0.12);
   border: 1px solid rgba(201,168,76,0.3);
-  color: #C9A84C;
-  font-family: 'DM Sans', sans-serif;
+  color: var(--color-gold);
+  font-family: var(--font-body);
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -358,7 +357,7 @@ const handleSubmit = async () => {
 .form-title {
   position: relative;
   z-index: 2;
-  font-family: 'Lora', Georgia, serif;
+  font-family: var(--font-display);
   font-size: 1.4rem;
   font-weight: 700;
   color: #ffffff;
@@ -380,7 +379,7 @@ const handleSubmit = async () => {
 }
 
 label {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.8rem;
   font-weight: 500;
   color: rgba(255,255,255,0.7);
@@ -389,7 +388,7 @@ label {
 
 input,
 textarea {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 0.95rem;
   color: #ffffff;
   background: rgba(255,255,255,0.06);
@@ -409,7 +408,7 @@ textarea::placeholder {
 
 input:focus,
 textarea:focus {
-  border-color: #C9A84C;
+  border-color: var(--color-gold);
   background: rgba(255,255,255,0.09);
 }
 
@@ -419,9 +418,9 @@ textarea:focus {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background: #C9A84C;
-  color: #2D1B69;
-  font-family: 'DM Sans', sans-serif;
+  background: var(--color-gold);
+  color: var(--color-primary);
+  font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 700;
   border: none;
@@ -449,7 +448,7 @@ textarea:focus {
   width: 15px;
   height: 15px;
   border: 2px solid rgba(45,27,105,0.3);
-  border-top-color: #2D1B69;
+  border-top-color: var(--color-primary);
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
   flex-shrink: 0;

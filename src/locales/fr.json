@@ -8,20 +8,34 @@
     "contact": "Nous joindre",
     "getInTouch": "Nous contacter"
   },
-  "hero": {
-    "badge": "Compassion. Respect. Confiance. Tranquillité d'esprit.",
-    "title_line1": "Soutien pour",
-    "title_line2": "la vie quotidienne.",
-    "subtitle": "Nous offrons des services de soutien non médicaux pour aider les aînés à vivre en toute sécurité, confortablement et de façon autonome dans leur chez-soi.",
-    "button1": "Appeler maintenant",
-    "button2": "En savoir plus",
-    "trust1": "La même personne à chaque visite",
-    "trust2": "Fiable et ponctuel",
-    "trust3": "Mises à jour pour la famille incluses",
-    "stat1": "Aînés soutenus",
-    "stat2": "Satisfaction client",
-    "stat3": "Années de service"
-  },
+"hero": {
+  "badge": "Compassion. Respect. Confiance. Tranquillité d'esprit.",
+  "title_line1": "Soutien pour",
+  "title_line2": "la vie quotidienne.",
+  "subtitle": "Nous offrons des services de soutien non médicaux pour aider les aînés à vivre en toute sécurité, confortablement et de façon autonome dans leur chez-soi.",
+  "button1": "Appeler maintenant",
+  "button2": "En savoir plus",
+  "trust1": "La même personne à chaque visite",
+  "trust2": "Fiable et ponctuel",
+  "trust3": "Mises à jour pour la famille incluses",
+  "stat1": "Aînés soutenus",
+  "stat2": "Satisfaction client",
+  "stat3": "Années de service",
+  "slides": {
+    "1":  { "badge": "Compassion. Respect. Confiance. Tranquillité d'esprit.", "line1": "Soutien pour", "line2": "la vie quotidienne.", "subtitle": "Nous offrons des services de soutien non médicaux pour aider les aînés à vivre en toute sécurité, confortablement et de façon autonome dans leur chez-soi.", "alt": "Accompagnateur aidant chaleureusement un couple d'aînés à la maison" },
+    "2":  { "badge": "Transport de confiance", "line1": "Trajets sûrs vers", "line2": "chaque rendez-vous.", "subtitle": "Transport fiable vers les rendez-vous médicaux, la pharmacie et l'épicerie — toujours à l'heure.", "alt": "Aîné aidé à monter dans une voiture" },
+    "3":  { "badge": "Soutien hebdomadaire à domicile", "line1": "Un coup de main", "line2": "à la maison.", "subtitle": "Entretien léger, organisation et tâches quotidiennes effectuées avec soin.", "alt": "Accompagnateur aidant à l'entretien léger de la maison" },
+    "4":  { "badge": "Compagnie", "line1": "Quelqu'un qui", "line2": "écoute vraiment.", "subtitle": "Visites amicales et conversations enrichissantes qui illuminent chaque journée.", "alt": "Accompagnateur discutant chaleureusement avec un aîné" },
+    "5":  { "badge": "Le même accompagnateur à chaque fois", "line1": "Visages familiers,", "line2": "confiance durable.", "subtitle": "La même personne dévouée vient à chaque fois, créant de vraies relations.", "alt": "Accompagnateur et aîné partageant un rire" },
+    "6":  { "badge": "Tranquillité d'esprit pour les familles", "line1": "Nous prenons soin, pour que", "line2": "vous puissiez vous reposer.", "subtitle": "Des mises à jour régulières gardent votre famille informée et rassurée.", "alt": "Membre de la famille souriant avec un parent âgé" },
+    "7":  { "badge": "Les courses simplifiées", "line1": "Nous gérons", "line2": "les petites choses.", "subtitle": "De l'épicerie aux médicaments, nous nous occupons des courses quotidiennes.", "alt": "Accompagnateur portant des courses pour un aîné" },
+    "8":  { "badge": "La sécurité avant tout", "line1": "Confort et", "line2": "sécurité à la maison.", "subtitle": "Chaque visite vise à assurer la sécurité et le confort des aînés.", "alt": "Accompagnateur aidant un aîné en toute sécurité à la maison" },
+    "9":  { "badge": "Forfaits flexibles", "line1": "Un soutien adapté", "line2": "à votre emploi du temps.", "subtitle": "De quelques visites par mois à des suivis hebdomadaires — flexible selon vos besoins.", "alt": "Accompagnateur et aîné consultant un calendrier" },
+    "10": { "badge": "Partout au Canada", "line1": "Fièrement au service", "line2": "des communautés du pays.", "subtitle": "Des services de soutien aux aînés fiables disponibles partout au Canada.", "alt": "Aîné profitant du plein air avec son accompagnateur" },
+    "11": { "badge": "Vivre en autonomie", "line1": "Aider les aînés à", "line2": "rester chez eux.", "subtitle": "Nous aidons les aînés à rester autonomes, en sécurité et à l'aise là où ils appartiennent.", "alt": "Aîné se relaxant à la maison avec son accompagnateur à proximité" },
+    "12": { "badge": "Commencez aujourd'hui", "line1": "Contactez-nous pour une", "line2": "consultation gratuite.", "subtitle": "Appelez-nous aujourd'hui et nous vous associerons au forfait qui vous convient.", "alt": "Accompagnateur et aîné se serrant chaleureusement la main" }
+  }
+},
   "about": {
     "label": "Qui sommes-nous",
     "title": "Nous traitons vos proches comme de la famille",
