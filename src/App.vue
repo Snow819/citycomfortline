@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- Preloader -->
+    <!-- Preloader disabled per client request — instant load, no white flash -->
     <!-- <CarPreloader /> -->
 
     <!-- Fixed UI -->
@@ -23,7 +23,7 @@
 </template>
 
 <script setup>
-import CarPreloader       from '@/components/CarPreloader.vue'
+// import CarPreloader     from '@/components/CarPreloader.vue'
 import TopBanner          from '@/components/TopBanner.vue'
 import Navbar              from '@/components/Navbar.vue'
 import FloatingCallButton from '@/components/FloatingCallButton.vue'
