@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- Preloader -->
-    <CarPreloader />
+    <!-- <CarPreloader /> -->
 
     <!-- Fixed UI -->
     <TopBanner />
