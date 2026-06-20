@@ -111,14 +111,14 @@
           </button>
           <transition name="dropdown">
             <ul v-if="langOpen" class="lang-list">
-              <li
-                v-for="lang in languages"
-                :key="lang.code"
-                v-if="lang.code !== currentLocale"
-                @click="selectLang(lang)"
-                class="lang-item"
-              >{{ lang.label }}</li>
-            </ul>
+  <template v-for="lang in languages" :key="lang.code">
+    <li
+      v-if="lang.code !== currentLocale"
+      @click="selectLang(lang)"
+      class="lang-item"
+    >{{ lang.label }}</li>
+  </template>
+</ul>
           </transition>
         </div>
 
@@ -275,12 +275,12 @@ onUnmounted(() => {
   z-index: 1000;
   background: #ffffff;
   border-bottom: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 2px 16px rgba(45,27,105,0.06);
+  box-shadow: 0 2px 16px rgba(69,19,125,0.06);
   transition: transform 0.35s ease, box-shadow 0.3s ease, top 0.3s ease;
 }
 
 .navbar-scrolled {
-  box-shadow: 0 4px 24px rgba(45,27,105,0.12);
+  box-shadow: 0 4px 24px rgba(69,19,125,0.12);
 }
 
 .navbar-hidden {
@@ -405,9 +405,9 @@ onUnmounted(() => {
   left: 50%;
   transform: translateX(-50%);
   background: #ffffff;
-  border: 1px solid rgba(45,27,105,0.1);
+  border: 1px solid rgba(69,19,125,0.1);
   border-radius: 14px;
-  box-shadow: 0 16px 48px rgba(45,27,105,0.14);
+  box-shadow: 0 16px 48px rgba(69,19,125,0.14);
   padding: 10px;
   min-width: 300px;
   z-index: 100;
@@ -481,7 +481,7 @@ onUnmounted(() => {
   font-weight: 500;
   color: var(--color-primary);
   background: transparent;
-  border: 1.5px solid rgba(45,27,105,0.15);
+  border: 1.5px solid var(--color-border);
   border-radius: 50px;
   padding: 7px 14px;
   cursor: pointer;
@@ -499,9 +499,9 @@ onUnmounted(() => {
   top: calc(100% + 8px);
   right: 0;
   background: #ffffff;
-  border: 1px solid rgba(45,27,105,0.1);
+  border: 1px solid rgba(69,19,125,0.1);
   border-radius: 10px;
-  box-shadow: 0 8px 28px rgba(45,27,105,0.12);
+  box-shadow: 0 8px 28px rgba(69,19,125,0.12);
   padding: 6px;
   list-style: none;
   min-width: 130px;
@@ -579,8 +579,8 @@ onUnmounted(() => {
   left: 0;
   width: 100%;
   background: #ffffff;
-  border-top: 1px solid rgba(45,27,105,0.08);
-  box-shadow: 0 16px 40px rgba(45,27,105,0.12);
+  border-top: 1px solid rgba(69,19,125,0.08);
+  box-shadow: 0 16px 40px rgba(69,19,125,0.12);
   padding: 20px 24px 28px;
   display: flex;
   flex-direction: column;
@@ -620,8 +620,8 @@ onUnmounted(() => {
 }
 
 .mobile-lang-btn.active {
-  color: #2D1B69;
-  border-color: #2D1B69;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
   font-weight: 600;
 }
 
