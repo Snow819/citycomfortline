@@ -180,15 +180,17 @@
     }
   },
   "serviceAreas": {
-    "label": "Où nous intervenons",
-    "title": "Fièrement présents partout au Canada",
-    "boundary": "Des services de soutien aux aînés fiables disponibles partout au Canada.",
-    "canadaTitle": "Couverture pancanadienne",
-    "canadaSub": "Soutien aux aînés digne de confiance, partout au pays",
-    "point1": "Accompagnateurs locaux et fiables",
-    "point2": "Horaires flexibles",
-    "point3": "La même personne à chaque visite",
-    "cta": "Vérifier la disponibilité dans votre région"
+    "label": "Où Nous Intervenons",
+    "title": "Fiers de Servir les Familles à l'Échelle Nationale",
+    "boundary": "Peu importe où vous habitez, Swift Comfort Line est là pour vous aider. Nous offrons des services de soins bienveillants aux familles partout au Canada.",
+    "canadaTitle": "Partout au Canada",
+    "canadaSub": "D'un océan à l'autre, nous sommes là pour vous",
+    "coveragePill": "Couverture Nationale",
+    "point1": "Consultations à distance disponibles",
+    "point2": "Coordonnateurs de soins dans chaque province",
+    "point3": "Horaires flexibles, où que vous soyez",
+    "cta": "Vérifier la Disponibilité dans Votre Région",
+    "footnote": "Des questions sur le service dans votre ville ou région? Contactez-nous et nous confirmerons la disponibilité immédiatement."
   },
   "testimonials": {
     "label": "Témoignages Clients",
@@ -247,21 +249,41 @@
     }
   },
   "contact": {
-    "label": "Contactez-nous",
-    "title": "Nous serions ravis de vous entendre",
-    "subtitle": "Appelez-nous ou envoyez un message — nous vous répondrons rapidement.",
-    "callUs": "Appelez-nous directement",
-    "phone": "+1 613 851 6775",
-    "formBadge": "Envoyer un message",
-    "formTitle": "Envoyez-nous un message",
-    "nameLabel": "Votre nom",
-    "phoneLabel": "Numéro de téléphone",
-    "messageLabel": "Message",
-    "namePlaceholder": "Votre nom complet",
-    "phonePlaceholder": "Votre numéro de téléphone",
-    "messagePlaceholder": "Comment pouvons-nous vous aider ?",
-    "submit": "Envoyer le message",
-    "sending": "Envoi en cours..."
+    "label": "Contactez-Nous",
+    "title": "Parlons des Soins de Votre Famille",
+    "subtitle": "Contactez-nous dès aujourd'hui pour une consultation gratuite et sans engagement. Nous écouterons vos besoins et bâtirons un plan de soins adapté à votre famille.",
+    "callUs": "Appelez-Nous Directement",
+    "phone": "+1 (613) 851-6775",
+    "hoursValue": "Support 24h / 24, 7j / 7",
+    "formBadge": "Consultation Gratuite",
+    "formTitle": "Envoyez-Nous un Message",
+    "nameLabel": "Nom Complet",
+    "namePlaceholder": "Jeanne Tremblay",
+    "phoneLabel": "Numéro de Téléphone",
+    "phonePlaceholder": "(613) 555-0123",
+    "messageLabel": "Comment Pouvons-Nous Vous Aider?",
+    "messagePlaceholder": "Parlez-nous un peu de vos besoins en soins...",
+    "submit": "Envoyer le Message",
+    "sending": "Envoi en cours...",
+    "privacyNote": "Vos informations restent confidentielles et ne sont jamais partagées avec des tiers.",
+    "successTitle": "Message Envoyé!",
+    "successText": "Merci de nous avoir contactés. Un membre de notre équipe vous contactera dans les 2 heures.",
+    "sendAnother": "Envoyer un Autre Message",
+    "swalSuccessTitle": "Message Envoyé!",
+    "swalSuccessText": "Merci! Nous vous répondrons sous peu.",
+    "swalErrorTitle": "Oups...",
+    "swalErrorText": "Une erreur est survenue. Veuillez réessayer ou nous appeler directement.",
+    "errors": {
+      "name": "Veuillez entrer votre nom complet.",
+      "phone": "Veuillez entrer un numéro de téléphone valide.",
+      "message": "Veuillez nous en dire un peu plus (au moins 10 caractères)."
+    }
+  },
+  "trust": {
+    "item1": "Aucun contrat à long terme requis",
+    "item2": "Évaluation initiale des soins gratuite",
+    "item3": "Soignants certifiés et vérifiés",
+    "item4": "Arrangements de soins le jour même disponibles"
   },
   "footer": {
     "description": "Soutien aux aînés à Ottawa. Transport, courses et visites hebdomadaires d'un accompagnateur de confiance.",
