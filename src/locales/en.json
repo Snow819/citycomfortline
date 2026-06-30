@@ -8,89 +8,175 @@
     "contact": "Contact Us",
     "getInTouch": "Get in Touch"
   },
+
   "hero": {
-  "badge": "Compassion. Respect. Trust. Peace of Mind.",
-  "title_line1": "Support for",
-  "title_line2": "Everyday Living.",
-  "subtitle": "We provide non-medical support services that help seniors live safely, comfortably and independently in the place they call home.",
-  "button1": "Call Now",
-  "button2": "Learn More",
-  "trust1": "Same person every visit",
-  "trust2": "Reliable & punctual",
-  "trust3": "Family updates included",
-  "stat1": "Seniors Supported",
-  "stat2": "Client Satisfaction",
-  "stat3": "Years of Service",
-  "slides": {
-    "1":  { "badge": "Compassion. Respect. Trust. Peace of Mind.", "line1": "Support for", "line2": "Everyday Living.", "subtitle": "We provide non-medical support services that help seniors live safely, comfortably and independently in the place they call home.", "alt": "Caregiver warmly assisting an elderly couple at home" },
-    "2":  { "badge": "Trusted Transportation", "line1": "Safe Rides to", "line2": "Every Appointment.", "subtitle": "Reliable transportation to doctor visits, pharmacy trips, and grocery stores — always on time.", "alt": "Senior being helped into a car" },
-    "3":  { "badge": "Weekly Home Support", "line1": "A Helping Hand", "line2": "Around the Home.", "subtitle": "Light housekeeping, organizing, and everyday tasks handled with care.", "alt": "Caregiver helping with light housekeeping" },
-    "4":  { "badge": "Companionship", "line1": "Someone Who", "line2": "Truly Listens.", "subtitle": "Friendly visits and meaningful conversations that brighten every day.", "alt": "Caregiver chatting warmly with a senior" },
-    "5":  { "badge": "Same Caregiver Every Time", "line1": "Familiar Faces,", "line2": "Lasting Trust.", "subtitle": "The same dedicated person visits every time, building real relationships.", "alt": "Caregiver and senior sharing a laugh" },
-    "6":  { "badge": "Peace of Mind for Families", "line1": "We Care, So", "line2": "You Can Rest Easy.", "subtitle": "Regular updates keep your family informed and reassured.", "alt": "Family member smiling with senior parent" },
-    "7":  { "badge": "Errands Made Easy", "line1": "We Handle", "line2": "the Little Things.", "subtitle": "From groceries to prescriptions, we take care of daily errands.", "alt": "Caregiver carrying groceries for a senior" },
-    "8":  { "badge": "Safety First", "line1": "Comfort and", "line2": "Safety at Home.", "subtitle": "Every visit is focused on keeping seniors safe and comfortable.", "alt": "Caregiver assisting senior safely at home" },
-    "9":  { "badge": "Flexible Plans", "line1": "Support That", "line2": "Fits Your Schedule.", "subtitle": "From a few visits a month to weekly check-ins — flexible to your needs.", "alt": "Caregiver and senior reviewing a calendar" },
-    "10": { "badge": "Across Canada", "line1": "Proudly Serving", "line2": "Communities Nationwide.", "subtitle": "Reliable senior support services available across Canada.", "alt": "Senior enjoying time outdoors with caregiver" },
-    "11": { "badge": "Independent Living", "line1": "Helping Seniors", "line2": "Stay at Home.", "subtitle": "We help seniors remain independent, safe, and comfortable where they belong.", "alt": "Senior relaxing at home with caregiver nearby" },
-    "12": { "badge": "Start Today", "line1": "Reach Out for a", "line2": "Free Consultation.", "subtitle": "Call us today and we'll match you with the right plan for your needs.", "alt": "Caregiver and senior shaking hands warmly" }
-  }
-},
+    "button2": "Our Services",
+    "trust1": "Licensed & Insured",
+    "trust2": "24 / 7 Availability",
+    "trust3": "Certified Caregivers",
+    "stat1": "Families Served",
+    "stat2": "Satisfaction Rate",
+    "stat3": "Years of Care",
+    "slides": {
+      "1": {
+        "badge": "Trusted Home Healthcare",
+        "line1": "Professional Care,",
+        "line2": "In Your Home",
+        "subtitle": "Compassionate, certified caregivers providing tailored support for your loved ones — so they can live with dignity and comfort."
+      },
+      "2": {
+        "badge": "Digital Health Support",
+        "line1": "Modern Care,",
+        "line2": "Always Connected",
+        "subtitle": "Technology-enabled healthcare that keeps families informed and loved ones safe, every hour of every day."
+      },
+      "3": {
+        "badge": "Team-Based Care",
+        "line1": "A Team You",
+        "line2": "Can Trust",
+        "subtitle": "Our certified specialists work together to deliver seamless, personalised care plans built around each client's unique needs."
+      },
+      "4": {
+        "badge": "Collaborative Excellence",
+        "line1": "Dedicated to",
+        "line2": "Your Wellbeing",
+        "subtitle": "Experienced professionals united by a commitment to elevating your standard of care through expertise, empathy, and attention to detail."
+      },
+      "5": {
+        "badge": "Community-Centred Care",
+        "line1": "Care That Feels",
+        "line2": "Like Family",
+        "subtitle": "We build lasting relationships and bring genuine warmth to every home we serve — because true care goes beyond the clinical."
+      },
+      "6": {
+        "badge": "Swift Comfort Line Team",
+        "line1": "Our People,",
+        "line2": "Your Comfort",
+        "subtitle": "Meet the Swift Comfort Line team — uniformed, trained professionals who bring expert care and a warm, reassuring presence to every visit."
+      }
+    }
+  },
   "about": {
     "label": "Who We Are",
-    "title": "We Treat Your Loved Ones Like Family",
-    "paragraph1": "Swift Comfort Line helps seniors remain independent at home by providing reliable support with daily tasks, appointments, and companionship.",
-    "paragraph2": "We serve Ottawa and surrounding areas with a focus on safety, comfort, and trust. Every visit is handled by the same dedicated person — someone your family can count on.",
-    "quote": "Swift Comfort Line — Here when you need us, every single week.",
-    "cta": "Learn More About Us",
-    "cardTitle": "We Are Here to Help",
-    "cardBtn": "Get in Touch"
+    "title": "Compassionate Care You Can Count On",
+    "paragraph1": "Swift Comfort Line was founded on a simple belief — that every person deserves to age with dignity, in the comfort of their own home, surrounded by the people and things they love. We bring that belief to life every day through our team of certified, compassionate caregivers.",
+    "paragraph2": "We don't just provide services — we build relationships. From the first consultation to each daily visit, our team is dedicated to understanding your family's unique needs and delivering care that truly makes a difference.",
+    "quote": "Care is not just what we do. It is who we are.",
+    "chip1": "Compassion First",
+    "chip2": "Safety Guaranteed",
+    "chip3": "5-Star Rated",
+    "stat1": "Families Served",
+    "stat2": "Satisfaction Rate",
+    "stat3": "Years of Care",
+    "stat4": "Always Available",
+    "cta": "Learn Our Story",
+    "callUs": "Call Us Now",
+    "expLabel": "Years of\nTrusted Care",
+    "availPill": "Available Now",
+    "accentLabel": "Trusted by\nFamilies",
+    "cardTitle": "Get in Touch",
+    "cardSub": "We're ready to help your family",
+    "urgency": "We respond to all inquiries within 2 hours. Same-day care arrangements available.",
+    "cardBtn": "Book a Free Consultation",
+    "contact": {
+      "phoneLabel": "Call Us",
+      "emailLabel": "Email Us",
+      "locationLabel": "Service Area",
+      "locationValue": "Serving Communities Across Canada",
+      "hoursLabel": "Hours of Operation",
+      "hoursValue": "24 hours a day, 7 days a week"
+    }
   },
   "ourServices": {
     "label": "What We Offer",
-    "title": "Our Services",
-    "subtitle": "Simple, reliable support for seniors living at home",
+    "title": "Caring Services, Tailored for You",
+    "subtitle": "We provide a full range of compassionate home care services designed to help your loved ones live independently, safely, and with dignity.",
+    "learnMore": "Learn more",
+    "viewAll": "Book a Free Consultation",
     "mostPopular": "Most Popular",
-    "viewAll": "View All Services",
-    "transportation": {
-      "title": "Transportation & Appointments",
-      "description": "Safe and reliable rides to doctor visits, pharmacy trips, grocery stores, and other needs",
-      "item1": "Doctor & specialist visits",
-      "item2": "Pharmacy & grocery runs",
-      "item3": "Hospital drop-offs & pickups"
+    "ctaEyebrow": "Ready to get started?",
+    "ctaHeading": "Let us build a care plan around your family's needs.",
+
+    "trust": {
+      "certified": { "label": "Certified Caregivers", "sub": "Trained & background-checked" },
+      "available": { "label": "Available 24 / 7", "sub": "Day, night & weekends" },
+      "insured": { "label": "Fully Insured", "sub": "Licensed & bonded" },
+      "rated": { "label": "98% Satisfaction", "sub": "200+ families served" }
     },
-    "homeSupport": {
-      "title": "Weekly Home Support",
-      "description": "Help with light housekeeping, organizing, and everyday tasks",
-      "item1": "Light housekeeping",
-      "item2": "Organizing & decluttering",
-      "item3": "Everyday errands"
-    },
+
     "companionship": {
-      "title": "Companionship & Check-ins",
-      "description": "Spending time with seniors, ensuring they are okay, and updating family if needed",
-      "item1": "Regular friendly visits",
-      "item2": "Safety check-ins",
-      "item3": "Family update calls"
+      "title": "Companionship",
+      "description": "Meaningful social connection that reduces isolation, lifts spirits, and keeps your loved one engaged in the things they enjoy every day.",
+      "item1": "Friendly conversation & activities",
+      "item2": "Accompaniment to outings & events",
+      "item3": "Emotional support & mental wellness"
+    },
+    "errands": {
+      "title": "Errands & Shopping",
+      "description": "We handle everyday errands so your family member can stay comfortable at home without missing a single necessity.",
+      "item1": "Grocery & prescription pick-up",
+      "item2": "Banking & postal errands",
+      "item3": "Dry cleaning & returns"
+    },
+    "mealPrep": {
+      "title": "Meal Preparation",
+      "description": "Nutritious, home-cooked meals prepared fresh to accommodate dietary needs, preferences, and medical requirements.",
+      "item1": "Personalised meal planning",
+      "item2": "Dietary & allergy-aware cooking",
+      "item3": "Grocery coordination"
+    },
+    "housekeeping": {
+      "title": "Light Housekeeping",
+      "description": "A clean, safe living environment maintained with care so your loved one can relax in comfort and dignity at home.",
+      "item1": "Vacuuming, dusting & tidying",
+      "item2": "Laundry, folding & linen changes",
+      "item3": "Kitchen & bathroom sanitising"
+    },
+    "transportation": {
+      "title": "Transportation",
+      "description": "Safe, reliable transport to medical appointments, social activities, and anywhere else life takes your loved one.",
+      "item1": "Medical & therapy appointments",
+      "item2": "Social visits & community events",
+      "item3": "Escorted shopping trips"
+    },
+    "respite": {
+      "title": "Respite Support",
+      "description": "Temporary relief for family caregivers — giving you peace of mind and the rest you deserve while your loved one is in trusted hands.",
+      "item1": "Short-term & emergency coverage",
+      "item2": "Flexible scheduling for family caregivers",
+      "item3": "Seamless care continuity"
     }
   },
+
   "packages": {
-    "title": "Our Plans",
-    "subtitle": "Flexible support that fits your schedule",
-    "note": "Minimum visit: 3 hours",
+    "label": "Care Plans",
+    "title": "Simple, Flexible Packages",
+    "note": "All plans include a personalised care assessment at no extra charge. No lock-in contracts.",
+    "bookBtn": "Book This Plan",
+
     "basic": {
-      "name": "Basic Plan",
-      "frequency": "2 visits per month"
+      "name": "Starter Care",
+      "frequency": "A few visits per week",
+      "feature1": "Up to 3 visits / week",
+      "feature2": "Companionship & errands",
+      "feature3": "Flexible scheduling"
     },
     "weekly": {
-      "name": "Weekly Plan",
-      "frequency": "1 visit per week"
+      "name": "Weekly Care",
+      "frequency": "Daily support, 5 days a week",
+      "feature1": "5 days / week coverage",
+      "feature2": "Meals, housekeeping & transport",
+      "feature3": "Dedicated caregiver assigned",
+      "feature4": "Monthly family progress report"
     },
     "premium": {
-      "name": "Premium Plan",
-      "frequency": "2 visits per week"
-    },
-    "bookBtn": "Book This Plan"
+      "name": "Full-Time Care",
+      "frequency": "7-day comprehensive support",
+      "feature1": "7 days / week coverage",
+      "feature2": "All 6 services included",
+      "feature3": "Priority scheduling & 24 / 7 access",
+      "feature4": "Weekly family update calls"
+    }
   },
   "trust": {
     "title": "Why Families Choose Us",
@@ -100,28 +186,70 @@
     "item4": "Focus on safety and comfort"
   },
   "serviceAreas": {
-  "label": "Where We Serve",
-  "title": "Proudly Serving Canada",
-  "boundary": "Reliable senior support services available across Canada.",
-  "canadaTitle": "Canada-Wide Coverage",
-  "canadaSub": "Trusted senior support nationwide",
-  "point1": "Local, trusted caregivers",
-  "point2": "Flexible scheduling",
-  "point3": "Same person every visit",
-  "cta": "Check Availability in Your Area"
-},
+    "label": "Where We Serve",
+    "title": "Proudly Serving Canada",
+    "boundary": "Reliable senior support services available across Canada.",
+    "canadaTitle": "Canada-Wide Coverage",
+    "canadaSub": "Trusted senior support nationwide",
+    "point1": "Local, trusted caregivers",
+    "point2": "Flexible scheduling",
+    "point3": "Same person every visit",
+    "cta": "Check Availability in Your Area"
+  },
   "testimonials": {
-    "label": "What Families Say",
-    "title": "What Our Clients Say",
+    "label": "Client Stories",
+    "title": "Trusted by Families Across Canada",
+    "subtitle": "Don't just take our word for it — hear directly from the families and clients we've had the privilege of caring for.",
+    "ratingLabel": "Average Rating",
+    "verified": "Verified Client",
+    "stat1": "Families Served",
+    "stat2": "Average Rating",
+    "stat3": "Satisfaction Rate",
+    "stat4": "Would Recommend",
+    "ctaText": "Join 200+ families who trust Swift Comfort Line with the care of their loved ones.",
+    "ctaBtn": "Book a Free Consultation",
+
     "items": {
-      "1": { "text": "Swift Comfort Line gave me the best experience ever! Booking was fast and seamless.", "name": "Oluwatobi Adebayo", "role": "Client" },
-      "2": { "text": "Professional and top-notch service. I highly recommend them!", "name": "Mary Johnson", "role": "Frequent Client" },
-      "3": { "text": "My mother is in great hands every week. Same person, always on time.", "name": "James Okoro", "role": "Son of a Client" },
-      "4": { "text": "Excellent service from start to finish. The team was professional and punctual!", "name": "Sarah Williams", "role": "Family Member" },
-      "5": { "text": "They take such good care of my father. He looks forward to every visit.", "name": "David Chen", "role": "Son of a Client" },
-      "6": { "text": "Highly recommend Swift Comfort Line. Professional, efficient, and affordable!", "name": "Aisha Mohammed", "role": "Client" },
-      "7": { "text": "Swift Comfort Line was a lifesaver. They took my mother to her hospital appointment and waited the entire time. So professional and caring!", "name": "Patricia Okonkwo", "role": "Family Caregiver" },
-      "8": { "text": "I use their service every week for my clinic visits. Reliable, always on time, and the companion service gives me so much peace of mind.", "name": "Robert Mensah", "role": "Regular Client" }
+      "1": {
+        "text": "Swift Comfort Line has been an absolute blessing for my mother. The caregivers are not just professional — they genuinely care. I finally have peace of mind knowing she's in good hands.",
+        "name": "Margaret O'Connell",
+        "role": "Daughter of Client"
+      },
+      "2": {
+        "text": "After my father's stroke, we needed reliable support fast. The team arranged everything within 48 hours and the quality of care has been exceptional ever since.",
+        "name": "David Chen",
+        "role": "Son of Client"
+      },
+      "3": {
+        "text": "I was nervous about having someone help me at home, but my caregiver treats me with so much respect and warmth. It doesn't feel like a service — it feels like family.",
+        "name": "Patricia Williams",
+        "role": "Client"
+      },
+      "4": {
+        "text": "The transportation and errand support has given my father back his independence. He can get to his appointments and the grocery store without relying on us every time.",
+        "name": "Robert Singh",
+        "role": "Son of Client"
+      },
+      "5": {
+        "text": "What stood out most was the communication. We always knew what was happening with my mother's care, and the team adjusted the plan whenever her needs changed.",
+        "name": "Linda Tremblay",
+        "role": "Daughter of Client"
+      },
+      "6": {
+        "text": "Living alone after my wife passed was hard. My companion caregiver visits twice a week and those visits have genuinely improved my mood and outlook on life.",
+        "name": "James Okafor",
+        "role": "Client"
+      },
+      "7": {
+        "text": "The respite care let me take a real vacation for the first time in three years without worrying about my mother. The caregiver was attentive, kind, and incredibly thorough.",
+        "name": "Susan Bergeron",
+        "role": "Daughter of Client"
+      },
+      "8": {
+        "text": "From the first phone call to the ongoing care, everything has been handled with professionalism and heart. I recommend Swift Comfort Line to every family I know.",
+        "name": "Michael Patel",
+        "role": "Son of Client"
+      }
     }
   },
   "contact": {

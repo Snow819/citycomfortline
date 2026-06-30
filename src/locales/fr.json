@@ -8,120 +8,242 @@
     "contact": "Nous joindre",
     "getInTouch": "Nous contacter"
   },
-"hero": {
-  "badge": "Compassion. Respect. Confiance. Tranquillité d'esprit.",
-  "title_line1": "Soutien pour",
-  "title_line2": "la vie quotidienne.",
-  "subtitle": "Nous offrons des services de soutien non médicaux pour aider les aînés à vivre en toute sécurité, confortablement et de façon autonome dans leur chez-soi.",
-  "button1": "Appeler maintenant",
-  "button2": "En savoir plus",
-  "trust1": "La même personne à chaque visite",
-  "trust2": "Fiable et ponctuel",
-  "trust3": "Mises à jour pour la famille incluses",
-  "stat1": "Aînés soutenus",
-  "stat2": "Satisfaction client",
-  "stat3": "Années de service",
-  "slides": {
-    "1":  { "badge": "Compassion. Respect. Confiance. Tranquillité d'esprit.", "line1": "Soutien pour", "line2": "la vie quotidienne.", "subtitle": "Nous offrons des services de soutien non médicaux pour aider les aînés à vivre en toute sécurité, confortablement et de façon autonome dans leur chez-soi.", "alt": "Accompagnateur aidant chaleureusement un couple d'aînés à la maison" },
-    "2":  { "badge": "Transport de confiance", "line1": "Trajets sûrs vers", "line2": "chaque rendez-vous.", "subtitle": "Transport fiable vers les rendez-vous médicaux, la pharmacie et l'épicerie — toujours à l'heure.", "alt": "Aîné aidé à monter dans une voiture" },
-    "3":  { "badge": "Soutien hebdomadaire à domicile", "line1": "Un coup de main", "line2": "à la maison.", "subtitle": "Entretien léger, organisation et tâches quotidiennes effectuées avec soin.", "alt": "Accompagnateur aidant à l'entretien léger de la maison" },
-    "4":  { "badge": "Compagnie", "line1": "Quelqu'un qui", "line2": "écoute vraiment.", "subtitle": "Visites amicales et conversations enrichissantes qui illuminent chaque journée.", "alt": "Accompagnateur discutant chaleureusement avec un aîné" },
-    "5":  { "badge": "Le même accompagnateur à chaque fois", "line1": "Visages familiers,", "line2": "confiance durable.", "subtitle": "La même personne dévouée vient à chaque fois, créant de vraies relations.", "alt": "Accompagnateur et aîné partageant un rire" },
-    "6":  { "badge": "Tranquillité d'esprit pour les familles", "line1": "Nous prenons soin, pour que", "line2": "vous puissiez vous reposer.", "subtitle": "Des mises à jour régulières gardent votre famille informée et rassurée.", "alt": "Membre de la famille souriant avec un parent âgé" },
-    "7":  { "badge": "Les courses simplifiées", "line1": "Nous gérons", "line2": "les petites choses.", "subtitle": "De l'épicerie aux médicaments, nous nous occupons des courses quotidiennes.", "alt": "Accompagnateur portant des courses pour un aîné" },
-    "8":  { "badge": "La sécurité avant tout", "line1": "Confort et", "line2": "sécurité à la maison.", "subtitle": "Chaque visite vise à assurer la sécurité et le confort des aînés.", "alt": "Accompagnateur aidant un aîné en toute sécurité à la maison" },
-    "9":  { "badge": "Forfaits flexibles", "line1": "Un soutien adapté", "line2": "à votre emploi du temps.", "subtitle": "De quelques visites par mois à des suivis hebdomadaires — flexible selon vos besoins.", "alt": "Accompagnateur et aîné consultant un calendrier" },
-    "10": { "badge": "Partout au Canada", "line1": "Fièrement au service", "line2": "des communautés du pays.", "subtitle": "Des services de soutien aux aînés fiables disponibles partout au Canada.", "alt": "Aîné profitant du plein air avec son accompagnateur" },
-    "11": { "badge": "Vivre en autonomie", "line1": "Aider les aînés à", "line2": "rester chez eux.", "subtitle": "Nous aidons les aînés à rester autonomes, en sécurité et à l'aise là où ils appartiennent.", "alt": "Aîné se relaxant à la maison avec son accompagnateur à proximité" },
-    "12": { "badge": "Commencez aujourd'hui", "line1": "Contactez-nous pour une", "line2": "consultation gratuite.", "subtitle": "Appelez-nous aujourd'hui et nous vous associerons au forfait qui vous convient.", "alt": "Accompagnateur et aîné se serrant chaleureusement la main" }
-  }
-},
-  "about": {
-    "label": "Qui sommes-nous",
-    "title": "Nous traitons vos proches comme de la famille",
-    "paragraph1": "Swift Comfort Line aide les aînés à rester autonomes à domicile en offrant un soutien fiable pour les tâches quotidiennes, les rendez-vous et la compagnie.",
-    "paragraph2": "Nous servons Ottawa et les environs en mettant l'accent sur la sécurité, le confort et la confiance. Chaque visite est assurée par la même personne dévouée — quelqu'un sur qui votre famille peut compter.",
-    "quote": "Swift Comfort Line — Présents quand vous avez besoin de nous, chaque semaine.",
-    "cta": "En savoir plus sur nous",
-    "cardTitle": "Nous sommes là pour vous aider",
-    "cardBtn": "Nous contacter"
-  },
-  "ourServices": {
-    "label": "Ce que nous offrons",
-    "title": "Nos services",
-    "subtitle": "Un soutien simple et fiable pour les aînés à domicile",
-    "mostPopular": "Le plus populaire",
-    "viewAll": "Voir tous les services",
-    "transportation": {
-      "title": "Transport et rendez-vous",
-      "description": "Trajets sûrs et fiables vers les médecins, pharmacies, épiceries et autres besoins",
-      "item1": "Visites chez le médecin et spécialistes",
-      "item2": "Courses à la pharmacie et à l'épicerie",
-      "item3": "Dépôts et collectes à l'hôpital"
-    },
-    "homeSupport": {
-      "title": "Soutien hebdomadaire à domicile",
-      "description": "Aide pour l'entretien léger, l'organisation et les tâches quotidiennes",
-      "item1": "Entretien léger du domicile",
-      "item2": "Organisation et désencombrement",
-      "item3": "Courses quotidiennes"
-    },
-    "companionship": {
-      "title": "Compagnie et visites de contrôle",
-      "description": "Présence auprès des aînés, vérification de leur bien-être et mises à jour pour la famille",
-      "item1": "Visites amicales régulières",
-      "item2": "Visites de sécurité",
-      "item3": "Appels de mise à jour pour la famille"
+
+  "hero": {
+    "button2": "Nos Services",
+    "trust1": "Agréé & Assuré",
+    "trust2": "Disponible 24h / 24",
+    "trust3": "Soignants Certifiés",
+    "stat1": "Familles Servies",
+    "stat2": "Taux de Satisfaction",
+    "stat3": "Ans d'Expérience",
+    "slides": {
+      "1": {
+        "badge": "Soins à Domicile de Confiance",
+        "line1": "Des Soins Professionnels,",
+        "line2": "Chez Vous",
+        "subtitle": "Des soignants certifiés et bienveillants offrant un soutien personnalisé à vos proches — pour qu'ils vivent avec dignité et confort."
+      },
+      "2": {
+        "badge": "Soutien Santé Numérique",
+        "line1": "Des Soins Modernes,",
+        "line2": "Toujours Connectés",
+        "subtitle": "Des soins de santé assistés par la technologie qui tiennent les familles informées et assurent la sécurité de vos proches, à toute heure."
+      },
+      "3": {
+        "badge": "Soins en Équipe",
+        "line1": "Une Équipe en qui",
+        "line2": "Vous Pouvez Avoir Confiance",
+        "subtitle": "Nos spécialistes certifiés collaborent pour offrir des plans de soins personnalisés et continus, adaptés aux besoins de chaque client."
+      },
+      "4": {
+        "badge": "Excellence Collaborative",
+        "line1": "Dédiés à",
+        "line2": "Votre Bien-Être",
+        "subtitle": "Des professionnels expérimentés unis par l'engagement d'élever votre niveau de soins grâce à l'expertise, l'empathie et l'attention aux détails."
+      },
+      "5": {
+        "badge": "Soins Centrés sur la Communauté",
+        "line1": "Des Soins qui Ressemblent",
+        "line2": "à une Famille",
+        "subtitle": "Nous bâtissons des relations durables et apportons une vraie chaleur humaine dans chaque foyer — parce que les vrais soins vont au-delà du clinique."
+      },
+      "6": {
+        "badge": "Équipe Swift Comfort Line",
+        "line1": "Notre Équipe,",
+        "line2": "Votre Confort",
+        "subtitle": "Rencontrez l'équipe Swift Comfort Line — des professionnels en uniforme, formés pour apporter expertise et présence chaleureuse à chaque visite."
+      }
     }
   },
+
+  "about": {
+    "label": "Qui Nous Sommes",
+    "title": "Des Soins Bienveillants sur Lesquels Vous Pouvez Compter",
+    "paragraph1": "Swift Comfort Line a été fondée sur une conviction simple — chaque personne mérite de vieillir avec dignité, dans le confort de son propre foyer, entourée des gens et des choses qu'elle aime. Nous concrétisons cette conviction chaque jour grâce à notre équipe de soignants certifiés et bienveillants.",
+    "paragraph2": "Nous ne fournissons pas seulement des services — nous construisons des relations. De la première consultation à chaque visite quotidienne, notre équipe s'engage à comprendre les besoins uniques de votre famille et à offrir des soins qui font vraiment une différence.",
+    "quote": "Le soin n'est pas seulement ce que nous faisons. C'est qui nous sommes.",
+    "chip1": "Bienveillance d'Abord",
+    "chip2": "Sécurité Garantie",
+    "chip3": "Noté 5 Étoiles",
+    "stat1": "Familles Servies",
+    "stat2": "Taux de Satisfaction",
+    "stat3": "Ans de Soins",
+    "stat4": "Toujours Disponible",
+    "cta": "Notre Histoire",
+    "callUs": "Appelez-Nous",
+    "expLabel": "Ans de Soins\nde Confiance",
+    "availPill": "Disponible Maintenant",
+    "accentLabel": "Approuvé par\nles Familles",
+    "cardTitle": "Contactez-Nous",
+    "cardSub": "Nous sommes prêts à aider votre famille",
+    "urgency": "Nous répondons à toutes les demandes dans les 2 heures. Arrangements de soins le jour même disponibles.",
+    "cardBtn": "Consultation Gratuite",
+    "contact": {
+      "phoneLabel": "Téléphone",
+      "emailLabel": "Courriel",
+      "locationLabel": "Zone de Service",
+      "locationValue": "Desservant des communautés partout au Canada",
+      "hoursLabel": "Heures d'Ouverture",
+      "hoursValue": "24 heures sur 24, 7 jours sur 7"
+    }
+  },
+  "ourServices": {
+    "label": "Nos Services",
+    "title": "Des Soins Personnalisés pour Vous",
+    "subtitle": "Nous offrons une gamme complète de services de soins à domicile conçus pour aider vos proches à vivre de façon autonome, sécuritaire et digne.",
+    "learnMore": "En savoir plus",
+    "viewAll": "Consultation gratuite",
+    "mostPopular": "Le Plus Populaire",
+    "ctaEyebrow": "Prêt à commencer?",
+    "ctaHeading": "Laissez-nous élaborer un plan de soins adapté à votre famille.",
+
+    "trust": {
+      "certified": { "label": "Soignants Certifiés", "sub": "Formés et vérifiés" },
+      "available": { "label": "Disponible 24h / 24", "sub": "Jour, nuit et week-ends" },
+      "insured": { "label": "Pleinement Assuré", "sub": "Agréé et cautionné" },
+      "rated": { "label": "98% de Satisfaction", "sub": "Plus de 200 familles servies" }
+    },
+
+    "companionship": {
+      "title": "Compagnie",
+      "description": "Un lien social significatif qui réduit l'isolement, remonte le moral et maintient votre proche engagé dans ce qu'il aime chaque jour.",
+      "item1": "Conversation amicale & activités",
+      "item2": "Accompagnement aux sorties & événements",
+      "item3": "Soutien émotionnel & bien-être mental"
+    },
+    "errands": {
+      "title": "Courses & Commissions",
+      "description": "Nous gérons les courses du quotidien pour que votre proche reste confortablement chez lui sans manquer l'essentiel.",
+      "item1": "Épicerie & collecte d'ordonnances",
+      "item2": "Banque & commissions postales",
+      "item3": "Pressing & retours"
+    },
+    "mealPrep": {
+      "title": "Préparation des Repas",
+      "description": "Des repas maison nutritifs préparés frais, adaptés aux besoins alimentaires, préférences et exigences médicales.",
+      "item1": "Planification personnalisée des repas",
+      "item2": "Cuisine adaptée aux régimes & allergies",
+      "item3": "Coordination des achats alimentaires"
+    },
+    "housekeeping": {
+      "title": "Entretien Ménager Léger",
+      "description": "Un environnement de vie propre et sécuritaire maintenu avec soin pour que votre proche se détende confortablement à la maison.",
+      "item1": "Aspirateur, dépoussiérage & rangement",
+      "item2": "Lessive, pliage & changement de literie",
+      "item3": "Assainissement cuisine & salle de bain"
+    },
+    "transportation": {
+      "title": "Transport",
+      "description": "Transport sûr et fiable vers les rendez-vous médicaux, activités sociales et partout où la vie mène votre proche.",
+      "item1": "Rendez-vous médicaux & thérapeutiques",
+      "item2": "Visites sociales & événements communautaires",
+      "item3": "Sorties shopping accompagnées"
+    },
+    "respite": {
+      "title": "Soutien Répit",
+      "description": "Un soulagement temporaire pour les aidants familiaux — offrez-vous la tranquillité d'esprit et le repos que vous méritez.",
+      "item1": "Couverture à court terme & urgences",
+      "item2": "Horaires flexibles pour les aidants",
+      "item3": "Continuité des soins sans interruption"
+    }
+  },
+
   "packages": {
-    "title": "Nos forfaits",
-    "subtitle": "Un soutien flexible adapté à votre emploi du temps",
-    "note": "Visite minimale : 3 heures",
+    "label": "Plans de Soins",
+    "title": "Des Forfaits Simples et Flexibles",
+    "note": "Tous les forfaits incluent une évaluation personnalisée des soins sans frais supplémentaires. Aucun contrat d'engagement.",
+    "bookBtn": "Réserver ce Forfait",
+
     "basic": {
-      "name": "Forfait de base",
-      "frequency": "2 visites par mois"
+      "name": "Soins Débutant",
+      "frequency": "Quelques visites par semaine",
+      "feature1": "Jusqu'à 3 visites / semaine",
+      "feature2": "Compagnie & courses",
+      "feature3": "Horaires flexibles"
     },
     "weekly": {
-      "name": "Forfait hebdomadaire",
-      "frequency": "1 visite par semaine"
+      "name": "Soins Hebdomadaires",
+      "frequency": "Soutien quotidien, 5 jours par semaine",
+      "feature1": "Couverture 5 jours / semaine",
+      "feature2": "Repas, ménage & transport",
+      "feature3": "Soignant dédié assigné",
+      "feature4": "Rapport mensuel à la famille"
     },
     "premium": {
-      "name": "Forfait premium",
-      "frequency": "2 visites par semaine"
-    },
-    "bookBtn": "Réserver ce forfait"
-  },
-  "trust": {
-    "title": "Pourquoi les familles nous choisissent",
-    "item1": "La même personne à chaque visite",
-    "item2": "Fiable et ponctuel",
-    "item3": "Soutien flexible",
-    "item4": "Priorité à la sécurité et au confort"
+      "name": "Soins à Temps Plein",
+      "frequency": "Soutien complet 7 jours sur 7",
+      "feature1": "Couverture 7 jours / semaine",
+      "feature2": "Les 6 services inclus",
+      "feature3": "Priorité & accès 24h / 24",
+      "feature4": "Appels de suivi hebdomadaires"
+    }
   },
   "serviceAreas": {
-  "label": "Où nous intervenons",
-  "title": "Fièrement présents partout au Canada",
-  "boundary": "Des services de soutien aux aînés fiables disponibles partout au Canada.",
-  "canadaTitle": "Couverture pancanadienne",
-  "canadaSub": "Soutien aux aînés digne de confiance, partout au pays",
-  "point1": "Accompagnateurs locaux et fiables",
-  "point2": "Horaires flexibles",
-  "point3": "La même personne à chaque visite",
-  "cta": "Vérifier la disponibilité dans votre région"
-},
+    "label": "Où nous intervenons",
+    "title": "Fièrement présents partout au Canada",
+    "boundary": "Des services de soutien aux aînés fiables disponibles partout au Canada.",
+    "canadaTitle": "Couverture pancanadienne",
+    "canadaSub": "Soutien aux aînés digne de confiance, partout au pays",
+    "point1": "Accompagnateurs locaux et fiables",
+    "point2": "Horaires flexibles",
+    "point3": "La même personne à chaque visite",
+    "cta": "Vérifier la disponibilité dans votre région"
+  },
   "testimonials": {
-    "label": "Ce que disent les familles",
-    "title": "Ce que disent nos clients",
+    "label": "Témoignages Clients",
+    "title": "Une Confiance Partagée par des Familles Partout au Canada",
+    "subtitle": "Ne nous croyez pas sur parole — écoutez directement les familles et clients que nous avons eu le privilège d'accompagner.",
+    "ratingLabel": "Note Moyenne",
+    "verified": "Client Vérifié",
+    "stat1": "Familles Servies",
+    "stat2": "Note Moyenne",
+    "stat3": "Taux de Satisfaction",
+    "stat4": "Nous Recommandent",
+    "ctaText": "Rejoignez plus de 200 familles qui font confiance à Swift Comfort Line pour les soins de leurs proches.",
+    "ctaBtn": "Consultation Gratuite",
+
     "items": {
-      "1": { "text": "Swift Comfort Line m'a offert la meilleure expérience possible. La réservation était rapide et simple.", "name": "Oluwatobi Adebayo", "role": "Client" },
-      "2": { "text": "Des professionnels et un service de qualité. Je les recommande vivement !", "name": "Mary Johnson", "role": "Cliente fidèle" },
-      "3": { "text": "Ma mère est entre de bonnes mains chaque semaine. Même personne, toujours à l'heure.", "name": "James Okoro", "role": "Fils d'une cliente" },
-      "4": { "text": "Service excellent du début à la fin. L'équipe était professionnelle et ponctuelle !", "name": "Sarah Williams", "role": "Membre de la famille" },
-      "5": { "text": "Ils prennent si bien soin de mon père. Il attend chaque visite avec impatience.", "name": "David Chen", "role": "Fils d'un client" },
-      "6": { "text": "Je recommande vivement Swift Comfort Line. Professionnel, efficace et abordable !", "name": "Aisha Mohammed", "role": "Cliente" },
-      "7": { "text": "Swift Comfort Line a été une bouée de sauvetage. Ils ont emmené ma mère à son rendez-vous à l'hôpital et ont attendu tout le temps. Tellement professionnel et attentionné !", "name": "Patricia Okonkwo", "role": "Aidante familiale" },
-      "8": { "text": "J'utilise leur service chaque semaine pour mes visites à la clinique. Fiable, toujours à l'heure, et le service d'accompagnement me donne tellement de tranquillité d'esprit.", "name": "Robert Mensah", "role": "Client régulier" }
+      "1": {
+        "text": "Swift Comfort Line a été une véritable bénédiction pour ma mère. Les soignants ne sont pas seulement professionnels — ils se soucient vraiment d'elle. J'ai enfin l'esprit tranquille.",
+        "name": "Margaret O'Connell",
+        "role": "Fille d'une Cliente"
+      },
+      "2": {
+        "text": "Après l'AVC de mon père, nous avions besoin d'un soutien fiable rapidement. L'équipe a tout organisé en 48 heures et la qualité des soins est exceptionnelle depuis.",
+        "name": "David Chen",
+        "role": "Fils d'un Client"
+      },
+      "3": {
+        "text": "J'étais nerveuse à l'idée d'avoir de l'aide à domicile, mais ma soignante me traite avec tellement de respect et de chaleur. Ça ne ressemble pas à un service — ça ressemble à de la famille.",
+        "name": "Patricia Williams",
+        "role": "Cliente"
+      },
+      "4": {
+        "text": "Le soutien au transport et aux courses a redonné son indépendance à mon père. Il peut se rendre à ses rendez-vous sans dépendre constamment de nous.",
+        "name": "Robert Singh",
+        "role": "Fils d'un Client"
+      },
+      "5": {
+        "text": "Ce qui m'a le plus marquée, c'est la communication. Nous savions toujours ce qui se passait avec les soins de ma mère, et l'équipe ajustait le plan selon ses besoins.",
+        "name": "Linda Tremblay",
+        "role": "Fille d'une Cliente"
+      },
+      "6": {
+        "text": "Vivre seul après le décès de mon épouse a été difficile. Mon accompagnateur me rend visite deux fois par semaine et ces visites ont vraiment amélioré mon moral.",
+        "name": "James Okafor",
+        "role": "Client"
+      },
+      "7": {
+        "text": "Les soins de répit m'ont permis de prendre de vraies vacances pour la première fois en trois ans sans m'inquiéter pour ma mère. La soignante était attentive et minutieuse.",
+        "name": "Susan Bergeron",
+        "role": "Fille d'une Cliente"
+      },
+      "8": {
+        "text": "Du premier appel téléphonique aux soins continus, tout a été géré avec professionnalisme et cœur. Je recommande Swift Comfort Line à toutes les familles que je connais.",
+        "name": "Michael Patel",
+        "role": "Fils d'un Client"
+      }
     }
   },
   "contact": {

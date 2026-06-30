@@ -3,27 +3,39 @@
 
 /* ─── Global Tokens — Official Brand Colors ──────────────── */
 :root {
-  --color-primary:       #45137D;   /* official brand purple */
-  --color-primary-dark:  #320e5c;
-  --color-primary-bright:#5d1ba8;
-  --color-primary-light: #f6f2fb;
-  --color-gold:          #CC933A;   /* official brand gold */
-  --color-gold-dark:     #a8772d;
-  --color-gold-bright:   #e0aa54;
-  --color-gold-light:    rgba(204,147,58,0.12);
-  --color-bg:            #ffffff;
-  --color-bg-soft:       #faf7fd;
-  --color-text:          #1a1224;
-  --color-text-muted:    #5c5468;
-  --color-border:        rgba(69,19,125,0.12);
-  --font-display:        'Lora', Georgia, serif;
-  --font-body:           'DM Sans', system-ui, sans-serif;
-  --radius-sm:           6px;
-  --radius-md:           12px;
-  --radius-lg:           20px;
-  --shadow-sm:           0 2px 8px rgba(69,19,125,0.08);
-  --shadow-md:           0 6px 24px rgba(69,19,125,0.14);
-  --shadow-lg:           0 16px 48px rgba(69,19,125,0.16);
+  /* ── Brand Purple ── */
+  --color-primary:        #45137D;   /* official brand purple */
+  --color-primary-dark:   #320e5c;   /* deep purple — navbars, footers */
+  --color-primary-deep:   #1A0535;   /* darkest purple — hero bg, overlays */
+  --color-primary-bright: #5d1ba8;
+  --color-primary-light:  #f6f2fb;
+
+  /* ── Brand Gold ── */
+  --color-gold:           #CC933A;   /* official brand gold */
+  --color-gold-dark:      #a8772d;
+  --color-gold-bright:    #e0aa54;
+  --color-gold-light:     rgba(204, 147, 58, 0.12);
+
+  /* ── Neutrals ── */
+  --color-bg:             #ffffff;
+  --color-bg-soft:        #faf7fd;
+  --color-text:           #1a1224;
+  --color-text-muted:     #5c5468;
+  --color-border:         rgba(69, 19, 125, 0.12);
+
+  /* ── Typography ── */
+  --font-display:         'Lora', Georgia, serif;
+  --font-body:            'DM Sans', system-ui, sans-serif;
+
+  /* ── Shape ── */
+  --radius-sm:            6px;
+  --radius-md:            12px;
+  --radius-lg:            20px;
+
+  /* ── Elevation ── */
+  --shadow-sm:            0 2px 8px  rgba(69, 19, 125, 0.08);
+  --shadow-md:            0 6px 24px rgba(69, 19, 125, 0.14);
+  --shadow-lg:            0 16px 48px rgba(69, 19, 125, 0.16);
 }
 
 /* ─── Reset ──────────────────────────────────────────────── */
@@ -43,7 +55,7 @@ html {
 
 /* ─── Base ───────────────────────────────────────────────── */
 body {
-  background-color: #ffffff;
+  background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-body);
   font-weight: 400;
@@ -82,18 +94,14 @@ button {
 }
 
 /* ─── Scrollbar ──────────────────────────────────────────── */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: #f6f2fb;
-}
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-primary-light); }
 ::-webkit-scrollbar-thumb {
-  background: rgba(69,19,125,0.3);
+  background: rgba(69, 19, 125, 0.30);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(69,19,125,0.5);
+  background: rgba(69, 19, 125, 0.50);
 }
 
 /* ─── Section utilities ──────────────────────────────────── */
@@ -141,17 +149,11 @@ button {
 
 /* ─── Responsive ─────────────────────────────────────────── */
 @media (max-width: 768px) {
-  .section {
-    padding: 64px 20px;
-  }
-
-  .container {
-    padding: 0 20px;
-  }
+  .section    { padding: 64px 20px; }
+  .container  { padding: 0 20px; }
 }
 
 /* ─── Section background-image utility ───────────────────── */
-/* Use on any section: <section class="section-bg"><img class="section-bg-img"><div class="section-overlay"></div><div class="section-content">...</div></section> */
 .section-bg {
   position: relative;
   overflow: hidden;
@@ -173,9 +175,9 @@ button {
   z-index: -1;
   background: linear-gradient(
     160deg,
-    rgba(69, 19, 125, 0.88) 0%,
+    rgba(69, 19, 125, 0.88)  0%,
     rgba(69, 19, 125, 0.78) 45%,
-    rgba(50, 14, 92, 0.85) 100%
+    rgba(50, 14,  92, 0.85) 100%
   );
 }
 
