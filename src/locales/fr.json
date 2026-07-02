@@ -148,35 +148,47 @@
       "item3": "Continuité des soins sans interruption"
     }
   },
-
   "packages": {
     "label": "Plans de Soins",
-    "title": "Des Forfaits Simples et Flexibles",
-    "note": "Tous les forfaits incluent une évaluation personnalisée des soins sans frais supplémentaires. Aucun contrat d'engagement.",
-    "bookBtn": "Réserver ce Forfait",
+    "title": "Des Plans de Soins Simples et Flexibles",
+    "note": "Tous les plans incluent une évaluation personnalisée gratuite. Aucun contrat d'engagement. Annulez ou ajustez à tout moment.",
+    "bookBtn": "Réserver ce Plan",
 
-    "basic": {
-      "name": "Soins Débutant",
-      "frequency": "Quelques visites par semaine",
-      "feature1": "Jusqu'à 3 visites / semaine",
-      "feature2": "Compagnie & courses",
-      "feature3": "Horaires flexibles"
+    "oneTime": {
+      "name": "Visite d'un Jour",
+      "frequency": "Visite unique — un jour",
+      "feature1": "Soutien d'une journée complète",
+      "feature2": "Tous nos 6 services disponibles",
+      "feature3": "Idéal pour un essai ou un besoin ponctuel"
     },
-    "weekly": {
-      "name": "Soins Hebdomadaires",
-      "frequency": "Soutien quotidien, 5 jours par semaine",
-      "feature1": "Couverture 5 jours / semaine",
-      "feature2": "Repas, ménage & transport",
+    "twice": {
+      "name": "Deux Fois par Semaine",
+      "frequency": "2 visites par semaine",
+      "feature1": "Soutien régulier deux fois par semaine",
+      "feature2": "Compagnie, repas ou ménage",
+      "feature3": "Choix flexible des jours"
+    },
+    "thrice": {
+      "name": "Trois Fois par Semaine",
+      "frequency": "3 visites par semaine",
+      "feature1": "Routine fiable pour votre proche",
+      "feature2": "Les 6 services disponibles par visite",
       "feature3": "Soignant dédié assigné",
-      "feature4": "Rapport mensuel à la famille"
+      "feature4": "Mise à jour mensuelle sur les progrès"
     },
-    "premium": {
-      "name": "Soins à Temps Plein",
-      "frequency": "Soutien complet 7 jours sur 7",
-      "feature1": "Couverture 7 jours / semaine",
-      "feature2": "Les 6 services inclus",
-      "feature3": "Priorité & accès 24h / 24",
-      "feature4": "Appels de suivi hebdomadaires"
+    "fourBiweekly": {
+      "name": "4 Visites / Quinzaine",
+      "frequency": "4 visites sur 2 semaines",
+      "feature1": "Planification toutes les deux semaines",
+      "feature2": "Idéal pour compléter les soins familiaux",
+      "feature3": "Espacement flexible des visites"
+    },
+    "fiveMonthly": {
+      "name": "5 Visites / Mois",
+      "frequency": "5 visites réparties sur le mois",
+      "feature1": "Routine de soins légère mensuelle",
+      "feature2": "Parfait pour les clients autonomes",
+      "feature3": "Reprogrammable jusqu'à 48h à l'avance"
     }
   },
   "serviceAreas": {

@@ -147,43 +147,48 @@
       "item3": "Seamless care continuity"
     }
   },
-
   "packages": {
     "label": "Care Plans",
-    "title": "Simple, Flexible Packages",
-    "note": "All plans include a personalised care assessment at no extra charge. No lock-in contracts.",
+    "title": "Simple, Flexible Care Plans",
+    "note": "All plans include a free personalised care assessment. No lock-in contracts. Cancel or adjust anytime.",
     "bookBtn": "Book This Plan",
 
-    "basic": {
-      "name": "Starter Care",
-      "frequency": "A few visits per week",
-      "feature1": "Up to 3 visits / week",
-      "feature2": "Companionship & errands",
-      "feature3": "Flexible scheduling"
+    "oneTime": {
+      "name": "One-Day Visit",
+      "frequency": "Single visit — one day",
+      "feature1": "Full-day caregiver support",
+      "feature2": "Any combination of our 6 services",
+      "feature3": "Ideal for trials or one-off needs"
     },
-    "weekly": {
-      "name": "Weekly Care",
-      "frequency": "Daily support, 5 days a week",
-      "feature1": "5 days / week coverage",
-      "feature2": "Meals, housekeeping & transport",
+    "twice": {
+      "name": "Twice a Week",
+      "frequency": "2 visits per week",
+      "feature1": "Consistent twice-weekly support",
+      "feature2": "Companionship, meals or housekeeping",
+      "feature3": "Flexible day selection"
+    },
+    "thrice": {
+      "name": "Thrice a Week",
+      "frequency": "3 visits per week",
+      "feature1": "Reliable routine for your loved one",
+      "feature2": "All 6 services available per visit",
       "feature3": "Dedicated caregiver assigned",
-      "feature4": "Monthly family progress report"
+      "feature4": "Monthly progress update"
     },
-    "premium": {
-      "name": "Full-Time Care",
-      "frequency": "7-day comprehensive support",
-      "feature1": "7 days / week coverage",
-      "feature2": "All 6 services included",
-      "feature3": "Priority scheduling & 24 / 7 access",
-      "feature4": "Weekly family update calls"
+    "fourBiweekly": {
+      "name": "4 Visits / Fortnight",
+      "frequency": "4 visits over 2 weeks",
+      "feature1": "Every-other-week scheduling",
+      "feature2": "Great for supplementing family care",
+      "feature3": "Flexible visit spacing"
+    },
+    "fiveMonthly": {
+      "name": "5 Visits / Month",
+      "frequency": "5 visits spread across the month",
+      "feature1": "Light monthly care routine",
+      "feature2": "Perfect for independent clients",
+      "feature3": "Reschedule up to 48 hrs in advance"
     }
-  },
-  "trust": {
-    "title": "Why Families Choose Us",
-    "item1": "Same person every visit",
-    "item2": "Reliable and punctual",
-    "item3": "Flexible support",
-    "item4": "Focus on safety and comfort"
   },
   "serviceAreas": {
     "label": "Where We Work",

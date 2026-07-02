@@ -20,13 +20,8 @@
 
       <!-- ── 6 service cards (3 × 2 grid) ─────────────────── -->
       <div class="cards-grid">
-        <div
-          class="service-card"
-          v-for="(service, i) in services"
-          :key="i"
-          data-aos="fade-up"
-          :data-aos-delay="(i % 3) * 90"
-        >
+        <div class="service-card" v-for="(service, i) in services" :key="i" data-aos="fade-up"
+          :data-aos-delay="(i % 3) * 90">
           <!-- Numbered accent -->
           <span class="card-number">0{{ i + 1 }}</span>
 
@@ -45,9 +40,8 @@
               <span class="item-check">
                 <!-- Inline SVG checkmark — no import needed -->
                 <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
-                  <polyline points="1.5 6 4.5 9 10.5 3"
-                    stroke="#CC933A" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"/>
+                  <polyline points="1.5 6 4.5 9 10.5 3" stroke="#CC933A" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
                 </svg>
               </span>
               {{ $t(item) }}
@@ -57,10 +51,10 @@
           <!-- Learn more link -->
           <a href="#contact" class="card-link" @click.prevent="scrollTo('contact')">
             {{ $t('ourServices.learnMore') }}
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
-                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-              <line x1="5" y1="12" x2="19" y2="12"/>
-              <polyline points="12 5 19 12 12 19"/>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
             </svg>
           </a>
         </div>
@@ -87,10 +81,10 @@
         </div>
         <a href="#contact" class="view-all-btn" @click.prevent="scrollTo('contact')">
           {{ $t('ourServices.viewAll') }}
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
-               stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-            <line x1="5" y1="12" x2="19" y2="12"/>
-            <polyline points="12 5 19 12 12 19"/>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
           </svg>
         </a>
       </div>
@@ -107,16 +101,16 @@
           <p class="packages-note">{{ $t('packages.note') }}</p>
         </div>
 
+        <!--
+          5 plans — displayed as a 3-column top row + 2-column bottom row
+          using CSS grid with auto-fill so it adapts cleanly on all screens.
+        -->
         <div class="packages-grid">
-          <div
-            class="package-card"
-            :class="{ 'package-card--featured': i === 1 }"
-            v-for="(pkg, i) in packages"
-            :key="i"
-            data-aos="fade-up"
-            :data-aos-delay="100 * (i + 1)"
-          >
-            <span v-if="i === 1" class="featured-tag">{{ $t('ourServices.mostPopular') }}</span>
+          <div class="package-card" :class="{ 'package-card--featured': pkg.featured }" v-for="(pkg, i) in packages"
+            :key="i" data-aos="fade-up" :data-aos-delay="80 * (i + 1)">
+            <span v-if="pkg.featured" class="featured-tag">
+              {{ $t('ourServices.mostPopular') }}
+            </span>
 
             <!-- Package icon -->
             <div class="pkg-icon-wrap">
@@ -126,13 +120,12 @@
             <span class="pkg-name">{{ $t(pkg.name) }}</span>
             <span class="pkg-freq">{{ $t(pkg.frequency) }}</span>
 
-            <!-- Feature list -->
+            <!-- Feature checklist -->
             <ul class="pkg-features">
               <li v-for="(f, fi) in pkg.features" :key="fi">
                 <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
-                  <polyline points="1.5 6 4.5 9 10.5 3"
-                    :stroke="i === 1 ? '#e0aa54' : '#CC933A'"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <polyline points="1.5 6 4.5 9 10.5 3" :stroke="pkg.featured ? '#e0aa54' : '#CC933A'" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 {{ $t(f) }}
               </li>
@@ -222,7 +215,7 @@ const IconTransport = defineComponent({
   }, [
     h('rect', { x: 1, y: 7, width: 15, height: 9, rx: 2 }),
     h('polygon', { points: '16 9 20 9 23 12 23 16 16 16 16 9' }),
-    h('circle', { cx: 5.5,  cy: 18, r: 2, fill: '#CC933A', stroke: 'none' }),
+    h('circle', { cx: 5.5, cy: 18, r: 2, fill: '#CC933A', stroke: 'none' }),
     h('circle', { cx: 18.5, cy: 18, r: 2, fill: '#CC933A', stroke: 'none' }),
   ]),
 })
@@ -284,18 +277,35 @@ const IconStar = defineComponent({
   ]),
 })
 
-/* ── Package icons ───────────────────────────────────────── */
-const IconPkgBasic = defineComponent({
+/* ── Package icons (one per plan) ────────────────────────── */
+
+/* Plan 1 — One Day: single sun/day */
+const IconPkgOneTime = defineComponent({
   render: () => h('svg', {
     width: 26, height: 26, viewBox: '0 0 24 24', fill: 'none',
     stroke: '#CC933A', 'stroke-width': '1.8', 'stroke-linecap': 'round',
   }, [
-    h('circle', { cx: 12, cy: 12, r: 10 }),
-    h('path', { d: 'M12 8v4l3 3' }),
+    h('circle', { cx: 12, cy: 12, r: 4 }),
+    h('line', { x1: 12, y1: 2, x2: 12, y2: 4 }),
+    h('line', { x1: 12, y1: 20, x2: 12, y2: 22 }),
+    h('line', { x1: 2, y1: 12, x2: 4, y2: 12 }),
+    h('line', { x1: 20, y1: 12, x2: 22, y2: 12 }),
   ]),
 })
 
-const IconPkgWeekly = defineComponent({
+/* Plan 2 — Twice a week: two circles */
+const IconPkgTwice = defineComponent({
+  render: () => h('svg', {
+    width: 26, height: 26, viewBox: '0 0 24 24', fill: 'none',
+    stroke: '#CC933A', 'stroke-width': '1.8', 'stroke-linecap': 'round',
+  }, [
+    h('circle', { cx: 8, cy: 12, r: 4 }),
+    h('circle', { cx: 16, cy: 12, r: 4 }),
+  ]),
+})
+
+/* Plan 3 — Thrice a week: calendar with 3 dots (featured) */
+const IconPkgThrice = defineComponent({
   render: () => h('svg', {
     width: 26, height: 26, viewBox: '0 0 24 24', fill: 'none',
     stroke: '#e0aa54', 'stroke-width': '1.8', 'stroke-linecap': 'round',
@@ -304,15 +314,36 @@ const IconPkgWeekly = defineComponent({
     h('line', { x1: 16, y1: 2, x2: 16, y2: 6 }),
     h('line', { x1: 8, y1: 2, x2: 8, y2: 6 }),
     h('line', { x1: 3, y1: 10, x2: 21, y2: 10 }),
+    h('circle', { cx: 8, cy: 16, r: 1, fill: '#e0aa54', stroke: 'none' }),
+    h('circle', { cx: 12, cy: 16, r: 1, fill: '#e0aa54', stroke: 'none' }),
+    h('circle', { cx: 16, cy: 16, r: 1, fill: '#e0aa54', stroke: 'none' }),
   ]),
 })
 
-const IconPkgPremium = defineComponent({
+/* Plan 4 — 4 times in 2 weeks: grid of 4 squares */
+const IconPkgFour = defineComponent({
   render: () => h('svg', {
     width: 26, height: 26, viewBox: '0 0 24 24', fill: 'none',
-    stroke: '#CC933A', 'stroke-width': '1.8', 'stroke-linecap': 'round',
+    stroke: '#CC933A', 'stroke-width': '1.8', 'stroke-linecap': 'round', 'stroke-linejoin': 'round',
   }, [
-    h('polygon', { points: '12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2' }),
+    h('rect', { x: 3, y: 3, width: 8, height: 8, rx: 1 }),
+    h('rect', { x: 13, y: 3, width: 8, height: 8, rx: 1 }),
+    h('rect', { x: 3, y: 13, width: 8, height: 8, rx: 1 }),
+    h('rect', { x: 13, y: 13, width: 8, height: 8, rx: 1 }),
+  ]),
+})
+
+/* Plan 5 — 5 times a month: calendar with checkmark */
+const IconPkgFive = defineComponent({
+  render: () => h('svg', {
+    width: 26, height: 26, viewBox: '0 0 24 24', fill: 'none',
+    stroke: '#CC933A', 'stroke-width': '1.8', 'stroke-linecap': 'round', 'stroke-linejoin': 'round',
+  }, [
+    h('rect', { x: 3, y: 4, width: 18, height: 18, rx: 2 }),
+    h('line', { x1: 16, y1: 2, x2: 16, y2: 6 }),
+    h('line', { x1: 8, y1: 2, x2: 8, y2: 6 }),
+    h('line', { x1: 3, y1: 10, x2: 21, y2: 10 }),
+    h('polyline', { points: '9 16 11 18 15 14', stroke: '#CC933A', 'stroke-width': '2' }),
   ]),
 })
 
@@ -322,7 +353,7 @@ const services = [
   {
     icon: IconCompanionship,
     title: 'ourServices.companionship.title',
-    desc:  'ourServices.companionship.description',
+    desc: 'ourServices.companionship.description',
     items: [
       'ourServices.companionship.item1',
       'ourServices.companionship.item2',
@@ -332,7 +363,7 @@ const services = [
   {
     icon: IconErrands,
     title: 'ourServices.errands.title',
-    desc:  'ourServices.errands.description',
+    desc: 'ourServices.errands.description',
     items: [
       'ourServices.errands.item1',
       'ourServices.errands.item2',
@@ -342,7 +373,7 @@ const services = [
   {
     icon: IconMeal,
     title: 'ourServices.mealPrep.title',
-    desc:  'ourServices.mealPrep.description',
+    desc: 'ourServices.mealPrep.description',
     items: [
       'ourServices.mealPrep.item1',
       'ourServices.mealPrep.item2',
@@ -352,7 +383,7 @@ const services = [
   {
     icon: IconCleaning,
     title: 'ourServices.housekeeping.title',
-    desc:  'ourServices.housekeeping.description',
+    desc: 'ourServices.housekeeping.description',
     items: [
       'ourServices.housekeeping.item1',
       'ourServices.housekeeping.item2',
@@ -362,7 +393,7 @@ const services = [
   {
     icon: IconTransport,
     title: 'ourServices.transportation.title',
-    desc:  'ourServices.transportation.description',
+    desc: 'ourServices.transportation.description',
     items: [
       'ourServices.transportation.item1',
       'ourServices.transportation.item2',
@@ -372,7 +403,7 @@ const services = [
   {
     icon: IconRespite,
     title: 'ourServices.respite.title',
-    desc:  'ourServices.respite.description',
+    desc: 'ourServices.respite.description',
     items: [
       'ourServices.respite.item1',
       'ourServices.respite.item2',
@@ -383,42 +414,66 @@ const services = [
 
 const trustPoints = [
   { icon: IconCertified, label: 'ourServices.trust.certified.label', sub: 'ourServices.trust.certified.sub' },
-  { icon: IconClock,     label: 'ourServices.trust.available.label', sub: 'ourServices.trust.available.sub' },
-  { icon: IconShield,    label: 'ourServices.trust.insured.label',   sub: 'ourServices.trust.insured.sub'   },
-  { icon: IconStar,      label: 'ourServices.trust.rated.label',     sub: 'ourServices.trust.rated.sub'     },
+  { icon: IconClock, label: 'ourServices.trust.available.label', sub: 'ourServices.trust.available.sub' },
+  { icon: IconShield, label: 'ourServices.trust.insured.label', sub: 'ourServices.trust.insured.sub' },
+  { icon: IconStar, label: 'ourServices.trust.rated.label', sub: 'ourServices.trust.rated.sub' },
 ]
 
 const packages = [
   {
-    icon: IconPkgBasic,
-    name:      'packages.basic.name',
-    frequency: 'packages.basic.frequency',
+    icon: IconPkgOneTime,
+    name: 'packages.oneTime.name',
+    frequency: 'packages.oneTime.frequency',
+    featured: false,
     features: [
-      'packages.basic.feature1',
-      'packages.basic.feature2',
-      'packages.basic.feature3',
+      'packages.oneTime.feature1',
+      'packages.oneTime.feature2',
+      'packages.oneTime.feature3',
     ],
   },
   {
-    icon: IconPkgWeekly,
-    name:      'packages.weekly.name',
-    frequency: 'packages.weekly.frequency',
+    icon: IconPkgTwice,
+    name: 'packages.twice.name',
+    frequency: 'packages.twice.frequency',
+    featured: false,
     features: [
-      'packages.weekly.feature1',
-      'packages.weekly.feature2',
-      'packages.weekly.feature3',
-      'packages.weekly.feature4',
+      'packages.twice.feature1',
+      'packages.twice.feature2',
+      'packages.twice.feature3',
     ],
   },
   {
-    icon: IconPkgPremium,
-    name:      'packages.premium.name',
-    frequency: 'packages.premium.frequency',
+    icon: IconPkgThrice,
+    name: 'packages.thrice.name',
+    frequency: 'packages.thrice.frequency',
+    featured: true,   /* most popular */
     features: [
-      'packages.premium.feature1',
-      'packages.premium.feature2',
-      'packages.premium.feature3',
-      'packages.premium.feature4',
+      'packages.thrice.feature1',
+      'packages.thrice.feature2',
+      'packages.thrice.feature3',
+      'packages.thrice.feature4',
+    ],
+  },
+  {
+    icon: IconPkgFour,
+    name: 'packages.fourBiweekly.name',
+    frequency: 'packages.fourBiweekly.frequency',
+    featured: false,
+    features: [
+      'packages.fourBiweekly.feature1',
+      'packages.fourBiweekly.feature2',
+      'packages.fourBiweekly.feature3',
+    ],
+  },
+  {
+    icon: IconPkgFive,
+    name: 'packages.fiveMonthly.name',
+    frequency: 'packages.fiveMonthly.frequency',
+    featured: false,
+    features: [
+      'packages.fiveMonthly.feature1',
+      'packages.fiveMonthly.feature2',
+      'packages.fiveMonthly.feature3',
     ],
   },
 ]
@@ -554,12 +609,10 @@ const scrollTo = (id) => {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(
-    to right,
-    var(--color-gold),
-    var(--color-gold-bright),
-    transparent
-  );
+  background: linear-gradient(to right,
+      var(--color-gold),
+      var(--color-gold-bright),
+      transparent);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s ease;
@@ -570,11 +623,9 @@ const scrollTo = (id) => {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    145deg,
-    rgba(204, 147, 58, 0.04) 0%,
-    transparent 60%
-  );
+  background: linear-gradient(145deg,
+      rgba(204, 147, 58, 0.04) 0%,
+      transparent 60%);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.32s ease;
@@ -586,8 +637,13 @@ const scrollTo = (id) => {
   box-shadow: var(--shadow-lg);
 }
 
-.service-card:hover::after  { transform: scaleX(1); }
-.service-card:hover::before { opacity: 1; }
+.service-card:hover::after {
+  transform: scaleX(1);
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
 
 /* ─── Card number ───────────────────────────────────────── */
 .card-number {
@@ -597,7 +653,8 @@ const scrollTo = (id) => {
   font-family: var(--font-display);
   font-size: 2rem;
   font-weight: 700;
-  color: rgba(69, 19, 125, 0.06);   /* --color-primary at 6% */
+  color: rgba(69, 19, 125, 0.06);
+  /* --color-primary at 6% */
   line-height: 1;
   user-select: none;
   pointer-events: none;
@@ -605,7 +662,8 @@ const scrollTo = (id) => {
 }
 
 .service-card:hover .card-number {
-  color: rgba(204, 147, 58, 0.12);  /* --color-gold at 12% */
+  color: rgba(204, 147, 58, 0.12);
+  /* --color-gold at 12% */
 }
 
 /* ─── Icon ──────────────────────────────────────────────── */
@@ -617,11 +675,9 @@ const scrollTo = (id) => {
   width: 68px;
   height: 68px;
   border-radius: 20px;
-  background: linear-gradient(
-    135deg,
-    var(--color-primary-light),
-    rgba(204, 147, 58, 0.09)
-  );
+  background: linear-gradient(135deg,
+      var(--color-primary-light),
+      rgba(204, 147, 58, 0.09));
   border: 1px solid rgba(204, 147, 58, 0.18);
   display: flex;
   align-items: center;
@@ -650,7 +706,8 @@ const scrollTo = (id) => {
   color: var(--color-text-muted);
   line-height: 1.72;
   margin-bottom: 18px;
-  flex: 1;                  /* push items list + link to bottom */
+  flex: 1;
+  /* push items list + link to bottom */
 }
 
 /* ─── Checklist ─────────────────────────────────────────── */
@@ -717,11 +774,9 @@ const scrollTo = (id) => {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
-  background: linear-gradient(
-    135deg,
-    var(--color-primary),
-    var(--color-primary-dark)
-  );
+  background: linear-gradient(135deg,
+      var(--color-primary),
+      var(--color-primary-dark));
   border-radius: var(--radius-lg);
   overflow: hidden;
   margin-bottom: 64px;
@@ -875,9 +930,54 @@ const scrollTo = (id) => {
 
 .packages-grid {
   display: grid;
+  /*
+    5 cards: first 3 fill the top row, last 2 centre on the bottom row.
+    We use auto-fill with min 220px so it reflows gracefully on tablet/mobile.
+    The centering of the last 2 is handled by justify-content on the grid.
+  */
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  align-items: center;
+  align-items: start;
+}
+
+/* Last 2 cards centred in their row when 3-column grid leaves a gap */
+.package-card:nth-child(4) {
+  grid-column: 1;
+}
+
+.package-card:nth-child(4),
+.package-card:nth-child(5) {
+  /* Shift the bottom row to visually centre under the 3-column row */
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Bottom 2 cards span adjusted columns to centre them */
+.packages-grid {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+/* Top 3 — each takes 2 of 6 columns */
+.package-card:nth-child(1) {
+  grid-column: 1 / 3;
+}
+
+.package-card:nth-child(2) {
+  grid-column: 3 / 5;
+}
+
+.package-card:nth-child(3) {
+  grid-column: 5 / 7;
+}
+
+/* Bottom 2 — each takes 2 of 6 columns, indented by 1 to centre */
+.package-card:nth-child(4) {
+  grid-column: 2 / 4;
+}
+
+.package-card:nth-child(5) {
+  grid-column: 4 / 6;
 }
 
 /* ─── Package card ──────────────────────────────────────── */
@@ -1030,6 +1130,19 @@ const scrollTo = (id) => {
   .trust-item:nth-child(2) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
   }
+
+  /* Tablet: collapse 6-column grid to 2-column, reset nth-child placements */
+  .packages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .package-card:nth-child(1),
+  .package-card:nth-child(2),
+  .package-card:nth-child(3),
+  .package-card:nth-child(4),
+  .package-card:nth-child(5) {
+    grid-column: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1065,8 +1178,17 @@ const scrollTo = (id) => {
     padding: 36px 20px;
   }
 
+  /* Mobile: single column, fully reset all grid column assignments */
   .packages-grid {
     grid-template-columns: 1fr;
+  }
+
+  .package-card:nth-child(1),
+  .package-card:nth-child(2),
+  .package-card:nth-child(3),
+  .package-card:nth-child(4),
+  .package-card:nth-child(5) {
+    grid-column: 1 / -1;
   }
 
   .package-card--featured {

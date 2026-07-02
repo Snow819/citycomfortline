@@ -148,35 +148,47 @@
       "item3": "无缝护理衔接"
     }
   },
-
   "packages": {
     "label": "护理套餐",
     "title": "简单灵活的护理计划",
-    "note": "所有套餐均免费包含个性化护理评估，无需签订长期合同。",
+    "note": "所有套餐均包含免费个性化护理评估。无需签订长期合同，随时可取消或调整。",
     "bookBtn": "预订此套餐",
 
-    "basic": {
-      "name": "入门护理",
-      "frequency": "每周数次探访",
-      "feature1": "每周最多3次探访",
-      "feature2": "陪伴与跑腿服务",
-      "feature3": "灵活排班"
+    "oneTime": {
+      "name": "单次探访",
+      "frequency": "单次探访——一天",
+      "feature1": "全天护理人员陪同支持",
+      "feature2": "可选我们6项服务中的任意组合",
+      "feature3": "适合试用或一次性需求"
     },
-    "weekly": {
-      "name": "每周护理",
-      "frequency": "每日支持，每周5天",
-      "feature1": "每周5天覆盖",
-      "feature2": "餐食、家务与接送",
+    "twice": {
+      "name": "每周两次",
+      "frequency": "每周2次探访",
+      "feature1": "每周稳定两次支持",
+      "feature2": "陪伴、餐食或家务服务",
+      "feature3": "灵活选择探访日期"
+    },
+    "thrice": {
+      "name": "每周三次",
+      "frequency": "每周3次探访",
+      "feature1": "为您的家人建立可靠的日常护理规律",
+      "feature2": "每次探访可使用全部6项服务",
       "feature3": "指定专属护理员",
-      "feature4": "每月家庭进度报告"
+      "feature4": "每月进度更新"
     },
-    "premium": {
-      "name": "全天候护理",
-      "frequency": "7天全面支持",
-      "feature1": "每周7天全覆盖",
-      "feature2": "包含全部6项服务",
-      "feature3": "优先排班及24小时支持",
-      "feature4": "每周家庭通话更新"
+    "fourBiweekly": {
+      "name": "每两周4次",
+      "frequency": "两周内共4次探访",
+      "feature1": "隔周灵活排班",
+      "feature2": "非常适合作为家庭护理的补充",
+      "feature3": "探访间隔灵活"
+    },
+    "fiveMonthly": {
+      "name": "每月5次",
+      "frequency": "每月共5次探访",
+      "feature1": "轻度月度护理规律",
+      "feature2": "非常适合独立生活的客户",
+      "feature3": "可提前48小时改期"
     }
   },
   "serviceAreas": {
