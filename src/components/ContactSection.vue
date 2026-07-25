@@ -1,38 +1,37 @@
 <template>
-  <section class="contact-section" id="contact">
+  <section class="cleaning-contact" id="contact">
 
-    <!-- ── Decorative blob ────────────────────────────────── -->
-    <div class="blob blob--bl" aria-hidden="true"></div>
+    <div class="cc-blob" aria-hidden="true"></div>
 
-    <div class="contact-inner">
+    <div class="cc-inner">
 
       <!-- ════════════════════════════════════════════════════
            LEFT — info
       ═════════════════════════════════════════════════════ -->
-      <div class="contact-info" data-aos="fade-right">
-        <div class="label-row">
-          <span class="label-line"></span>
-          <span class="section-label">{{ t('contact.label') }}</span>
-          <span class="label-line"></span>
+      <div class="cc-info" data-aos="fade-right">
+        <div class="cc-label-row">
+          <span class="cc-label-line"></span>
+          <span class="cc-label">{{ t('cleaningContact.label') }}</span>
+          <span class="cc-label-line"></span>
         </div>
 
-        <h2 class="contact-title">{{ t('contact.title') }}</h2>
-        <p class="contact-subtitle">{{ t('contact.subtitle') }}</p>
+        <h2 class="cc-title">{{ t('cleaningContact.title') }}</h2>
+        <p class="cc-subtitle">{{ t('cleaningContact.subtitle') }}</p>
 
         <!-- Big phone CTA -->
-        <a :href="'tel:' + rawPhone" class="phone-cta">
-          <div class="phone-icon-wrap">
+        <a :href="'tel:' + rawPhone" class="cc-phone-cta">
+          <div class="cc-phone-icon-wrap">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round">
               <path
                 d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z" />
             </svg>
           </div>
-          <div class="phone-text">
-            <span class="phone-label">{{ t('contact.callUs') }}</span>
-            <span class="phone-number">{{ t('contact.phone') }}</span>
+          <div class="cc-phone-text">
+            <span class="cc-phone-label">{{ t('cleaningContact.callUs') }}</span>
+            <span class="cc-phone-number">{{ t('cleaningContact.phone') }}</span>
           </div>
-          <svg class="phone-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          <svg class="cc-phone-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
             stroke-width="2.5" stroke-linecap="round">
             <line x1="5" y1="12" x2="19" y2="12" />
             <polyline points="12 5 19 12 12 19" />
@@ -40,31 +39,30 @@
         </a>
 
         <!-- Secondary contact methods -->
-        <div class="quick-links">
-          <a :href="'mailto:' + email" class="quick-link">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#45137D" stroke-width="2"
+        <div class="cc-quick-links">
+          <a :href="'mailto:' + email" class="cc-quick-link">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round">
-              <!-- #45137D = --color-primary -->
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
               <polyline points="22,6 12,13 2,6" />
             </svg>
             {{ email }}
           </a>
-          <a href="#" class="quick-link" @click.prevent="scrollToHours">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#45137D" stroke-width="2"
+          <a href="#" class="cc-quick-link" @click.prevent="scrollToHours">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               stroke-linecap="round">
               <circle cx="12" cy="12" r="10" />
               <polyline points="12 6 12 12 16 14" />
             </svg>
-            {{ t('contact.hoursValue') }}
+            {{ t('cleaningContact.hoursValue') }}
           </a>
         </div>
 
         <!-- Trust list -->
-        <div class="contact-trust">
-          <div class="trust-item" v-for="(item, i) in trustItems" :key="i">
-            <span class="trust-check">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#45137D" stroke-width="3"
+        <div class="cc-trust">
+          <div class="cc-trust-item" v-for="(item, i) in trustItems" :key="i">
+            <span class="cc-trust-check">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
                 stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="20 6 9 17 4 12" />
               </svg>
@@ -72,92 +70,103 @@
             <span>{{ t(item) }}</span>
           </div>
         </div>
-
       </div>
 
       <!-- ════════════════════════════════════════════════════
            RIGHT — form
       ═════════════════════════════════════════════════════ -->
-      <div class="contact-form-wrap" data-aos="fade-left">
+      <div class="cc-form-wrap" data-aos="fade-left">
 
-        <div class="dot-texture" aria-hidden="true"></div>
-        <div class="gold-glow" aria-hidden="true"></div>
+        <div class="cc-dot-texture" aria-hidden="true"></div>
+        <div class="cc-gold-glow" aria-hidden="true"></div>
 
-        <div class="form-badge">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="#e0aa54">
-            <!-- #e0aa54 = --color-gold-bright -->
+        <div class="cc-form-badge">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
             <path
               d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
           </svg>
-          {{ t('contact.formBadge') }}
+          {{ t('cleaningContact.formBadge') }}
         </div>
 
-        <!-- ── Success state replaces the form after submit ── -->
-        <transition name="fade-swap" mode="out-in">
+        <transition name="cc-fade-swap" mode="out-in">
 
-          <div v-if="submitted" key="success" class="form-success">
-            <div class="success-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e0aa54" stroke-width="2.5"
+          <div v-if="submitted" key="success" class="cc-success">
+            <div class="cc-success-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                 stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="20 6 9 17 4 12" />
               </svg>
             </div>
-            <h3 class="success-title">{{ t('contact.successTitle') }}</h3>
-            <p class="success-text">{{ t('contact.successText') }}</p>
-            <button class="success-reset-btn" @click="resetToForm">
-              {{ t('contact.sendAnother') }}
+            <h3 class="cc-success-title">{{ t('cleaningContact.successTitle') }}</h3>
+            <p class="cc-success-text">{{ t('cleaningContact.successText') }}</p>
+            <button class="cc-reset-btn" @click="resetToForm">
+              {{ t('cleaningContact.sendAnother') }}
             </button>
           </div>
 
-          <form v-else key="form" @submit.prevent="handleSubmit" class="contact-form" novalidate>
-            <h3 class="form-title">{{ t('contact.formTitle') }}</h3>
+          <form v-else key="form" @submit.prevent="handleSubmit" class="cc-form" novalidate>
+            <h3 class="cc-form-title">{{ t('cleaningContact.formTitle') }}</h3>
 
             <!-- Name -->
-            <div class="form-group">
-              <label for="c-name">{{ t('contact.nameLabel') }}</label>
-              <input id="c-name" type="text" v-model="form.name" required :class="{ 'has-error': errors.name }"
-                :aria-invalid="!!errors.name" :placeholder="t('contact.namePlaceholder')"
+            <div class="cc-form-group">
+              <label for="cc-name">{{ t('cleaningContact.nameLabel') }}</label>
+              <input id="cc-name" type="text" v-model="form.name" required :class="{ 'has-error': errors.name }"
+                :aria-invalid="!!errors.name" :placeholder="t('cleaningContact.namePlaceholder')"
                 @blur="validateField('name')" />
-              <span v-if="errors.name" class="field-error">{{ errors.name }}</span>
+              <span v-if="errors.name" class="cc-field-error">{{ errors.name }}</span>
             </div>
 
             <!-- Phone -->
-            <div class="form-group">
-              <label for="c-phone">{{ t('contact.phoneLabel') }}</label>
-              <input id="c-phone" type="tel" v-model="form.phone" required :class="{ 'has-error': errors.phone }"
-                :aria-invalid="!!errors.phone" :placeholder="t('contact.phonePlaceholder')"
+            <div class="cc-form-group">
+              <label for="cc-phone">{{ t('cleaningContact.phoneLabel') }}</label>
+              <input id="cc-phone" type="tel" v-model="form.phone" required :class="{ 'has-error': errors.phone }"
+                :aria-invalid="!!errors.phone" :placeholder="t('cleaningContact.phonePlaceholder')"
                 @blur="validateField('phone')" />
-              <span v-if="errors.phone" class="field-error">{{ errors.phone }}</span>
+              <span v-if="errors.phone" class="cc-field-error">{{ errors.phone }}</span>
+            </div>
+
+            <!-- Service type -->
+            <div class="cc-form-group">
+              <label for="cc-service">{{ t('cleaningContact.serviceLabel') }}</label>
+              <select id="cc-service" v-model="form.service" required :class="{ 'has-error': errors.service }"
+                :aria-invalid="!!errors.service" @blur="validateField('service')">
+                <option value="" disabled>{{ t('cleaningContact.servicePlaceholder') }}</option>
+                <option value="home">{{ t('cleaningServices.home.title') }}</option>
+                <option value="office">{{ t('cleaningServices.office.title') }}</option>
+                <option value="deep">{{ t('cleaningServices.deep.title') }}</option>
+                <option value="moveIn">{{ t('cleaningServices.moveIn.title') }}</option>
+                <option value="airbnb">{{ t('cleaningServices.airbnb.title') }}</option>
+              </select>
+              <span v-if="errors.service" class="cc-field-error">{{ errors.service }}</span>
             </div>
 
             <!-- Message -->
-            <div class="form-group">
-              <label for="c-message">{{ t('contact.messageLabel') }}</label>
-              <textarea id="c-message" v-model="form.message" required rows="4" :class="{ 'has-error': errors.message }"
-                :aria-invalid="!!errors.message" :placeholder="t('contact.messagePlaceholder')"
-                @blur="validateField('message')"></textarea>
-              <span v-if="errors.message" class="field-error">{{ errors.message }}</span>
+            <div class="cc-form-group">
+              <label for="cc-message">{{ t('cleaningContact.messageLabel') }}</label>
+              <textarea id="cc-message" v-model="form.message" required rows="4"
+                :class="{ 'has-error': errors.message }" :aria-invalid="!!errors.message"
+                :placeholder="t('cleaningContact.messagePlaceholder')" @blur="validateField('message')"></textarea>
+              <span v-if="errors.message" class="cc-field-error">{{ errors.message }}</span>
             </div>
 
             <!-- Honeypot — invisible to humans, catches bots -->
-            <div class="honeypot" aria-hidden="true">
-              <label for="c-website">Website</label>
-              <input id="c-website" type="text" v-model="honeypot" tabindex="-1" autocomplete="off" />
+            <div class="cc-honeypot" aria-hidden="true">
+              <label for="cc-website">Website</label>
+              <input id="cc-website" type="text" v-model="honeypot" tabindex="-1" autocomplete="off" />
             </div>
 
             <!-- Submit -->
-            <button type="submit" class="submit-btn" :disabled="loading" :aria-busy="loading">
+            <button type="submit" class="cc-submit-btn" :disabled="loading" :aria-busy="loading">
               <svg v-if="!loading" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round">
                 <line x1="22" y1="2" x2="11" y2="13" />
                 <polygon points="22 2 15 22 11 13 2 9 22 2" />
               </svg>
-              <span class="spinner" v-else></span>
-              {{ loading ? t('contact.sending') : t('contact.submit') }}
+              <span class="cc-spinner" v-else></span>
+              {{ loading ? t('cleaningContact.sending') : t('cleaningContact.submit') }}
             </button>
 
-            <!-- Privacy / consent microcopy -->
-            <p class="form-privacy">{{ t('contact.privacyNote') }}</p>
+            <p class="cc-privacy">{{ t('cleaningContact.privacyNote') }}</p>
           </form>
 
         </transition>
@@ -169,10 +178,12 @@
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref, reactive, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import emailjs from '@emailjs/browser'
 import Swal from 'sweetalert2'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const { t } = useI18n()
 
@@ -180,16 +191,15 @@ const rawPhone = '+16138516775'
 const email = 'info@swiftcomfortline.ca'
 
 const trustItems = [
-  'trust.item1',
-  'trust.item2',
-  'trust.item3',
-  'trust.item4',
+  'cleaningHero.trust1',
+  'cleaningHero.trust2',
+  'cleaningHero.trust3',
 ]
 
 /* ── Form state ──────────────────────────────────────────── */
-const form = reactive({ name: '', phone: '', message: '' })
-const errors = reactive({ name: '', phone: '', message: '' })
-const honeypot = ref('')          // bot trap — must stay empty
+const form = reactive({ name: '', phone: '', service: '', message: '' })
+const errors = reactive({ name: '', phone: '', service: '', message: '' })
+const honeypot = ref('')
 const loading = ref(false)
 const submitted = ref(false)
 
@@ -198,30 +208,36 @@ const PHONE_RE = /^[\d\s+().-]{7,20}$/
 
 const validateField = (field) => {
   if (field === 'name') {
-    errors.name = form.name.trim().length < 2 ? t('contact.errors.name') : ''
+    errors.name = form.name.trim().length < 2 ? t('cleaningContact.errors.name') : ''
   }
   if (field === 'phone') {
-    errors.phone = !PHONE_RE.test(form.phone.trim()) ? t('contact.errors.phone') : ''
+    errors.phone = !PHONE_RE.test(form.phone.trim()) ? t('cleaningContact.errors.phone') : ''
+  }
+  if (field === 'service') {
+    errors.service = !form.service ? t('cleaningContact.errors.service') : ''
   }
   if (field === 'message') {
-    errors.message = form.message.trim().length < 10 ? t('contact.errors.message') : ''
+    errors.message = form.message.trim().length < 10 ? t('cleaningContact.errors.message') : ''
   }
 }
 
 const validateAll = () => {
   validateField('name')
   validateField('phone')
+  validateField('service')
   validateField('message')
-  return !errors.name && !errors.phone && !errors.message
+  return !errors.name && !errors.phone && !errors.service && !errors.message
 }
 
 /* ── Reset ───────────────────────────────────────────────── */
 const resetForm = () => {
   form.name = ''
   form.phone = ''
+  form.service = ''
   form.message = ''
   errors.name = ''
   errors.phone = ''
+  errors.service = ''
   errors.message = ''
 }
 
@@ -231,7 +247,6 @@ const resetToForm = () => {
 
 /* ── Submit ──────────────────────────────────────────────── */
 const handleSubmit = async () => {
-  // Bot caught — silently pretend success, do not send
   if (honeypot.value) {
     submitted.value = true
     return
@@ -242,17 +257,18 @@ const handleSubmit = async () => {
   loading.value = true
   try {
     /*
-      EmailJS IDs read from environment variables rather than hardcoded.
+      EmailJS IDs read from environment variables, kept separate
+      from the senior-care form's IDs so cleaning inquiries route
+      to a different inbox/template if you want.
       Add these to your .env file:
-        VITE_EMAILJS_SERVICE_ID=service_43u0keo
-        VITE_EMAILJS_TEMPLATE_ID=template_uz6z09w
+        VITE_EMAILJS_CLEANING_SERVICE_ID=service_xxxxxxx
+        VITE_EMAILJS_CLEANING_TEMPLATE_ID=template_xxxxxxx
         VITE_EMAILJS_PUBLIC_KEY=HqGKm1H0vhqeb0y1z
-      The public key is designed to be exposed client-side, but using
-      env vars keeps config out of source control diffs and lets you
-      swap keys per environment (dev / staging / prod) without code changes.
+      (public key can be shared across forms — it's meant to be
+      exposed client-side)
     */
-    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
-    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_CLEANING_SERVICE_ID
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_CLEANING_TEMPLATE_ID
     const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
     emailjs.init(PUBLIC_KEY)
@@ -260,18 +276,18 @@ const handleSubmit = async () => {
     await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
       name: form.name,
       phone: form.phone,
+      service: form.service,
       message: form.message,
     })
 
     submitted.value = true
     resetForm()
 
-    // Toast as a secondary confirmation — the inline success state is primary
     Swal.fire({
       icon: 'success',
-      title: t('contact.swalSuccessTitle'),
-      text: t('contact.swalSuccessText'),
-      confirmButtonColor: '#45137D',
+      title: t('cleaningContact.swalSuccessTitle'),
+      text: t('cleaningContact.swalSuccessText'),
+      confirmButtonColor: '#CC933A',
       timer: 3000,
       showConfirmButton: true,
     })
@@ -279,9 +295,9 @@ const handleSubmit = async () => {
     console.error('EmailJS Error:', error)
     Swal.fire({
       icon: 'error',
-      title: t('contact.swalErrorTitle'),
-      text: t('contact.swalErrorText'),
-      confirmButtonColor: '#45137D',
+      title: t('cleaningContact.swalErrorTitle'),
+      text: t('cleaningContact.swalErrorText'),
+      confirmButtonColor: '#CC933A',
     })
   } finally {
     loading.value = false
@@ -293,27 +309,29 @@ const scrollToHours = () => {
   const el = document.getElementById('footer')
   if (el) el.scrollIntoView({ behavior: 'smooth' })
 }
+
+onMounted(() => {
+  AOS.init({ duration: 860, once: true, easing: 'ease-out-cubic' })
+})
 </script>
 
 <style scoped>
 /*
-  All colors come from main.css :root tokens — nothing redefined here.
-  SVG fill/stroke attributes that cannot read CSS vars use hardcoded hex
-  matching the token exactly:
-    #45137D  = --color-primary
-    #CC933A  = --color-gold
-    #e0aa54  = --color-gold-bright
+  Colors read from the main.css :root tokens — same deep-purple
+  + gold pairing as CleaningHero.vue / CleaningServices.vue.
+  rgba() fallbacks use the RGB equivalents of --color-primary-deep
+  (#1A0535 = rgb(26,5,53)) and --color-gold (#CC933A = rgb(204,147,58)).
 */
 
 /* ─── Section ───────────────────────────────────────────── */
-.contact-section {
+.cleaning-contact {
   position: relative;
-  background: var(--color-bg);
+  background: var(--color-bg-soft);
   padding: 100px 40px 110px;
   overflow: hidden;
 }
 
-.blob--bl {
+.cc-blob {
   position: absolute;
   bottom: -160px;
   left: -160px;
@@ -325,7 +343,7 @@ const scrollToHours = () => {
   z-index: 0;
 }
 
-.contact-inner {
+.cc-inner {
   position: relative;
   z-index: 1;
   max-width: 1100px;
@@ -339,20 +357,20 @@ const scrollToHours = () => {
 /* ════════════════════════════════════════════════════════════
    LEFT — info
 ═════════════════════════════════════════════════════════════ */
-.label-row {
+.cc-label-row {
   display: flex;
   align-items: center;
   gap: 14px;
   margin-bottom: 14px;
 }
 
-.label-line {
+.cc-label-line {
   width: 32px;
   height: 1px;
   background: var(--color-gold);
 }
 
-.section-label {
+.cc-label {
   font-family: var(--font-body);
   font-size: 0.75rem;
   font-weight: 700;
@@ -361,16 +379,16 @@ const scrollToHours = () => {
   color: var(--color-gold);
 }
 
-.contact-title {
+.cc-title {
   font-family: var(--font-display);
   font-size: clamp(1.9rem, 3.2vw, 2.6rem);
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-primary-deep);
   line-height: 1.25;
   margin-bottom: 14px;
 }
 
-.contact-subtitle {
+.cc-subtitle {
   font-family: var(--font-body);
   font-size: 1rem;
   color: var(--color-text-muted);
@@ -379,10 +397,10 @@ const scrollToHours = () => {
 }
 
 /* ─── Phone CTA ─────────────────────────────────────────── */
-.phone-cta {
+.cc-phone-cta {
   display: flex;
   gap: 16px;
-  background: var(--color-bg-soft);
+  background: var(--color-bg);
   border: 1.5px solid var(--color-border);
   border-radius: var(--radius-md);
   align-items: center;
@@ -392,17 +410,17 @@ const scrollToHours = () => {
   margin-bottom: 22px;
 }
 
-.phone-cta:hover {
+.cc-phone-cta:hover {
   border-color: var(--color-gold);
   box-shadow: 0 8px 28px rgba(204, 147, 58, 0.16);
   transform: translateY(-2px);
 }
 
-.phone-icon-wrap {
+.cc-phone-icon-wrap {
   width: 52px;
   height: 52px;
   border-radius: var(--radius-sm);
-  background: var(--color-primary);
+  background: var(--color-primary-deep);
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -410,41 +428,41 @@ const scrollToHours = () => {
   flex-shrink: 0;
 }
 
-.phone-text {
+.cc-phone-text {
   display: flex;
   flex-direction: column;
 }
 
-.phone-label {
+.cc-phone-label {
   font-family: var(--font-body);
   font-size: 0.75rem;
   color: var(--color-text-muted);
   margin-bottom: 2px;
 }
 
-.phone-number {
+.cc-phone-number {
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-primary-deep);
   letter-spacing: 0.02em;
 }
 
-.phone-arrow {
+.cc-phone-arrow {
   margin-left: auto;
   color: var(--color-gold);
   flex-shrink: 0;
 }
 
 /* ─── Quick links (email / hours) ────────────────────────── */
-.quick-links {
+.cc-quick-links {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 28px;
 }
 
-.quick-link {
+.cc-quick-link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -452,7 +470,7 @@ const scrollToHours = () => {
   font-size: 0.83rem;
   font-weight: 500;
   color: var(--color-text-muted);
-  background: var(--color-bg-soft);
+  background: var(--color-bg);
   border: 1px solid var(--color-border);
   padding: 8px 14px;
   border-radius: 50px;
@@ -460,20 +478,20 @@ const scrollToHours = () => {
   transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
 }
 
-.quick-link:hover {
+.cc-quick-link:hover {
   border-color: rgba(204, 147, 58, 0.35);
-  color: var(--color-primary);
-  background: var(--color-primary-light);
+  color: var(--color-primary-deep);
+  background: var(--color-gold-light);
 }
 
 /* ─── Trust list ────────────────────────────────────────── */
-.contact-trust {
+.cc-trust {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
-.trust-item {
+.cc-trust-item {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -482,11 +500,12 @@ const scrollToHours = () => {
   color: var(--color-text-muted);
 }
 
-.trust-check {
+.cc-trust-check {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: rgba(204, 147, 58, 0.12);
+  background: var(--color-gold-light);
+  color: var(--color-gold);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -496,16 +515,16 @@ const scrollToHours = () => {
 /* ════════════════════════════════════════════════════════════
    RIGHT — form card
 ═════════════════════════════════════════════════════════════ */
-.contact-form-wrap {
+.cc-form-wrap {
   position: relative;
-  background: var(--color-primary);
+  background: var(--color-primary-deep);
   border-radius: var(--radius-lg);
   padding: 44px 40px;
   overflow: hidden;
   box-shadow: var(--shadow-lg);
 }
 
-.dot-texture {
+.cc-dot-texture {
   position: absolute;
   inset: 0;
   background-image: radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px);
@@ -513,7 +532,7 @@ const scrollToHours = () => {
   pointer-events: none;
 }
 
-.gold-glow {
+.cc-gold-glow {
   position: absolute;
   bottom: -60px;
   right: -60px;
@@ -524,7 +543,7 @@ const scrollToHours = () => {
   pointer-events: none;
 }
 
-.form-badge {
+.cc-form-badge {
   position: relative;
   z-index: 2;
   display: inline-flex;
@@ -543,7 +562,7 @@ const scrollToHours = () => {
   margin-bottom: 22px;
 }
 
-.form-title {
+.cc-form-title {
   position: relative;
   z-index: 2;
   font-family: var(--font-display);
@@ -553,7 +572,7 @@ const scrollToHours = () => {
   margin-bottom: 22px;
 }
 
-.contact-form {
+.cc-form {
   position: relative;
   z-index: 2;
   display: flex;
@@ -561,13 +580,13 @@ const scrollToHours = () => {
   gap: 16px;
 }
 
-.form-group {
+.cc-form-group {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-label {
+.cc-form label {
   font-family: var(--font-body);
   font-size: 0.8rem;
   font-weight: 500;
@@ -575,8 +594,9 @@ label {
   letter-spacing: 0.02em;
 }
 
-input,
-textarea {
+.cc-form input,
+.cc-form select,
+.cc-form textarea {
   font-family: var(--font-body);
   font-size: 0.95rem;
   color: #ffffff;
@@ -589,25 +609,40 @@ textarea {
   resize: vertical;
 }
 
-input::placeholder,
-textarea::placeholder {
+.cc-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 40px;
+}
+
+.cc-form select option {
+  background: var(--color-primary-deep);
+  color: #ffffff;
+}
+
+.cc-form input::placeholder,
+.cc-form textarea::placeholder {
   color: rgba(255, 255, 255, 0.36);
   font-weight: 300;
 }
 
-input:focus,
-textarea:focus {
+.cc-form input:focus,
+.cc-form select:focus,
+.cc-form textarea:focus {
   border-color: var(--color-gold);
   background: rgba(255, 255, 255, 0.10);
 }
 
-input.has-error,
-textarea.has-error {
+.cc-form input.has-error,
+.cc-form select.has-error,
+.cc-form textarea.has-error {
   border-color: #f08b8b;
   background: rgba(240, 139, 139, 0.07);
 }
 
-.field-error {
+.cc-field-error {
   font-family: var(--font-body);
   font-size: 0.74rem;
   color: #f5a5a5;
@@ -615,7 +650,7 @@ textarea.has-error {
 }
 
 /* ─── Honeypot — hidden from real users, visible to bots ─── */
-.honeypot {
+.cc-honeypot {
   position: absolute;
   left: -9999px;
   width: 1px;
@@ -624,7 +659,7 @@ textarea.has-error {
 }
 
 /* ─── Submit button ─────────────────────────────────────── */
-.submit-btn {
+.cc-submit-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -645,39 +680,38 @@ textarea.has-error {
     inset 0 1px 0 rgba(255, 255, 255, 0.22);
 }
 
-.submit-btn:hover:not(:disabled) {
+.cc-submit-btn:hover:not(:disabled) {
   transform: translateY(-2px);
   box-shadow:
     0 12px 32px rgba(204, 147, 58, 0.40),
     inset 0 1px 0 rgba(255, 255, 255, 0.22);
 }
 
-.submit-btn:disabled {
+.cc-submit-btn:disabled {
   opacity: 0.55;
   cursor: not-allowed;
   background: rgba(204, 147, 58, 0.45);
   box-shadow: none;
 }
 
-/* Loading spinner */
-.spinner {
+.cc-spinner {
   width: 15px;
   height: 15px;
   border: 2px solid rgba(26, 5, 53, 0.25);
   border-top-color: var(--color-primary-deep);
   border-radius: 50%;
-  animation: spin 0.8s linear infinite;
+  animation: cc-spin 0.8s linear infinite;
   flex-shrink: 0;
 }
 
-@keyframes spin {
+@keyframes cc-spin {
   to {
     transform: rotate(360deg);
   }
 }
 
 /* ─── Privacy microcopy ──────────────────────────────────── */
-.form-privacy {
+.cc-privacy {
   font-family: var(--font-body);
   font-size: 0.72rem;
   color: rgba(255, 255, 255, 0.50);
@@ -687,7 +721,7 @@ textarea.has-error {
 }
 
 /* ─── Success state ──────────────────────────────────────── */
-.form-success {
+.cc-success {
   position: relative;
   z-index: 2;
   display: flex;
@@ -697,19 +731,20 @@ textarea.has-error {
   padding: 28px 8px 12px;
 }
 
-.success-icon {
+.cc-success-icon {
   width: 64px;
   height: 64px;
   border-radius: 50%;
   background: rgba(204, 147, 58, 0.18);
   border: 1.5px solid rgba(204, 147, 58, 0.4);
+  color: var(--color-gold-bright);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 18px;
 }
 
-.success-title {
+.cc-success-title {
   font-family: var(--font-display);
   font-size: 1.3rem;
   font-weight: 700;
@@ -717,7 +752,7 @@ textarea.has-error {
   margin-bottom: 10px;
 }
 
-.success-text {
+.cc-success-text {
   font-family: var(--font-body);
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.75);
@@ -726,7 +761,7 @@ textarea.has-error {
   margin-bottom: 24px;
 }
 
-.success-reset-btn {
+.cc-reset-btn {
   background: rgba(255, 255, 255, 0.10);
   border: 1.5px solid rgba(255, 255, 255, 0.30);
   color: #ffffff;
@@ -739,49 +774,49 @@ textarea.has-error {
   transition: background 0.2s ease, border-color 0.2s ease;
 }
 
-.success-reset-btn:hover {
+.cc-reset-btn:hover {
   background: rgba(255, 255, 255, 0.16);
   border-color: rgba(255, 255, 255, 0.5);
 }
 
 /* ─── Fade-swap transition (form ↔ success) ─────────────── */
-.fade-swap-enter-active,
-.fade-swap-leave-active {
+.cc-fade-swap-enter-active,
+.cc-fade-swap-leave-active {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.fade-swap-enter-from {
+.cc-fade-swap-enter-from {
   opacity: 0;
   transform: translateY(10px);
 }
 
-.fade-swap-leave-to {
+.cc-fade-swap-leave-to {
   opacity: 0;
   transform: translateY(-10px);
 }
 
 /* ─── Responsive ────────────────────────────────────────── */
 @media (max-width: 900px) {
-  .contact-inner {
+  .cc-inner {
     grid-template-columns: 1fr;
     gap: 48px;
   }
 }
 
 @media (max-width: 600px) {
-  .contact-section {
+  .cleaning-contact {
     padding: 64px 20px 80px;
   }
 
-  .contact-form-wrap {
+  .cc-form-wrap {
     padding: 32px 24px;
   }
 
-  .phone-number {
+  .cc-phone-number {
     font-size: 1.2rem;
   }
 
-  .phone-cta {
+  .cc-phone-cta {
     padding: 16px 18px;
   }
 }
@@ -789,9 +824,9 @@ textarea.has-error {
 /* ─── Reduced motion ─────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
 
-  .spinner,
-  .fade-swap-enter-active,
-  .fade-swap-leave-active {
+  .cc-spinner,
+  .cc-fade-swap-enter-active,
+  .cc-fade-swap-leave-active {
     transition: none !important;
     animation: none !important;
   }

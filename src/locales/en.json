@@ -6,9 +6,10 @@
     "serviceAreas": "Service Areas",
     "testimonials": "Testimonials",
     "contact": "Contact Us",
-    "getInTouch": "Get in Touch"
+    "getInTouch": "Get in Touch",
+    "cleaning": "Cleaning Services",
+    "cleaningTitle": "Visit our Professional Cleaning page"
   },
-
   "hero": {
     "button2": "Our Services",
     "trust1": "Licensed & Insured",
@@ -17,6 +18,7 @@
     "stat1": "Families Served",
     "stat2": "Satisfaction Rate",
     "stat3": "Years of Care",
+    "cleaningBtn": "Our Cleaning Services",
     "slides": {
       "1": {
         "badge": "Trusted Home Healthcare",
@@ -71,9 +73,9 @@
     "stat4": "Always Available",
     "cta": "Learn Our Story",
     "callUs": "Call Us Now",
-    "expLabel": "Years of\nTrusted Care",
+    "expLabel": "Years of Trusted Care",
     "availPill": "Available Now",
-    "accentLabel": "Trusted by\nFamilies",
+    "accentLabel": "Trusted by Families",
     "cardTitle": "Get in Touch",
     "cardSub": "We're ready to help your family",
     "urgency": "We respond to all inquiries within 2 hours. Same-day care arrangements available.",
@@ -96,14 +98,24 @@
     "mostPopular": "Most Popular",
     "ctaEyebrow": "Ready to get started?",
     "ctaHeading": "Let us build a care plan around your family's needs.",
-
     "trust": {
-      "certified": { "label": "Certified Caregivers", "sub": "Trained & background-checked" },
-      "available": { "label": "Available 24 / 7", "sub": "Day, night & weekends" },
-      "insured": { "label": "Fully Insured", "sub": "Licensed & bonded" },
-      "rated": { "label": "98% Satisfaction", "sub": "200+ families served" }
+      "certified": {
+        "label": "Certified Caregivers",
+        "sub": "Trained & background-checked"
+      },
+      "available": {
+        "label": "Available 24 / 7",
+        "sub": "Day, night & weekends"
+      },
+      "insured": {
+        "label": "Fully Insured",
+        "sub": "Licensed & bonded"
+      },
+      "rated": {
+        "label": "98% Satisfaction",
+        "sub": "200+ families served"
+      }
     },
-
     "companionship": {
       "title": "Companionship",
       "description": "Meaningful social connection that reduces isolation, lifts spirits, and keeps your loved one engaged in the things they enjoy every day.",
@@ -152,7 +164,6 @@
     "title": "Simple, Flexible Care Plans",
     "note": "All plans include a free personalised care assessment. No lock-in contracts. Cancel or adjust anytime.",
     "bookBtn": "Book This Plan",
-
     "oneTime": {
       "name": "One-Day Visit",
       "frequency": "Single visit — one day",
@@ -190,6 +201,13 @@
       "feature3": "Reschedule up to 48 hrs in advance"
     }
   },
+  "satisfaction": {
+    "seniors": "Seniors Cared For",
+    "satisfaction": "Satisfaction Rate",
+    "families": "Families Served",
+    "punctual": "On-Time Visits",
+    "years": "Years of Service"
+  },
   "serviceAreas": {
     "label": "Where We Work",
     "title": "Proudly Serving Families Nationwide",
@@ -215,7 +233,6 @@
     "stat4": "Would Recommend",
     "ctaText": "Join 200+ families who trust Swift Comfort Line with the care of their loved ones.",
     "ctaBtn": "Book a Free Consultation",
-
     "items": {
       "1": {
         "text": "Swift Comfort Line has been an absolute blessing for my mother. The caregivers are not just professional — they genuinely care. I finally have peace of mind knowing she's in good hands.",
@@ -290,25 +307,159 @@
       "message": "Please tell us a bit more (at least 10 characters)."
     }
   },
+  "trust": {
+    "item1": "No long-term contracts required",
+    "item2": "Free initial care assessment",
+    "item3": "Background-checked, certified caregivers",
+    "item4": "Same-day care arrangements available"
+  },
   "footer": {
-    "description": "Reliable senior support in Ottawa. Transportation, errands, and weekly home visits from a trusted companion.",
-    "tagline": "Non-Medical Support Services",
-    "quickLinksTitle": "Quick Links",
-    "servicesTitle": "Services",
-    "links": {
-      "home": "Home",
-      "about": "About Us",
-      "services": "Services",
-      "serviceArea": "Service Areas",
-      "testimonial": "Testimonials"
-    },
-    "contactTitle": "Contact Us",
-    "address": "1338 Wellington St West, Unit 10, Ottawa, Ontario, K1Y 3B7 Canada.",
-    "phone": "+1 613 851 6775",
-    "email": "info{'@'}swiftcomfortline.com",
-    "cta": "Get in Touch",
+    "desc": "Compassionate non-medical home care services for seniors and families across Canada. Dignity, comfort, and peace of mind — delivered.",
+    "quickLinks": "Quick Links",
+    "ourServices": "Our Services",
+    "contactUs": "Contact Us",
+    "hours": "24 hours a day, 7 days a week",
+    "location": "Serving communities across Canada",
+    "cleaningLink": "Our Cleaning Services",
+    "rights": "All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "rights": "All rights reserved."
+    "backToTop": "Back to top"
+  },
+  "banner": {
+    "message": "Looking for professional cleaning services?",
+    "linkText": "Visit Swift Comfort Line Cleaning",
+    "dismiss": "Dismiss announcement"
+  },
+  "cleaningHero": {
+    "badge": "Professional Cleaning Services",
+    "line1": "A Higher Standard",
+    "line2": "of Clean.",
+    "subtitle": "Premium home, office and short-term rental cleaning across Canada. Reliable, detail-focused professionals who treat your space with respect.",
+    "cta1": "Request a Cleaning Quote",
+    "cta2": "View Our Services",
+    "careBtn": "Non-Medical Care Services",
+    "trust1": "Insured",
+    "trust2": "Reliable",
+    "trust3": "Detail-Focused"
+  },
+  "cleaningServices": {
+    "title": "Cleaning,",
+    "titleAccent": "Refined.",
+    "subtitle": "From everyday home cleaning to deep cleans and short-term rental turnovers — we handle every detail so you don't have to.",
+    "ctaText": "Ready for a spotlessly clean space?",
+    "ctaBtn": "Request a Free Quote",
+    "home": {
+      "title": "Home Cleaning",
+      "desc": "Regular and one-off residential cleaning tailored to your schedule and standards."
+    },
+    "office": {
+      "title": "Office Cleaning",
+      "desc": "Professional workspace cleaning that keeps your team focused and your clients impressed."
+    },
+    "deep": {
+      "title": "Deep Cleaning",
+      "desc": "Thorough top-to-bottom cleans for move-ins, spring cleans, or any space that needs a reset."
+    },
+    "moveIn": {
+      "title": "Move-In & Move-Out",
+      "desc": "Spotless handovers for landlords, tenants, and real estate professionals."
+    },
+    "airbnb": {
+      "title": "Airbnb Turnovers",
+      "desc": "Fast, reliable turnovers between guests — fresh linens, restocked supplies, 5-star ready."
+    }
+  },
+  "cleaningAbout": {
+    "label": "Our Approach",
+    "title": "Every Detail",
+    "titleAccent": "Matters.",
+    "subtitle": "Our team delivers a higher standard of clean with care, consistency, and deep respect for your space — every single visit.",
+    "badge": "Rated Service",
+    "cta": "Book a Cleaning",
+    "check1": {
+      "title": "Careful Room-by-Room Service",
+      "desc": "We clean every space thoroughly and systematically, never cutting corners."
+    },
+    "check2": {
+      "title": "Flexible Booking",
+      "desc": "Schedule at a time that suits you — mornings, evenings, or weekends."
+    },
+    "check3": {
+      "title": "Consistent Results",
+      "desc": "The same high standard every visit, whether it's your first or fiftieth."
+    },
+    "check4": {
+      "title": "Respect for Your Property",
+      "desc": "We treat your home or office with the same care we'd give our own."
+    }
+  },
+  "cleaningTesti": {
+    "label": "Client Reviews",
+    "title": "Trusted Across Canada",
+    "ratingLabel": "Average Rating",
+    "verified": "Verified Client",
+    "items": {
+      "1": {
+        "text": "Our home has never felt cleaner. The attention to detail is unmatched and the team is wonderful.",
+        "name": "Sarah M.",
+        "location": "Kanata, Ottawa"
+      },
+      "2": {
+        "text": "Reliable, professional and thorough. They keep our office spotless every single time.",
+        "name": "James R.",
+        "location": "Downtown Ottawa"
+      },
+      "3": {
+        "text": "Perfect for our short-term rentals. Fast turnovers, spotless results and great communication.",
+        "name": "Priya N.",
+        "location": "Sandy Hill, Ottawa"
+      }
+    }
+  },
+  "cleaningCTA": {
+    "label": "Get Started",
+    "title": "Ready for a Beautifully Clean Space?",
+    "subtitle": "Book a one-time clean or set up a regular schedule. We'll take care of every detail so you don't have to.",
+    "btn": "Get Your Quote",
+    "chip1": "Insured & Bonded",
+    "chip2": "Flexible Scheduling",
+    "chip3": "Satisfaction Guaranteed",
+    "infoTitle": "Same-Day Bookings Available",
+    "infoSub": "Call us and we'll arrange it today"
+  },
+  "cleaningContact": {
+    "label": "Get In Touch",
+    "title": "Let's Get Your Space Spotless",
+    "subtitle": "Reach out today for a free, no-obligation quote. Tell us what you need and we'll take it from there.",
+    "callUs": "Call Us Directly",
+    "phone": "+1 (613) 851-6775",
+    "hoursValue": "Mon–Sat, 8am–6pm",
+    "formBadge": "Free Quote",
+    "formTitle": "Request a Quote",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Jane Smith",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "(613) 555-0123",
+    "serviceLabel": "Service Needed",
+    "servicePlaceholder": "Select a service",
+    "messageLabel": "Tell Us About the Job",
+    "messagePlaceholder": "Size of space, preferred date, any special requests...",
+    "submit": "Request Quote",
+    "sending": "Sending...",
+    "privacyNote": "Your information is kept confidential and is never shared with third parties.",
+    "successTitle": "Request Sent!",
+    "successText": "Thanks for reaching out. We'll get back to you with a quote within 2 hours.",
+    "sendAnother": "Send Another Request",
+    "swalSuccessTitle": "Request Sent!",
+    "swalSuccessText": "Thank you! We'll be in touch shortly.",
+    "swalErrorTitle": "Oops...",
+    "swalErrorText": "Something went wrong. Please try again or call us directly.",
+    "errors": {
+      "name": "Please enter your full name.",
+      "phone": "Please enter a valid phone number.",
+      "service": "Please select a service.",
+      "message": "Please tell us a bit more (at least 10 characters)."
+    }
   }
 }

@@ -76,15 +76,12 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
-
 /* ─── Strip ─────────────────────────────────────────────── */
 .satisfaction-strip {
   background:
-    linear-gradient(
-      135deg,
+    linear-gradient(135deg,
       var(--color-primary) 0%,
-      var(--color-primary-dark) 100%
-    );
+      var(--color-primary-dark) 100%);
 
   padding: 34px 40px;
   position: relative;
@@ -97,16 +94,12 @@ onBeforeUnmount(() => {
   inset: 0;
 
   background:
-    radial-gradient(
-      circle at 15% 50%,
-      rgba(204,147,58,0.12),
-      transparent 35%
-    ),
-    radial-gradient(
-      circle at 85% 50%,
-      rgba(204,147,58,0.08),
-      transparent 40%
-    );
+    radial-gradient(circle at 15% 50%,
+      rgba(204, 147, 58, 0.12),
+      transparent 35%),
+    radial-gradient(circle at 85% 50%,
+      rgba(204, 147, 58, 0.08),
+      transparent 40%);
 
   pointer-events: none;
 }
@@ -123,12 +116,10 @@ onBeforeUnmount(() => {
   height: 2px;
 
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       transparent,
       var(--color-gold),
-      transparent
-    );
+      transparent);
 }
 
 /* ─── Stats row ─────────────────────────────────────────── */
@@ -147,15 +138,12 @@ onBeforeUnmount(() => {
 /* ─── Single stat ───────────────────────────────────────── */
 .stat {
   flex: 1;
-transition: transform .3s ease
+  transition: transform .3s ease; 
   display: flex;
   align-items: center;
   justify-content: center;
-
   gap: 14px;
-
   padding: 18px 24px;
-
   position: relative;
 }
 
@@ -177,11 +165,9 @@ transition: transform .3s ease
   height: 60%;
 
   background:
-    linear-gradient(
-      transparent,
-      rgba(255,255,255,0.18),
-      transparent
-    );
+    linear-gradient(transparent,
+      rgba(255, 255, 255, 0.18),
+      transparent);
 }
 
 /* ─── Icon ──────────────────────────────────────────────── */
@@ -196,7 +182,7 @@ transition: transform .3s ease
   border-radius: 14px;
 
   background:
-    rgba(204,147,58,0.12);
+    rgba(204, 147, 58, 0.12);
 
   color: var(--color-gold);
 
@@ -225,7 +211,7 @@ transition: transform .3s ease
 
   font-size: 0.8rem;
 
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
 
   margin-top: 4px;
 

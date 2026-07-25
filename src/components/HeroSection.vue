@@ -66,13 +66,23 @@
             </svg>
             <span class="btn-label">+1 (613) 851-6775</span>
           </a>
-          <a href="#services" class="btn-outline" @click.prevent="scrollTo('services')">
+          <!-- <a href="#services" class="btn-outline" @click.prevent="scrollTo('services')">
             {{ t('hero.button2') }}
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
               stroke-linecap="round">
               <line x1="5" y1="12" x2="19" y2="12" />
               <polyline points="12 5 19 12 12 19" />
             </svg>
+          </a> -->
+
+          <!-- Cleaning page shortcut -->
+          <a href="/cleaning" class="btn-cleaning">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+            {{ t('hero.cleaningBtn') }}
           </a>
         </div>
 
@@ -134,12 +144,6 @@
 </template>
 
 <script setup>
-import Image1 from "../assets/SCL.png"
-import Image2 from "../assets/scl2.png"
-import Image3 from "../assets/scl3.png"
-import Image4 from "../assets/scl4.png"
-import Image5 from "../assets/scl5.png"
-import Image6 from "../assets/scl1.png"
 import { useI18n } from 'vue-i18n'
 import { ref, watch, onMounted, onUnmounted } from 'vue'
 
@@ -157,7 +161,7 @@ const stats = [
 /* ── 6 carousel slides ───────────────────────────────────── */
 const slides = [
   {
-    image: Image1,
+    image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1600&q=85&auto=format&fit=crop',
     badge: 'hero.slides.1.badge',
     line1: 'hero.slides.1.line1',
     line2: 'hero.slides.1.line2',
@@ -165,7 +169,7 @@ const slides = [
     workerSlide: false,
   },
   {
-    image: Image2,
+    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1600&q=85&auto=format&fit=crop',
     badge: 'hero.slides.2.badge',
     line1: 'hero.slides.2.line1',
     line2: 'hero.slides.2.line2',
@@ -173,7 +177,7 @@ const slides = [
     workerSlide: false,
   },
   {
-    image: Image3,
+    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&q=85&auto=format&fit=crop',
     badge: 'hero.slides.3.badge',
     line1: 'hero.slides.3.line1',
     line2: 'hero.slides.3.line2',
@@ -181,7 +185,7 @@ const slides = [
     workerSlide: false,
   },
   {
-    image: Image4,
+    image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600&q=85&auto=format&fit=crop',
     badge: 'hero.slides.4.badge',
     line1: 'hero.slides.4.line1',
     line2: 'hero.slides.4.line2',
@@ -189,7 +193,7 @@ const slides = [
     workerSlide: false,
   },
   {
-    image: Image5,
+    image: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=1600&q=85&auto=format&fit=crop',
     badge: 'hero.slides.5.badge',
     line1: 'hero.slides.5.line1',
     line2: 'hero.slides.5.line2',
@@ -202,7 +206,7 @@ const slides = [
      * Replace this Unsplash URL with your own staff photo once available.
      * The .uniform-badge overlay will appear on top of any image here.
      */
-    image: Image6,
+    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=85&auto=format&fit=crop',
     badge: 'hero.slides.6.badge',
     line1: 'hero.slides.6.line1',
     line2: 'hero.slides.6.line2',
@@ -730,6 +734,44 @@ onUnmounted(() => {
   transform: translateX(4px);
 }
 
+/* ─── Cleaning page button ──────────────────────────────── */
+.btn-cleaning {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255, 255, 255, 0.10);
+  color: rgba(255, 255, 255, 0.88);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 9px 20px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: all 0.22s ease;
+  white-space: nowrap;
+}
+
+.btn-cleaning:hover {
+  background: rgba(204, 147, 58, 0.18);
+  /* --color-gold tint */
+  border-color: rgba(204, 147, 58, 0.55);
+  color: var(--color-gold-bright);
+  transform: translateY(-2px);
+}
+
+.btn-cleaning svg {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.btn-cleaning:hover svg {
+  transform: translateY(-1px);
+}
+
 /* ─── Trust row ─────────────────────────────────────────── */
 .trust-row {
   display: flex;
@@ -1066,7 +1108,8 @@ onUnmounted(() => {
   }
 
   .btn-primary,
-  .btn-outline {
+  .btn-outline,
+  .btn-cleaning {
     justify-content: center;
   }
 

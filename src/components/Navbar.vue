@@ -112,7 +112,7 @@
         <a href="#services" class="mobile-link" @click="mobileNav('services')">{{ t('navbar.services') }}</a>
         <a href="#areas" class="mobile-link" @click="mobileNav('areas')">{{ t('navbar.serviceAreas') }}</a>
         <a href="#testimonials" class="mobile-link" @click="mobileNav('testimonials')">{{ t('navbar.testimonials')
-          }}</a>
+        }}</a>
         <a href="#contact" class="mobile-link" @click="mobileNav('contact')">{{ t('navbar.contact') }}</a>
 
         <div class="mobile-lang">

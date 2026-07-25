@@ -6,9 +6,10 @@
     "serviceAreas": "Zones desservies",
     "testimonials": "Témoignages",
     "contact": "Nous joindre",
-    "getInTouch": "Nous contacter"
+    "getInTouch": "Nous contacter",
+    "cleaning": "Services de Nettoyage",
+    "cleaningTitle": "Visiter notre page de nettoyage professionnel"
   },
-
   "hero": {
     "button2": "Nos Services",
     "trust1": "Agréé & Assuré",
@@ -17,6 +18,7 @@
     "stat1": "Familles Servies",
     "stat2": "Taux de Satisfaction",
     "stat3": "Ans d'Expérience",
+    "cleaningBtn": "Nos Services de Nettoyage",
     "slides": {
       "1": {
         "badge": "Soins à Domicile de Confiance",
@@ -56,7 +58,6 @@
       }
     }
   },
-
   "about": {
     "label": "Qui Nous Sommes",
     "title": "Des Soins Bienveillants sur Lesquels Vous Pouvez Compter",
@@ -72,9 +73,9 @@
     "stat4": "Toujours Disponible",
     "cta": "Notre Histoire",
     "callUs": "Appelez-Nous",
-    "expLabel": "Ans de Soins\nde Confiance",
+    "expLabel": "Ans de Soins de Confiance",
     "availPill": "Disponible Maintenant",
-    "accentLabel": "Approuvé par\nles Familles",
+    "accentLabel": "Approuvé par les Familles",
     "cardTitle": "Contactez-Nous",
     "cardSub": "Nous sommes prêts à aider votre famille",
     "urgency": "Nous répondons à toutes les demandes dans les 2 heures. Arrangements de soins le jour même disponibles.",
@@ -97,14 +98,24 @@
     "mostPopular": "Le Plus Populaire",
     "ctaEyebrow": "Prêt à commencer?",
     "ctaHeading": "Laissez-nous élaborer un plan de soins adapté à votre famille.",
-
     "trust": {
-      "certified": { "label": "Soignants Certifiés", "sub": "Formés et vérifiés" },
-      "available": { "label": "Disponible 24h / 24", "sub": "Jour, nuit et week-ends" },
-      "insured": { "label": "Pleinement Assuré", "sub": "Agréé et cautionné" },
-      "rated": { "label": "98% de Satisfaction", "sub": "Plus de 200 familles servies" }
+      "certified": {
+        "label": "Soignants Certifiés",
+        "sub": "Formés et vérifiés"
+      },
+      "available": {
+        "label": "Disponible 24h / 24",
+        "sub": "Jour, nuit et week-ends"
+      },
+      "insured": {
+        "label": "Pleinement Assuré",
+        "sub": "Agréé et cautionné"
+      },
+      "rated": {
+        "label": "98% de Satisfaction",
+        "sub": "Plus de 200 familles servies"
+      }
     },
-
     "companionship": {
       "title": "Compagnie",
       "description": "Un lien social significatif qui réduit l'isolement, remonte le moral et maintient votre proche engagé dans ce qu'il aime chaque jour.",
@@ -153,7 +164,6 @@
     "title": "Des Plans de Soins Simples et Flexibles",
     "note": "Tous les plans incluent une évaluation personnalisée gratuite. Aucun contrat d'engagement. Annulez ou ajustez à tout moment.",
     "bookBtn": "Réserver ce Plan",
-
     "oneTime": {
       "name": "Visite d'un Jour",
       "frequency": "Visite unique — un jour",
@@ -191,6 +201,13 @@
       "feature3": "Reprogrammable jusqu'à 48h à l'avance"
     }
   },
+  "satisfaction": {
+    "seniors": "Aînés Pris en Charge",
+    "satisfaction": "Taux de Satisfaction",
+    "families": "Familles Servies",
+    "punctual": "Visites à l'Heure",
+    "years": "Années de Service"
+  },
   "serviceAreas": {
     "label": "Où Nous Intervenons",
     "title": "Fiers de Servir les Familles à l'Échelle Nationale",
@@ -216,7 +233,6 @@
     "stat4": "Nous Recommandent",
     "ctaText": "Rejoignez plus de 200 familles qui font confiance à Swift Comfort Line pour les soins de leurs proches.",
     "ctaBtn": "Consultation Gratuite",
-
     "items": {
       "1": {
         "text": "Swift Comfort Line a été une véritable bénédiction pour ma mère. Les soignants ne sont pas seulement professionnels — ils se soucient vraiment d'elle. J'ai enfin l'esprit tranquille.",
@@ -298,24 +314,152 @@
     "item4": "Arrangements de soins le jour même disponibles"
   },
   "footer": {
-    "description": "Soutien aux aînés à Ottawa. Transport, courses et visites hebdomadaires d'un accompagnateur de confiance.",
-    "tagline": "Services de soutien non médicaux",
-    "quickLinksTitle": "Liens rapides",
-    "servicesTitle": "Services",
-    "links": {
-      "home": "Accueil",
-      "about": "À propos",
-      "services": "Services",
-      "serviceArea": "Zones desservies",
-      "testimonial": "Témoignages"
+    "desc": "Services de soins à domicile non médicaux, bienveillants, pour les aînés et les familles partout au Canada. Dignité, confort et tranquillité d'esprit — livrés.",
+    "quickLinks": "Liens Rapides",
+    "ourServices": "Nos Services",
+    "contactUs": "Contactez-Nous",
+    "hours": "24 heures sur 24, 7 jours sur 7",
+    "location": "Desservant les communautés partout au Canada",
+    "cleaningLink": "Nos Services de Nettoyage",
+    "rights": "Tous droits réservés.",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "backToTop": "Retour en haut"
+  },
+  "banner": {
+    "message": "Vous cherchez des services de nettoyage professionnels?",
+    "linkText": "Visiter Swift Comfort Line Nettoyage",
+    "dismiss": "Fermer l'annonce"
+  },
+  "cleaningHero": {
+    "badge": "Services de Nettoyage Professionnels",
+    "line1": "Un Standard Plus Élevé",
+    "line2": "de Propreté.",
+    "subtitle": "Nettoyage résidentiel, commercial et de locations à court terme partout au Canada. Des professionnels fiables et attentifs aux détails qui respectent votre espace.",
+    "cta1": "Demander un Devis",
+    "cta2": "Voir Nos Services",
+    "careBtn": "Services de Soins Non Médicaux",
+    "trust1": "Assuré",
+    "trust2": "Fiable",
+    "trust3": "Soucieux des Détails"
+  },
+  "cleaningServices": {
+    "title": "Nettoyage,",
+    "titleAccent": "Raffiné.",
+    "subtitle": "Du ménage quotidien au grand nettoyage en passant par les remises en état de locations courte durée — nous gérons chaque détail à votre place.",
+    "ctaText": "Prêt pour un espace impeccablement propre?",
+    "ctaBtn": "Demander un Devis Gratuit",
+    "home": {
+      "title": "Nettoyage Résidentiel",
+      "desc": "Nettoyage régulier ou ponctuel, adapté à votre emploi du temps et à vos exigences."
     },
-    "contactTitle": "Nous joindre",
-    "address": "1338, rue Wellington Ouest, unité 10, Ottawa, Ontario, K1Y 3B7 Canada.",
-    "phone": "+1 613 851 6775",
-    "email": "info{'@'}swiftcomfortline.com",
-    "cta": "Nous contacter",
-    "privacy": "Politique de confidentialité",
-    "terms": "Conditions d'utilisation",
-    "rights": "Tous droits réservés."
+    "office": {
+      "title": "Nettoyage de Bureaux",
+      "desc": "Entretien professionnel des espaces de travail pour des équipes concentrées et des clients impressionnés."
+    },
+    "deep": {
+      "title": "Nettoyage en Profondeur",
+      "desc": "Nettoyage complet de fond en comble pour emménagements, grands ménages ou remises à neuf."
+    },
+    "moveIn": {
+      "title": "Entrée & Sortie",
+      "desc": "Remises en état impeccables pour propriétaires, locataires et professionnels de l'immobilier."
+    },
+    "airbnb": {
+      "title": "Remises Airbnb",
+      "desc": "Remises rapides et fiables entre locataires — linge frais, fournitures restockées, prêt 5 étoiles."
+    }
+  },
+  "cleaningAbout": {
+    "label": "Notre Approche",
+    "title": "Chaque Détail",
+    "titleAccent": "Compte.",
+    "subtitle": "Notre équipe offre un niveau de propreté supérieur, avec soin, constance et un profond respect pour votre espace — à chaque visite.",
+    "badge": "Service 5 Étoiles",
+    "cta": "Réserver un Nettoyage",
+    "check1": {
+      "title": "Service Pièce par Pièce",
+      "desc": "Nous nettoyons chaque espace de façon méthodique et approfondie, sans jamais bâcler."
+    },
+    "check2": {
+      "title": "Réservation Flexible",
+      "desc": "Planifiez à l'heure qui vous convient — matin, soir ou week-end."
+    },
+    "check3": {
+      "title": "Résultats Constants",
+      "desc": "Le même haut standard à chaque visite, qu'il s'agisse de la première ou de la cinquantième."
+    },
+    "check4": {
+      "title": "Respect de Votre Propriété",
+      "desc": "Nous traitons votre maison ou bureau avec le même soin que nous donnerions au nôtre."
+    }
+  },
+  "cleaningTesti": {
+    "label": "Avis Clients",
+    "title": "Approuvé Partout au Canada",
+    "ratingLabel": "Note Moyenne",
+    "verified": "Client Vérifié",
+    "items": {
+      "1": {
+        "text": "Notre maison n'a jamais été aussi propre. L'attention aux détails est incomparable et l'équipe est formidable.",
+        "name": "Sarah M.",
+        "location": "Kanata, Ottawa"
+      },
+      "2": {
+        "text": "Fiable, professionnel et minutieux. Ils gardent notre bureau impeccable à chaque fois.",
+        "name": "James R.",
+        "location": "Centre-ville d'Ottawa"
+      },
+      "3": {
+        "text": "Parfait pour nos locations à court terme. Remises rapides, résultats impeccables et excellente communication.",
+        "name": "Priya N.",
+        "location": "Sandy Hill, Ottawa"
+      }
+    }
+  },
+  "cleaningCTA": {
+    "label": "Commencer",
+    "title": "Prêt pour un Espace Impeccablement Propre?",
+    "subtitle": "Réservez un nettoyage ponctuel ou établissez un programme régulier. Nous nous occupons de chaque détail à votre place.",
+    "btn": "Obtenir un Devis",
+    "chip1": "Assuré & Cautionné",
+    "chip2": "Horaires Flexibles",
+    "chip3": "Satisfaction Garantie",
+    "infoTitle": "Réservations le Jour Même",
+    "infoSub": "Appelez-nous et nous arrangerons ça aujourd'hui"
+  },
+  "cleaningContact": {
+    "label": "Contactez-nous",
+    "title": "Rendons votre espace impeccable",
+    "subtitle": "Contactez-nous dès aujourd'hui pour une soumission gratuite et sans engagement. Dites-nous ce dont vous avez besoin et nous nous occupons du reste.",
+    "callUs": "Appelez-nous directement",
+    "phone": "+1 (613) 851-6775",
+    "hoursValue": "Lun–Sam, 8h–18h",
+    "formBadge": "Soumission gratuite",
+    "formTitle": "Demander une soumission",
+    "nameLabel": "Nom complet",
+    "namePlaceholder": "Jane Smith",
+    "phoneLabel": "Numéro de téléphone",
+    "phonePlaceholder": "(613) 555-0123",
+    "serviceLabel": "Service souhaité",
+    "servicePlaceholder": "Sélectionnez un service",
+    "messageLabel": "Parlez-nous du projet",
+    "messagePlaceholder": "Superficie de l'espace, date préférée, demandes particulières...",
+    "submit": "Demander une soumission",
+    "sending": "Envoi en cours...",
+    "privacyNote": "Vos informations restent confidentielles et ne sont jamais partagées avec des tiers.",
+    "successTitle": "Demande envoyée !",
+    "successText": "Merci de nous avoir contactés. Nous vous enverrons une soumission dans les 2 heures.",
+    "sendAnother": "Envoyer une autre demande",
+    "swalSuccessTitle": "Demande envoyée !",
+    "swalSuccessText": "Merci ! Nous vous répondrons sous peu.",
+    "swalErrorTitle": "Oups...",
+    "swalErrorText": "Une erreur s'est produite. Veuillez réessayer ou nous appeler directement.",
+    "errors": {
+      "name": "Veuillez saisir votre nom complet.",
+      "phone": "Veuillez saisir un numéro de téléphone valide.",
+      "service": "Veuillez sélectionner un service.",
+      "message": "Veuillez nous en dire un peu plus (10 caractères minimum)."
+    }
   }
 }
