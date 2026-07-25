@@ -146,6 +146,13 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 import { ref, watch, onMounted, onUnmounted } from 'vue'
+import Image1 from "../assets/scl1.png";
+import Image2 from "../assets/scl2.png";
+import Image3 from "../assets/scl3.png";
+import Image4 from "../assets/scl4.png";
+import Image5 from "../assets/scl5.png";
+import Image6 from "../assets/SCL.png";
+
 
 const { t } = useI18n()
 const phone = '+16138516775'
@@ -161,7 +168,7 @@ const stats = [
 /* ── 6 carousel slides ───────────────────────────────────── */
 const slides = [
   {
-    image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1600&q=85&auto=format&fit=crop',
+    image: Image1,
     badge: 'hero.slides.1.badge',
     line1: 'hero.slides.1.line1',
     line2: 'hero.slides.1.line2',
@@ -169,7 +176,7 @@ const slides = [
     workerSlide: false,
   },
   {
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1600&q=85&auto=format&fit=crop',
+    image: Image2,
     badge: 'hero.slides.2.badge',
     line1: 'hero.slides.2.line1',
     line2: 'hero.slides.2.line2',
@@ -177,7 +184,7 @@ const slides = [
     workerSlide: false,
   },
   {
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&q=85&auto=format&fit=crop',
+    image: Image3,
     badge: 'hero.slides.3.badge',
     line1: 'hero.slides.3.line1',
     line2: 'hero.slides.3.line2',
@@ -185,7 +192,7 @@ const slides = [
     workerSlide: false,
   },
   {
-    image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600&q=85&auto=format&fit=crop',
+    image: Image4,
     badge: 'hero.slides.4.badge',
     line1: 'hero.slides.4.line1',
     line2: 'hero.slides.4.line2',
@@ -193,7 +200,7 @@ const slides = [
     workerSlide: false,
   },
   {
-    image: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=1600&q=85&auto=format&fit=crop',
+    image: Image5,
     badge: 'hero.slides.5.badge',
     line1: 'hero.slides.5.line1',
     line2: 'hero.slides.5.line2',
@@ -206,7 +213,7 @@ const slides = [
      * Replace this Unsplash URL with your own staff photo once available.
      * The .uniform-badge overlay will appear on top of any image here.
      */
-    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=85&auto=format&fit=crop',
+    image: Image6,
     badge: 'hero.slides.6.badge',
     line1: 'hero.slides.6.line1',
     line2: 'hero.slides.6.line2',
