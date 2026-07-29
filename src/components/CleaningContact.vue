@@ -1,68 +1,71 @@
 <template>
     <section class="cleaning-contact" id="contact">
 
-        <div class="cc-blob" aria-hidden="true"></div>
+        <!-- ── Decorative blobs ───────────────────────────────── -->
+        <div class="cc-blob cc-blob--tr" aria-hidden="true"></div>
+        <div class="cc-blob cc-blob--bl" aria-hidden="true"></div>
 
         <div class="cc-inner">
 
             <!-- ════════════════════════════════════════════════════
            LEFT — info
       ═════════════════════════════════════════════════════ -->
-            <div class="cc-info" data-aos="fade-right">
-                <div class="cc-label-row">
-                    <span class="cc-label-line"></span>
-                    <span class="cc-label">{{ t('cleaningContact.label') }}</span>
-                    <span class="cc-label-line"></span>
+            <div class="cc-info" data-aos="fade-right" data-aos-duration="900">
+
+                <div class="label-row">
+                    <span class="label-line"></span>
+                    <span class="section-label">{{ t('cleaningContact.label') }}</span>
+                    <span class="label-line"></span>
                 </div>
 
                 <h2 class="cc-title">{{ t('cleaningContact.title') }}</h2>
                 <p class="cc-subtitle">{{ t('cleaningContact.subtitle') }}</p>
 
-                <!-- Big phone CTA -->
+                <!-- Phone CTA -->
                 <a :href="'tel:' + rawPhone" class="cc-phone-cta">
-                    <div class="cc-phone-icon-wrap">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <div class="cc-phone-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round">
                             <path
                                 d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z" />
                         </svg>
                     </div>
                     <div class="cc-phone-text">
                         <span class="cc-phone-label">{{ t('cleaningContact.callUs') }}</span>
-                        <span class="cc-phone-number">{{ t('cleaningContact.phone') }}</span>
+                        <span class="cc-phone-number">+1 (613) 851-6775</span>
                     </div>
-                    <svg class="cc-phone-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" class="cc-phone-arrow">
                         <line x1="5" y1="12" x2="19" y2="12" />
                         <polyline points="12 5 19 12 12 19" />
                     </svg>
                 </a>
 
-                <!-- Secondary contact methods -->
+                <!-- Quick links row -->
                 <div class="cc-quick-links">
-                    <a :href="'mailto:' + email" class="cc-quick-link">
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <a href="mailto:info@swiftcomfortline.ca" class="cc-quick-link">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round">
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                             <polyline points="22,6 12,13 2,6" />
                         </svg>
-                        {{ email }}
+                        info@swiftcomfortline.ca
                     </a>
-                    <a href="#" class="cc-quick-link" @click.prevent="scrollToHours">
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    <div class="cc-quick-link">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round">
                             <circle cx="12" cy="12" r="10" />
                             <polyline points="12 6 12 12 16 14" />
                         </svg>
-                        {{ t('cleaningContact.hoursValue') }}
-                    </a>
+                        {{ t('cleaningContact.hours') }}
+                    </div>
                 </div>
 
                 <!-- Trust list -->
-                <div class="cc-trust">
+                <div class="cc-trust-list">
                     <div class="cc-trust-item" v-for="(item, i) in trustItems" :key="i">
                         <span class="cc-trust-check">
-                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#CC933A"
                                 stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                                 <polyline points="20 6 9 17 4 12" />
                             </svg>
@@ -70,30 +73,33 @@
                         <span>{{ t(item) }}</span>
                     </div>
                 </div>
+
             </div>
 
             <!-- ════════════════════════════════════════════════════
            RIGHT — form
       ═════════════════════════════════════════════════════ -->
-            <div class="cc-form-wrap" data-aos="fade-left">
+            <div class="cc-form-wrap" data-aos="fade-left" data-aos-duration="900" data-aos-delay="100">
 
                 <div class="cc-dot-texture" aria-hidden="true"></div>
                 <div class="cc-gold-glow" aria-hidden="true"></div>
 
+                <!-- Badge -->
                 <div class="cc-form-badge">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="#e0aa54">
                         <path
                             d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
                     </svg>
                     {{ t('cleaningContact.formBadge') }}
                 </div>
 
-                <transition name="cc-fade-swap" mode="out-in">
+                <!-- Success state -->
+                <transition name="fade-swap" mode="out-in">
 
                     <div v-if="submitted" key="success" class="cc-success">
                         <div class="cc-success-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#e0aa54"
+                                stroke-width="2.5" stroke-linecap="round">
                                 <polyline points="20 6 9 17 4 12" />
                             </svg>
                         </div>
@@ -105,13 +111,26 @@
                     </div>
 
                     <form v-else key="form" @submit.prevent="handleSubmit" class="cc-form" novalidate>
+
                         <h3 class="cc-form-title">{{ t('cleaningContact.formTitle') }}</h3>
+
+                        <!-- Service type selector -->
+                        <div class="cc-form-group">
+                            <label for="cc-service">{{ t('cleaningContact.serviceLabel') }}</label>
+                            <select id="cc-service" v-model="form.service" :class="{ 'has-error': errors.service }"
+                                @change="errors.service = ''">
+                                <option value="" disabled>{{ t('cleaningContact.servicePlaceholder') }}</option>
+                                <option v-for="opt in serviceOptions" :key="opt" :value="t(opt)">
+                                    {{ t(opt) }}
+                                </option>
+                            </select>
+                            <span v-if="errors.service" class="cc-field-error">{{ errors.service }}</span>
+                        </div>
 
                         <!-- Name -->
                         <div class="cc-form-group">
                             <label for="cc-name">{{ t('cleaningContact.nameLabel') }}</label>
-                            <input id="cc-name" type="text" v-model="form.name" required
-                                :class="{ 'has-error': errors.name }" :aria-invalid="!!errors.name"
+                            <input id="cc-name" type="text" v-model="form.name" :class="{ 'has-error': errors.name }"
                                 :placeholder="t('cleaningContact.namePlaceholder')" @blur="validateField('name')" />
                             <span v-if="errors.name" class="cc-field-error">{{ errors.name }}</span>
                         </div>
@@ -119,47 +138,29 @@
                         <!-- Phone -->
                         <div class="cc-form-group">
                             <label for="cc-phone">{{ t('cleaningContact.phoneLabel') }}</label>
-                            <input id="cc-phone" type="tel" v-model="form.phone" required
-                                :class="{ 'has-error': errors.phone }" :aria-invalid="!!errors.phone"
+                            <input id="cc-phone" type="tel" v-model="form.phone" :class="{ 'has-error': errors.phone }"
                                 :placeholder="t('cleaningContact.phonePlaceholder')" @blur="validateField('phone')" />
                             <span v-if="errors.phone" class="cc-field-error">{{ errors.phone }}</span>
-                        </div>
-
-                        <!-- Service type -->
-                        <div class="cc-form-group">
-                            <label for="cc-service">{{ t('cleaningContact.serviceLabel') }}</label>
-                            <select id="cc-service" v-model="form.service" required
-                                :class="{ 'has-error': errors.service }" :aria-invalid="!!errors.service"
-                                @blur="validateField('service')">
-                                <option value="" disabled>{{ t('cleaningContact.servicePlaceholder') }}</option>
-                                <option value="home">{{ t('cleaningServices.home.title') }}</option>
-                                <option value="office">{{ t('cleaningServices.office.title') }}</option>
-                                <option value="deep">{{ t('cleaningServices.deep.title') }}</option>
-                                <option value="moveIn">{{ t('cleaningServices.moveIn.title') }}</option>
-                                <option value="airbnb">{{ t('cleaningServices.airbnb.title') }}</option>
-                            </select>
-                            <span v-if="errors.service" class="cc-field-error">{{ errors.service }}</span>
                         </div>
 
                         <!-- Message -->
                         <div class="cc-form-group">
                             <label for="cc-message">{{ t('cleaningContact.messageLabel') }}</label>
-                            <textarea id="cc-message" v-model="form.message" required rows="4"
-                                :class="{ 'has-error': errors.message }" :aria-invalid="!!errors.message"
+                            <textarea id="cc-message" v-model="form.message" rows="3"
+                                :class="{ 'has-error': errors.message }"
                                 :placeholder="t('cleaningContact.messagePlaceholder')"
                                 @blur="validateField('message')"></textarea>
                             <span v-if="errors.message" class="cc-field-error">{{ errors.message }}</span>
                         </div>
 
-                        <!-- Honeypot — invisible to humans, catches bots -->
+                        <!-- Honeypot -->
                         <div class="cc-honeypot" aria-hidden="true">
-                            <label for="cc-website">Website</label>
-                            <input id="cc-website" type="text" v-model="honeypot" tabindex="-1" autocomplete="off" />
+                            <input type="text" v-model="honeypot" tabindex="-1" autocomplete="off" />
                         </div>
 
                         <!-- Submit -->
-                        <button type="submit" class="cc-submit-btn" :disabled="loading" :aria-busy="loading">
-                            <svg v-if="!loading" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        <button type="submit" class="cc-submit" :disabled="loading" :aria-busy="loading">
+                            <svg v-if="!loading" width="15" height="15" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round">
                                 <line x1="22" y1="2" x2="11" y2="13" />
                                 <polygon points="22 2 15 22 11 13 2 9 22 2" />
@@ -169,6 +170,7 @@
                         </button>
 
                         <p class="cc-privacy">{{ t('cleaningContact.privacyNote') }}</p>
+
                     </form>
 
                 </transition>
@@ -190,17 +192,25 @@ import 'aos/dist/aos.css'
 const { t } = useI18n()
 
 const rawPhone = '+16138516775'
-const email = 'info@swiftcomfortline.com'
 
 const trustItems = [
-    'cleaningHero.trust1',
-    'cleaningHero.trust2',
-    'cleaningHero.trust3',
+    'cleaningContact.trust1',
+    'cleaningContact.trust2',
+    'cleaningContact.trust3',
+    'cleaningContact.trust4',
+]
+
+const serviceOptions = [
+    'cleaningServices.home.title',
+    'cleaningServices.office.title',
+    'cleaningServices.deep.title',
+    'cleaningServices.moveIn.title',
+    'cleaningServices.airbnb.title',
 ]
 
 /* ── Form state ──────────────────────────────────────────── */
-const form = reactive({ name: '', phone: '', service: '', message: '' })
-const errors = reactive({ name: '', phone: '', service: '', message: '' })
+const form = reactive({ service: '', name: '', phone: '', message: '' })
+const errors = reactive({ service: '', name: '', phone: '', message: '' })
 const honeypot = ref('')
 const loading = ref(false)
 const submitted = ref(false)
@@ -209,76 +219,42 @@ const submitted = ref(false)
 const PHONE_RE = /^[\d\s+().-]{7,20}$/
 
 const validateField = (field) => {
-    if (field === 'name') {
-        errors.name = form.name.trim().length < 2 ? t('cleaningContact.errors.name') : ''
-    }
-    if (field === 'phone') {
-        errors.phone = !PHONE_RE.test(form.phone.trim()) ? t('cleaningContact.errors.phone') : ''
-    }
-    if (field === 'service') {
-        errors.service = !form.service ? t('cleaningContact.errors.service') : ''
-    }
-    if (field === 'message') {
-        errors.message = form.message.trim().length < 10 ? t('cleaningContact.errors.message') : ''
-    }
+    if (field === 'name') errors.name = form.name.trim().length < 2 ? t('cleaningContact.errors.name') : ''
+    if (field === 'phone') errors.phone = !PHONE_RE.test(form.phone.trim()) ? t('cleaningContact.errors.phone') : ''
+    if (field === 'message') errors.message = form.message.trim().length < 5 ? t('cleaningContact.errors.message') : ''
 }
 
 const validateAll = () => {
+    errors.service = !form.service ? t('cleaningContact.errors.service') : ''
     validateField('name')
     validateField('phone')
-    validateField('service')
     validateField('message')
-    return !errors.name && !errors.phone && !errors.service && !errors.message
+    return !errors.service && !errors.name && !errors.phone && !errors.message
 }
 
-/* ── Reset ───────────────────────────────────────────────── */
 const resetForm = () => {
-    form.name = ''
-    form.phone = ''
-    form.service = ''
-    form.message = ''
-    errors.name = ''
-    errors.phone = ''
-    errors.service = ''
-    errors.message = ''
+    form.service = ''; form.name = ''; form.phone = ''; form.message = ''
+    errors.service = ''; errors.name = ''; errors.phone = ''; errors.message = ''
 }
 
-const resetToForm = () => {
-    submitted.value = false
-}
+const resetToForm = () => { submitted.value = false }
 
 /* ── Submit ──────────────────────────────────────────────── */
 const handleSubmit = async () => {
-    if (honeypot.value) {
-        submitted.value = true
-        return
-    }
-
+    if (honeypot.value) { submitted.value = true; return }
     if (!validateAll()) return
 
     loading.value = true
     try {
-        /*
-          EmailJS IDs read from environment variables, kept separate
-          from the senior-care form's IDs so cleaning inquiries route
-          to a different inbox/template if you want.
-          Add these to your .env file:
-            VITE_EMAILJS_CLEANING_SERVICE_ID=service_xxxxxxx
-            VITE_EMAILJS_CLEANING_TEMPLATE_ID=template_xxxxxxx
-            VITE_EMAILJS_PUBLIC_KEY=HqGKm1H0vhqeb0y1z
-          (public key can be shared across forms — it's meant to be
-          exposed client-side)
-        */
-        const SERVICE_ID = import.meta.env.VITE_EMAILJS_CLEANING_SERVICE_ID
-        const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_CLEANING_TEMPLATE_ID
+        const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
+        const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
         const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
         emailjs.init(PUBLIC_KEY)
-
         await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+            service: form.service,
             name: form.name,
             phone: form.phone,
-            service: form.service,
             message: form.message,
         })
 
@@ -289,62 +265,69 @@ const handleSubmit = async () => {
             icon: 'success',
             title: t('cleaningContact.swalSuccessTitle'),
             text: t('cleaningContact.swalSuccessText'),
-            confirmButtonColor: '#CC933A',
+            confirmButtonColor: '#45137D',
             timer: 3000,
             showConfirmButton: true,
         })
-    } catch (error) {
-        console.error('EmailJS Error:', error)
+    } catch (err) {
+        console.error('EmailJS Error:', err)
         Swal.fire({
             icon: 'error',
             title: t('cleaningContact.swalErrorTitle'),
             text: t('cleaningContact.swalErrorText'),
-            confirmButtonColor: '#CC933A',
+            confirmButtonColor: '#45137D',
         })
     } finally {
         loading.value = false
     }
 }
 
-/* ── Helper: scroll to footer hours if present ───────────── */
-const scrollToHours = () => {
-    const el = document.getElementById('footer')
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
-}
-
 onMounted(() => {
-    AOS.init({ duration: 860, once: true, easing: 'ease-out-cubic' })
+    AOS.init({ duration: 860, once: true, easing: 'ease-out-cubic', offset: 50 })
 })
 </script>
 
 <style scoped>
 /*
-  Colors read from the main.css :root tokens — same deep-purple
-  + gold pairing as CleaningHero.vue / CleaningServices.vue.
-  rgba() fallbacks use the RGB equivalents of --color-primary-deep
-  (#1A0535 = rgb(26,5,53)) and --color-gold (#CC933A = rgb(204,147,58)).
+  All colors from main.css tokens.
+  SVG hardcoded hex:
+    #CC933A = --color-gold
+    #e0aa54 = --color-gold-bright
+    #45137D = --color-primary
 */
 
 /* ─── Section ───────────────────────────────────────────── */
 .cleaning-contact {
     position: relative;
-    background: var(--color-bg-soft);
+    background: var(--color-bg);
     padding: 100px 40px 110px;
     overflow: hidden;
 }
 
 .cc-blob {
     position: absolute;
-    bottom: -160px;
-    left: -160px;
-    width: 460px;
-    height: 460px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(204, 147, 58, 0.07) 0%, transparent 70%);
     pointer-events: none;
     z-index: 0;
 }
 
+.cc-blob--tr {
+    top: -140px;
+    right: -140px;
+    width: 440px;
+    height: 440px;
+    background: radial-gradient(circle, rgba(204, 147, 58, 0.07) 0%, transparent 70%);
+}
+
+.cc-blob--bl {
+    bottom: -140px;
+    left: -140px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(69, 19, 125, 0.06) 0%, transparent 70%);
+}
+
+/* ─── Inner grid ────────────────────────────────────────── */
 .cc-inner {
     position: relative;
     z-index: 1;
@@ -356,37 +339,37 @@ onMounted(() => {
     align-items: center;
 }
 
-/* ════════════════════════════════════════════════════════════
+/* ════════════════════════════════════════════════════════
    LEFT — info
-═════════════════════════════════════════════════════════════ */
-.cc-label-row {
+═══════════════════════════════════════════════════════ */
+.label-row {
     display: flex;
     align-items: center;
     gap: 14px;
     margin-bottom: 14px;
 }
 
-.cc-label-line {
-    width: 32px;
+.label-line {
+    width: 28px;
     height: 1px;
     background: var(--color-gold);
 }
 
-.cc-label {
+.section-label {
     font-family: var(--font-body);
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 700;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.13em;
     text-transform: uppercase;
     color: var(--color-gold);
 }
 
 .cc-title {
     font-family: var(--font-display);
-    font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+    font-size: clamp(1.9rem, 3vw, 2.5rem);
     font-weight: 700;
-    color: var(--color-primary-deep);
-    line-height: 1.25;
+    color: var(--color-primary);
+    line-height: 1.22;
     margin-bottom: 14px;
 }
 
@@ -395,34 +378,34 @@ onMounted(() => {
     font-size: 1rem;
     color: var(--color-text-muted);
     line-height: 1.75;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 }
 
-/* ─── Phone CTA ─────────────────────────────────────────── */
+/* Phone CTA */
 .cc-phone-cta {
     display: flex;
-    gap: 16px;
-    background: var(--color-bg);
+    align-items: center;
+    gap: 14px;
+    background: var(--color-bg-soft);
     border: 1.5px solid var(--color-border);
     border-radius: var(--radius-md);
-    align-items: center;
-    padding: 20px 24px;
+    padding: 18px 22px;
     text-decoration: none;
+    margin-bottom: 18px;
     transition: border-color 0.22s ease, box-shadow 0.22s ease, transform 0.22s ease;
-    margin-bottom: 22px;
 }
 
 .cc-phone-cta:hover {
     border-color: var(--color-gold);
-    box-shadow: 0 8px 28px rgba(204, 147, 58, 0.16);
+    box-shadow: 0 8px 28px rgba(204, 147, 58, 0.14);
     transform: translateY(-2px);
 }
 
-.cc-phone-icon-wrap {
-    width: 52px;
-    height: 52px;
+.cc-phone-icon {
+    width: 48px;
+    height: 48px;
     border-radius: var(--radius-sm);
-    background: var(--color-primary-deep);
+    background: var(--color-primary);
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -433,93 +416,92 @@ onMounted(() => {
 .cc-phone-text {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .cc-phone-label {
     font-family: var(--font-body);
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     color: var(--color-text-muted);
     margin-bottom: 2px;
 }
 
 .cc-phone-number {
     font-family: var(--font-display);
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     font-weight: 700;
-    color: var(--color-primary-deep);
-    letter-spacing: 0.02em;
+    color: var(--color-primary);
+    letter-spacing: 0.01em;
 }
 
 .cc-phone-arrow {
-    margin-left: auto;
     color: var(--color-gold);
     flex-shrink: 0;
 }
 
-/* ─── Quick links (email / hours) ────────────────────────── */
+/* Quick links */
 .cc-quick-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 28px;
+    gap: 8px;
+    margin-bottom: 24px;
 }
 
 .cc-quick-link {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 7px;
     font-family: var(--font-body);
-    font-size: 0.83rem;
+    font-size: 0.82rem;
     font-weight: 500;
     color: var(--color-text-muted);
-    background: var(--color-bg);
+    background: var(--color-bg-soft);
     border: 1px solid var(--color-border);
-    padding: 8px 14px;
+    padding: 7px 13px;
     border-radius: 50px;
     text-decoration: none;
-    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+    transition: border-color 0.2s ease, color 0.2s ease;
 }
 
-.cc-quick-link:hover {
+a.cc-quick-link:hover {
     border-color: rgba(204, 147, 58, 0.35);
-    color: var(--color-primary-deep);
-    background: var(--color-gold-light);
+    color: var(--color-primary);
 }
 
-/* ─── Trust list ────────────────────────────────────────── */
-.cc-trust {
+/* Trust list */
+.cc-trust-list {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 12px;
 }
 
 .cc-trust-item {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     font-family: var(--font-body);
-    font-size: 0.92rem;
+    font-size: 0.88rem;
     color: var(--color-text-muted);
 }
 
 .cc-trust-check {
-    width: 26px;
-    height: 26px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
     background: var(--color-gold-light);
-    color: var(--color-gold);
+    border: 1px solid rgba(204, 147, 58, 0.22);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
 }
 
-/* ════════════════════════════════════════════════════════════
+/* ════════════════════════════════════════════════════════
    RIGHT — form card
-═════════════════════════════════════════════════════════════ */
+═══════════════════════════════════════════════════════ */
 .cc-form-wrap {
     position: relative;
-    background: var(--color-primary-deep);
+    background: var(--color-primary);
     border-radius: var(--radius-lg);
     padding: 44px 40px;
     overflow: hidden;
@@ -545,41 +527,53 @@ onMounted(() => {
     pointer-events: none;
 }
 
+/* Gold top accent */
+.cc-form-wrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(to right, var(--color-gold-bright), var(--color-gold), transparent);
+}
+
 .cc-form-badge {
     position: relative;
     z-index: 2;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 7px;
     background: rgba(204, 147, 58, 0.13);
-    border: 1px solid rgba(204, 147, 58, 0.32);
+    border: 1px solid rgba(204, 147, 58, 0.30);
     color: var(--color-gold-bright);
     font-family: var(--font-body);
     font-size: 0.72rem;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.10em;
     text-transform: uppercase;
     padding: 6px 16px;
     border-radius: 50px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
 .cc-form-title {
     position: relative;
     z-index: 2;
     font-family: var(--font-display);
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
+/* ─── Form ───────────────────────────────────────────────── */
 .cc-form {
     position: relative;
     z-index: 2;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 15px;
 }
 
 .cc-form-group {
@@ -588,70 +582,62 @@ onMounted(() => {
     gap: 6px;
 }
 
-.cc-form label {
+label {
     font-family: var(--font-body);
-    font-size: 0.8rem;
+    font-size: 0.80rem;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.72);
     letter-spacing: 0.02em;
 }
 
-.cc-form input,
-.cc-form select,
-.cc-form textarea {
+input,
+textarea,
+select {
     font-family: var(--font-body);
     font-size: 0.95rem;
     color: #ffffff;
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.07);
     border: 1.5px solid rgba(255, 255, 255, 0.14);
     border-radius: var(--radius-sm);
-    padding: 13px 16px;
+    padding: 12px 15px;
     transition: border-color 0.2s ease, background 0.2s ease;
     outline: none;
     resize: vertical;
+    -webkit-appearance: none;
 }
 
-.cc-form select {
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 16px center;
-    padding-right: 40px;
-}
-
-.cc-form select option {
-    background: var(--color-primary-deep);
+select option {
+    background: var(--color-primary-dark);
     color: #ffffff;
 }
 
-.cc-form input::placeholder,
-.cc-form textarea::placeholder {
-    color: rgba(255, 255, 255, 0.36);
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.35);
     font-weight: 300;
 }
 
-.cc-form input:focus,
-.cc-form select:focus,
-.cc-form textarea:focus {
+input:focus,
+textarea:focus,
+select:focus {
     border-color: var(--color-gold);
     background: rgba(255, 255, 255, 0.10);
 }
 
-.cc-form input.has-error,
-.cc-form select.has-error,
-.cc-form textarea.has-error {
+input.has-error,
+textarea.has-error,
+select.has-error {
     border-color: #f08b8b;
     background: rgba(240, 139, 139, 0.07);
 }
 
 .cc-field-error {
     font-family: var(--font-body);
-    font-size: 0.74rem;
+    font-size: 0.73rem;
     color: #f5a5a5;
-    margin-top: 2px;
 }
 
-/* ─── Honeypot — hidden from real users, visible to bots ─── */
+/* Honeypot */
 .cc-honeypot {
     position: absolute;
     left: -9999px;
@@ -660,8 +646,8 @@ onMounted(() => {
     overflow: hidden;
 }
 
-/* ─── Submit button ─────────────────────────────────────── */
-.cc-submit-btn {
+/* Submit button */
+.cc-submit {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -672,24 +658,24 @@ onMounted(() => {
     font-size: 0.95rem;
     font-weight: 700;
     border: none;
-    padding: 15px 28px;
+    padding: 14px 28px;
     border-radius: 50px;
     cursor: pointer;
-    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
     margin-top: 4px;
     box-shadow:
         0 8px 24px rgba(204, 147, 58, 0.30),
         inset 0 1px 0 rgba(255, 255, 255, 0.22);
+    transition: transform 0.22s ease, box-shadow 0.22s ease, opacity 0.2s ease;
 }
 
-.cc-submit-btn:hover:not(:disabled) {
+.cc-submit:hover:not(:disabled) {
     transform: translateY(-2px);
     box-shadow:
         0 12px 32px rgba(204, 147, 58, 0.40),
         inset 0 1px 0 rgba(255, 255, 255, 0.22);
 }
 
-.cc-submit-btn:disabled {
+.cc-submit:disabled {
     opacity: 0.55;
     cursor: not-allowed;
     background: rgba(204, 147, 58, 0.45);
@@ -702,21 +688,20 @@ onMounted(() => {
     border: 2px solid rgba(26, 5, 53, 0.25);
     border-top-color: var(--color-primary-deep);
     border-radius: 50%;
-    animation: cc-spin 0.8s linear infinite;
+    animation: spin 0.8s linear infinite;
     flex-shrink: 0;
 }
 
-@keyframes cc-spin {
+@keyframes spin {
     to {
         transform: rotate(360deg);
     }
 }
 
-/* ─── Privacy microcopy ──────────────────────────────────── */
 .cc-privacy {
     font-family: var(--font-body);
-    font-size: 0.72rem;
-    color: rgba(255, 255, 255, 0.50);
+    font-size: 0.70rem;
+    color: rgba(255, 255, 255, 0.45);
     text-align: center;
     line-height: 1.5;
     margin-top: 2px;
@@ -730,74 +715,70 @@ onMounted(() => {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 28px 8px 12px;
+    padding: 24px 8px 8px;
+    gap: 14px;
 }
 
 .cc-success-icon {
-    width: 64px;
-    height: 64px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    background: rgba(204, 147, 58, 0.18);
-    border: 1.5px solid rgba(204, 147, 58, 0.4);
-    color: var(--color-gold-bright);
+    background: rgba(204, 147, 58, 0.16);
+    border: 1.5px solid rgba(204, 147, 58, 0.38);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 18px;
 }
 
 .cc-success-title {
     font-family: var(--font-display);
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 10px;
 }
 
 .cc-success-text {
     font-family: var(--font-body);
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.72);
     line-height: 1.65;
-    max-width: 320px;
-    margin-bottom: 24px;
+    max-width: 300px;
 }
 
 .cc-reset-btn {
     background: rgba(255, 255, 255, 0.10);
-    border: 1.5px solid rgba(255, 255, 255, 0.30);
+    border: 1.5px solid rgba(255, 255, 255, 0.28);
     color: #ffffff;
     font-family: var(--font-body);
     font-size: 0.85rem;
     font-weight: 600;
-    padding: 11px 26px;
+    padding: 10px 24px;
     border-radius: 50px;
     cursor: pointer;
-    transition: background 0.2s ease, border-color 0.2s ease;
+    transition: background 0.2s ease;
 }
 
 .cc-reset-btn:hover {
     background: rgba(255, 255, 255, 0.16);
-    border-color: rgba(255, 255, 255, 0.5);
 }
 
-/* ─── Fade-swap transition (form ↔ success) ─────────────── */
-.cc-fade-swap-enter-active,
-.cc-fade-swap-leave-active {
+/* Fade swap transition */
+.fade-swap-enter-active,
+.fade-swap-leave-active {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.cc-fade-swap-enter-from {
+.fade-swap-enter-from {
     opacity: 0;
     transform: translateY(10px);
 }
 
-.cc-fade-swap-leave-to {
+.fade-swap-leave-to {
     opacity: 0;
     transform: translateY(-10px);
 }
 
-/* ─── Responsive ────────────────────────────────────────── */
+/* ─── Responsive ─────────────────────────────────────────── */
 @media (max-width: 900px) {
     .cc-inner {
         grid-template-columns: 1fr;
@@ -811,24 +792,19 @@ onMounted(() => {
     }
 
     .cc-form-wrap {
-        padding: 32px 24px;
+        padding: 32px 22px;
     }
 
     .cc-phone-number {
-        font-size: 1.2rem;
-    }
-
-    .cc-phone-cta {
-        padding: 16px 18px;
+        font-size: 1.15rem;
     }
 }
 
-/* ─── Reduced motion ─────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
 
     .cc-spinner,
-    .cc-fade-swap-enter-active,
-    .cc-fade-swap-leave-active {
+    .fade-swap-enter-active,
+    .fade-swap-leave-active {
         transition: none !important;
         animation: none !important;
     }

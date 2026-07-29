@@ -19,7 +19,7 @@
                     </div>
                 </a>
 
-                <p class="footer-desc">{{ t('footer.desc') }}</p>
+                <p class="footer-desc">{{ page === 'cleaning' ? t('footer.cleaningDesc') : t('footer.desc') }}</p>
 
                 <!-- Social links -->
                 <div class="footer-socials">
@@ -29,14 +29,10 @@
                     </a>
                 </div>
 
-                <!-- Cleaning page shortcut -->
-                <a href="/cleaning" class="footer-cleaning-link">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                        <polyline points="9 22 9 12 15 12 15 22" />
-                    </svg>
-                    {{ t('footer.cleaningLink') }}
+                <!-- Cross-page shortcut — flips based on which page we're on -->
+                <a :href="crossLink.href" class="footer-cleaning-link">
+                    <component :is="crossLink.icon" />
+                    {{ t(crossLink.label) }}
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                         stroke-linecap="round">
                         <line x1="5" y1="12" x2="19" y2="12" />
@@ -185,6 +181,54 @@ const props = defineProps({
         type: String,
         default: 'Non-Medical Support Services',
     },
+    /*
+      page: 'healthcare' (default) or 'cleaning'
+      Controls which cross-page link appears in the footer brand column.
+      Healthcare page → shows "Our Cleaning Services" → /cleaning
+      Cleaning page   → shows "Non-Medical Care Services" → /
+    */
+    page: {
+        type: String,
+        default: 'healthcare',
+    },
+})
+
+/* Cross-link icon components */
+const IconBroom = defineComponent({
+    render: () => h('svg', {
+        width: 13, height: 13, viewBox: '0 0 24 24',
+        fill: 'none', stroke: 'currentColor',
+        'stroke-width': '2.2', 'stroke-linecap': 'round', 'stroke-linejoin': 'round',
+    }, [
+        h('path', { d: 'M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z' }),
+        h('polyline', { points: '9 22 9 12 15 12 15 22' }),
+    ]),
+})
+
+const IconHeart = defineComponent({
+    render: () => h('svg', {
+        width: 13, height: 13, viewBox: '0 0 24 24',
+        fill: 'none', stroke: 'currentColor',
+        'stroke-width': '2.2', 'stroke-linecap': 'round', 'stroke-linejoin': 'round',
+    }, [
+        h('path', { d: 'M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z' }),
+    ]),
+})
+
+/* Computed cross-link — reacts to the page prop */
+const crossLink = computed(() => {
+    if (props.page === 'cleaning') {
+        return {
+            href: '/',
+            label: 'footer.careLink',
+            icon: IconHeart,
+        }
+    }
+    return {
+        href: '/cleaning',
+        label: 'footer.cleaningLink',
+        icon: IconBroom,
+    }
 })
 
 const rawPhone = '+16138516775'
@@ -256,7 +300,7 @@ const quickLinks = [
     { id: 'contact', label: 'navbar.contact' },
 ]
 
-const serviceLinks = [
+const healthcareServiceLinks = [
     'ourServices.companionship.title',
     'ourServices.errands.title',
     'ourServices.mealPrep.title',
@@ -264,6 +308,18 @@ const serviceLinks = [
     'ourServices.transportation.title',
     'ourServices.respite.title',
 ]
+
+const cleaningServiceLinks = [
+    'cleaningServices.home.title',
+    'cleaningServices.office.title',
+    'cleaningServices.deep.title',
+    'cleaningServices.moveIn.title',
+    'cleaningServices.airbnb.title',
+]
+
+const serviceLinks = computed(() =>
+    props.page === 'cleaning' ? cleaningServiceLinks : healthcareServiceLinks
+)
 
 /* ── Helpers ────────────────────────────────────────────── */
 const scrollTo = (id) => {

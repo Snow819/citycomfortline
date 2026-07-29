@@ -1,7 +1,8 @@
 <template>
     <div>
         <TopBanner />
-        <Navbar />
+        <Navbar page="healthcare" />
+        <CleaningBanner />
         <HeroSection />
         <AboutSection />
         <OurServices />
@@ -9,11 +10,14 @@
         <ServiceArea />
         <Satisfaction />
         <ContactSection />
-        <SiteFooter tagline="Non-Medical Support Services" />
+        <SiteFooter tagline="Non-Medical Support Services" page="healthcare" />
     </div>
 </template>
 
 <script setup>
+import { usePageTitle } from '@/composables/usePageTitle'
+import CleaningBanner from '@/components/CleaningBanner.vue'
+usePageTitle('Non-Medical Senior Support Services | Swift Comfort Line')
 import TopBanner from '@/components/TopBanner.vue'
 import Navbar from '@/components/Navbar.vue'
 import HeroSection from '@/components/HeroSection.vue'

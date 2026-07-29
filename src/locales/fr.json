@@ -8,16 +8,18 @@
     "contact": "Nous joindre",
     "getInTouch": "Nous contacter",
     "cleaning": "Services de Nettoyage",
-    "cleaningTitle": "Visiter notre page de nettoyage professionnel"
+    "cleaningTitle": "Visiter notre page de nettoyage professionnel",
+    "cleaningTagline": "Services de Nettoyage Professionnels",
+    "healthcareTagline": "Services de Soutien Non Médicaux"
   },
   "hero": {
-    "button2": "Nos Services",
-    "trust1": "Agréé & Assuré",
-    "trust2": "Disponible 24h / 24",
-    "trust3": "Soignants Certifiés",
-    "stat1": "Familles Servies",
-    "stat2": "Taux de Satisfaction",
-    "stat3": "Ans d'Expérience",
+    "button2": "Nos Services de Soutien aux Aînés",
+    "trust1": "Soignants Bienveillants",
+    "trust2": "Horaires Flexibles",
+    "trust3": "Consultation Gratuite",
+    "stat1": "Familles Soutenues",
+    "stat2": "Satisfaction Client",
+    "stat3": "Ans de Service",
     "cleaningBtn": "Nos Services de Nettoyage",
     "slides": {
       "1": {
@@ -67,9 +69,9 @@
     "chip1": "Bienveillance d'Abord",
     "chip2": "Sécurité Garantie",
     "chip3": "Noté 5 Étoiles",
-    "stat1": "Familles Servies",
-    "stat2": "Taux de Satisfaction",
-    "stat3": "Ans de Soins",
+    "stat1": "Familles Soutenues",
+    "stat2": "Satisfaction Client",
+    "stat3": "Ans de Service",
     "stat4": "Toujours Disponible",
     "cta": "Notre Histoire",
     "callUs": "Appelez-Nous",
@@ -211,7 +213,7 @@
   "serviceAreas": {
     "label": "Où Nous Intervenons",
     "title": "Fiers de Servir les Familles à l'Échelle Nationale",
-    "boundary": "Peu importe où vous habitez, Swift Comfort Line est là pour vous aider. Nous offrons des services de soins bienveillants aux familles partout au Canada.",
+    "boundary": "Peu importe où vous êtes au Canada, Swift Comfort Line est là pour vous. Nous offrons des services de soins non médicaux aux familles partout au pays.",
     "canadaTitle": "Partout au Canada",
     "canadaSub": "D'un océan à l'autre, nous sommes là pour vous",
     "coveragePill": "Couverture Nationale",
@@ -278,8 +280,8 @@
   },
   "contact": {
     "label": "Contactez-Nous",
-    "title": "Parlons des Soins de Votre Famille",
-    "subtitle": "Contactez-nous dès aujourd'hui pour une consultation gratuite et sans engagement. Nous écouterons vos besoins et bâtirons un plan de soins adapté à votre famille.",
+    "title": "Parlons de Vos Besoins en Soutien",
+    "subtitle": "Contactez-nous dès aujourd'hui pour une consultation gratuite et sans engagement. Nous écouterons vos besoins et bâtirons un plan de soins adapté.",
     "callUs": "Appelez-Nous Directement",
     "phone": "+1 (613) 851-6775",
     "hoursValue": "Support 24h / 24, 7j / 7",
@@ -324,7 +326,9 @@
     "rights": "Tous droits réservés.",
     "privacy": "Politique de Confidentialité",
     "terms": "Conditions d'Utilisation",
-    "backToTop": "Retour en haut"
+    "backToTop": "Retour en haut",
+    "careLink": "Services de Soins Non Médicaux",
+    "cleaningDesc": "Nettoyage résidentiel, commercial, en profondeur, entrée/sortie et Airbnb au service d'Ottawa et des communautés environnantes."
   },
   "banner": {
     "message": "Vous cherchez des services de nettoyage professionnels?",
@@ -335,7 +339,7 @@
     "badge": "Services de Nettoyage Professionnels",
     "line1": "Un Standard Plus Élevé",
     "line2": "de Propreté.",
-    "subtitle": "Nettoyage résidentiel, commercial et de locations à court terme partout au Canada. Des professionnels fiables et attentifs aux détails qui respectent votre espace.",
+    "subtitle": "Nettoyage résidentiel, commercial et de locations à court terme au service d'Ottawa et des communautés environnantes. Des professionnels fiables et attentifs aux détails.",
     "cta1": "Demander un Devis",
     "cta2": "Voir Nos Services",
     "careBtn": "Services de Soins Non Médicaux",
@@ -346,7 +350,7 @@
   "cleaningServices": {
     "title": "Nettoyage,",
     "titleAccent": "Raffiné.",
-    "subtitle": "Du ménage quotidien au grand nettoyage en passant par les remises en état de locations courte durée — nous gérons chaque détail à votre place.",
+    "subtitle": "Du ménage quotidien au grand nettoyage en passant par les remises Airbnb — au service d'Ottawa et de la région.",
     "ctaText": "Prêt pour un espace impeccablement propre?",
     "ctaBtn": "Demander un Devis Gratuit",
     "home": {
@@ -374,7 +378,7 @@
     "label": "Notre Approche",
     "title": "Chaque Détail",
     "titleAccent": "Compte.",
-    "subtitle": "Notre équipe offre un niveau de propreté supérieur, avec soin, constance et un profond respect pour votre espace — à chaque visite.",
+    "subtitle": "Notre équipe offre un niveau de propreté supérieur, avec soin et respect pour votre espace — au service d'Ottawa et de la région.",
     "badge": "Service 5 Étoiles",
     "cta": "Réserver un Nettoyage",
     "check1": {
@@ -396,7 +400,7 @@
   },
   "cleaningTesti": {
     "label": "Avis Clients",
-    "title": "Approuvé Partout au Canada",
+    "title": "Approuvé à Ottawa",
     "ratingLabel": "Note Moyenne",
     "verified": "Client Vérifié",
     "items": {
@@ -420,7 +424,7 @@
   "cleaningCTA": {
     "label": "Commencer",
     "title": "Prêt pour un Espace Impeccablement Propre?",
-    "subtitle": "Réservez un nettoyage ponctuel ou établissez un programme régulier. Nous nous occupons de chaque détail à votre place.",
+    "subtitle": "Réservez un nettoyage ponctuel ou établissez un programme régulier. Fiers de servir Ottawa et les communautés environnantes.",
     "btn": "Obtenir un Devis",
     "chip1": "Assuré & Cautionné",
     "chip2": "Horaires Flexibles",
@@ -429,37 +433,44 @@
     "infoSub": "Appelez-nous et nous arrangerons ça aujourd'hui"
   },
   "cleaningContact": {
-    "label": "Contactez-nous",
-    "title": "Rendons votre espace impeccable",
-    "subtitle": "Contactez-nous dès aujourd'hui pour une soumission gratuite et sans engagement. Dites-nous ce dont vous avez besoin et nous nous occupons du reste.",
-    "callUs": "Appelez-nous directement",
-    "phone": "+1 (613) 851-6775",
-    "hoursValue": "Lun–Sam, 8h–18h",
-    "formBadge": "Soumission gratuite",
-    "formTitle": "Demander une soumission",
-    "nameLabel": "Nom complet",
-    "namePlaceholder": "Jane Smith",
-    "phoneLabel": "Numéro de téléphone",
+    "label": "Obtenir un Devis",
+    "title": "Rendons Votre Espace Impeccable",
+    "subtitle": "Demandez un devis gratuit et sans engagement. Nous servons Ottawa et la région et répondons dans les 2 heures.",
+    "callUs": "Appelez-Nous Directement",
+    "hours": "7 jours sur 7, horaires flexibles",
+    "formBadge": "Devis Gratuit",
+    "formTitle": "Demander un Devis de Nettoyage",
+    "serviceLabel": "Type de Service",
+    "servicePlaceholder": "Sélectionnez un service...",
+    "nameLabel": "Nom Complet",
+    "namePlaceholder": "Jeanne Tremblay",
+    "phoneLabel": "Numéro de Téléphone",
     "phonePlaceholder": "(613) 555-0123",
-    "serviceLabel": "Service souhaité",
-    "servicePlaceholder": "Sélectionnez un service",
-    "messageLabel": "Parlez-nous du projet",
-    "messagePlaceholder": "Superficie de l'espace, date préférée, demandes particulières...",
-    "submit": "Demander une soumission",
+    "messageLabel": "Détails Supplémentaires",
+    "messagePlaceholder": "Parlez-nous de votre espace, sa taille, la fréquence souhaitée...",
+    "submit": "Envoyer la Demande",
     "sending": "Envoi en cours...",
     "privacyNote": "Vos informations restent confidentielles et ne sont jamais partagées avec des tiers.",
-    "successTitle": "Demande envoyée !",
-    "successText": "Merci de nous avoir contactés. Nous vous enverrons une soumission dans les 2 heures.",
-    "sendAnother": "Envoyer une autre demande",
-    "swalSuccessTitle": "Demande envoyée !",
-    "swalSuccessText": "Merci ! Nous vous répondrons sous peu.",
+    "successTitle": "Demande Envoyée !",
+    "successText": "Merci ! Un membre de notre équipe de nettoyage vous contactera dans les 2 heures.",
+    "sendAnother": "Envoyer une Autre Demande",
+    "swalSuccessTitle": "Demande Envoyée !",
+    "swalSuccessText": "Nous vous contacterons sous peu.",
     "swalErrorTitle": "Oups...",
-    "swalErrorText": "Une erreur s'est produite. Veuillez réessayer ou nous appeler directement.",
+    "swalErrorText": "Une erreur est survenue. Veuillez réessayer ou nous appeler directement.",
+    "trust1": "Devis gratuits, sans engagement",
+    "trust2": "Service le jour même disponible",
+    "trust3": "Pleinement assuré et cautionné",
+    "trust4": "Satisfaction garantie",
     "errors": {
-      "name": "Veuillez saisir votre nom complet.",
-      "phone": "Veuillez saisir un numéro de téléphone valide.",
-      "service": "Veuillez sélectionner un service.",
-      "message": "Veuillez nous en dire un peu plus (10 caractères minimum)."
+      "service": "Veuillez sélectionner un type de service.",
+      "name": "Veuillez entrer votre nom complet.",
+      "phone": "Veuillez entrer un numéro de téléphone valide.",
+      "message": "Veuillez ajouter quelques détails supplémentaires (5 caractères minimum)."
     }
+  },
+  "cleaningBanner": {
+    "message": "Vous cherchez des services de nettoyage professionnels?",
+    "linkText": "Voir nos services de nettoyage"
   }
 }

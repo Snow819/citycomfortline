@@ -1,7 +1,7 @@
 <template>
     <div>
         <TopBanner />
-        <Navbar />
+        <Navbar page="cleaning" />
         <CleaningHero />
         <CleaningAbout />
         <!-- <CleaningDetails /> -->
@@ -9,11 +9,13 @@
         <CleaningTestimonials />
         <CleaningCTA />
         <CleaningContact />
-        <SiteFooter tagline="Professional Cleaning" />
+        <SiteFooter tagline="Professional Cleaning Services" page="cleaning" />
     </div>
 </template>
 
 <script setup>
+import { usePageTitle } from '@/composables/usePageTitle'
+usePageTitle('Professional Cleaning Services in Ottawa | Swift Comfort Line')
 import TopBanner from '@/components/TopBanner.vue'
 import Navbar from '@/components/Navbar.vue'
 import CleaningHero from '@/components/CleaningHero.vue'

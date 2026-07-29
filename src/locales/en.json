@@ -8,16 +8,18 @@
     "contact": "Contact Us",
     "getInTouch": "Get in Touch",
     "cleaning": "Cleaning Services",
-    "cleaningTitle": "Visit our Professional Cleaning page"
+    "cleaningTitle": "Visit our Professional Cleaning page",
+    "cleaningTagline": "Professional Cleaning Services",
+    "healthcareTagline": "Non-Medical Support Services"
   },
   "hero": {
-    "button2": "Our Services",
-    "trust1": "Licensed & Insured",
-    "trust2": "24 / 7 Availability",
-    "trust3": "Certified Caregivers",
-    "stat1": "Families Served",
-    "stat2": "Satisfaction Rate",
-    "stat3": "Years of Care",
+    "button2": "Our Senior Support Services",
+    "trust1": "Compassionate Caregivers",
+    "trust2": "Flexible Scheduling",
+    "trust3": "Free Consultation",
+    "stat1": "Families Supported",
+    "stat2": "Client Satisfaction",
+    "stat3": "Years of Service",
     "cleaningBtn": "Our Cleaning Services",
     "slides": {
       "1": {
@@ -67,10 +69,10 @@
     "chip1": "Compassion First",
     "chip2": "Safety Guaranteed",
     "chip3": "5-Star Rated",
-    "stat1": "Families Served",
-    "stat2": "Satisfaction Rate",
-    "stat3": "Years of Care",
-    "stat4": "Always Available",
+    "stat1": "Families Supported",
+    "stat2": "Client Satisfaction",
+    "stat3": "Years of Service",
+    "stat4": "Always Here",
     "cta": "Learn Our Story",
     "callUs": "Call Us Now",
     "expLabel": "Years of Trusted Care",
@@ -211,7 +213,7 @@
   "serviceAreas": {
     "label": "Where We Work",
     "title": "Proudly Serving Families Nationwide",
-    "boundary": "No matter where you call home, Swift Comfort Line is here to help. We provide compassionate care services to families right across Canada.",
+    "boundary": "No matter where you are in Canada, Swift Comfort Line is here to help. We provide compassionate non-medical care services to families across the country.",
     "canadaTitle": "All of Canada",
     "canadaSub": "Coast to coast, we're here for you",
     "coveragePill": "Nationwide Coverage",
@@ -278,7 +280,7 @@
   },
   "contact": {
     "label": "Get In Touch",
-    "title": "Let's Talk About Your Family's Care",
+    "title": "Let's Talk About Your Support Needs",
     "subtitle": "Reach out today for a free, no-obligation consultation. We'll listen to your needs and build a care plan that's right for your family.",
     "callUs": "Call Us Directly",
     "phone": "+1 (613) 851-6775",
@@ -324,7 +326,9 @@
     "rights": "All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "backToTop": "Back to top"
+    "backToTop": "Back to top",
+    "careLink": "Non-Medical Care Services",
+    "cleaningDesc": "Professional home, office, deep, move-in, move-out, and Airbnb turnover cleaning serving Ottawa and surrounding communities."
   },
   "banner": {
     "message": "Looking for professional cleaning services?",
@@ -335,7 +339,7 @@
     "badge": "Professional Cleaning Services",
     "line1": "A Higher Standard",
     "line2": "of Clean.",
-    "subtitle": "Premium home, office and short-term rental cleaning across Canada. Reliable, detail-focused professionals who treat your space with respect.",
+    "subtitle": "Premium home, office and short-term rental cleaning serving Ottawa and surrounding communities. Reliable, detail-focused professionals who respect your space.",
     "cta1": "Request a Cleaning Quote",
     "cta2": "View Our Services",
     "careBtn": "Non-Medical Care Services",
@@ -346,7 +350,7 @@
   "cleaningServices": {
     "title": "Cleaning,",
     "titleAccent": "Refined.",
-    "subtitle": "From everyday home cleaning to deep cleans and short-term rental turnovers — we handle every detail so you don't have to.",
+    "subtitle": "From everyday home cleaning to deep cleans and Airbnb turnovers — serving Ottawa and the surrounding area.",
     "ctaText": "Ready for a spotlessly clean space?",
     "ctaBtn": "Request a Free Quote",
     "home": {
@@ -374,7 +378,7 @@
     "label": "Our Approach",
     "title": "Every Detail",
     "titleAccent": "Matters.",
-    "subtitle": "Our team delivers a higher standard of clean with care, consistency, and deep respect for your space — every single visit.",
+    "subtitle": "Our team delivers a higher standard of clean with care, consistency, and deep respect for your space — serving Ottawa and surrounding communities.",
     "badge": "Rated Service",
     "cta": "Book a Cleaning",
     "check1": {
@@ -396,7 +400,7 @@
   },
   "cleaningTesti": {
     "label": "Client Reviews",
-    "title": "Trusted Across Canada",
+    "title": "Trusted Across Ottawa",
     "ratingLabel": "Average Rating",
     "verified": "Verified Client",
     "items": {
@@ -420,7 +424,7 @@
   "cleaningCTA": {
     "label": "Get Started",
     "title": "Ready for a Beautifully Clean Space?",
-    "subtitle": "Book a one-time clean or set up a regular schedule. We'll take care of every detail so you don't have to.",
+    "subtitle": "Book a one-time clean or set up a regular schedule. Proudly serving Ottawa and surrounding communities.",
     "btn": "Get Your Quote",
     "chip1": "Insured & Bonded",
     "chip2": "Flexible Scheduling",
@@ -429,37 +433,44 @@
     "infoSub": "Call us and we'll arrange it today"
   },
   "cleaningContact": {
-    "label": "Get In Touch",
+    "label": "Get a Quote",
     "title": "Let's Get Your Space Spotless",
-    "subtitle": "Reach out today for a free, no-obligation quote. Tell us what you need and we'll take it from there.",
+    "subtitle": "Request a free, no-obligation quote today. We serve Ottawa and surrounding communities and respond within 2 hours.",
     "callUs": "Call Us Directly",
-    "phone": "+1 (613) 851-6775",
-    "hoursValue": "Mon–Sat, 8am–6pm",
+    "hours": "7 days a week, flexible hours",
     "formBadge": "Free Quote",
-    "formTitle": "Request a Quote",
+    "formTitle": "Request a Cleaning Quote",
+    "serviceLabel": "Service Type",
+    "servicePlaceholder": "Select a service...",
     "nameLabel": "Full Name",
     "namePlaceholder": "Jane Smith",
     "phoneLabel": "Phone Number",
     "phonePlaceholder": "(613) 555-0123",
-    "serviceLabel": "Service Needed",
-    "servicePlaceholder": "Select a service",
-    "messageLabel": "Tell Us About the Job",
-    "messagePlaceholder": "Size of space, preferred date, any special requests...",
-    "submit": "Request Quote",
+    "messageLabel": "Additional Details",
+    "messagePlaceholder": "Tell us about your space, size, frequency...",
+    "submit": "Send Quote Request",
     "sending": "Sending...",
-    "privacyNote": "Your information is kept confidential and is never shared with third parties.",
-    "successTitle": "Request Sent!",
-    "successText": "Thanks for reaching out. We'll get back to you with a quote within 2 hours.",
+    "privacyNote": "Your information is kept confidential and never shared with third parties.",
+    "successTitle": "Quote Request Sent!",
+    "successText": "Thank you! A member of our cleaning team will contact you within 2 hours.",
     "sendAnother": "Send Another Request",
     "swalSuccessTitle": "Request Sent!",
-    "swalSuccessText": "Thank you! We'll be in touch shortly.",
+    "swalSuccessText": "We will be in touch shortly.",
     "swalErrorTitle": "Oops...",
     "swalErrorText": "Something went wrong. Please try again or call us directly.",
+    "trust1": "Free quotes, no obligation",
+    "trust2": "Same-day service available",
+    "trust3": "Fully insured & bonded",
+    "trust4": "Satisfaction guaranteed",
     "errors": {
+      "service": "Please select a service type.",
       "name": "Please enter your full name.",
       "phone": "Please enter a valid phone number.",
-      "service": "Please select a service.",
-      "message": "Please tell us a bit more (at least 10 characters)."
+      "message": "Please add a few more details (at least 5 characters)."
     }
+  },
+  "cleaningBanner": {
+    "message": "Looking for professional cleaning services?",
+    "linkText": "View Our Cleaning Services"
   }
 }
