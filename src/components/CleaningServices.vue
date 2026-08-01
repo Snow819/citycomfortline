@@ -49,46 +49,43 @@ import 'aos/dist/aos.css'
 const { t } = useI18n()
 
 /*
-  SVG stroke/fill now reference the main.css :root tokens via
-  var() — presentation attributes on inline SVG participate in
-  the CSS cascade, so var(--color-primary-deep) and var(--color-gold)
-  resolve the same as they would in a stylesheet. No more hardcoded
-  #0d1b2a / #C9A84C — this page now shares the same brand tokens
-  as the rest of the site.
+  SVG stroke uses #0d1b2a (cleaning dark navy) and #CC933A (cleaning gold).
+  These are NOT main.css purple tokens — intentionally different
+  so the cleaning page has its own visual identity.
 */
 
 const IconHome = defineComponent({
     render: () => h('svg', {
         width: 32, height: 32, viewBox: '0 0 24 24',
-        fill: 'none', stroke: 'var(--color-primary-deep)',
+        fill: 'none', stroke: '#0d1b2a',
         'stroke-width': '1.6', 'stroke-linecap': 'round', 'stroke-linejoin': 'round',
     }, [
         h('path', { d: 'M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z' }),
-        h('polyline', { points: '9 22 9 12 15 12 15 22', stroke: 'var(--color-gold)' }),
+        h('polyline', { points: '9 22 9 12 15 12 15 22', stroke: '#CC933A' }),
     ]),
 })
 
 const IconOffice = defineComponent({
     render: () => h('svg', {
         width: 32, height: 32, viewBox: '0 0 24 24',
-        fill: 'none', stroke: 'var(--color-primary-deep)',
+        fill: 'none', stroke: '#0d1b2a',
         'stroke-width': '1.6', 'stroke-linecap': 'round', 'stroke-linejoin': 'round',
     }, [
         h('rect', { x: 2, y: 3, width: 20, height: 14, rx: 2 }),
-        h('line', { x1: 8, y1: 21, x2: 16, y2: 21, stroke: 'var(--color-gold)' }),
-        h('line', { x1: 12, y1: 17, x2: 12, y2: 21, stroke: 'var(--color-gold)' }),
+        h('line', { x1: 8, y1: 21, x2: 16, y2: 21, stroke: '#CC933A' }),
+        h('line', { x1: 12, y1: 17, x2: 12, y2: 21, stroke: '#CC933A' }),
     ]),
 })
 
 const IconDeep = defineComponent({
     render: () => h('svg', {
         width: 32, height: 32, viewBox: '0 0 24 24',
-        fill: 'none', stroke: 'var(--color-primary-deep)',
+        fill: 'none', stroke: '#0d1b2a',
         'stroke-width': '1.6', 'stroke-linecap': 'round', 'stroke-linejoin': 'round',
     }, [
-        h('path', { d: 'M3 6l3-3 3 3-3 3z', fill: 'var(--color-gold-light)', stroke: 'var(--color-gold)' }),
+        h('path', { d: 'M3 6l3-3 3 3-3 3z', fill: 'rgba(204, 147, 58,0.15)', stroke: '#CC933A' }),
         h('path', { d: 'M9 3h12v4H9z' }),
-        h('path', { d: 'M3 14l3-3 3 3-3 3z', fill: 'var(--color-gold-light)', stroke: 'var(--color-gold)' }),
+        h('path', { d: 'M3 14l3-3 3 3-3 3z', fill: 'rgba(204, 147, 58,0.15)', stroke: '#CC933A' }),
         h('path', { d: 'M9 11h12v4H9z' }),
         h('path', { d: 'M9 19h12v2H9z' }),
     ]),
@@ -97,23 +94,23 @@ const IconDeep = defineComponent({
 const IconMoveIn = defineComponent({
     render: () => h('svg', {
         width: 32, height: 32, viewBox: '0 0 24 24',
-        fill: 'none', stroke: 'var(--color-primary-deep)',
+        fill: 'none', stroke: '#0d1b2a',
         'stroke-width': '1.6', 'stroke-linecap': 'round', 'stroke-linejoin': 'round',
     }, [
         h('path', { d: 'M5 8h14M5 8a2 2 0 1 0 0-4h14a2 2 0 1 0 0 4M5 8l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2L19 8' }),
-        h('line', { x1: 10, y1: 12, x2: 14, y2: 12, stroke: 'var(--color-gold)' }),
+        h('line', { x1: 10, y1: 12, x2: 14, y2: 12, stroke: '#CC933A' }),
     ]),
 })
 
 const IconAirbnb = defineComponent({
     render: () => h('svg', {
         width: 32, height: 32, viewBox: '0 0 24 24',
-        fill: 'none', stroke: 'var(--color-primary-deep)',
+        fill: 'none', stroke: '#0d1b2a',
         'stroke-width': '1.6', 'stroke-linecap': 'round', 'stroke-linejoin': 'round',
     }, [
         h('path', { d: 'M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z' }),
-        h('rect', { x: 9, y: 13, width: 6, height: 9, rx: 1, stroke: 'var(--color-gold)' }),
-        h('circle', { cx: 12, cy: 6, r: 1.5, fill: 'var(--color-gold)', stroke: 'none' }),
+        h('rect', { x: 9, y: 13, width: 6, height: 9, rx: 1, stroke: '#CC933A' }),
+        h('circle', { cx: 12, cy: 6, r: 1.5, fill: '#CC933A', stroke: 'none' }),
     ]),
 })
 
@@ -160,17 +157,9 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/*
-  Colors now read from the global :root tokens in main.css.
-  rgba() fallbacks use the same RGB values as the hex tokens
-  (--color-primary-deep #1A0535 = rgb(26,5,53),
-   --color-gold #CC933A = rgb(204,147,58)) since CSS vars
-  can't be interpolated inside rgba() directly.
-*/
-
 /* ─── Section ───────────────────────────────────────────── */
 .cleaning-services {
-    background: var(--color-bg);
+    background: #ffffff;
     padding: 90px 40px;
     position: relative;
     overflow: hidden;
@@ -206,7 +195,7 @@ onMounted(() => {
     font-family: var(--font-display);
     font-size: clamp(2rem, 3.5vw, 2.8rem);
     font-weight: 700;
-    color: var(--color-primary-deep);
+    color: #0d1b2a;
     line-height: 1.15;
     margin-bottom: 10px;
     letter-spacing: -0.015em;
@@ -214,7 +203,7 @@ onMounted(() => {
 
 .cs-title--accent {
     font-style: italic;
-    color: var(--color-gold);
+    color: #CC933A;
     display: inline;
 }
 
@@ -222,7 +211,7 @@ onMounted(() => {
 .cs-title-line {
     width: 52px;
     height: 3px;
-    background: linear-gradient(to right, var(--color-gold), rgba(204, 147, 58, 0.3));
+    background: linear-gradient(to right, #CC933A, rgba(204, 147, 58, 0.3));
     border-radius: 3px;
     margin: 12px auto 18px;
 }
@@ -230,7 +219,7 @@ onMounted(() => {
 .cs-subtitle {
     font-family: var(--font-body);
     font-size: 1rem;
-    color: var(--color-text-muted);
+    color: #5a6a75;
     max-width: 520px;
     margin: 0 auto;
     line-height: 1.75;
@@ -270,8 +259,8 @@ onMounted(() => {
 
 /* ─── Card ──────────────────────────────────────────────── */
 .cs-card {
-    background: var(--color-bg);
-    border: 1px solid rgba(26, 5, 53, 0.09);
+    background: #ffffff;
+    border: 1px solid rgba(13, 27, 42, 0.09);
     border-radius: 16px;
     padding: 32px 24px;
     display: flex;
@@ -279,7 +268,7 @@ onMounted(() => {
     align-items: center;
     text-align: center;
     gap: 14px;
-    box-shadow: 0 2px 12px rgba(26, 5, 53, 0.06);
+    box-shadow: 0 2px 12px rgba(13, 27, 42, 0.06);
     transition: transform 0.30s ease, box-shadow 0.30s ease, border-color 0.30s ease;
     position: relative;
     overflow: hidden;
@@ -293,7 +282,7 @@ onMounted(() => {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(to right, var(--color-gold), rgba(204, 147, 58, 0.3), transparent);
+    background: linear-gradient(to right, #CC933A, rgba(204, 147, 58, 0.3), transparent);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.35s ease;
@@ -301,7 +290,7 @@ onMounted(() => {
 
 .cs-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 16px 40px rgba(26, 5, 53, 0.12);
+    box-shadow: 0 16px 40px rgba(13, 27, 42, 0.12);
     border-color: rgba(204, 147, 58, 0.25);
 }
 
@@ -314,7 +303,7 @@ onMounted(() => {
     width: 72px;
     height: 72px;
     border-radius: 18px;
-    background: linear-gradient(135deg, var(--color-primary-light), rgba(204, 147, 58, 0.10));
+    background: linear-gradient(135deg, #f5f0e8, rgba(204, 147, 58, 0.10));
     border: 1px solid rgba(204, 147, 58, 0.18);
     display: flex;
     align-items: center;
@@ -333,7 +322,7 @@ onMounted(() => {
     font-family: var(--font-display);
     font-size: 1rem;
     font-weight: 700;
-    color: var(--color-primary-deep);
+    color: #0d1b2a;
     line-height: 1.25;
     margin: 0;
 }
@@ -341,7 +330,7 @@ onMounted(() => {
 .cs-card-desc {
     font-family: var(--font-body);
     font-size: 0.83rem;
-    color: var(--color-text-muted);
+    color: #5a6a75;
     line-height: 1.65;
     margin: 0;
 }
@@ -352,7 +341,7 @@ onMounted(() => {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    background: linear-gradient(135deg, var(--color-primary-deep), var(--color-primary-dark));
+    background: linear-gradient(135deg, #0d1b2a, #162840);
     border-radius: 16px;
     padding: 28px 36px;
     flex-wrap: wrap;
@@ -373,8 +362,8 @@ onMounted(() => {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: linear-gradient(135deg, var(--color-gold-bright), var(--color-gold));
-    color: var(--color-primary-deep);
+    background: linear-gradient(135deg, #d4b050, #CC933A);
+    color: #0d1b2a;
     font-family: var(--font-body);
     font-size: 0.9rem;
     font-weight: 700;

@@ -2,7 +2,7 @@
     <div>
         <TopBanner />
         <Navbar page="healthcare" />
-        <CleaningBanner />
+        <!-- <CleaningBanner /> -->
         <HeroSection />
         <AboutSection />
         <OurServices />
@@ -16,7 +16,7 @@
 
 <script setup>
 import { usePageTitle } from '@/composables/usePageTitle'
-import CleaningBanner from '@/components/CleaningBanner.vue'
+// import CleaningBanner from '@/components/CleaningBanner.vue'
 usePageTitle('Non-Medical Senior Support Services | Swift Comfort Line')
 import TopBanner from '@/components/TopBanner.vue'
 import Navbar from '@/components/Navbar.vue'

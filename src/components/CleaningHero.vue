@@ -3,7 +3,7 @@
 
         <!-- ── Background image ──────────────────────────────── -->
         <div class="hero-bg">
-            <img src="@/assets/cleaninghero.jpg" alt="Beautifully clean living space" class="hero-bg-img" />
+            <img src="@/assets/hero.jpg" alt="Beautifully clean living space" class="hero-bg-img" />
             <div class="hero-bg-overlay"></div>
         </div>
 
@@ -103,15 +103,16 @@ onMounted(() => {
 
 <style scoped>
 /*
-  Colors now read from the global :root tokens in main.css —
-  nothing hardcoded here. Deep-purple background/overlay uses
-  --color-primary-deep, gold accents use --color-gold /
-  --color-gold-bright / --color-gold-dark / --color-gold-light.
+  Cleaning hero uses its own color palette —
+  warm navy/dark tones from the screenshot, NOT the
+  purple brand tokens used on the healthcare page.
+  This keeps the two pages visually distinct.
 
-  rgba() fallbacks below use the same RGB values as the hex
-  tokens (--color-primary-deep #1A0535 = rgb(26,5,53),
-  --color-gold #CC933A = rgb(204,147,58)) since CSS vars can't
-  be interpolated inside rgba() directly in all target browsers.
+  Cleaning palette (scoped to this component):
+    --c-dark:    #0d1b2a   deep navy
+    --c-card:    rgba(13,27,42,0.92)  card bg
+    --c-gold:    #CC933A   cleaning gold (matches screenshot)
+    --c-gold-lt: rgba(204, 147, 58,0.15)
 */
 
 .cleaning-hero {
@@ -120,7 +121,7 @@ onMounted(() => {
     display: flex;
     align-items: center;
     overflow: hidden;
-    background: var(--color-primary-deep);
+    background: #0d1b2a;
 }
 
 /* ─── Background ─────────────────────────────────────────── */
@@ -142,10 +143,10 @@ onMounted(() => {
     position: absolute;
     inset: 0;
     background: linear-gradient(105deg,
-            rgba(26, 5, 53, 0.96) 0%,
-            rgba(26, 5, 53, 0.85) 40%,
-            rgba(26, 5, 53, 0.45) 65%,
-            rgba(26, 5, 53, 0.10) 100%);
+            rgba(13, 27, 42, 0.96) 0%,
+            rgba(13, 27, 42, 0.85) 40%,
+            rgba(13, 27, 42, 0.45) 65%,
+            rgba(13, 27, 42, 0.10) 100%);
 }
 
 /* ─── Inner layout ───────────────────────────────────────── */
@@ -161,9 +162,9 @@ onMounted(() => {
 /* ─── Card ───────────────────────────────────────────────── */
 .hero-card {
     max-width: 560px;
-    background: rgba(26, 5, 53, 0.72);
+    background: rgba(13, 27, 42, 0.72);
     border: 1px solid rgba(204, 147, 58, 0.20);
-    border-radius: var(--radius-lg);
+    border-radius: 20px;
     padding: 48px 44px;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -182,8 +183,8 @@ onMounted(() => {
     font-weight: 700;
     letter-spacing: 0.13em;
     text-transform: uppercase;
-    color: var(--color-gold);
-    background: var(--color-gold-light);
+    color: #CC933A;
+    background: rgba(204, 147, 58, 0.12);
     border: 1px solid rgba(204, 147, 58, 0.30);
     padding: 5px 14px 5px 10px;
     border-radius: 50px;
@@ -194,7 +195,7 @@ onMounted(() => {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: var(--color-gold);
+    background: #CC933A;
     flex-shrink: 0;
     animation: pulseDot 2.5s ease-out infinite;
 }
@@ -228,7 +229,7 @@ onMounted(() => {
 /* Gold underline accent on second line */
 .hero-headline--accent {
     display: block;
-    color: var(--color-gold);
+    color: #CC933A;
     font-style: italic;
     position: relative;
 }
@@ -240,7 +241,7 @@ onMounted(() => {
     left: 0;
     height: 3px;
     width: 55%;
-    background: linear-gradient(to right, var(--color-gold), rgba(204, 147, 58, 0.3), transparent);
+    background: linear-gradient(to right, #CC933A, rgba(204, 147, 58, 0.3), transparent);
     border-radius: 3px;
 }
 
@@ -289,8 +290,8 @@ onMounted(() => {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    background: linear-gradient(135deg, var(--color-gold-bright), var(--color-gold), var(--color-gold-dark));
-    color: var(--color-primary-deep);
+    background: linear-gradient(135deg, #d4b050, #CC933A, #a8872d);
+    color: #0d1b2a;
     font-family: var(--font-body);
     font-size: 0.9rem;
     font-weight: 700;
@@ -333,7 +334,7 @@ onMounted(() => {
 
 .btn-outline:hover {
     background: #ffffff;
-    color: var(--color-primary-deep);
+    color: #0d1b2a;
     border-color: #ffffff;
     transform: translateY(-2px);
 }
@@ -369,7 +370,7 @@ onMounted(() => {
 .btn-care:hover {
     background: rgba(204, 147, 58, 0.15);
     border-color: rgba(204, 147, 58, 0.50);
-    color: var(--color-gold);
+    color: #CC933A;
     transform: translateY(-1px);
 }
 
@@ -404,7 +405,7 @@ onMounted(() => {
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background: var(--color-gold);
+    background: #CC933A;
     flex-shrink: 0;
 }
 

@@ -86,7 +86,7 @@
       "phoneLabel": "Call Us",
       "emailLabel": "Email Us",
       "locationLabel": "Service Area",
-      "locationValue": "Serving Communities Across Canada",
+      "locationValue": "Serving Ottawa and Surrounding Communities",
       "hoursLabel": "Hours of Operation",
       "hoursValue": "24 hours a day, 7 days a week"
     }
@@ -225,7 +225,7 @@
   },
   "testimonials": {
     "label": "Client Stories",
-    "title": "Trusted by Families Across Canada",
+    "title": "Trusted by Ottawa Families",
     "subtitle": "Don't just take our word for it — hear directly from the families and clients we've had the privilege of caring for.",
     "ratingLabel": "Client Feedback",
     "verified": "Client",

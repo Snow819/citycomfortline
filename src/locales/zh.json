@@ -86,7 +86,7 @@
       "phoneLabel": "电话",
       "emailLabel": "电子邮件",
       "locationLabel": "服务地区",
-      "locationValue": "覆盖加拿大各地社区",
+      "locationValue": "服务渥太华及周边社区",
       "hoursLabel": "服务时间",
       "hoursValue": "每天24小时，每周7天"
     }
@@ -225,7 +225,7 @@
   },
   "testimonials": {
     "label": "客户评价",
-    "title": "深受加拿大各地家庭信赖",
+    "title": "深受渥太华家庭信赖",
     "subtitle": "不要只听我们说——直接听听我们有幸照顾过的家庭和客户的真实心声。",
     "ratingLabel": "客户反馈",
     "verified": "客户",

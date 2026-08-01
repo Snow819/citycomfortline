@@ -86,7 +86,7 @@
       "phoneLabel": "Téléphone",
       "emailLabel": "Courriel",
       "locationLabel": "Zone de Service",
-      "locationValue": "Desservant des communautés partout au Canada",
+      "locationValue": "Desservant Ottawa et les communautés environnantes",
       "hoursLabel": "Heures d'Ouverture",
       "hoursValue": "24 heures sur 24, 7 jours sur 7"
     }
@@ -225,7 +225,7 @@
   },
   "testimonials": {
     "label": "Témoignages Clients",
-    "title": "Une Confiance Partagée par des Familles Partout au Canada",
+    "title": "Une Confiance Partagée par des Familles d'Ottawa",
     "subtitle": "Ne nous croyez pas sur parole — écoutez directement les familles et clients que nous avons eu le privilège d'accompagner.",
     "ratingLabel": "Témoignages Clients",
     "verified": "Client",
