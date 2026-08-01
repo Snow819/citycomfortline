@@ -14,40 +14,40 @@
   },
   "hero": {
     "button2": "Our Senior Support Services",
-    "trust1": "Compassionate Caregivers",
+    "trust1": "Reliable and Personal Support",
     "trust2": "Flexible Scheduling",
-    "trust3": "Free Consultation",
-    "stat1": "Families Supported",
-    "stat2": "Client Satisfaction",
-    "stat3": "Years of Service",
+    "trust3": "Serving Ottawa Families",
+    "stat1": "Reliable Support",
+    "stat2": "Flexible Hours",
+    "stat3": "Ottawa Based",
     "cleaningBtn": "Our Cleaning Services",
     "slides": {
       "1": {
-        "badge": "Trusted Home Healthcare",
+        "badge": "Trusted Non-Medical Senior Support",
         "line1": "Professional Care,",
         "line2": "In Your Home",
         "subtitle": "Compassionate, certified caregivers providing tailored support for your loved ones — so they can live with dignity and comfort."
       },
       "2": {
-        "badge": "Digital Health Support",
+        "badge": "Digital Support Services",
         "line1": "Modern Care,",
         "line2": "Always Connected",
         "subtitle": "Technology-enabled healthcare that keeps families informed and loved ones safe, every hour of every day."
       },
       "3": {
-        "badge": "Team-Based Care",
+        "badge": "Team-Based Support",
         "line1": "A Team You",
         "line2": "Can Trust",
         "subtitle": "Our certified specialists work together to deliver seamless, personalised care plans built around each client's unique needs."
       },
       "4": {
-        "badge": "Collaborative Excellence",
+        "badge": "Collaborative Care",
         "line1": "Dedicated to",
         "line2": "Your Wellbeing",
         "subtitle": "Experienced professionals united by a commitment to elevating your standard of care through expertise, empathy, and attention to detail."
       },
       "5": {
-        "badge": "Community-Centred Care",
+        "badge": "Community-Centred Support",
         "line1": "Care That Feels",
         "line2": "Like Family",
         "subtitle": "We build lasting relationships and bring genuine warmth to every home we serve — because true care goes beyond the clinical."
@@ -102,20 +102,20 @@
     "ctaHeading": "Let us build a care plan around your family's needs.",
     "trust": {
       "certified": {
-        "label": "Certified Caregivers",
-        "sub": "Trained & background-checked"
+        "label": "Experienced Team",
+        "sub": "Dedicated support workers"
       },
       "available": {
-        "label": "Available 24 / 7",
-        "sub": "Day, night & weekends"
+        "label": "Flexible Hours",
+        "sub": "Days, evenings & weekends"
       },
       "insured": {
-        "label": "Fully Insured",
-        "sub": "Licensed & bonded"
+        "label": "Ottawa Based",
+        "sub": "Serving your community"
       },
       "rated": {
-        "label": "98% Satisfaction",
-        "sub": "200+ families served"
+        "label": "Personal Approach",
+        "sub": "Care tailored to you"
       }
     },
     "companionship": {
@@ -134,10 +134,10 @@
     },
     "mealPrep": {
       "title": "Meal Preparation",
-      "description": "Nutritious, home-cooked meals prepared fresh to accommodate dietary needs, preferences, and medical requirements.",
+      "description": "Nutritious, home-cooked meals prepared fresh around personal preferences and general dietary requests.",
       "item1": "Personalised meal planning",
       "item2": "Dietary & allergy-aware cooking",
-      "item3": "Grocery coordination"
+      "item3": "Prepared around personal food preferences"
     },
     "housekeeping": {
       "title": "Light Housekeeping",
@@ -212,69 +212,69 @@
   },
   "serviceAreas": {
     "label": "Where We Work",
-    "title": "Proudly Serving Families Nationwide",
-    "boundary": "No matter where you are in Canada, Swift Comfort Line is here to help. We provide compassionate non-medical care services to families across the country.",
-    "canadaTitle": "All of Canada",
-    "canadaSub": "Coast to coast, we're here for you",
-    "coveragePill": "Nationwide Coverage",
-    "point1": "Remote consultations available",
-    "point2": "Care coordinators in every province",
-    "point3": "Flexible scheduling, wherever you are",
+    "title": "Proudly Serving Ottawa and Surrounding Communities",
+    "boundary": "Swift Comfort Line provides compassionate non-medical support services to seniors and families in Ottawa and the surrounding area.",
+    "canadaTitle": "Ottawa & Surrounding Area",
+    "canadaSub": "Serving families in Ottawa and nearby communities",
+    "coveragePill": "Ottawa Area",
+    "point1": "In-person and phone consultations available",
+    "point2": "Flexible scheduling that works for your family",
+    "point3": "Personalised support in your local community",
     "cta": "Check Availability in Your Area",
-    "footnote": "Have questions about service in your specific city or region? Reach out and we'll confirm availability right away."
+    "footnote": "Not sure if we cover your area? Reach out and we will confirm right away."
   },
   "testimonials": {
     "label": "Client Stories",
     "title": "Trusted by Families Across Canada",
     "subtitle": "Don't just take our word for it — hear directly from the families and clients we've had the privilege of caring for.",
-    "ratingLabel": "Average Rating",
-    "verified": "Verified Client",
-    "stat1": "Families Served",
-    "stat2": "Average Rating",
-    "stat3": "Satisfaction Rate",
-    "stat4": "Would Recommend",
-    "ctaText": "Join 200+ families who trust Swift Comfort Line with the care of their loved ones.",
+    "ratingLabel": "Client Feedback",
+    "verified": "Client",
+    "stat1": "Families Supported",
+    "stat2": "Client Feedback",
+    "stat3": "Satisfaction",
+    "stat4": "Recommended",
+    "ctaText": "Reach out today and let us show you what personalised senior support looks like.",
     "ctaBtn": "Book a Free Consultation",
     "items": {
       "1": {
         "text": "Swift Comfort Line has been an absolute blessing for my mother. The caregivers are not just professional — they genuinely care. I finally have peace of mind knowing she's in good hands.",
-        "name": "Margaret O'Connell",
-        "role": "Daughter of Client"
+        "name": "Client Family 1",
+        "role": "Ottawa Area"
       },
       "2": {
         "text": "After my father's stroke, we needed reliable support fast. The team arranged everything within 48 hours and the quality of care has been exceptional ever since.",
-        "name": "David Chen",
-        "role": "Son of Client"
+        "name": "Client Family 2",
+        "role": "Ottawa Area"
       },
       "3": {
         "text": "I was nervous about having someone help me at home, but my caregiver treats me with so much respect and warmth. It doesn't feel like a service — it feels like family.",
-        "name": "Patricia Williams",
-        "role": "Client"
+        "name": "Client Family 3",
+        "role": "Ottawa Area"
       },
       "4": {
         "text": "The transportation and errand support has given my father back his independence. He can get to his appointments and the grocery store without relying on us every time.",
-        "name": "Robert Singh",
-        "role": "Son of Client"
+        "name": "Client Family 4",
+        "role": "Ottawa Area"
       },
       "5": {
         "text": "What stood out most was the communication. We always knew what was happening with my mother's care, and the team adjusted the plan whenever her needs changed.",
-        "name": "Linda Tremblay",
-        "role": "Daughter of Client"
+        "name": "Client Family 5",
+        "role": "Ottawa Area"
       },
       "6": {
         "text": "Living alone after my wife passed was hard. My companion caregiver visits twice a week and those visits have genuinely improved my mood and outlook on life.",
-        "name": "James Okafor",
-        "role": "Client"
+        "name": "Client Family 6",
+        "role": "Ottawa Area"
       },
       "7": {
         "text": "The respite care let me take a real vacation for the first time in three years without worrying about my mother. The caregiver was attentive, kind, and incredibly thorough.",
-        "name": "Susan Bergeron",
-        "role": "Daughter of Client"
+        "name": "Client Family 7",
+        "role": "Ottawa Area"
       },
       "8": {
         "text": "From the first phone call to the ongoing care, everything has been handled with professionalism and heart. I recommend Swift Comfort Line to every family I know.",
-        "name": "Michael Patel",
-        "role": "Son of Client"
+        "name": "Client Family 8",
+        "role": "Ottawa Area"
       }
     }
   },
@@ -311,24 +311,24 @@
   },
   "trust": {
     "item1": "No long-term contracts required",
-    "item2": "Free initial care assessment",
-    "item3": "Background-checked, certified caregivers",
-    "item4": "Same-day care arrangements available"
+    "item2": "Free initial consultation",
+    "item3": "Personalised support plans",
+    "item4": "Flexible scheduling available"
   },
   "footer": {
-    "desc": "Compassionate non-medical home care services for seniors and families across Canada. Dignity, comfort, and peace of mind — delivered.",
+    "desc": "Compassionate non-medical support services for seniors and families in Ottawa and surrounding communities.",
     "quickLinks": "Quick Links",
     "ourServices": "Our Services",
     "contactUs": "Contact Us",
-    "hours": "24 hours a day, 7 days a week",
-    "location": "Serving communities across Canada",
+    "hours": "Mon – Sat, flexible hours",
+    "location": "Serving Ottawa and Surrounding Communities",
     "cleaningLink": "Our Cleaning Services",
     "rights": "All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "backToTop": "Back to top",
     "careLink": "Non-Medical Care Services",
-    "cleaningDesc": "Professional home, office, deep, move-in, move-out, and Airbnb turnover cleaning serving Ottawa and surrounding communities."
+    "cleaningDesc": "Professional home, office, deep clean, move-in, move-out, and Airbnb turnover cleaning serving Ottawa and surrounding communities."
   },
   "banner": {
     "message": "Looking for professional cleaning services?",
@@ -402,21 +402,21 @@
     "label": "Client Reviews",
     "title": "Trusted Across Ottawa",
     "ratingLabel": "Average Rating",
-    "verified": "Verified Client",
+    "verified": "Client",
     "items": {
       "1": {
         "text": "Our home has never felt cleaner. The attention to detail is unmatched and the team is wonderful.",
-        "name": "Sarah M.",
+        "name": "Client 1",
         "location": "Kanata, Ottawa"
       },
       "2": {
         "text": "Reliable, professional and thorough. They keep our office spotless every single time.",
-        "name": "James R.",
+        "name": "Client 2",
         "location": "Downtown Ottawa"
       },
       "3": {
         "text": "Perfect for our short-term rentals. Fast turnovers, spotless results and great communication.",
-        "name": "Priya N.",
+        "name": "Client 3",
         "location": "Sandy Hill, Ottawa"
       }
     }
@@ -426,9 +426,9 @@
     "title": "Ready for a Beautifully Clean Space?",
     "subtitle": "Book a one-time clean or set up a regular schedule. Proudly serving Ottawa and surrounding communities.",
     "btn": "Get Your Quote",
-    "chip1": "Insured & Bonded",
+    "chip1": "Ottawa Based",
     "chip2": "Flexible Scheduling",
-    "chip3": "Satisfaction Guaranteed",
+    "chip3": "Detail Focused",
     "infoTitle": "Same-Day Bookings Available",
     "infoSub": "Call us and we'll arrange it today"
   },
@@ -437,7 +437,7 @@
     "title": "Let's Get Your Space Spotless",
     "subtitle": "Request a free, no-obligation quote today. We serve Ottawa and surrounding communities and respond within 2 hours.",
     "callUs": "Call Us Directly",
-    "hours": "7 days a week, flexible hours",
+    "hours": "Mon – Sat, flexible hours",
     "formBadge": "Free Quote",
     "formTitle": "Request a Cleaning Quote",
     "serviceLabel": "Service Type",
@@ -459,9 +459,9 @@
     "swalErrorTitle": "Oops...",
     "swalErrorText": "Something went wrong. Please try again or call us directly.",
     "trust1": "Free quotes, no obligation",
-    "trust2": "Same-day service available",
-    "trust3": "Fully insured & bonded",
-    "trust4": "Satisfaction guaranteed",
+    "trust2": "Flexible scheduling available",
+    "trust3": "Ottawa and surrounding area",
+    "trust4": "Personal and attentive service",
     "errors": {
       "service": "Please select a service type.",
       "name": "Please enter your full name.",
@@ -472,5 +472,10 @@
   "cleaningBanner": {
     "message": "Looking for professional cleaning services?",
     "linkText": "View Our Cleaning Services"
+  },
+  "topBanner": {
+    "location": "Serving Ottawa and Surrounding Communities",
+    "phone": "+1 (613) 851-6775",
+    "email": "info@swiftcomfortline.ca"
   }
 }

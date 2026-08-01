@@ -14,40 +14,40 @@
   },
   "hero": {
     "button2": "Nos Services de Soutien aux Aînés",
-    "trust1": "Soignants Bienveillants",
+    "trust1": "Soutien Fiable et Personnalisé",
     "trust2": "Horaires Flexibles",
-    "trust3": "Consultation Gratuite",
-    "stat1": "Familles Soutenues",
-    "stat2": "Satisfaction Client",
-    "stat3": "Ans de Service",
+    "trust3": "Au Service des Familles d'Ottawa",
+    "stat1": "Soutien Fiable",
+    "stat2": "Horaires Flexibles",
+    "stat3": "Basé à Ottawa",
     "cleaningBtn": "Nos Services de Nettoyage",
     "slides": {
       "1": {
-        "badge": "Soins à Domicile de Confiance",
+        "badge": "Soutien Non Médical de Confiance",
         "line1": "Des Soins Professionnels,",
         "line2": "Chez Vous",
         "subtitle": "Des soignants certifiés et bienveillants offrant un soutien personnalisé à vos proches — pour qu'ils vivent avec dignité et confort."
       },
       "2": {
-        "badge": "Soutien Santé Numérique",
+        "badge": "Services de Soutien Numériques",
         "line1": "Des Soins Modernes,",
         "line2": "Toujours Connectés",
         "subtitle": "Des soins de santé assistés par la technologie qui tiennent les familles informées et assurent la sécurité de vos proches, à toute heure."
       },
       "3": {
-        "badge": "Soins en Équipe",
+        "badge": "Soutien en Équipe",
         "line1": "Une Équipe en qui",
         "line2": "Vous Pouvez Avoir Confiance",
         "subtitle": "Nos spécialistes certifiés collaborent pour offrir des plans de soins personnalisés et continus, adaptés aux besoins de chaque client."
       },
       "4": {
-        "badge": "Excellence Collaborative",
+        "badge": "Soins Collaboratifs",
         "line1": "Dédiés à",
         "line2": "Votre Bien-Être",
         "subtitle": "Des professionnels expérimentés unis par l'engagement d'élever votre niveau de soins grâce à l'expertise, l'empathie et l'attention aux détails."
       },
       "5": {
-        "badge": "Soins Centrés sur la Communauté",
+        "badge": "Soutien Centré sur la Communauté",
         "line1": "Des Soins qui Ressemblent",
         "line2": "à une Famille",
         "subtitle": "Nous bâtissons des relations durables et apportons une vraie chaleur humaine dans chaque foyer — parce que les vrais soins vont au-delà du clinique."
@@ -102,20 +102,20 @@
     "ctaHeading": "Laissez-nous élaborer un plan de soins adapté à votre famille.",
     "trust": {
       "certified": {
-        "label": "Soignants Certifiés",
-        "sub": "Formés et vérifiés"
+        "label": "Équipe Expérimentée",
+        "sub": "Travailleurs de soutien dévoués"
       },
       "available": {
-        "label": "Disponible 24h / 24",
-        "sub": "Jour, nuit et week-ends"
+        "label": "Horaires Flexibles",
+        "sub": "Jours, soirs et week-ends"
       },
       "insured": {
-        "label": "Pleinement Assuré",
-        "sub": "Agréé et cautionné"
+        "label": "Basé à Ottawa",
+        "sub": "Au service de votre communauté"
       },
       "rated": {
-        "label": "98% de Satisfaction",
-        "sub": "Plus de 200 familles servies"
+        "label": "Approche Personnalisée",
+        "sub": "Soins adaptés à vos besoins"
       }
     },
     "companionship": {
@@ -134,10 +134,10 @@
     },
     "mealPrep": {
       "title": "Préparation des Repas",
-      "description": "Des repas maison nutritifs préparés frais, adaptés aux besoins alimentaires, préférences et exigences médicales.",
+      "description": "Des repas maison nutritifs préparés frais en tenant compte des préférences personnelles et des demandes alimentaires générales.",
       "item1": "Planification personnalisée des repas",
       "item2": "Cuisine adaptée aux régimes & allergies",
-      "item3": "Coordination des achats alimentaires"
+      "item3": "Adaptés aux préférences alimentaires personnelles"
     },
     "housekeeping": {
       "title": "Entretien Ménager Léger",
@@ -212,69 +212,69 @@
   },
   "serviceAreas": {
     "label": "Où Nous Intervenons",
-    "title": "Fiers de Servir les Familles à l'Échelle Nationale",
-    "boundary": "Peu importe où vous êtes au Canada, Swift Comfort Line est là pour vous. Nous offrons des services de soins non médicaux aux familles partout au pays.",
-    "canadaTitle": "Partout au Canada",
-    "canadaSub": "D'un océan à l'autre, nous sommes là pour vous",
-    "coveragePill": "Couverture Nationale",
-    "point1": "Consultations à distance disponibles",
-    "point2": "Coordonnateurs de soins dans chaque province",
-    "point3": "Horaires flexibles, où que vous soyez",
+    "title": "Au Service d'Ottawa et des Communautés Environnantes",
+    "boundary": "Swift Comfort Line offre des services de soutien non médicaux bienveillants aux aînés et aux familles à Ottawa et dans la région.",
+    "canadaTitle": "Ottawa et Région",
+    "canadaSub": "Au service des familles à Ottawa et dans les communautés avoisinantes",
+    "coveragePill": "Région d'Ottawa",
+    "point1": "Consultations en personne et par téléphone disponibles",
+    "point2": "Horaires flexibles adaptés à votre famille",
+    "point3": "Soutien personnalisé dans votre communauté locale",
     "cta": "Vérifier la Disponibilité dans Votre Région",
-    "footnote": "Des questions sur le service dans votre ville ou région? Contactez-nous et nous confirmerons la disponibilité immédiatement."
+    "footnote": "Pas certain que nous desservons votre secteur? Contactez-nous et nous confirmerons immédiatement."
   },
   "testimonials": {
     "label": "Témoignages Clients",
     "title": "Une Confiance Partagée par des Familles Partout au Canada",
     "subtitle": "Ne nous croyez pas sur parole — écoutez directement les familles et clients que nous avons eu le privilège d'accompagner.",
-    "ratingLabel": "Note Moyenne",
-    "verified": "Client Vérifié",
-    "stat1": "Familles Servies",
-    "stat2": "Note Moyenne",
-    "stat3": "Taux de Satisfaction",
-    "stat4": "Nous Recommandent",
-    "ctaText": "Rejoignez plus de 200 familles qui font confiance à Swift Comfort Line pour les soins de leurs proches.",
+    "ratingLabel": "Témoignages Clients",
+    "verified": "Client",
+    "stat1": "Familles Soutenues",
+    "stat2": "Témoignages",
+    "stat3": "Satisfaction",
+    "stat4": "Recommandé",
+    "ctaText": "Contactez-nous aujourd'hui et laissez-nous vous montrer ce que le soutien personnalisé aux aînés signifie vraiment.",
     "ctaBtn": "Consultation Gratuite",
     "items": {
       "1": {
         "text": "Swift Comfort Line a été une véritable bénédiction pour ma mère. Les soignants ne sont pas seulement professionnels — ils se soucient vraiment d'elle. J'ai enfin l'esprit tranquille.",
-        "name": "Margaret O'Connell",
-        "role": "Fille d'une Cliente"
+        "name": "Famille Cliente 1",
+        "role": "Région d'Ottawa"
       },
       "2": {
         "text": "Après l'AVC de mon père, nous avions besoin d'un soutien fiable rapidement. L'équipe a tout organisé en 48 heures et la qualité des soins est exceptionnelle depuis.",
-        "name": "David Chen",
-        "role": "Fils d'un Client"
+        "name": "Famille Cliente 2",
+        "role": "Région d'Ottawa"
       },
       "3": {
         "text": "J'étais nerveuse à l'idée d'avoir de l'aide à domicile, mais ma soignante me traite avec tellement de respect et de chaleur. Ça ne ressemble pas à un service — ça ressemble à de la famille.",
-        "name": "Patricia Williams",
-        "role": "Cliente"
+        "name": "Famille Cliente 3",
+        "role": "Région d'Ottawa"
       },
       "4": {
         "text": "Le soutien au transport et aux courses a redonné son indépendance à mon père. Il peut se rendre à ses rendez-vous sans dépendre constamment de nous.",
-        "name": "Robert Singh",
-        "role": "Fils d'un Client"
+        "name": "Famille Cliente 4",
+        "role": "Région d'Ottawa"
       },
       "5": {
         "text": "Ce qui m'a le plus marquée, c'est la communication. Nous savions toujours ce qui se passait avec les soins de ma mère, et l'équipe ajustait le plan selon ses besoins.",
-        "name": "Linda Tremblay",
-        "role": "Fille d'une Cliente"
+        "name": "Famille Cliente 5",
+        "role": "Région d'Ottawa"
       },
       "6": {
         "text": "Vivre seul après le décès de mon épouse a été difficile. Mon accompagnateur me rend visite deux fois par semaine et ces visites ont vraiment amélioré mon moral.",
-        "name": "James Okafor",
-        "role": "Client"
+        "name": "Famille Cliente 6",
+        "role": "Région d'Ottawa"
       },
       "7": {
         "text": "Les soins de répit m'ont permis de prendre de vraies vacances pour la première fois en trois ans sans m'inquiéter pour ma mère. La soignante était attentive et minutieuse.",
-        "name": "Susan Bergeron",
-        "role": "Fille d'une Cliente"
+        "name": "Famille Cliente 7",
+        "role": "Région d'Ottawa"
       },
       "8": {
         "text": "Du premier appel téléphonique aux soins continus, tout a été géré avec professionnalisme et cœur. Je recommande Swift Comfort Line à toutes les familles que je connais.",
-        "name": "Michael Patel",
-        "role": "Fils d'un Client"
+        "name": "Famille Cliente 8",
+        "role": "Région d'Ottawa"
       }
     }
   },
@@ -311,17 +311,17 @@
   },
   "trust": {
     "item1": "Aucun contrat à long terme requis",
-    "item2": "Évaluation initiale des soins gratuite",
-    "item3": "Soignants certifiés et vérifiés",
-    "item4": "Arrangements de soins le jour même disponibles"
+    "item2": "Consultation initiale gratuite",
+    "item3": "Plans de soutien personnalisés",
+    "item4": "Horaires flexibles disponibles"
   },
   "footer": {
-    "desc": "Services de soins à domicile non médicaux, bienveillants, pour les aînés et les familles partout au Canada. Dignité, confort et tranquillité d'esprit — livrés.",
+    "desc": "Services de soutien non médicaux bienveillants pour les aînés et les familles à Ottawa et dans les communautés environnantes.",
     "quickLinks": "Liens Rapides",
     "ourServices": "Nos Services",
     "contactUs": "Contactez-Nous",
-    "hours": "24 heures sur 24, 7 jours sur 7",
-    "location": "Desservant les communautés partout au Canada",
+    "hours": "Lun – Sam, horaires flexibles",
+    "location": "Au service d'Ottawa et des communautés environnantes",
     "cleaningLink": "Nos Services de Nettoyage",
     "rights": "Tous droits réservés.",
     "privacy": "Politique de Confidentialité",
@@ -402,21 +402,21 @@
     "label": "Avis Clients",
     "title": "Approuvé à Ottawa",
     "ratingLabel": "Note Moyenne",
-    "verified": "Client Vérifié",
+    "verified": "Client",
     "items": {
       "1": {
         "text": "Notre maison n'a jamais été aussi propre. L'attention aux détails est incomparable et l'équipe est formidable.",
-        "name": "Sarah M.",
+        "name": "Client 1",
         "location": "Kanata, Ottawa"
       },
       "2": {
         "text": "Fiable, professionnel et minutieux. Ils gardent notre bureau impeccable à chaque fois.",
-        "name": "James R.",
+        "name": "Client 2",
         "location": "Centre-ville d'Ottawa"
       },
       "3": {
         "text": "Parfait pour nos locations à court terme. Remises rapides, résultats impeccables et excellente communication.",
-        "name": "Priya N.",
+        "name": "Client 3",
         "location": "Sandy Hill, Ottawa"
       }
     }
@@ -426,9 +426,9 @@
     "title": "Prêt pour un Espace Impeccablement Propre?",
     "subtitle": "Réservez un nettoyage ponctuel ou établissez un programme régulier. Fiers de servir Ottawa et les communautés environnantes.",
     "btn": "Obtenir un Devis",
-    "chip1": "Assuré & Cautionné",
+    "chip1": "Basé à Ottawa",
     "chip2": "Horaires Flexibles",
-    "chip3": "Satisfaction Garantie",
+    "chip3": "Soucieux des Détails",
     "infoTitle": "Réservations le Jour Même",
     "infoSub": "Appelez-nous et nous arrangerons ça aujourd'hui"
   },
@@ -437,7 +437,7 @@
     "title": "Rendons Votre Espace Impeccable",
     "subtitle": "Demandez un devis gratuit et sans engagement. Nous servons Ottawa et la région et répondons dans les 2 heures.",
     "callUs": "Appelez-Nous Directement",
-    "hours": "7 jours sur 7, horaires flexibles",
+    "hours": "Lun – Sam, horaires flexibles",
     "formBadge": "Devis Gratuit",
     "formTitle": "Demander un Devis de Nettoyage",
     "serviceLabel": "Type de Service",
@@ -459,9 +459,9 @@
     "swalErrorTitle": "Oups...",
     "swalErrorText": "Une erreur est survenue. Veuillez réessayer ou nous appeler directement.",
     "trust1": "Devis gratuits, sans engagement",
-    "trust2": "Service le jour même disponible",
-    "trust3": "Pleinement assuré et cautionné",
-    "trust4": "Satisfaction garantie",
+    "trust2": "Horaires flexibles disponibles",
+    "trust3": "Ottawa et région",
+    "trust4": "Service personnel et attentif",
     "errors": {
       "service": "Veuillez sélectionner un type de service.",
       "name": "Veuillez entrer votre nom complet.",
@@ -472,5 +472,10 @@
   "cleaningBanner": {
     "message": "Vous cherchez des services de nettoyage professionnels?",
     "linkText": "Voir nos services de nettoyage"
+  },
+  "topBanner": {
+    "location": "Au service d'Ottawa et des communautés environnantes",
+    "phone": "+1 (613) 851-6775",
+    "email": "info@swiftcomfortline.ca"
   }
 }

@@ -146,22 +146,25 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 import { ref, watch, onMounted, onUnmounted } from 'vue'
-import Image1 from "../assets/SCL.png"
-import Image2 from "../assets/scl1.png"
-import Image3 from "../assets/scl2.png"
-import Image4 from "../assets/scl3.png"
-import Image5 from "../assets/scl4.png"
-import Image6 from "../assets/scl5.png"
+
+/* ── Local asset imports — no internet images ────────────── */
+import Image1 from '@/assets/SCL.png'
+import Image2 from '@/assets/scl1.png'
+import Image3 from '@/assets/scl2.png'
+import Image4 from '@/assets/scl3.png'
+import Image5 from '@/assets/scl4.png'
+import Image6 from '@/assets/scl5.png'
 
 const { t } = useI18n()
 const phone = '+16138516775'
 
 const trustItems = ['hero.trust1', 'hero.trust2', 'hero.trust3']
 
-const stats = [
-  { value: 200, suffix: '+', label: 'hero.stat1' },
-  { value: 98, suffix: '%', label: 'hero.stat2' },
-  { value: 5, suffix: '+', label: 'hero.stat3' },
+/* Honest trust points — no invented numbers */
+const trustPoints = [
+  'hero.stat1',
+  'hero.stat2',
+  'hero.stat3',
 ]
 
 /* ── 6 carousel slides ───────────────────────────────────── */
@@ -225,7 +228,7 @@ const slides = [
 const currentSlide = ref(0)
 const contentKey = ref(0)   // incrementing this re-mounts hero-content → clean animation re-trigger
 const dotProgress = ref(0)
-const animatedStats = ref(stats.map(() => 0))
+
 
 let autoplayTimer = null
 let progressTimer = null
@@ -312,7 +315,7 @@ const scrollTo = (id) => {
 
 /* ── Lifecycle ───────────────────────────────────────────── */
 onMounted(() => {
-  setTimeout(() => stats.forEach((s, i) => animateCount(i, s.value)), 800)
+
   startAutoplay()
   startProgress()
 })
@@ -811,9 +814,10 @@ onUnmounted(() => {
 
 .stat-item {
   display: flex;
-  flex-direction: column;
-  gap: 3px;
-  padding: 0 28px;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px;
   border-right: 1px solid rgba(255, 255, 255, 0.16);
 }
 
@@ -837,10 +841,10 @@ onUnmounted(() => {
 
 .stat-label {
   font-family: var(--font-body);
-  font-size: 0.72rem;
-  color: rgba(255, 255, 255, 0.64);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  font-size: 0.80rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.82);
+  letter-spacing: 0.01em;
 }
 
 /* ─── Uniform badge (slide 6 only) ─────────────────────── */

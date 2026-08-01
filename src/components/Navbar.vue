@@ -21,52 +21,39 @@
 
       <!-- ── Desktop nav links ─────────────────────────────── -->
       <ul class="nav-links">
-        <li>
-          <a href="#home" class="nav-link" :class="{ active: activeSection === 'home' }"
-            @click.prevent="scrollTo('home')">{{ t('navbar.home') }}</a>
-        </li>
-        <li>
-          <a href="#about" class="nav-link" :class="{ active: activeSection === 'about' }"
-            @click.prevent="scrollTo('about')">{{ t('navbar.about') }}</a>
-        </li>
-
-        <!-- Services dropdown -->
-        <li class="nav-dropdown" @mouseenter="servicesOpen = true" @mouseleave="servicesOpen = false">
-          <a href="#services" class="nav-link nav-link--dropdown" :class="{ active: activeSection === 'services' }"
-            @click.prevent="scrollTo('services')">
-            {{ t('navbar.services') }}
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-              stroke-linecap="round">
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-          </a>
-          <transition name="dropdown">
-            <div v-if="servicesOpen" class="dropdown-panel">
-              <a v-for="item in serviceItems" :key="item.label" href="#services" class="dropdown-item"
-                @click.prevent="scrollTo('services'); servicesOpen = false">
-                <div class="dropdown-icon">
-                  <component :is="item.icon" />
-                </div>
-                <div>
-                  <span class="dropdown-item-title">{{ t(item.label) }}</span>
-                  <span class="dropdown-item-desc">{{ t(item.desc) }}</span>
-                </div>
+        <li v-for="link in navLinks" :key="link.id">
+          <!-- Services link gets a dropdown only on healthcare page -->
+          <template v-if="link.id === 'services' && page === 'healthcare'">
+            <div class="nav-dropdown" @mouseenter="servicesOpen = true" @mouseleave="servicesOpen = false">
+              <a href="#services" class="nav-link nav-link--dropdown" :class="{ active: activeSection === 'services' }"
+                @click.prevent="scrollTo('services')">
+                {{ t('navbar.services') }}
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
               </a>
+              <transition name="dropdown">
+                <div v-if="servicesOpen" class="dropdown-panel">
+                  <a v-for="item in serviceItems" :key="item.label" href="#services" class="dropdown-item"
+                    @click.prevent="scrollTo('services'); servicesOpen = false">
+                    <div class="dropdown-icon">
+                      <component :is="item.icon" />
+                    </div>
+                    <div>
+                      <span class="dropdown-item-title">{{ t(item.label) }}</span>
+                      <span class="dropdown-item-desc">{{ t(item.desc) }}</span>
+                    </div>
+                  </a>
+                </div>
+              </transition>
             </div>
-          </transition>
-        </li>
-
-        <li>
-          <a href="#areas" class="nav-link" :class="{ active: activeSection === 'areas' }"
-            @click.prevent="scrollTo('areas')">{{ t('navbar.serviceAreas') }}</a>
-        </li>
-        <li>
-          <a href="#testimonials" class="nav-link" :class="{ active: activeSection === 'testimonials' }"
-            @click.prevent="scrollTo('testimonials')">{{ t('navbar.testimonials') }}</a>
-        </li>
-        <li>
-          <a href="#contact" class="nav-link" :class="{ active: activeSection === 'contact' }"
-            @click.prevent="scrollTo('contact')">{{ t('navbar.contact') }}</a>
+          </template>
+          <!-- All other links — plain -->
+          <template v-else>
+            <a :href="'#' + link.id" class="nav-link" :class="{ active: activeSection === link.id }"
+              @click.prevent="scrollTo(link.id)">{{ t(link.label) }}</a>
+          </template>
         </li>
       </ul>
 
@@ -114,14 +101,8 @@
     <!-- ── Mobile menu ────────────────────────────────────── -->
     <transition name="mobile-slide">
       <div v-if="mobileOpen" class="mobile-menu">
-        <a href="#home" class="mobile-link" @click.prevent="mobileNav('home')">{{ t('navbar.home') }}</a>
-        <a href="#about" class="mobile-link" @click.prevent="mobileNav('about')">{{ t('navbar.about') }}</a>
-        <a href="#services" class="mobile-link" @click.prevent="mobileNav('services')">{{ t('navbar.services') }}</a>
-        <a href="#areas" class="mobile-link" @click.prevent="mobileNav('areas')">{{ t('navbar.serviceAreas') }}</a>
-        <a href="#testimonials" class="mobile-link" @click.prevent="mobileNav('testimonials')">{{
-          t('navbar.testimonials')
-          }}</a>
-        <a href="#contact" class="mobile-link" @click.prevent="mobileNav('contact')">{{ t('navbar.contact') }}</a>
+        <a v-for="link in navLinks" :key="link.id" :href="'#' + link.id" class="mobile-link"
+          @click.prevent="mobileNav(link.id)">{{ t(link.label) }}</a>
 
         <div class="mobile-lang">
           <span v-for="lang in languages" :key="lang.code" class="mobile-lang-btn"
@@ -149,8 +130,10 @@ const { t, locale } = useI18n()
 
 /*
   page prop: 'healthcare' (default) or 'cleaning'
-  Controls the logo tagline shown under the brand name.
-  Pass page="cleaning" from CleaningPage.vue.
+  Controls:
+    - Logo tagline
+    - Which nav links are shown (cleaning page has different sections)
+    - Active section detection IDs
 */
 const props = defineProps({
   page: {
@@ -158,6 +141,36 @@ const props = defineProps({
     default: 'healthcare',
   },
 })
+
+/*
+  Nav links per page:
+  Healthcare: home, about, services, areas, testimonials, contact
+  Cleaning:   home, services, testimonials, contact
+  (about/areas don't exist as sections on the cleaning page)
+*/
+const navLinks = computed(() => {
+  if (props.page === 'cleaning') {
+    return [
+      { id: 'home', label: 'navbar.home' },
+      { id: 'cleaning-services', label: 'navbar.services' },
+      { id: 'cleaning-testimonials', label: 'navbar.testimonials' },
+      { id: 'contact', label: 'navbar.contact' },
+    ]
+  }
+  return [
+    { id: 'home', label: 'navbar.home' },
+    { id: 'about', label: 'navbar.about' },
+    { id: 'services', label: 'navbar.services' },
+    { id: 'areas', label: 'navbar.serviceAreas' },
+    { id: 'testimonials', label: 'navbar.testimonials' },
+    { id: 'contact', label: 'navbar.contact' },
+  ]
+})
+
+/*
+  Active section IDs for scroll detection
+*/
+const sectionIds = computed(() => navLinks.value.map(l => l.id))
 
 /* ── Service dropdown icons ──────────────────────────────── */
 const IconCar = defineComponent({
@@ -299,12 +312,12 @@ const onScroll = () => {
 
   lastY = y
 
-  /* Active section detection */
-  const sections = ['home', 'about', 'services', 'areas', 'testimonials', 'contact']
-  for (let i = sections.length - 1; i >= 0; i--) {
-    const el = document.getElementById(sections[i])
+  /* Active section detection — uses dynamic sectionIds based on page */
+  const ids = sectionIds.value
+  for (let i = ids.length - 1; i >= 0; i--) {
+    const el = document.getElementById(ids[i])
     if (el && el.getBoundingClientRect().top <= 120) {
-      activeSection.value = sections[i]
+      activeSection.value = ids[i]
       break
     }
   }
