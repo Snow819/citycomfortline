@@ -294,9 +294,9 @@ const missionChips = [
 ]
 
 const stats = [
-  { value: '200+', label: 'about.stat1' },
-  { value: '98%', label: 'about.stat2' },
-  { value: '5+', label: 'about.stat3' },
+  { value: '150+', label: 'about.stat1' },
+  { value: '70%', label: 'about.stat2' },
+  { value: '1+', label: 'about.stat3' },
   { value: '24/7', label: 'about.stat4' },
 ]
 
