@@ -31,8 +31,8 @@ const IconShield = defineComponent({ render: () => h('svg', { width: 22, height:
 
 const stats = ref([
   { icon: IconHeart, labelKey: 'satisfaction.seniors', target: 70, current: 0, suffix: '+' },
-  { icon: IconStar, labelKey: 'satisfaction.satisfaction', target: 100, current: 0, suffix: '%' },
-  { icon: IconUsers, labelKey: 'satisfaction.families', target: 150, current: 0, suffix: '+' },
+  { icon: IconStar, labelKey: 'satisfaction.satisfaction', target: 80, current: 0, suffix: '%' },
+  { icon: IconUsers, labelKey: 'satisfaction.families', target: 70, current: 0, suffix: '+' },
   { icon: IconClock, labelKey: 'satisfaction.punctual', target: 98, current: 0, suffix: '%' },
   { icon: IconShield, labelKey: 'satisfaction.years', target: 3, current: 0, suffix: '+' },
 ])
