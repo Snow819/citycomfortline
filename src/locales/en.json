@@ -80,7 +80,7 @@
     "accentLabel": "Trusted by Families",
     "cardTitle": "Get in Touch",
     "cardSub": "We're ready to help your family",
-    "urgency": "We respond to all inquiries within 2 hours. Same-day care arrangements available.",
+    "urgency": "We respond to all inquiries within 2 hours. Short-notice bookings subject to availability.",
     "cardBtn": "Book a Free Consultation",
     "contact": {
       "phoneLabel": "Call Us",
@@ -336,10 +336,38 @@
     "dismiss": "Dismiss announcement"
   },
   "cleaningHero": {
-    "badge": "Professional Cleaning Services",
-    "line1": "A Higher Standard",
-    "line2": "of Clean.",
-    "subtitle": "Premium home, office and short-term rental cleaning serving Ottawa and surrounding communities. Reliable, detail-focused professionals who respect your space.",
+    "slides": {
+      "1": {
+        "badge": "Professional Cleaning",
+        "line1": "A Spotless Home,",
+        "line2": "Every Time",
+        "subtitle": "From routine tidying to deep cleans, our trained team leaves every corner of your home fresh, sanitized, and welcoming."
+      },
+      "2": {
+        "badge": "Deep Clean Experts",
+        "line1": "Fresh Spaces,",
+        "line2": "Fresh Start",
+        "subtitle": "We tackle the details others miss — baseboards, vents, and hidden corners — for a clean that truly lasts."
+      },
+      "3": {
+        "badge": "Trusted Cleaners",
+        "line1": "Sparkling Clean,",
+        "line2": "Stress-Free",
+        "subtitle": "Fully vetted, background-checked professionals you can welcome into your home with confidence."
+      },
+      "4": {
+        "badge": "Reliable Service",
+        "line1": "Your Home,",
+        "line2": "Our Priority",
+        "subtitle": "Flexible scheduling and consistent quality, so you always know exactly what to expect."
+      },
+      "5": {
+        "badge": "Detail-Oriented Care",
+        "line1": "Cleanliness You Can",
+        "line2": "Trust",
+        "subtitle": "Eco-friendly products and meticulous attention to detail, for a home that's safe for your whole family."
+      }
+    },
     "cta1": "Request a Cleaning Quote",
     "cta2": "View Our Services",
     "careBtn": "Non-Medical Care Services",
@@ -429,7 +457,7 @@
     "chip1": "Ottawa Based",
     "chip2": "Flexible Scheduling",
     "chip3": "Detail Focused",
-    "infoTitle": "Same-Day Bookings Available",
+    "infoTitle": "Short-Notice Bookings Subject to Availability",
     "infoSub": "Call us and we'll arrange it today"
   },
   "cleaningContact": {

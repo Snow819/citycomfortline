@@ -336,10 +336,38 @@
     "dismiss": "Fermer l'annonce"
   },
   "cleaningHero": {
-    "badge": "Services de Nettoyage Professionnels",
-    "line1": "Un Standard Plus Élevé",
-    "line2": "de Propreté.",
-    "subtitle": "Nettoyage résidentiel, commercial et de locations à court terme au service d'Ottawa et des communautés environnantes. Des professionnels fiables et attentifs aux détails.",
+    "slides": {
+      "1": {
+        "badge": "Nettoyage Professionnel",
+        "line1": "Une Maison Impeccable,",
+        "line2": "à Chaque Fois",
+        "subtitle": "Du nettoyage courant au nettoyage en profondeur, notre équipe qualifiée laisse chaque recoin de votre maison frais, désinfecté et accueillant."
+      },
+      "2": {
+        "badge": "Experts du Nettoyage en Profondeur",
+        "line1": "Des Espaces Frais,",
+        "line2": "Un Nouveau Départ",
+        "subtitle": "Nous nous occupons des détails que les autres oublient — plinthes, bouches d'aération et recoins cachés — pour une propreté qui dure vraiment."
+      },
+      "3": {
+        "badge": "Nettoyeurs de Confiance",
+        "line1": "Étincelant de Propreté,",
+        "line2": "Sans Stress",
+        "subtitle": "Des professionnels entièrement vérifiés, avec antécédents contrôlés, que vous pouvez accueillir chez vous en toute confiance."
+      },
+      "4": {
+        "badge": "Service Fiable",
+        "line1": "Votre Maison,",
+        "line2": "Notre Priorité",
+        "subtitle": "Des horaires flexibles et une qualité constante, pour que vous sachiez toujours à quoi vous attendre."
+      },
+      "5": {
+        "badge": "Soin Minutieux",
+        "line1": "Une Propreté en Qui Vous Pouvez",
+        "line2": "Avoir Confiance",
+        "subtitle": "Des produits écologiques et une attention méticuleuse aux détails, pour une maison sûre pour toute votre famille."
+      }
+    },
     "cta1": "Demander un Devis",
     "cta2": "Voir Nos Services",
     "careBtn": "Services de Soins Non Médicaux",
@@ -429,7 +457,7 @@
     "chip1": "Basé à Ottawa",
     "chip2": "Horaires Flexibles",
     "chip3": "Soucieux des Détails",
-    "infoTitle": "Réservations le Jour Même",
+    "infoTitle": "Réservations de Dernière Minute Selon Disponibilité",
     "infoSub": "Appelez-nous et nous arrangerons ça aujourd'hui"
   },
   "cleaningContact": {

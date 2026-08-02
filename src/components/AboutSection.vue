@@ -93,7 +93,7 @@
 
           <!-- Floating experience badge -->
           <div class="exp-badge">
-            <span class="exp-number">5<sup>+</sup></span>
+            <span class="exp-number">3<sup>+</sup></span>
             <span class="exp-label">{{ $t('about.expLabel') }}</span>
           </div>
 
@@ -294,9 +294,9 @@ const missionChips = [
 ]
 
 const stats = [
-  { value: '150+', label: 'about.stat1' },
-  { value: '70%', label: 'about.stat2' },
-  { value: '1+', label: 'about.stat3' },
+  { value: '70+', label: 'about.stat1' },
+  { value: '80%', label: 'about.stat2' },
+  { value: '3+', label: 'about.stat3' },
   { value: '24/7', label: 'about.stat4' },
 ]
 

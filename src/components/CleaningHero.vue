@@ -1,34 +1,37 @@
 <template>
     <section class="cleaning-hero" id="home">
 
-        <!-- ── Background image ──────────────────────────────── -->
-        <div class="hero-bg">
-            <img src="@/assets/hero.jpg" alt="Beautifully clean living space" class="hero-bg-img" />
-            <div class="hero-bg-overlay"></div>
+        <!-- ── Background carousel ───────────────────────────── -->
+        <div class="slides-track">
+            <transition name="slide-bg-fade">
+                <div class="hero-bg" :key="currentSlide"
+                    :style="{ backgroundImage: `url(${slides[currentSlide].image})` }">
+                    <div class="hero-bg-overlay"></div>
+                </div>
+            </transition>
         </div>
 
         <!-- ── Content card ──────────────────────────────────── -->
         <div class="hero-inner">
-            <div class="hero-card" data-aos="fade-right" data-aos-duration="900">
+            <div class="hero-card" :key="contentKey">
 
                 <!-- Eyebrow badge -->
                 <div class="hero-badge">
                     <span class="badge-dot"></span>
-                    {{ t('cleaningHero.badge') }}
+                    {{ t(slides[currentSlide].badge) }}
                 </div>
 
                 <!-- Headline -->
                 <h1 class="hero-headline">
-                    {{ t('cleaningHero.line1') }}
-                    <span class="hero-headline--accent">{{ t('cleaningHero.line2') }}</span>
+                    {{ t(slides[currentSlide].line1) }}
+                    <span class="hero-headline--accent">{{ t(slides[currentSlide].line2) }}</span>
                 </h1>
 
                 <!-- Subtitle -->
-                <p class="hero-subtitle">{{ t('cleaningHero.subtitle') }}</p>
+                <p class="hero-subtitle">{{ t(slides[currentSlide].subtitle) }}</p>
 
                 <!-- Buttons -->
                 <div class="hero-buttons">
-                    <!-- Primary CTA -->
                     <a href="#contact" class="btn-primary" @click.prevent="scrollTo('contact')">
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2.2" stroke-linecap="round">
@@ -38,7 +41,6 @@
                         {{ t('cleaningHero.cta1') }}
                     </a>
 
-                    <!-- Outline CTA -->
                     <a href="#services" class="btn-outline" @click.prevent="scrollTo('cleaning-services')">
                         {{ t('cleaningHero.cta2') }}
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -48,7 +50,6 @@
                         </svg>
                     </a>
 
-                    <!-- Non-medical care link back to healthcare page -->
                     <a href="/" class="btn-care">
                         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -70,14 +71,39 @@
             </div>
         </div>
 
+        <!-- ── Arrow navigation ──────────────────────────────── -->
+        <button class="carousel-arrow carousel-arrow--left" @click="prevSlide" aria-label="Previous slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round">
+                <polyline points="15 18 9 12 15 6" />
+            </svg>
+        </button>
+        <button class="carousel-arrow carousel-arrow--right" @click="nextSlide" aria-label="Next slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round">
+                <polyline points="9 18 15 12 9 6" />
+            </svg>
+        </button>
+
+        <!-- ── Progress dots ─────────────────────────────────── -->
+        <div class="carousel-dots">
+            <button v-for="(s, i) in slides" :key="i" class="carousel-dot" :class="{ active: i === currentSlide }"
+                @click="goToSlide(i)" :aria-label="`Go to slide ${i + 1}`"></button>
+        </div>
+
     </section>
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+
+/* ── Local cleaning images ───────────────────────────────── */
+import CleaningImage1 from '@/assets/cleaning/CleaningImage1.png'
+import CleaningImage2 from '@/assets/cleaning/CleaningImage2.png'
+import CleaningImage3 from '@/assets/cleaning/CleaningImage3.png'
+import CleaningImage4 from '@/assets/cleaning/CleaningImage4.png'
+import CleaningImage5 from '@/assets/cleaning/CleaningImage5.png'
 
 const { t } = useI18n()
 
@@ -86,6 +112,77 @@ const trustItems = [
     'cleaningHero.trust2',
     'cleaningHero.trust3',
 ]
+
+/* ── 5 carousel slides ───────────────────────────────────── */
+const slides = [
+    {
+        image: CleaningImage1,
+        badge: 'cleaningHero.slides.1.badge',
+        line1: 'cleaningHero.slides.1.line1',
+        line2: 'cleaningHero.slides.1.line2',
+        subtitle: 'cleaningHero.slides.1.subtitle',
+    },
+    {
+        image: CleaningImage2,
+        badge: 'cleaningHero.slides.2.badge',
+        line1: 'cleaningHero.slides.2.line1',
+        line2: 'cleaningHero.slides.2.line2',
+        subtitle: 'cleaningHero.slides.2.subtitle',
+    },
+    {
+        image: CleaningImage3,
+        badge: 'cleaningHero.slides.3.badge',
+        line1: 'cleaningHero.slides.3.line1',
+        line2: 'cleaningHero.slides.3.line2',
+        subtitle: 'cleaningHero.slides.3.subtitle',
+    },
+    {
+        image: CleaningImage4,
+        badge: 'cleaningHero.slides.4.badge',
+        line1: 'cleaningHero.slides.4.line1',
+        line2: 'cleaningHero.slides.4.line2',
+        subtitle: 'cleaningHero.slides.4.subtitle',
+    },
+    {
+        image: CleaningImage5,
+        badge: 'cleaningHero.slides.5.badge',
+        line1: 'cleaningHero.slides.5.line1',
+        line2: 'cleaningHero.slides.5.line2',
+        subtitle: 'cleaningHero.slides.5.subtitle',
+    },
+]
+
+/* ── Reactive state ──────────────────────────────────────── */
+const currentSlide = ref(0)
+const contentKey = ref(0)
+let autoplayTimer = null
+const SLIDE_DURATION = 5500
+
+const startAutoplay = () => {
+    clearInterval(autoplayTimer)
+    autoplayTimer = setInterval(() => {
+        currentSlide.value = (currentSlide.value + 1) % slides.length
+        contentKey.value++
+    }, SLIDE_DURATION)
+}
+
+const nextSlide = () => {
+    currentSlide.value = (currentSlide.value + 1) % slides.length
+    contentKey.value++
+    startAutoplay()
+}
+
+const prevSlide = () => {
+    currentSlide.value = (currentSlide.value - 1 + slides.length) % slides.length
+    contentKey.value++
+    startAutoplay()
+}
+
+const goToSlide = (i) => {
+    currentSlide.value = i
+    contentKey.value++
+    startAutoplay()
+}
 
 const scrollTo = (id) => {
     const el = document.getElementById(id)
@@ -97,24 +194,15 @@ const scrollTo = (id) => {
 }
 
 onMounted(() => {
-    AOS.init({ duration: 860, once: true, easing: 'ease-out-cubic' })
+    startAutoplay()
+})
+
+onUnmounted(() => {
+    clearInterval(autoplayTimer)
 })
 </script>
 
 <style scoped>
-/*
-  Cleaning hero uses its own color palette —
-  warm navy/dark tones from the screenshot, NOT the
-  purple brand tokens used on the healthcare page.
-  This keeps the two pages visually distinct.
-
-  Cleaning palette (scoped to this component):
-    --c-dark:    #0d1b2a   deep navy
-    --c-card:    rgba(13,27,42,0.92)  card bg
-    --c-gold:    #CC933A   cleaning gold (matches screenshot)
-    --c-gold-lt: rgba(204, 147, 58,0.15)
-*/
-
 .cleaning-hero {
     position: relative;
     min-height: 100vh;
@@ -124,19 +212,39 @@ onMounted(() => {
     background: #0d1b2a;
 }
 
-/* ─── Background ─────────────────────────────────────────── */
-.hero-bg {
+/* ─── Background carousel ────────────────────────────────── */
+.slides-track {
     position: absolute;
     inset: 0;
     z-index: 0;
 }
 
-.hero-bg-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #0d1b2a;
+    will-change: opacity;
+    animation: kenBurns 6s ease-out forwards;
+}
+
+@keyframes kenBurns {
+    from { transform: scale(1.06); }
+    to { transform: scale(1.00); }
+}
+
+.slide-bg-fade-enter-active,
+.slide-bg-fade-leave-active {
+    transition: opacity 1s ease;
+    position: absolute;
+    inset: 0;
+}
+
+.slide-bg-fade-enter-from,
+.slide-bg-fade-leave-to {
+    opacity: 0;
 }
 
 .hero-bg-overlay {
@@ -171,6 +279,12 @@ onMounted(() => {
     box-shadow:
         0 24px 64px rgba(0, 0, 0, 0.45),
         inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    animation: cardFadeIn 0.6s ease both;
+}
+
+@keyframes cardFadeIn {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* ─── Badge ──────────────────────────────────────────────── */
@@ -201,17 +315,9 @@ onMounted(() => {
 }
 
 @keyframes pulseDot {
-    0% {
-        box-shadow: 0 0 0 0 rgba(204, 147, 58, 0.6);
-    }
-
-    60% {
-        box-shadow: 0 0 0 7px rgba(204, 147, 58, 0);
-    }
-
-    100% {
-        box-shadow: 0 0 0 0 rgba(204, 147, 58, 0);
-    }
+    0% { box-shadow: 0 0 0 0 rgba(204, 147, 58, 0.6); }
+    60% { box-shadow: 0 0 0 7px rgba(204, 147, 58, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(204, 147, 58, 0); }
 }
 
 /* ─── Headline ───────────────────────────────────────────── */
@@ -226,7 +332,6 @@ onMounted(() => {
     text-shadow: 0 3px 20px rgba(0, 0, 0, 0.40);
 }
 
-/* Gold underline accent on second line */
 .hero-headline--accent {
     display: block;
     color: #CC933A;
@@ -253,38 +358,22 @@ onMounted(() => {
     color: rgba(255, 255, 255, 0.78);
     line-height: 1.78;
     margin-bottom: 30px;
-    /* override global p color */
     margin-top: 0;
 }
 
 /* ─── Buttons ────────────────────────────────────────────── */
 .hero-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 28px;
-}
-
-/* Row 1: two main CTAs side by side */
-.hero-buttons .btn-primary,
-.hero-buttons .btn-outline {
-    flex: 1;
-}
-
-/* Wrap first two in a row */
-.hero-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     gap: 10px;
+    margin-bottom: 28px;
 }
 
 .btn-care {
     grid-column: 1 / -1;
-    /* full width on its own row */
 }
 
-/* Gold primary button */
 .btn-primary {
     display: inline-flex;
     align-items: center;
@@ -312,7 +401,6 @@ onMounted(() => {
         inset 0 1px 0 rgba(255, 255, 255, 0.22);
 }
 
-/* Outline button */
 .btn-outline {
     display: inline-flex;
     align-items: center;
@@ -339,15 +427,9 @@ onMounted(() => {
     transform: translateY(-2px);
 }
 
-.btn-outline svg {
-    transition: transform 0.2s ease;
-}
+.btn-outline svg { transition: transform 0.2s ease; }
+.btn-outline:hover svg { transform: translateX(4px); }
 
-.btn-outline:hover svg {
-    transform: translateX(4px);
-}
-
-/* Non-medical care button */
 .btn-care {
     display: inline-flex;
     align-items: center;
@@ -374,13 +456,8 @@ onMounted(() => {
     transform: translateY(-1px);
 }
 
-.btn-care svg {
-    transition: transform 0.2s ease;
-}
-
-.btn-care:hover svg {
-    transform: scale(1.15);
-}
+.btn-care svg { transition: transform 0.2s ease; }
+.btn-care:hover svg { transform: scale(1.15); }
 
 /* ─── Trust bar ──────────────────────────────────────────── */
 .trust-bar {
@@ -409,10 +486,73 @@ onMounted(() => {
     flex-shrink: 0;
 }
 
+/* ─── Arrow navigation ──────────────────────────────────── */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid rgba(204, 147, 58, 0.32);
+    background: rgba(13, 27, 42, 0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.22s ease, border-color 0.22s ease, transform 0.22s ease;
+}
+
+.carousel-arrow:hover {
+    background: #CC933A;
+    border-color: #CC933A;
+    color: #0d1b2a;
+    transform: translateY(calc(-50% - 2px));
+}
+
+.carousel-arrow--left { left: 28px; }
+.carousel-arrow--right { right: 28px; }
+
+/* ─── Progress dots ─────────────────────────────────────── */
+.carousel-dots {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    display: flex;
+    gap: 8px;
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.35);
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.22s ease, transform 0.22s ease, width 0.22s ease;
+}
+
+.carousel-dot.active {
+    background: #CC933A;
+    width: 22px;
+    border-radius: 4px;
+}
+
 /* ─── Responsive ─────────────────────────────────────────── */
+@media (max-width: 1024px) {
+    .carousel-arrow { width: 44px; height: 44px; }
+}
+
 @media (max-width: 768px) {
     .hero-inner {
-        padding: 120px 20px 80px;
+        padding: 120px 20px 100px;
     }
 
     .hero-card {
@@ -431,15 +571,29 @@ onMounted(() => {
     .btn-care {
         grid-column: 1;
     }
+
+    .carousel-arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .carousel-arrow--left { left: 10px; }
+    .carousel-arrow--right { right: 10px; }
+
+    .carousel-dots { bottom: 20px; }
+}
+
+@media (max-width: 420px) {
+    .hero-headline {
+        font-size: 2rem;
+    }
 }
 
 /* ─── Reduced motion ─────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
-    .badge-dot {
-        animation: none !important;
-    }
-
-    .hero-headline--accent::after {
+    .badge-dot,
+    .hero-bg,
+    .hero-card {
         animation: none !important;
     }
 }
