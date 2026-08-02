@@ -30,11 +30,11 @@ const IconClock = defineComponent({ render: () => h('svg', { width: 22, height: 
 const IconShield = defineComponent({ render: () => h('svg', { width: 22, height: 22, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', 'stroke-width': '2', 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, [h('path', { d: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' })]) })
 
 const stats = ref([
-  { icon: IconHeart, labelKey: 'satisfaction.seniors', target: 200, current: 0, suffix: '+' },
+  { icon: IconHeart, labelKey: 'satisfaction.seniors', target: 70, current: 0, suffix: '+' },
   { icon: IconStar, labelKey: 'satisfaction.satisfaction', target: 100, current: 0, suffix: '%' },
   { icon: IconUsers, labelKey: 'satisfaction.families', target: 150, current: 0, suffix: '+' },
   { icon: IconClock, labelKey: 'satisfaction.punctual', target: 98, current: 0, suffix: '%' },
-  { icon: IconShield, labelKey: 'satisfaction.years', target: 5, current: 0, suffix: '+' },
+  { icon: IconShield, labelKey: 'satisfaction.years', target: 3, current: 0, suffix: '+' },
 ])
 
 const stripRef = ref(null)
