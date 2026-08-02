@@ -170,9 +170,9 @@ const testimonials = [
 
 /* ── Summary stats ───────────────────────────────────────── */
 const summaryStats = [
-  { value: '200+', label: 'testimonials.stat1' },
+  { value: '70+', label: 'testimonials.stat1' },
   { value: '5.0★', label: 'testimonials.stat2' },
-  { value: '98%', label: 'testimonials.stat3' },
+  { value: '80%', label: 'testimonials.stat3' },
   { value: '100%', label: 'testimonials.stat4' },
 ]
 
