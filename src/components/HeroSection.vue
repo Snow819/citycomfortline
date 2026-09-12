@@ -31,11 +31,7 @@
     </transition>
 
     <!-- ── Hero text content ─────────────────────────────── -->
-    <!--
-      FIX: No Vue <transition> on content. Instead we use a contentKey
-      watch to re-mount a fresh .hero-content div, which naturally
-      re-triggers the CSS @keyframes without Vue transition interference.
-    -->
+
     <div class="hero-content-wrap">
       <div class="hero-content" :key="contentKey">
 
@@ -210,11 +206,6 @@ const slides = [
     workerSlide: false,
   },
   {
-    /*
-     * Slide 6 — Swift Comfort Line branded worker slide.
-     * Replace this Unsplash URL with your own staff photo once available.
-     * The .uniform-badge overlay will appear on top of any image here.
-     */
     image: Image6,
     badge: 'hero.slides.6.badge',
     line1: 'hero.slides.6.line1',
@@ -226,7 +217,7 @@ const slides = [
 
 /* ── Reactive state ──────────────────────────────────────── */
 const currentSlide = ref(0)
-const contentKey = ref(0)   // incrementing this re-mounts hero-content → clean animation re-trigger
+const contentKey = ref(0)
 const dotProgress = ref(0)
 
 
@@ -234,14 +225,7 @@ let autoplayTimer = null
 let progressTimer = null
 const SLIDE_DURATION = 5500  // ms
 
-/* ── Watch slide change → bump contentKey ────────────────── */
-/*
- * WHY: CSS @keyframes only re-fire when the element is re-inserted into
- * the DOM. Bumping :key forces Vue to destroy + recreate .hero-content,
- * so every reveal-* animation starts cleanly from opacity:0/translateY.
- * We use a plain watch instead of <transition> on the content so the
- * background and content transitions are fully independent.
- */
+
 watch(currentSlide, () => {
   contentKey.value++
 })
@@ -327,22 +311,6 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-/*
-  ALL colors reference tokens defined in main.css :root.
-  No color values are redefined here — this component inherits
-  everything from the global stylesheet so changing main.css
-  automatically updates the hero section.
-
-  The only exception is SVG stroke/fill attributes (which cannot
-  read CSS vars cross-browser) — those use the hardcoded hex
-  values that match the main.css tokens exactly:
-    #CC933A  = --color-gold
-    #e0aa54  = --color-gold-bright
-    #45137D  = --color-primary
-    #1A0535  = --color-primary-deep
-    #ffffff  = --color-bg
-*/
-
 /* ─── Section ───────────────────────────────────────────── */
 .hero-section {
   position: relative;
@@ -465,12 +433,6 @@ onUnmounted(() => {
   max-width: 680px;
 }
 
-/* ─── Entrance animations ────────────────────────────────
-   All child elements animate on mount because .hero-content
-   is re-keyed on every slide change, inserting a fresh DOM
-   node that starts at opacity:0/translateY and animates up.
-   Stagger is controlled via animation-delay on each element.
-──────────────────────────────────────────────────────────── */
 .hero-badge {
   animation: revealUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) 0.05s both;
 }
