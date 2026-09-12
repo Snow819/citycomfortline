@@ -26,7 +26,7 @@
         "badge": "Trusted Non-Medical Senior Support",
         "line1": "Professional Care,",
         "line2": "In Your Home",
-        "subtitle": "Compassionate, dependable support providers providing tailored support for your loved ones — so they can live with dignity and comfort."
+        "subtitle": "Compassionate, dependable support providers providing tailored support for your loved ones \u2014 so they can live with dignity and comfort."
       },
       "2": {
         "badge": "Digital Support Services",
@@ -50,21 +50,21 @@
         "badge": "Community-Centred Support",
         "line1": "Care That Feels",
         "line2": "Like Family",
-        "subtitle": "We build lasting relationships and bring genuine warmth to every home we serve — because true care goes beyond the clinical."
+        "subtitle": "We build lasting relationships and bring genuine warmth to every home we serve \u2014 because true care goes beyond the clinical."
       },
       "6": {
         "badge": "Swift Comfort Line Team",
         "line1": "Our People,",
         "line2": "Your Comfort",
-        "subtitle": "Meet the Swift Comfort Line team — uniformed, dependable caregivers who bring expert care and a warm, reassuring presence to every visit."
+        "subtitle": "Meet the Swift Comfort Line team \u2014 uniformed, dependable caregivers who bring expert care and a warm, reassuring presence to every visit."
       }
     }
   },
   "about": {
     "label": "Who We Are",
     "title": "Compassionate Care You Can Count On",
-    "paragraph1": "Swift Comfort Line was founded on a simple belief — that every person deserves to age with dignity, in the comfort of their own home, surrounded by the people and things they love. We bring that belief to life every day through our team of certified, compassionate caregivers.",
-    "paragraph2": "We don't just provide services — we build relationships. From the first consultation to each daily visit, our team is dedicated to understanding your family's unique needs and delivering care that truly makes a difference.",
+    "paragraph1": "Swift Comfort Line was founded on a simple belief \u2014 that every person deserves to age with dignity, in the comfort of their own home, surrounded by the people and things they love. We bring that belief to life every day through our team of certified, compassionate caregivers.",
+    "paragraph2": "We don't just provide services \u2014 we build relationships. From the first consultation to each daily visit, our team is dedicated to understanding your family's unique needs and delivering care that truly makes a difference.",
     "quote": "Care is not just what we do. It is who we are.",
     "chip1": "Compassion First",
     "chip2": "Safety Guaranteed",
@@ -86,7 +86,7 @@
       "phoneLabel": "Call Us",
       "emailLabel": "Email Us",
       "locationLabel": "Service Area",
-      "locationValue": "Serving Ottawa and Surrounding Communities",
+      "locationValue": "Serving Ottawa, Nepean, Kanata, Barrhaven, Orleans, and Gloucester",
       "hoursLabel": "Hours of Operation",
       "hoursValue": "24 hours a day, 7 days a week"
     }
@@ -155,7 +155,7 @@
     },
     "respite": {
       "title": "Respite Support",
-      "description": "Temporary relief for family caregivers — giving you peace of mind and the rest you deserve while your loved one is in trusted hands.",
+      "description": "Temporary relief for family caregivers \u2014 giving you peace of mind and the rest you deserve while your loved one is in trusted hands.",
       "item1": "Short-term & emergency coverage",
       "item2": "Flexible scheduling for family caregivers",
       "item3": "Seamless care continuity"
@@ -168,7 +168,7 @@
     "bookBtn": "Book This Plan",
     "oneTime": {
       "name": "One-Day Visit",
-      "frequency": "Single visit — one day",
+      "frequency": "Single visit \u2014 one day",
       "feature1": "Full-day caregiver support",
       "feature2": "Any combination of our 6 services",
       "feature3": "Ideal for trials or one-off needs"
@@ -213,9 +213,9 @@
   "serviceAreas": {
     "label": "Where We Work",
     "title": "Proudly Serving Ottawa and Surrounding Communities",
-    "boundary": "Swift Comfort Line provides compassionate non-medical support services to seniors and families in Ottawa and the surrounding area.",
+    "boundary": "Swift Comfort Line provides compassionate non-medical support services to seniors and families across Ottawa, including Nepean, Kanata, Barrhaven, Orleans, and Gloucester.",
     "canadaTitle": "Ottawa & Surrounding Area",
-    "canadaSub": "Serving families in Ottawa and nearby communities",
+    "canadaSub": "Serving families in Ottawa, Nepean, Kanata, Barrhaven, Orleans, and Gloucester",
     "coveragePill": "Ottawa Area",
     "point1": "In-person and phone consultations available",
     "point2": "Flexible scheduling that works for your family",
@@ -226,7 +226,7 @@
   "testimonials": {
     "label": "Client Stories",
     "title": "Trusted by Ottawa Families",
-    "subtitle": "Don't just take our word for it — hear directly from the families and clients we've had the privilege of caring for.",
+    "subtitle": "Don't just take our word for it \u2014 hear directly from the families and clients we've had the privilege of caring for.",
     "ratingLabel": "Client Feedback",
     "verified": "Client",
     "stat1": "Families Supported",
@@ -237,7 +237,7 @@
     "ctaBtn": "Book a Free Consultation",
     "items": {
       "1": {
-        "text": "Swift Comfort Line has been an absolute blessing for my mother. The caregivers are not just professional — they genuinely care. I finally have peace of mind knowing she's in good hands.",
+        "text": "Swift Comfort Line has been an absolute blessing for my mother. The caregivers are not just professional \u2014 they genuinely care. I finally have peace of mind knowing she's in good hands.",
         "name": "Client Family 1",
         "role": "Ottawa Area"
       },
@@ -247,7 +247,7 @@
         "role": "Ottawa Area"
       },
       "3": {
-        "text": "I was nervous about having someone help me at home, but my caregiver treats me with so much respect and warmth. It doesn't feel like a service — it feels like family.",
+        "text": "I was nervous about having someone help me at home, but my caregiver treats me with so much respect and warmth. It doesn't feel like a service \u2014 it feels like family.",
         "name": "Client Family 3",
         "role": "Ottawa Area"
       },
@@ -320,7 +320,7 @@
     "quickLinks": "Quick Links",
     "ourServices": "Our Services",
     "contactUs": "Contact Us",
-    "hours": "Mon – Sat, flexible hours",
+    "hours": "Mon \u2013 Sat, flexible hours",
     "location": "Serving Ottawa and Surrounding Communities",
     "cleaningLink": "Our Cleaning Services",
     "rights": "All rights reserved.",
@@ -347,7 +347,7 @@
         "badge": "Deep Clean Experts",
         "line1": "Fresh Spaces,",
         "line2": "Fresh Start",
-        "subtitle": "We tackle the details others miss — baseboards, vents, and hidden corners — for a clean that truly lasts."
+        "subtitle": "We tackle the details others miss \u2014 baseboards, vents, and hidden corners \u2014 for a clean that truly lasts."
       },
       "3": {
         "badge": "Trusted Cleaners",
@@ -378,7 +378,7 @@
   "cleaningServices": {
     "title": "Cleaning,",
     "titleAccent": "Refined.",
-    "subtitle": "From everyday home cleaning to deep cleans and Airbnb turnovers — serving Ottawa and the surrounding area.",
+    "subtitle": "From everyday home cleaning to deep cleans and Airbnb turnovers \u2014 serving Ottawa and the surrounding area.",
     "ctaText": "Ready for a spotlessly clean space?",
     "ctaBtn": "Request a Free Quote",
     "home": {
@@ -399,14 +399,14 @@
     },
     "airbnb": {
       "title": "Airbnb Turnovers",
-      "desc": "Fast, reliable turnovers between guests — fresh linens, restocked supplies, 5-star ready."
+      "desc": "Fast, reliable turnovers between guests \u2014 fresh linens, restocked supplies, 5-star ready."
     }
   },
   "cleaningAbout": {
     "label": "Our Approach",
     "title": "Every Detail",
     "titleAccent": "Matters.",
-    "subtitle": "Our team delivers a higher standard of clean with care, consistency, and deep respect for your space — serving Ottawa and surrounding communities.",
+    "subtitle": "Our team delivers a higher standard of clean with care, consistency, and deep respect for your space \u2014 serving Ottawa and surrounding communities.",
     "badge": "Rated Service",
     "cta": "Book a Cleaning",
     "check1": {
@@ -415,7 +415,7 @@
     },
     "check2": {
       "title": "Flexible Booking",
-      "desc": "Schedule at a time that suits you — mornings, evenings, or weekends."
+      "desc": "Schedule at a time that suits you \u2014 mornings, evenings, or weekends."
     },
     "check3": {
       "title": "Consistent Results",
@@ -465,7 +465,7 @@
     "title": "Let's Get Your Space Spotless",
     "subtitle": "Request a free, no-obligation quote today. We serve Ottawa and surrounding communities and respond within 2 hours.",
     "callUs": "Call Us Directly",
-    "hours": "Mon – Sat, flexible hours",
+    "hours": "Mon \u2013 Sat, flexible hours",
     "formBadge": "Free Quote",
     "formTitle": "Request a Cleaning Quote",
     "serviceLabel": "Service Type",

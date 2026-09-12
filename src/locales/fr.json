@@ -86,7 +86,7 @@
       "phoneLabel": "Téléphone",
       "emailLabel": "Courriel",
       "locationLabel": "Zone de Service",
-      "locationValue": "Desservant Ottawa et les communautés environnantes",
+      "locationValue": "Desservant Ottawa, Nepean, Kanata, Barrhaven, Orléans et Gloucester",
       "hoursLabel": "Heures d'Ouverture",
       "hoursValue": "24 heures sur 24, 7 jours sur 7"
     }
@@ -213,9 +213,9 @@
   "serviceAreas": {
     "label": "Où Nous Intervenons",
     "title": "Au Service d'Ottawa et des Communautés Environnantes",
-    "boundary": "Swift Comfort Line offre des services de soutien non médicaux bienveillants aux aînés et aux familles à Ottawa et dans la région.",
+    "boundary": "Swift Comfort Line offre des services de soutien non médicaux bienveillants aux aînés et aux familles à Ottawa, incluant Nepean, Kanata, Barrhaven, Orléans et Gloucester.",
     "canadaTitle": "Ottawa et Région",
-    "canadaSub": "Au service des familles à Ottawa et dans les communautés avoisinantes",
+    "canadaSub": "Au service des familles à Ottawa, Nepean, Kanata, Barrhaven, Orléans et Gloucester",
     "coveragePill": "Région d'Ottawa",
     "point1": "Consultations en personne et par téléphone disponibles",
     "point2": "Horaires flexibles adaptés à votre famille",

@@ -86,7 +86,7 @@
       "phoneLabel": "电话",
       "emailLabel": "电子邮件",
       "locationLabel": "服务地区",
-      "locationValue": "服务渥太华及周边社区",
+      "locationValue": "服务渥太华、Nepean、Kanata、Barrhaven、Orleans 及 Gloucester 地区",
       "hoursLabel": "服务时间",
       "hoursValue": "每天24小时，每周7天"
     }
@@ -213,9 +213,9 @@
   "serviceAreas": {
     "label": "服务范围",
     "title": "自豪地服务渥太华及周边社区",
-    "boundary": "Swift Comfort Line 为渥太华及周边地区的老年人和家庭提供贴心的非医疗支援服务。",
+    "boundary": "Swift Comfort Line 为渥太华及周边地区（包括 Nepean、Kanata、Barrhaven、Orleans 和 Gloucester）的老年人和家庭提供贴心的非医疗支援服务。",
     "canadaTitle": "渥太华及周边地区",
-    "canadaSub": "服务渥太华及附近社区的家庭",
+    "canadaSub": "服务渥太华、Nepean、Kanata、Barrhaven、Orleans 及 Gloucester 的家庭",
     "coveragePill": "渥太华地区",
     "point1": "提供面对面及电话咨询",
     "point2": "灵活排班，适合您的家庭需求",
