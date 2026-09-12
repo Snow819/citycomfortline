@@ -10,7 +10,7 @@
             <!-- Col 1 — Brand ───────────────────────────────────── -->
             <div class="footer-brand">
                 <a href="#home" class="footer-logo" @click.prevent="scrollTo('home')">
-                    <img src="@/assets/logo-m.svg" alt="Swift Comfort Line" class="footer-logo-img" />
+                    <img src="@/assets/logo-m.png" alt="Swift Comfort Line" class="footer-logo-img" />
                     <div class="footer-logo-text">
                         <span class="footer-logo-name">
                             Swift Comfort <span class="footer-logo-name--gold">Line</span>
